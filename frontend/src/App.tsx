@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { HomePageSimple } from './pages/HomePageSimple'
-import { TripPage } from './pages/TripPage'
+import { TripPageSimple } from './pages/TripPageSimple'
 import { InterestsPage } from './pages/InterestsPage'
 import { AddPage } from './pages/AddPage'
 
@@ -13,7 +13,7 @@ function App() {
         {/* Main Layout Routes */}
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePageSimple />} />
-          <Route path="trip" element={<TripPage />} />
+          <Route path="trip" element={<TripPageSimple />} />
           <Route path="organize/interests" element={<InterestsPage />} />
           <Route path="add" element={<AddPage />} />
         </Route>
