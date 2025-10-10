@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { fetchCountries, type CountrySummary } from '../api/client'
 
-// Mock data for now
+// Fallback mock data
 const mockCountries = [
   { country: 'Japan', count: 12 },
   { country: 'Bali', count: 8 },
@@ -10,8 +11,37 @@ const mockCountries = [
 
 export const HomePageSimple: React.FC = () => {
   const navigate = useNavigate()
-  const [countries] = useState(mockCountries)
+  const [loading, setLoading] = useState(true)
+  const [countries, setCountries] = useState<CountrySummary[]>(mockCountries)
   const [picked, setPicked] = useState<string | null>(null)
+  const tries = useRef(0)
+  const polling = useRef<NodeJS.Timeout | null>(null)
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        setLoading(true)
+        const data = await fetchCountries()
+        if (data && data.length > 0) {
+          setCountries(data)
+        } else if (tries.current < 5) {
+          // Retry a few times then fallback to mock data
+          tries.current += 1
+          polling.current = setTimeout(loadData, 2000)
+          return
+        }
+        // If no data after retries, keep using mock data
+      } catch (error) {
+        console.error('Failed to load countries:', error)
+        // Keep using mock data on error
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    loadData()
+    return () => { if (polling.current) clearTimeout(polling.current) }
+  }, [])
 
   const onPick = (c: string) => setPicked(c)
   const onNavigate = () => { if (picked) navigate(`/organize/${encodeURIComponent(picked)}?focus=1`) }
