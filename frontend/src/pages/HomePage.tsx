@@ -145,10 +145,10 @@ export const HomePage: React.FC = () => {
                       <img 
                         src={base64.startsWith('data:') ? base64 : `data:image/jpeg;base64,${base64}`}
                         alt={c.country}
-                        className="w-21 h-21 rounded-xl object-cover bg-gray-800"
+                        className="w-20 h-20 rounded-xl object-cover bg-gray-800"
                       />
                     ) : (
-                      <div className="w-21 h-21 rounded-xl bg-gray-800 animate-pulse" />
+                      <div className="w-20 h-20 rounded-xl bg-gray-800 animate-pulse" />
                     )}
                     <div className="flex-1 text-left">
                       <h3 className={`text-lg font-semibold ${dim ? 'text-gray-600' : 'text-white'}`}>
