@@ -1,26 +1,19 @@
 import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Layout } from './components/Layout'
-
-// Simple test component first
-const TestHomePage: React.FC = () => (
-  <div className="flex-1 bg-black text-white min-h-screen p-4">
-    <h1 className="text-2xl font-bold mb-4">Verso Travel Platform</h1>
-    <p className="text-gray-400 mb-4">Original black theme restored!</p>
-    <div className="bg-gray-900 rounded-lg p-4 border border-gray-800">
-      <p className="text-green-400">✅ React Router working</p>
-      <p className="text-green-400">✅ Black minimalistic theme</p>
-      <p className="text-green-400">✅ Tailwind CSS functional</p>
-    </div>
-  </div>
-)
-
-const TestTripPage: React.FC = () => (
-  <div className="flex-1 bg-black text-white min-h-screen p-4">
-    <h1 className="text-xl font-bold mb-4">Trip Planning</h1>
-    <p className="text-gray-400">Trip page with original styling</p>
-  </div>
-)
+import { HomePage } from './pages/HomePage'
+import { ExplorePage } from './pages/ExplorePage'
+import { TripPage } from './pages/TripPage'
+import { CountryPage } from './pages/CountryPage'
+import { CategoryPage } from './pages/CategoryPage'
+import { CityPage } from './pages/CityPage'
+import { QuestionnairePage } from './pages/QuestionnairePage'
+import { ItineraryPage } from './pages/ItineraryPage'
+import { HotelsPage } from './pages/HotelsPage'
+import { CafesPage } from './pages/CafesPage'
+import { InterestsPage } from './pages/InterestsPage'
+import { AddPage } from './pages/AddPage'
+import { AuthPage } from './pages/AuthPage'
 
 function App() {
   return (
@@ -28,8 +21,25 @@ function App() {
       <Routes>
         {/* Main Layout Routes */}
         <Route path="/" element={<Layout />}>
-          <Route index element={<TestHomePage />} />
-          <Route path="trip" element={<TestTripPage />} />
+          <Route index element={<HomePage />} />
+          <Route path="explore" element={<ExplorePage />} />
+          <Route path="trip" element={<TripPage />} />
+          
+          {/* Organize routes */}
+          <Route path="organize/:country" element={<CountryPage />} />
+          <Route path="organize/:country/category/:categoryName" element={<CategoryPage />} />
+          <Route path="organize/:country/:city" element={<CityPage />} />
+          <Route path="organize/interests" element={<InterestsPage />} />
+          
+          {/* Trip planning routes */}
+          <Route path="trip/questionnaire" element={<QuestionnairePage />} />
+          <Route path="trip/itinerary" element={<ItineraryPage />} />
+          <Route path="trip/hotels" element={<HotelsPage />} />
+          <Route path="trip/cafes" element={<CafesPage />} />
+          
+          {/* Other routes */}
+          <Route path="add" element={<AddPage />} />
+          <Route path="auth" element={<AuthPage />} />
         </Route>
 
         {/* Fallback */}
@@ -38,5 +48,7 @@ function App() {
     </div>
   )
 }
+
+export default App
 
 export default App
