@@ -122,6 +122,27 @@ export const TripPlanningPage: React.FC = () => {
             <span className="text-white text-sm whitespace-nowrap">Home</span>
           </div>
         </div>
+
+        {/* Visa Status */}
+        <div className="mt-4">
+          <button
+            onClick={() => setActiveSheet('visa')}
+            className="w-full bg-green-900/20 border border-green-500/30 hover:border-green-500/50 rounded-xl p-4 text-left transition-all hover:bg-green-900/30"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
+                  <CheckCircle size={20} className="text-green-400" />
+                </div>
+                <div>
+                  <p className="text-white font-semibold text-sm">Visa-free entry</p>
+                  <p className="text-gray-400 text-xs">Japan · up to 90 days</p>
+                </div>
+              </div>
+              <ChevronRight size={20} className="text-gray-400" />
+            </div>
+          </button>
+        </div>
       </div>
 
       {/* City Cards */}
