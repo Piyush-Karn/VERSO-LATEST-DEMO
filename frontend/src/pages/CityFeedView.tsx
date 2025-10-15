@@ -319,22 +319,27 @@ export const CityFeedView: React.FC = () => {
 
   const handleTouchStart = (e: React.TouchEvent) => {
     startY.current = e.touches[0].clientY
+    startTime.current = Date.now()
   }
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     const endY = e.changedTouches[0].clientY
     const diff = startY.current - endY
+    const duration = Date.now() - startTime.current
 
+    // Require at least 50px movement
     if (Math.abs(diff) > 50) {
-      if (diff > 0 && currentIndex < activities.length - 1) {
+      if (diff > 0) {
         // Swipe up - next activity
-        setCurrentIndex(prev => prev + 1)
-      } else if (diff < 0 && currentIndex > 0) {
+        if (currentIndex < activities.length - 1) {
+          setCurrentIndex(prev => prev + 1)
+        }
+      } else if (diff < 0) {
         // Swipe down
         if (currentIndex === 0) {
           // At first card, close view
           navigate(-1)
-        } else {
+        } else if (currentIndex > 0) {
           setCurrentIndex(prev => prev - 1)
         }
       }
