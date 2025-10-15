@@ -54,6 +54,9 @@ function App() {
           <Route path="add" element={<AddPage />} />
         </Route>
 
+        {/* QR Code Page (outside Layout) */}
+        <Route path="/qr" element={<QRCodePage />} />
+
         {/* Fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
