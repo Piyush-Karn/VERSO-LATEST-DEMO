@@ -422,6 +422,15 @@ export const VaultDetailPage: React.FC = () => {
           </div>
         </button>
       </div>
+
+      {/* Filter Modal */}
+      <FilterModal
+        isOpen={showFilterModal}
+        onClose={() => setShowFilterModal(false)}
+        type="month"
+        currentValue={selectedMonth}
+        onSelect={setSelectedMonth}
+      />
     </div>
   )
 }
