@@ -35,7 +35,7 @@ function App() {
       <Routes>
         {/* Main Layout Routes */}
         <Route path="/" element={<Layout />}>
-          <Route index element={<GlobeExplorePage />} />
+          <Route index element={<MapboxExplorePage />} />
           <Route path="collections" element={<VaultViewPage />} />
           <Route path="vault/:vaultId" element={<VaultDetailPage />} />
           <Route path="trip" element={<TripPageSimple />} />
