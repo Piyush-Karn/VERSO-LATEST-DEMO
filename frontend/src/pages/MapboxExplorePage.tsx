@@ -46,7 +46,7 @@ export const MapboxExplorePage: React.FC = () => {
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/dark-v11',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12', // More colorful like Apple Maps
       projection: { name: 'globe' },
       center: [20, 30],
       zoom: 1.5,
