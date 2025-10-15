@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft, Calendar, MapPin, Compass } from 'lucide-react'
+import { ArrowLeft, Calendar, MapPin, Compass, Loader2 } from 'lucide-react'
+import { fetchPexelsImages, type PexelsPhoto } from '../services/pexels'
 
 // Mock vault data - matches with VaultViewPage
 const MOCK_VAULT_DATA: Record<string, any> = {
