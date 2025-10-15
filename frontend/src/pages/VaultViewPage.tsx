@@ -109,48 +109,53 @@ export const VaultViewPage: React.FC = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
-      {/* Background Map */}
-      <div className="absolute inset-0 z-0 opacity-30">
-        <Map
-          mapboxAccessToken={MAPBOX_TOKEN}
-          initialViewState={{
-            longitude: mapCenter[0],
-            latitude: mapCenter[1],
-            zoom: 3,
+      {/* Background Map - Simplified SVG World Map */}
+      <div className="absolute inset-0 z-0 opacity-20">
+        <svg 
+          className="w-full h-full" 
+          viewBox="0 0 1000 500" 
+          preserveAspectRatio="xMidYMid slice"
+          style={{
+            transform: `translateX(${-currentIndex * 10}px)`,
+            transition: 'transform 1s ease-out',
           }}
-          longitude={mapCenter[0]}
-          latitude={mapCenter[1]}
-          zoom={3}
-          style={{ width: '100%', height: '100%' }}
-          mapStyle="mapbox://styles/mapbox/dark-v11"
-          interactive={false}
-          transitionDuration={1000}
         >
-          {/* Glow effect for current region */}
-          <Source
-            id="glow-source"
-            type="geojson"
-            data={{
-              type: 'Feature',
-              geometry: {
-                type: 'Point',
-                coordinates: mapCenter,
-              },
-              properties: {},
+          {/* Simplified world continents */}
+          <g fill="none" stroke="#4B5563" strokeWidth="0.5">
+            {/* North America */}
+            <path d="M150,100 Q200,80 250,100 L270,150 Q260,180 240,200 L200,190 Q170,160 150,140 Z" opacity="0.6" />
+            {/* South America */}
+            <path d="M220,220 Q240,240 250,280 L240,340 Q230,360 210,340 L200,300 Q190,260 220,220 Z" opacity="0.6" />
+            {/* Europe */}
+            <path d="M480,120 Q520,110 560,130 L570,160 Q560,180 540,170 L500,165 Q480,150 480,120 Z" opacity="0.6" />
+            {/* Africa */}
+            <path d="M500,200 Q540,210 560,240 L570,300 Q550,350 520,340 L490,310 Q480,260 500,200 Z" opacity="0.6" />
+            {/* Asia */}
+            <path d="M600,100 Q700,80 780,110 L820,180 Q800,200 760,190 L680,180 Q620,160 600,100 Z" opacity="0.6" />
+            {/* Australia */}
+            <path d="M750,320 Q800,330 820,350 L810,380 Q790,385 770,375 L750,355 Q745,340 750,320 Z" opacity="0.6" />
+          </g>
+          
+          {/* Glow effect for current vault location */}
+          <circle
+            cx={500 + (currentIndex % 4) * 100}
+            cy={200 + Math.sin(currentIndex) * 50}
+            r="60"
+            fill="#FDE68A"
+            opacity="0.15"
+            style={{
+              filter: 'blur(40px)',
+              transition: 'all 1s ease-out',
             }}
-          >
-            <Layer
-              id="glow-layer"
-              type="circle"
-              paint={{
-                'circle-radius': 100,
-                'circle-color': '#FDE68A',
-                'circle-opacity': 0.3,
-                'circle-blur': 1,
-              }}
-            />
-          </Source>
-        </Map>
+          />
+          <circle
+            cx={500 + (currentIndex % 4) * 100}
+            cy={200 + Math.sin(currentIndex) * 50}
+            r="4"
+            fill="#FDE68A"
+            opacity="0.8"
+          />
+        </svg>
       </div>
 
       {/* Vault Cards - Horizontal Scroll */}
