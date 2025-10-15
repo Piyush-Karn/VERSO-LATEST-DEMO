@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft, Calendar, MapPin, Compass, Loader2 } from 'lucide-react'
+import { ArrowLeft, Calendar, MapPin, Compass, Loader2, Filter } from 'lucide-react'
 import { fetchPexelsImages, type PexelsPhoto } from '../services/pexels'
 import { NeighborhoodCard } from '../components/NeighborhoodCard'
+import { FilterModal } from '../components/FilterModal'
 import neighborhoodsData from '../data/neighborhoods_data.json'
 
 // Mock vault data - matches with VaultViewPage and Explore page
