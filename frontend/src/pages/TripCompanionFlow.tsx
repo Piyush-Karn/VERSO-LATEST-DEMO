@@ -505,7 +505,7 @@ export const TripCompanionFlow: React.FC = () => {
 
             {/* Stay Cards */}
             <div className="p-6 space-y-6">
-              {DEMO_STAYS.map((stay) => (
+              {getStays().map((stay) => (
                 <button
                   key={stay.id}
                   onClick={() => setSelectedStay(stay.id)}
