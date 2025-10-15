@@ -13,6 +13,7 @@ import { InterestsPage } from './pages/InterestsPage'
 import { AddPage } from './pages/AddPage'
 import { QRCodePage } from './pages/QRCodePage'
 import { NeighborhoodDetailPage } from './pages/NeighborhoodDetailPage'
+import { CityDetailPage } from './pages/CityDetailPage'
 
 // Simple Ask Verso placeholder
 const AskVersoPage = () => (
