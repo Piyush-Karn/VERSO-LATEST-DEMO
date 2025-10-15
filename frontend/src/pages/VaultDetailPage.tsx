@@ -208,7 +208,20 @@ export const VaultDetailPage: React.FC = () => {
             )}
             {!loading && (
               <div className="space-y-6">
-                {vaultData.cities.map((city: string, idx: number) => (
+                {(() => {
+                  // Sort cities based on selected month
+                  const sortedCities = [...vaultData.cities]
+                  if (selectedMonth && vaultData.seasons) {
+                    sortedCities.sort((a, b) => {
+                      const aMatch = vaultData.seasons.some((s: any) => s.month === selectedMonth)
+                      const bMatch = vaultData.seasons.some((s: any) => s.month === selectedMonth)
+                      if (aMatch && !bMatch) return -1
+                      if (!aMatch && bMatch) return 1
+                      return 0
+                    })
+                  }
+                  return sortedCities
+                })().map((city: string, idx: number) => (
                   <button
                     key={city}
                     onClick={() => navigate(`/city/${vaultData.country.toLowerCase()}/${city.toLowerCase()}`)}
