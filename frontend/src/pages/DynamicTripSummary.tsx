@@ -375,23 +375,30 @@ export const DynamicTripSummary: React.FC = () => {
             {/* Route Ribbon */}
             <div className="bg-gray-900/50 rounded-xl p-4 border border-gray-700/50">
               <p className="text-gray-400 text-xs mb-3 uppercase tracking-wide">Your Route</p>
-              <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
-                <span className="text-white text-sm whitespace-nowrap">Home</span>
-                {tripData.route.map((city, idx) => (
-                  <React.Fragment key={city.id}>
-                    <button
-                      onClick={() => idx === 0 ? handleFlightClick() : handleTrainClick(city.id)}
-                      className="text-gray-500 text-lg hover:text-yellow-200 transition-colors hover:scale-110 cursor-pointer"
-                    >
-                      {city.transport.emoji}
-                    </button>
-                    <span className="text-white font-semibold text-sm whitespace-nowrap">{city.name}</span>
-                  </React.Fragment>
-                ))}
-                <button onClick={handleFlightClick} className="text-gray-500 text-lg hover:text-yellow-200 transition-colors hover:scale-110">
-                  ✈️
-                </button>
-                <span className="text-white text-sm whitespace-nowrap">Home</span>
+              <div className="flex items-center gap-1 overflow-x-auto scrollbar-hide pb-2">
+                <div className="flex items-center gap-1">
+                  <span className="text-white text-sm whitespace-nowrap px-2">Home</span>
+                  {tripData.route.map((city, idx) => (
+                    <React.Fragment key={city.id}>
+                      <button
+                        onClick={() => idx === 0 ? handleFlightClick() : handleTrainClick(city.id)}
+                        className="group flex flex-col items-center gap-1 px-3 py-2 rounded-xl hover:bg-gray-800 transition-all border-2 border-transparent hover:border-yellow-200/50"
+                      >
+                        <span className="text-2xl group-hover:scale-125 transition-transform">{city.transport.emoji}</span>
+                        <span className="text-xs text-gray-500 group-hover:text-yellow-200 whitespace-nowrap">{city.transport.duration}</span>
+                      </button>
+                      <span className="text-white font-semibold text-sm whitespace-nowrap px-2">{city.name}</span>
+                    </React.Fragment>
+                  ))}
+                  <button
+                    onClick={handleFlightClick}
+                    className="group flex flex-col items-center gap-1 px-3 py-2 rounded-xl hover:bg-gray-800 transition-all border-2 border-transparent hover:border-yellow-200/50"
+                  >
+                    <span className="text-2xl group-hover:scale-125 transition-transform">✈️</span>
+                    <span className="text-xs text-gray-500 group-hover:text-yellow-200 whitespace-nowrap">11h</span>
+                  </button>
+                  <span className="text-white text-sm whitespace-nowrap px-2">Home</span>
+                </div>
               </div>
             </div>
 
