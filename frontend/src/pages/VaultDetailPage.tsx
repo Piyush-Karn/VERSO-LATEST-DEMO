@@ -163,7 +163,7 @@ export const VaultDetailPage: React.FC = () => {
 
       {/* Tab Navigation */}
       <div className="flex border-b border-gray-800 bg-black sticky top-0 z-10">
-        {['cities', 'neighborhoods', 'categories', 'seasons'].map((tab) => (
+        {['cities', 'neighborhoods', 'things_to_do'].map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab as any)}
