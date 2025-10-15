@@ -104,11 +104,21 @@ export const TripPlanningPage: React.FC = () => {
             <span className="text-white text-sm whitespace-nowrap">Home</span>
             {trip.route.map((city, idx) => (
               <React.Fragment key={city.city_id}>
-                <span className="text-gray-500 text-lg">{city.travel_from_previous.mode}</span>
+                <button
+                  onClick={() => setActiveSheet(city.travel_from_previous.mode === '✈️' ? 'flight' : 'train')}
+                  className="text-gray-500 text-lg hover:text-yellow-200 transition-colors hover:scale-110"
+                >
+                  {city.travel_from_previous.mode}
+                </button>
                 <span className="text-white font-semibold text-sm whitespace-nowrap">{city.city_name}</span>
               </React.Fragment>
             ))}
-            <span className="text-gray-500 text-lg">✈️</span>
+            <button
+              onClick={() => setActiveSheet('flight')}
+              className="text-gray-500 text-lg hover:text-yellow-200 transition-colors hover:scale-110"
+            >
+              ✈️
+            </button>
             <span className="text-white text-sm whitespace-nowrap">Home</span>
           </div>
         </div>
