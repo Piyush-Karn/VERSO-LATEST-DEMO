@@ -235,7 +235,7 @@ export const TripHomePage: React.FC = () => {
 
         {/* Create New Trip Card */}
         <button
-          onClick={() => navigate('/collections')}
+          onClick={() => navigate('/trip/create')}
           className="w-full bg-gray-900 rounded-3xl border-2 border-dashed border-gray-700 hover:border-yellow-200/50 transition-all p-8 flex flex-col items-center justify-center gap-3 min-h-[200px]"
         >
           <div className="w-16 h-16 bg-yellow-200/10 rounded-full flex items-center justify-center">
@@ -243,7 +243,7 @@ export const TripHomePage: React.FC = () => {
           </div>
           <div className="text-center">
             <p className="text-white font-semibold mb-1">Start a new trip</p>
-            <p className="text-gray-400 text-sm">Explore and save inspirations</p>
+            <p className="text-gray-400 text-sm">Let Verso guide you through planning</p>
           </div>
         </button>
       </div>
