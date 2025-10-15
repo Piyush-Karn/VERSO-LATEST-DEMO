@@ -182,7 +182,7 @@ export const TripCompanionFlow: React.FC = () => {
   const [searchParams] = useSearchParams()
   const destinationParam = searchParams.get('destination') || 'Kyoto'
   
-  const [phase, setPhase] = useState<FlowPhase>('context')
+  const [phase, setPhase] = useState<FlowPhase>('when')
   const [tripContext, setTripContext] = useState<TripContext>({
     destination: destinationParam,
     travelMonth: 'Mar',
