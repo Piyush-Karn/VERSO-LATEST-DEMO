@@ -411,7 +411,7 @@ export const TripCompanionFlow: React.FC = () => {
 
             {/* Neighborhood Cards */}
             <div className="p-6 space-y-6">
-              {DEMO_NEIGHBORHOODS.map((neighborhood) => (
+              {getNeighborhoods().map((neighborhood) => (
                 <button
                   key={neighborhood.id}
                   onClick={() => setSelectedNeighborhood(neighborhood.id)}
