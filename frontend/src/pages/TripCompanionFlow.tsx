@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { Calendar, Users, MapPin, Plane, Train, CheckCircle, ArrowRight, Sparkles, Home } from 'lucide-react'
 import { fetchPexelsImages } from '../services/pexels'
 
