@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Layout } from './components/Layout'
-import { MapboxExplorePage } from './pages/MapboxExplorePage'
+import { ExplorePageCinematic } from './pages/ExplorePageCinematic'
 import { VaultViewPage } from './pages/VaultViewPage'
 import { VaultDetailPage } from './pages/VaultDetailPage'
 import { TripPageSimple } from './pages/TripPageSimple'
