@@ -40,6 +40,7 @@ function App() {
         {/* Main Layout Routes */}
         <Route path="/" element={<Layout />}>
           <Route index element={<ExplorePageCinematic />} />
+          <Route path="country/:countryName" element={<CountryOverviewPage />} />
           <Route path="collections" element={<VaultViewPage />} />
           <Route path="vault/:vaultId" element={<VaultDetailPage />} />
           <Route path="vault/:vaultId/city/:cityName" element={<CityFeedView />} />
