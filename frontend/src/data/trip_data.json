@@ -1,0 +1,148 @@
+{
+  "trip": {
+    "trip_id": "demo_trip_1",
+    "user_id": "demo_user",
+    "status": "planning",
+    "created_at": "2025-01-10",
+    "overview": {
+      "total_days": 8,
+      "total_cities": 3,
+      "saved_experiences": 12,
+      "companions": 2,
+      "travel_style": "cultural_immersion"
+    },
+    "route": [
+      {
+        "city_id": "tokyo",
+        "city_name": "Tokyo",
+        "country": "Japan",
+        "days": 3,
+        "order": 1,
+        "travel_from_previous": {
+          "mode": "✈️",
+          "duration": "Direct flight",
+          "notes": "From home"
+        },
+        "image_keywords": "tokyo skyline night shibuya crossing neon",
+        "experiences": [
+          {
+            "experience_id": "tokyo-1",
+            "title": "Shibuya Crossing Food Tour",
+            "type": "activity",
+            "day": 1,
+            "time_of_day": "evening",
+            "status": "saved",
+            "image_keywords": "shibuya crossing night food"
+          },
+          {
+            "experience_id": "tokyo-2",
+            "title": "Senso-ji Temple & Asakusa",
+            "type": "activity",
+            "day": 2,
+            "time_of_day": "morning",
+            "status": "saved",
+            "image_keywords": "sensoji temple asakusa morning"
+          },
+          {
+            "cafe_id": "fuglen_tokyo",
+            "title": "Fuglen Tokyo",
+            "type": "cafe",
+            "day": 2,
+            "time_of_day": "afternoon",
+            "status": "saved",
+            "image_keywords": "fuglen tokyo coffee interior"
+          }
+        ],
+        "neighborhoods": ["Shibuya", "Asakusa"],
+        "vibe": "Urban energy meets tradition",
+        "open_slots": 2
+      },
+      {
+        "city_id": "kyoto",
+        "city_name": "Kyoto",
+        "country": "Japan",
+        "days": 3,
+        "order": 2,
+        "travel_from_previous": {
+          "mode": "🚆",
+          "duration": "2.5 hrs by Shinkansen",
+          "notes": "Bullet train from Tokyo"
+        },
+        "image_keywords": "kyoto fushimi inari torii gates bamboo arashiyama",
+        "experiences": [
+          {
+            "experience_id": "kyoto-1",
+            "title": "Fushimi Inari Shrine Hike",
+            "type": "activity",
+            "day": 4,
+            "time_of_day": "morning",
+            "status": "saved",
+            "image_keywords": "fushimi inari gates mountain"
+          },
+          {
+            "experience_id": "kyoto-2",
+            "title": "Arashiyama Bamboo Grove",
+            "type": "activity",
+            "day": 5,
+            "time_of_day": "morning",
+            "status": "saved",
+            "image_keywords": "arashiyama bamboo forest"
+          },
+          {
+            "experience_id": "kyoto-3",
+            "title": "Traditional Tea Ceremony",
+            "type": "activity",
+            "day": 5,
+            "time_of_day": "afternoon",
+            "status": "saved",
+            "image_keywords": "kyoto tea ceremony gion"
+          }
+        ],
+        "neighborhoods": ["Gion", "Arashiyama"],
+        "vibe": "Timeless elegance and zen",
+        "open_slots": 3
+      },
+      {
+        "city_id": "osaka",
+        "city_name": "Osaka",
+        "country": "Japan",
+        "days": 2,
+        "order": 3,
+        "travel_from_previous": {
+          "mode": "🚆",
+          "duration": "30 mins by train",
+          "notes": "Quick hop from Kyoto"
+        },
+        "image_keywords": "osaka dotonbori neon lights canal night",
+        "experiences": [
+          {
+            "experience_id": "osaka-1",
+            "title": "Dotonbori Food Walk",
+            "type": "activity",
+            "day": 7,
+            "time_of_day": "evening",
+            "status": "saved",
+            "image_keywords": "dotonbori osaka street food night"
+          },
+          {
+            "experience_id": "osaka-2",
+            "title": "Osaka Castle",
+            "type": "activity",
+            "day": 8,
+            "time_of_day": "morning",
+            "status": "suggested",
+            "image_keywords": "osaka castle cherry blossom"
+          }
+        ],
+        "neighborhoods": ["Dotonbori", "Umeda"],
+        "vibe": "Street food and nightlife",
+        "open_slots": 2
+      }
+    ],
+    "companion_notes": [
+      "Most of your saved experiences are in Kyoto — we've given you an extra day there.",
+      "You seem to love morning temple visits. We've clustered them early in your days.",
+      "Added Osaka for food culture — it's only 30 minutes from Kyoto."
+    ]
+  }
+}
