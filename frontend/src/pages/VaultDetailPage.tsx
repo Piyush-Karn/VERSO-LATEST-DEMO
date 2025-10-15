@@ -173,7 +173,7 @@ export const VaultDetailPage: React.FC = () => {
                 : 'text-gray-400 hover:text-gray-300'
             }`}
           >
-            {tab === 'categories' ? 'Things to do' : tab}
+            {tab === 'things_to_do' ? 'Things To Do' : tab}
           </button>
         ))}
       </div>
