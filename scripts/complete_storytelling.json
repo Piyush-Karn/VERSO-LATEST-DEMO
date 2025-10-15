@@ -1,0 +1,286 @@
+{
+  "croatia": {
+    "dubrovnik": {
+      "dubrovnik-1": {
+        "subtitle": "Walk ancient walls as golden hour light paints the marble streets below",
+        "description": "You climb stone steps worn smooth by centuries. The Adriatic stretches endless and blue. Red terracotta roofs glow in morning light. This is Dubrovnik from above—timeless, breathtaking, pure magic.",
+        "best_time": "Sunrise (6-7:30 AM) for fewer crowds",
+        "nearby_cafes": ["D'vino Wine Bar", "Festival Café on Stradun"],
+        "related_activities": ["dubrovnik-2", "dubrovnik-3"]
+      },
+      "dubrovnik-2": {
+        "subtitle": "A wild island escape just 15 minutes by ferry",
+        "description": "Peacocks strut freely. Pine forests whisper. The Dead Sea—a saltwater lake—invites you to float, weightless. Lokrum feels like a secret, even though it's so close.",
+        "best_time": "Midday for swimming",
+        "nearby_cafes": ["Pack a picnic", "Buža Bar back in Dubrovnik"],
+        "related_activities": ["dubrovnik-1", "dubrovnik-3"]
+      },
+      "dubrovnik-3": {
+        "subtitle": "Paddle beneath city walls to hidden caves and beaches",
+        "description": "The kayak glides. Waves lap gently. Ahead, a sea cave opens like a secret door. You slip inside, snorkel in turquoise water, and emerge feeling like an explorer.",
+        "best_time": "Late afternoon for sunset paddle",
+        "nearby_cafes": ["Buža Bar for post-adventure drinks"],
+        "related_activities": ["dubrovnik-1", "dubrovnik-2"]
+      }
+    },
+    "split": {
+      "split-1": {
+        "subtitle": "Walk through a 1,700-year-old palace still alive with locals",
+        "description": "Roman columns frame modern cafés. Underground cellars echo with footsteps. You're not just touring history—you're walking through it, living in it.",
+        "best_time": "Morning (8-10 AM)",
+        "nearby_cafes": ["Lvxor Café on Peristyle Square"],
+        "related_activities": ["split-2", "split-3"]
+      },
+      "split-2": {
+        "subtitle": "Climb the forested hill for panoramic Adriatic views",
+        "description": "Pine scent fills the air. The trail winds upward. At the summit, Split sprawls below, the sea glittering beyond. You watch the sun set, painting everything gold.",
+        "best_time": "Late afternoon for sunset",
+        "nearby_cafes": ["Vidilica Café mid-hill"],
+        "related_activities": ["split-1", "split-3"]
+      },
+      "split-3": {
+        "subtitle": "Island hop to Croatia's most stunning swimming spots",
+        "description": "The boat cuts through blue water. You anchor in the Blue Lagoon—turquoise, shallow, perfect. You swim, you float, you never want to leave.",
+        "best_time": "Full day (departs 9 AM)",
+        "nearby_cafes": ["Zrno Soli on return"],
+        "related_activities": ["split-1", "split-2"]
+      }
+    },
+    "rovinj": {
+      "rovinj-1": {
+        "subtitle": "Cobblestone streets, pastel houses, and the most romantic sunset in Istria",
+        "description": "The church bells ring. Fishing boats bob in the harbor. You climb narrow lanes to St. Euphemia's hilltop perch and watch the sun sink into the Adriatic.",
+        "best_time": "Golden hour (6-8 PM)",
+        "nearby_cafes": ["Piassa Grande for gelato"],
+        "related_activities": ["rovinj-2", "rovinj-3"]
+      },
+      "rovinj-2": {
+        "subtitle": "Paddle to a pine-covered island nature reserve",
+        "description": "Your kayak glides over clear water. Red Island rises ahead, green and inviting. You explore hidden coves, swim in secluded bays, and feel wonderfully alone.",
+        "best_time": "Morning (9-11 AM)",
+        "nearby_cafes": ["Valentino Champagne Bar on return"],
+        "related_activities": ["rovinj-1", "rovinj-3"]
+      },
+      "rovinj-3": {
+        "subtitle": "Follow trained dogs through the forest in search of Istria's white gold",
+        "description": "The dog's nose works. Suddenly, it digs. The truffle emerges—earthy, precious. Later, you taste it shaved over fresh pasta, and understand why Istria is obsessed.",
+        "best_time": "Autumn (peak truffle season)",
+        "nearby_cafes": ["Monte Restaurant for truffle tasting menu"],
+        "related_activities": ["rovinj-1", "rovinj-2"]
+      }
+    }
+  },
+  "thailand": {
+    "bangkok": {
+      "bangkok-1": {
+        "subtitle": "Marvel at Thailand's most sacred temple in all its golden glory",
+        "description": "The Grand Palace shimmers—gold everywhere. Tourists gasp. The Emerald Buddha sits serene. You're surrounded by beauty so overwhelming, it feels like a fever dream.",
+        "best_time": "Early morning (8-9 AM)",
+        "nearby_cafes": ["Roast Coffee & Eatery", "The Commons food hall"],
+        "related_activities": ["bangkok-2", "bangkok-3"]
+      },
+      "bangkok-2": {
+        "subtitle": "Glide through canals lined with floating vendors selling fresh fruit",
+        "description": "The longtail boat putters forward. Vendors paddle up, offering mangoes, coconut pancakes. The water smells earthy. This is Bangkok before the skyscrapers—slow, lush, unforgettable.",
+        "best_time": "Early morning (7-9 AM)",
+        "nearby_cafes": ["Street vendors at the market"],
+        "related_activities": ["bangkok-1", "bangkok-3"]
+      },
+      "bangkok-3": {
+        "subtitle": "Sip cocktails 60 floors up as the city glitters below",
+        "description": "The elevator rises. Doors open to sky. Bangkok sprawls in every direction, a sea of lights. Your cocktail arrives. This is Bangkok's glamorous side—dizzy, dazzling, unforgettable.",
+        "best_time": "Sunset into night (6-9 PM)",
+        "nearby_cafes": ["Rocket Coffeebar S12 for daytime coffee"],
+        "related_activities": ["bangkok-1", "bangkok-2"]
+      }
+    },
+    "chiang_mai": {
+      "chiangmai-1": {
+        "subtitle": "Spend the day with rescued elephants in ethical sanctuary",
+        "description": "You meet the elephants—gentle giants with soulful eyes. You feed them, bathe them in the river, watch them play. It's emotional, joyful, deeply meaningful.",
+        "best_time": "Full day experience",
+        "nearby_cafes": ["Ristr8to for post-sanctuary coffee"],
+        "related_activities": ["chiangmai-2", "chiangmai-3"]
+      },
+      "chiangmai-2": {
+        "subtitle": "From market to kitchen—master the art of Thai cooking",
+        "description": "The market overflows with color. You learn to pick the freshest herbs. Then, in a rustic kitchen, you chop, stir, taste. By the end, you've cooked five dishes and gained a new skill.",
+        "best_time": "Morning start (8 AM)",
+        "nearby_cafes": ["Graph Café", "Rustic & Blue"],
+        "related_activities": ["chiangmai-1", "chiangmai-3"]
+      },
+      "chiangmai-3": {
+        "subtitle": "Wander lantern-lit stalls selling everything from pad thai to mango sticky rice",
+        "description": "The night bazaar hums. Vendors grill, fry, steam. You taste everything—spicy, sweet, sour. This is Chiang Mai's beating heart, alive and delicious.",
+        "best_time": "Evening (7-10 PM)",
+        "nearby_cafes": ["Street food stalls throughout"],
+        "related_activities": ["chiangmai-1", "chiangmai-2"]
+      }
+    },
+    "phuket": {
+      "phuket-1": {
+        "subtitle": "Speedboat to limestone cliffs and the famous Maya Bay",
+        "description": "The boat slices through turquoise water. Phi Phi Islands rise—dramatic, otherworldly. You snorkel, you swim, you marvel. This is Thailand at its most iconic.",
+        "best_time": "Full day (departs 8 AM)",
+        "nearby_cafes": ["Gallery Café on return"],
+        "related_activities": ["phuket-2", "phuket-3"]
+      },
+      "phuket-2": {
+        "subtitle": "Descend into the Andaman's underwater world",
+        "description": "You sink beneath the surface. Coral gardens sprawl. Fish dart in rainbow schools. Maybe a shark glides past. Down here, everything else fades—it's just you and the blue.",
+        "best_time": "Morning dives (8 AM start)",
+        "nearby_cafes": ["The Coffee Club Patong Beach"],
+        "related_activities": ["phuket-1", "phuket-3"]
+      },
+      "phuket-3": {
+        "subtitle": "Stroll Sino-Portuguese streets painted in every color imaginable",
+        "description": "Every building is a different shade—pink, yellow, turquoise. Street art pops from walls. Cafés spill onto sidewalks. Old Phuket Town feels like stepping into a vintage postcard.",
+        "best_time": "Morning or late afternoon",
+        "nearby_cafes": ["Bookhemian bookstore café"],
+        "related_activities": ["phuket-1", "phuket-2"]
+      }
+    }
+  },
+  "new_zealand": {
+    "queenstown": {
+      "queenstown-1": {
+        "subtitle": "Leap from the birthplace of commercial bungy jumping",
+        "description": "Your heart pounds. You stand on the edge. The river rushes far below. Then you jump—and fly. For five seconds, you're weightless, screaming, alive.",
+        "best_time": "Midday (10 AM-2 PM)",
+        "nearby_cafes": ["Joe's Garage for bravery fuel"],
+        "related_activities": ["queenstown-2", "queenstown-3"]
+      },
+      "queenstown-2": {
+        "subtitle": "Journey to New Zealand's most spectacular fjord",
+        "description": "The road winds through mountains. Then Milford Sound appears—waterfalls tumbling from cliffs, mist hanging low. You cruise through, small and awed. Rudyard Kipling called it the Eighth Wonder. He wasn't wrong.",
+        "best_time": "Full day (departs early)",
+        "nearby_cafes": ["Pack snacks, lunch included on cruise"],
+        "related_activities": ["queenstown-1", "queenstown-3"]
+      },
+      "queenstown-3": {
+        "subtitle": "Ride the gondola up, then race down on gravity-powered carts",
+        "description": "The gondola climbs. The view opens—lake, mountains, sky. Then you hop on a luge cart and zoom downhill, laughing like a kid. It's pure joy, simple and perfect.",
+        "best_time": "Afternoon into sunset",
+        "nearby_cafes": ["Stratosfare Restaurant at the summit"],
+        "related_activities": ["queenstown-1", "queenstown-2"]
+      }
+    },
+    "auckland": {
+      "auckland-1": {
+        "subtitle": "Ferry to an island paradise for world-class wine tasting",
+        "description": "The ferry departs. Thirty-five minutes later, you're on Waiheke—vineyards cascading to the sea. You sip Bordeaux blends, eat fresh oysters, and realize this is what paradise tastes like.",
+        "best_time": "Full day (morning ferry)",
+        "nearby_cafes": ["Vineyard restaurants on island"],
+        "related_activities": ["auckland-2", "auckland-3"]
+      },
+      "auckland-2": {
+        "subtitle": "Hike up Auckland's youngest volcano for 360° harbor views",
+        "description": "The trail winds through volcanic rock and hardy plants. At the summit, Auckland sprawls below—city, harbor, islands. The wind whips. You feel on top of the world.",
+        "best_time": "Morning (8-10 AM)",
+        "nearby_cafes": ["Best Ugly Bagels on return"],
+        "related_activities": ["auckland-1", "auckland-3"]
+      },
+      "auckland-3": {
+        "subtitle": "Walk the edge of the Southern Hemisphere's tallest tower",
+        "description": "You step out onto the platform—nothing but sky and a harness. The SkyWalk is terrifying, exhilarating. Then you dine in the rotating restaurant, watching Auckland turn below.",
+        "best_time": "Sunset for views and dinner",
+        "nearby_cafes": ["Ortolana for daytime dining"],
+        "related_activities": ["auckland-1", "auckland-2"]
+      }
+    },
+    "rotorua": {
+      "rotorua-1": {
+        "subtitle": "Experience Māori culture and explosive geothermal wonders",
+        "description": "Steam hisses from the ground. A geyser erupts. Then the cultural show begins—haka, poi, stories. You feel the earth's power and the depth of Māori tradition, all at once.",
+        "best_time": "Afternoon performance (2-5 PM)",
+        "nearby_cafes": ["Capers Café lakefront"],
+        "related_activities": ["rotorua-2", "rotorua-3"]
+      },
+      "rotorua-2": {
+        "subtitle": "Walk through a landscape of bubbling mud and rainbow-colored pools",
+        "description": "Sulfur hangs in the air. The Champagne Pool sparkles orange and gold. Steam rises from turquoise water. It's otherworldly—like walking on an alien planet.",
+        "best_time": "Morning (8-10 AM for geyser)",
+        "nearby_cafes": ["Third Place Café"],
+        "related_activities": ["rotorua-1", "rotorua-3"]
+      },
+      "rotorua-3": {
+        "subtitle": "Walk among redwoods lit by thousands of glowing lanterns",
+        "description": "Night falls. The forest lights up—suspended walkways glow in rainbow colors. You walk among giants, enchanted. It feels like stepping into a fairy tale.",
+        "best_time": "After dark",
+        "nearby_cafes": ["Lime Caffeteria for daytime coffee"],
+        "related_activities": ["rotorua-1", "rotorua-2"]
+      }
+    }
+  },
+  "south_africa": {
+    "cape_town": {
+      "capetown-1": {
+        "subtitle": "Ride the cable car or hike to the summit of Cape Town's iconic mountain",
+        "description": "The cable car rotates as it climbs. The city shrinks below. At the top, the view stretches forever—ocean, city, mountains. You walk the flat summit, wind in your hair, feeling infinite.",
+        "best_time": "Morning for clear skies",
+        "nearby_cafes": ["Truth Coffee roastery"],
+        "related_activities": ["capetown-2", "capetown-3"]
+      },
+      "capetown-2": {
+        "subtitle": "Come face-to-face with great white sharks in their natural habitat",
+        "description": "You lower into the cage. Cold water rushes in. Then—a shadow. The great white glides past, massive and graceful. Your heart races. You're terrified and mesmerized at once.",
+        "best_time": "Full day (departs early)",
+        "nearby_cafes": ["Lunch included on tour"],
+        "related_activities": ["capetown-1", "capetown-3"]
+      },
+      "capetown-3": {
+        "subtitle": "Drive one of the world's most scenic coastal roads to meet penguins",
+        "description": "Chapman's Peak hugs the cliff. Below, waves crash. You stop at Boulders Beach—African penguins waddle past, utterly unbothered. Then Cape Point, where two oceans meet. It's a day of pure wonder.",
+        "best_time": "Full day",
+        "nearby_cafes": ["Simon's Town cafés midway"],
+        "related_activities": ["capetown-1", "capetown-2"]
+      }
+    },
+    "stellenbosch": {
+      "stellenbosch-1": {
+        "subtitle": "Sip world-class wines with mountain views at South Africa's finest estates",
+        "description": "Vineyards roll to the horizon. You swirl, sniff, taste—Pinotage, Chenin Blanc, Cabernet. Each estate is more beautiful than the last. This is wine country at its absolute best.",
+        "best_time": "Late morning to afternoon",
+        "nearby_cafes": ["Estate restaurants on tour"],
+        "related_activities": ["stellenbosch-2", "stellenbosch-3"]
+      },
+      "stellenbosch-2": {
+        "subtitle": "Trek through fynbos-covered mountains with waterfall rewards",
+        "description": "The trail climbs steeply. Proteas bloom. At the top, a waterfall cascades into a clear pool. You cool off, breathe deep, and feel utterly alive.",
+        "best_time": "Morning (cooler temps)",
+        "nearby_cafes": ["Café Felix for post-hike pastries"],
+        "related_activities": ["stellenbosch-1", "stellenbosch-3"]
+      },
+      "stellenbosch-3": {
+        "subtitle": "Explore Cape Dutch architecture and local art in historic Stellenbosch",
+        "description": "Oak-lined streets. White-gabled buildings. You wander galleries, sip coffee, browse art. Stellenbosch feels genteel, creative, timeless.",
+        "best_time": "Afternoon",
+        "nearby_cafes": ["Schoon De Companje on Dorp Street"],
+        "related_activities": ["stellenbosch-1", "stellenbosch-2"]
+      }
+    },
+    "kruger": {
+      "kruger-1": {
+        "subtitle": "Hunt for lions, elephants, leopards, rhinos, and buffalo on safari",
+        "description": "The jeep rumbles. Ahead—a lioness crouches in tall grass. Your guide whispers. You hold your breath. Then she moves, powerful and focused. This is Africa—wild, raw, unforgettable.",
+        "best_time": "Dawn or dusk game drives",
+        "nearby_cafes": ["Lodge dining included"],
+        "related_activities": ["kruger-2", "kruger-3"]
+      },
+      "kruger-2": {
+        "subtitle": "Track animals on foot with armed rangers in the African bush",
+        "description": "No vehicle. Just your feet, the ranger, and the wild. You walk quietly, spotting tracks, learning animal behavior. When an elephant crosses your path, your heart stops. This is safari, raw.",
+        "best_time": "Early morning",
+        "nearby_cafes": ["Lodge breakfast before/after"],
+        "related_activities": ["kruger-1", "kruger-3"]
+      },
+      "kruger-3": {
+        "subtitle": "Watch the sun set over the savanna with sundowner drinks",
+        "description": "The jeep stops on a hill. The ranger pours gin and tonics. The sun melts into orange and pink. Somewhere, a lion roars. You sip, you watch, and you never want to leave.",
+        "best_time": "Late afternoon into sunset",
+        "nearby_cafes": ["Bush dinner under stars"],
+        "related_activities": ["kruger-1", "kruger-2"]
+      }
+    }
+  }
+}
