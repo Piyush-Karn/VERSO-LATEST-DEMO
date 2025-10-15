@@ -59,7 +59,7 @@ function App() {
           <Route path="trip/:tripId" element={<TripPlanningPage />} />
           <Route path="trip/questionnaire" element={<QuestionnaireStepByStep />} />
           <Route path="trip/create" element={<TripCompanionFlowPhase1 />} />
-          <Route path="trip/summary/:summaryId" element={<TripPlanningPage />} />
+          <Route path="trip/summary/:summaryId" element={<DynamicTripSummary />} />
           <Route path="trip/itinerary" element={<ItineraryPage />} />
           <Route path="ask-verso" element={<AskVersoPage />} />
           <Route path="organize/interests" element={<InterestsPage />} />
