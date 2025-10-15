@@ -16,6 +16,7 @@ import { QRCodePage } from './pages/QRCodePage'
 import { NeighborhoodDetailPage } from './pages/NeighborhoodDetailPage'
 import { CityDetailPage } from './pages/CityDetailPage'
 import { TripPlanningPage } from './pages/TripPlanningPage'
+import { TripCompanionFlow } from './pages/TripCompanionFlow'
 
 // Simple Ask Verso placeholder
 const AskVersoPage = () => (
