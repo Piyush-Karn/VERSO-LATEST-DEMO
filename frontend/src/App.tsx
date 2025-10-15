@@ -42,6 +42,7 @@ function App() {
           <Route path="collections" element={<VaultViewPage />} />
           <Route path="vault/:vaultId" element={<VaultDetailPage />} />
           <Route path="vault/:vaultId/city/:cityName" element={<CityFeedView />} />
+          <Route path="vault/:vaultId/category/:categoryName" element={<CityFeedView />} />
           <Route path="trip" element={<TripPageSimple />} />
           <Route path="trip/questionnaire" element={<QuestionnaireStepByStep />} />
           <Route path="trip/itinerary" element={<ItineraryPage />} />
