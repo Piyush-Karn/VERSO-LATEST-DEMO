@@ -496,45 +496,56 @@ export const CityFeedView: React.FC = () => {
             {/* Card Content */}
             {index === currentIndex && (
               <div className="absolute bottom-0 left-0 right-0 p-6 pb-32 z-10 animate-fade-in">
-                {/* Title */}
-                <h2 className="text-3xl font-bold text-white mb-4 leading-tight">
+                {/* Micro-tags row at top */}
+                <div className="flex items-center gap-2 mb-3 flex-wrap">
+                  <div className="flex items-center gap-1 bg-black/50 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20">
+                    <DollarSign size={12} className="text-yellow-200" />
+                    <span className="text-xs text-white font-medium">{activity.cost}</span>
+                  </div>
+                  <div className="flex items-center gap-1 bg-black/50 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20">
+                    <Clock size={12} className="text-yellow-200" />
+                    <span className="text-xs text-white font-medium">{activity.duration}</span>
+                  </div>
+                  <div className="flex items-center gap-1 bg-black/50 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20">
+                    <MapPin size={12} className="text-yellow-200" />
+                    <span className="text-xs text-white font-medium">{activity.location}</span>
+                  </div>
+                  {activity.crowdLevel && activity.crowdLevel !== 'Moderate' && (
+                    <div className="flex items-center gap-1 bg-green-500/30 backdrop-blur-md px-2.5 py-1 rounded-full border border-green-400/30">
+                      <TrendingUp size={12} className="text-green-200" />
+                      <span className="text-xs text-green-100 font-medium">{activity.crowdLevel}</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Title - 2 lines max */}
+                <h2 className="text-3xl font-bold text-white mb-2 leading-tight line-clamp-2">
                   {activity.title}
                 </h2>
 
-                {/* Tags */}
-                <div className="flex items-center gap-3 mb-4 flex-wrap">
-                  <div className="flex items-center gap-1 bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-full">
-                    <DollarSign size={14} className="text-yellow-200" />
-                    <span className="text-xs text-white font-medium">{activity.cost}</span>
-                  </div>
-                  <div className="flex items-center gap-1 bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-full">
-                    <Clock size={14} className="text-yellow-200" />
-                    <span className="text-xs text-white font-medium">{activity.duration}</span>
-                  </div>
-                  <div className="flex items-center gap-1 bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-full">
-                    <MapPin size={14} className="text-yellow-200" />
-                    <span className="text-xs text-white font-medium">{activity.location}</span>
-                  </div>
-                </div>
+                {/* Sensory subcopy - 12-14 words max */}
+                <p className="text-white/90 text-base mb-4 leading-relaxed line-clamp-1">
+                  {activity.description}
+                </p>
 
-                {/* Rating */}
-                <div className="flex items-center gap-2 mb-4">
+                {/* Rating row */}
+                <div className="flex items-center gap-2 mb-5">
                   <Star size={16} className="text-yellow-200 fill-yellow-200" />
-                  <span className="text-white font-semibold">{activity.rating}</span>
-                  <span className="text-gray-400 text-sm">({activity.reviews} reviews)</span>
+                  <span className="text-white font-semibold">{activity.rating.toFixed(1)}</span>
+                  <span className="text-white/60 text-sm">({activity.reviews} reviews)</span>
                 </div>
 
                 {/* Action Buttons */}
                 <div className="flex gap-3">
                   <button
                     onClick={() => handleActivityClick(activity)}
-                    className="flex-1 bg-yellow-200 hover:bg-yellow-100 text-black font-semibold py-4 rounded-full transition-all"
+                    className="flex-1 bg-yellow-200 hover:bg-yellow-100 text-black font-semibold py-4 rounded-full transition-all shadow-lg"
                   >
                     View Details
                   </button>
                   <button
                     onClick={() => handleLike(activity.id)}
-                    className={`p-4 rounded-full border-2 transition-all ${
+                    className={`p-4 rounded-full border-2 transition-all shadow-lg ${
                       liked.has(activity.id)
                         ? 'bg-red-500 border-red-500'
                         : 'bg-black/40 backdrop-blur-sm border-white/20 hover:border-white/40'
@@ -545,6 +556,13 @@ export const CityFeedView: React.FC = () => {
                       className={liked.has(activity.id) ? 'text-white fill-white' : 'text-white'} 
                     />
                   </button>
+                </div>
+
+                {/* Swipe hint indicator */}
+                <div className="flex items-center justify-center gap-2 mt-6 opacity-60">
+                  <div className="w-1 h-1 bg-white rounded-full animate-pulse" />
+                  <div className="w-1 h-1 bg-white rounded-full animate-pulse delay-100" />
+                  <div className="w-1 h-1 bg-white rounded-full animate-pulse delay-200" />
                 </div>
               </div>
             )}
