@@ -26,12 +26,6 @@ export default defineConfig({
       }
     }
   },
-  optimizeDeps: {
-    include: ['react-map-gl', 'mapbox-gl'],
-    esbuildOptions: {
-      target: 'es2020',
-    }
-  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
