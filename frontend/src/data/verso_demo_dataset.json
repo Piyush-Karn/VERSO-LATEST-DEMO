@@ -95,7 +95,32 @@
               "related_activities": [
                 "tokyo-2",
                 "tokyo-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "March",
+                "April",
+                "October",
+                "November"
+              ],
+              "activity_tags": [
+                "Food",
+                "Culture",
+                "Walking"
+              ],
+              "rating": 4.601821490852334,
+              "reviews": 219,
+              "sensory_subcopy": "The scramble of a thousand footsteps fades as you slip into narrow lanes. Steam..."
             },
             {
               "experience_id": "tokyo-2",
@@ -142,7 +167,32 @@
               "related_activities": [
                 "tokyo-1",
                 "tokyo-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "March",
+                "April",
+                "October",
+                "November"
+              ],
+              "activity_tags": [
+                "Culture",
+                "History",
+                "Photography"
+              ],
+              "rating": 4.648088982650865,
+              "reviews": 255,
+              "sensory_subcopy": "Incense smoke curls upward. Red lanterns glow against morning sky. Nakamise Street hums with..."
             },
             {
               "experience_id": "tokyo-3",
@@ -189,7 +239,32 @@
               "related_activities": [
                 "tokyo-1",
                 "tokyo-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "March",
+                "April",
+                "October",
+                "November"
+              ],
+              "activity_tags": [
+                "Art",
+                "Technology",
+                "Indoor"
+              ],
+              "rating": 4.536356277555253,
+              "reviews": 343,
+              "sensory_subcopy": "Walls dissolve. Flowers bloom across your feet. Light cascades like water. This isn't a..."
             }
           ],
           "cafes": [
@@ -197,19 +272,58 @@
               "name": "%Arabica Tokyo",
               "notes": "Minimalist specialty coffee with city views",
               "vibe": "Quiet, focused, modern",
-              "image_keywords": "arabica coffee tokyo minimalist interior"
+              "image_keywords": "arabica coffee tokyo minimalist interior",
+              "cafe_id": "_arabica_tokyo",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Fuglen Tokyo",
               "notes": "Norwegian-Japanese coffee bar in Shibuya",
               "vibe": "Eclectic, warm, timeless",
-              "image_keywords": "fuglen tokyo coffee bar interior"
+              "image_keywords": "fuglen tokyo coffee bar interior",
+              "cafe_id": "fuglen_tokyo",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Blue Bottle Roppongi",
               "notes": "Sleek café in art district",
               "vibe": "Calm, refined, artistic",
-              "image_keywords": "blue bottle tokyo roppongi cafe"
+              "image_keywords": "blue bottle tokyo roppongi cafe",
+              "cafe_id": "blue_bottle_roppongi",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "A city that never sleeps, where vending machines serve hot ramen at 3 AM and serene shrines hide between skyscrapers."
@@ -264,7 +378,32 @@
               "related_activities": [
                 "kyoto-2",
                 "kyoto-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "March",
+                "April",
+                "October",
+                "November"
+              ],
+              "activity_tags": [
+                "Hiking",
+                "Culture",
+                "Photography"
+              ],
+              "rating": 4.8535233810257985,
+              "reviews": 275,
+              "sensory_subcopy": "Each torii gate is a donated prayer. As you climb, the crowd thins. By..."
             },
             {
               "experience_id": "kyoto-2",
@@ -311,7 +450,32 @@
               "related_activities": [
                 "kyoto-1",
                 "kyoto-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "March",
+                "April",
+                "October",
+                "November"
+              ],
+              "activity_tags": [
+                "Nature",
+                "Photography",
+                "Walking"
+              ],
+              "rating": 4.822602673744832,
+              "reviews": 402,
+              "sensory_subcopy": "Sunlight filters green. The air cools. Bamboo rises like cathedral columns, swaying, creaking, alive...."
             },
             {
               "experience_id": "kyoto-3",
@@ -358,7 +522,32 @@
               "related_activities": [
                 "kyoto-1",
                 "kyoto-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 5,
+                "max": 5,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "March",
+                "April",
+                "October",
+                "November"
+              ],
+              "activity_tags": [
+                "Culture",
+                "Traditional",
+                "Experience"
+              ],
+              "rating": 4.7122501800634105,
+              "reviews": 389,
+              "sensory_subcopy": "You kneel on tatami. A host whisks matcha in slow, deliberate arcs. Each gesture..."
             }
           ],
           "cafes": [
@@ -366,19 +555,58 @@
               "name": "%Arabica Kyoto",
               "notes": "Iconic coffee spot near Yasaka Pagoda",
               "vibe": "Busy, photogenic, excellent espresso",
-              "image_keywords": "arabica kyoto pagoda view coffee"
+              "image_keywords": "arabica kyoto pagoda view coffee",
+              "cafe_id": "_arabica_kyoto",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Weekenders Coffee",
               "notes": "Specialty roastery in traditional house",
               "vibe": "Peaceful, artisan, local favorite",
-              "image_keywords": "weekenders coffee kyoto traditional interior"
+              "image_keywords": "weekenders coffee kyoto traditional interior",
+              "cafe_id": "weekenders_coffee",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Inoda Coffee Honten",
               "notes": "Historic Kyoto coffee institution since 1940",
               "vibe": "Nostalgic, warm, unhurried",
-              "image_keywords": "inoda coffee kyoto vintage interior"
+              "image_keywords": "inoda coffee kyoto vintage interior",
+              "cafe_id": "inoda_coffee_honten",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Japan's ancient capital where every corner reveals a temple, a garden, or a glimpse of geisha disappearing into wooden teahouses."
@@ -433,7 +661,32 @@
               "related_activities": [
                 "osaka-2",
                 "osaka-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "March",
+                "April",
+                "October",
+                "November"
+              ],
+              "activity_tags": [
+                "Food",
+                "Nightlife",
+                "Culture"
+              ],
+              "rating": 4.822875211313122,
+              "reviews": 229,
+              "sensory_subcopy": "Glowing billboards reflect in the canal. Crowds swarm. The air smells of grilled octopus..."
             },
             {
               "experience_id": "osaka-2",
@@ -479,7 +732,32 @@
               "related_activities": [
                 "osaka-1",
                 "osaka-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 5,
+                "max": 5,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "March",
+                "April",
+                "October",
+                "November"
+              ],
+              "activity_tags": [
+                "History",
+                "Architecture",
+                "Park"
+              ],
+              "rating": 4.519967930590274,
+              "reviews": 319,
+              "sensory_subcopy": "The castle towers above, regal and gleaming. Below, cherry trees bloom in waves of..."
             },
             {
               "experience_id": "osaka-3",
@@ -525,7 +803,32 @@
               "related_activities": [
                 "osaka-1",
                 "osaka-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 5,
+                "max": 5,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "March",
+                "April",
+                "October",
+                "November"
+              ],
+              "activity_tags": [
+                "Food",
+                "Market",
+                "Seafood"
+              ],
+              "rating": 4.82390297161587,
+              "reviews": 409,
+              "sensory_subcopy": "Vendors call out. Fresh fish glisten on ice. The smell of grilled seafood fills..."
             }
           ],
           "cafes": [
@@ -533,19 +836,58 @@
               "name": "Lilo Coffee Roasters",
               "notes": "Award-winning specialty coffee in Minami",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "lilo coffee osaka roastery interior"
+              "image_keywords": "lilo coffee osaka roastery interior",
+              "cafe_id": "lilo_coffee_roasters",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Mel Coffee Roasters",
               "notes": "Industrial-chic café near Namba",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "mel coffee osaka industrial design"
+              "image_keywords": "mel coffee osaka industrial design",
+              "cafe_id": "mel_coffee_roasters",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Brooklyn Roasting Company Kitahama",
               "notes": "Spacious riverside café",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "brooklyn roasting osaka riverside cafe"
+              "image_keywords": "brooklyn roasting osaka riverside cafe",
+              "cafe_id": "brooklyn_roasting_company_kitahama",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Japan's kitchen—where neon-lit streets overflow with takoyaki stands, and locals live to eat, laugh, and celebrate."
@@ -645,7 +987,32 @@
               "related_activities": [
                 "dubrovnik-2",
                 "dubrovnik-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Walking",
+                "History",
+                "Photography"
+              ],
+              "rating": 4.5246440590131005,
+              "reviews": 481,
+              "sensory_subcopy": "You climb stone steps worn smooth by centuries. The Adriatic stretches endless and blue...."
             },
             {
               "experience_id": "dubrovnik-2",
@@ -692,7 +1059,32 @@
               "related_activities": [
                 "dubrovnik-1",
                 "dubrovnik-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 4,
+                "max": 4,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Beach",
+                "Nature",
+                "Swimming"
+              ],
+              "rating": 4.732389422333366,
+              "reviews": 294,
+              "sensory_subcopy": "Peacocks strut freely. Pine forests whisper. The Dead Sea—a saltwater lake—invites you to float,..."
             },
             {
               "experience_id": "dubrovnik-3",
@@ -738,7 +1130,32 @@
               "related_activities": [
                 "dubrovnik-1",
                 "dubrovnik-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Adventure",
+                "Water",
+                "Caves"
+              ],
+              "rating": 4.759180039472171,
+              "reviews": 245,
+              "sensory_subcopy": "The kayak glides. Waves lap gently. Ahead, a sea cave opens like a secret..."
             }
           ],
           "cafes": [
@@ -746,19 +1163,58 @@
               "name": "Buža Bar",
               "notes": "Cliffside bar with Adriatic sunset views",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "buza bar dubrovnik cliff sunset adriatic"
+              "image_keywords": "buza bar dubrovnik cliff sunset adriatic",
+              "cafe_id": "bu_a_bar",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "D'vino Wine Bar",
               "notes": "Croatian wine tasting in stone cellar",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "dvino wine bar dubrovnik cellar interior"
+              "image_keywords": "dvino wine bar dubrovnik cellar interior",
+              "cafe_id": "d_vino_wine_bar",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Festival Café",
               "notes": "Elegant terrace on Stradun marble street",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "festival cafe dubrovnik stradun terrace"
+              "image_keywords": "festival cafe dubrovnik stradun terrace",
+              "cafe_id": "festival_caf_",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "The Pearl of the Adriatic—marble streets, fortress walls, and sunsets that stop you in your tracks."
@@ -812,7 +1268,32 @@
               "related_activities": [
                 "split-2",
                 "split-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "History",
+                "Architecture",
+                "UNESCO"
+              ],
+              "rating": 4.544524147894029,
+              "reviews": 292,
+              "sensory_subcopy": "Roman columns frame modern cafés. Underground cellars echo with footsteps. You're not just touring..."
             },
             {
               "experience_id": "split-2",
@@ -858,7 +1339,32 @@
               "related_activities": [
                 "split-1",
                 "split-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 5,
+                "max": 5,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Hiking",
+                "Nature",
+                "Sunset"
+              ],
+              "rating": 4.569595408088285,
+              "reviews": 332,
+              "sensory_subcopy": "Pine scent fills the air. The trail winds upward. At the summit, Split sprawls..."
             },
             {
               "experience_id": "split-3",
@@ -904,7 +1410,32 @@
               "related_activities": [
                 "split-1",
                 "split-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 6,
+                "max": 6,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Boat",
+                "Swimming",
+                "Islands"
+              ],
+              "rating": 4.837151791837254,
+              "reviews": 415,
+              "sensory_subcopy": "The boat cuts through blue water. You anchor in the Blue Lagoon—turquoise, shallow, perfect...."
             }
           ],
           "cafes": [
@@ -912,19 +1443,58 @@
               "name": "Fabrique Bakery",
               "notes": "Swedish-style bakery with sourdough breads",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "fabrique bakery split interior pastries"
+              "image_keywords": "fabrique bakery split interior pastries",
+              "cafe_id": "fabrique_bakery",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Lvxor Café",
               "notes": "Historic café on Peristyle Square",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "lvxor cafe split diocletian palace peristyle"
+              "image_keywords": "lvxor cafe split diocletian palace peristyle",
+              "cafe_id": "lvxor_caf_",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Zrno Soli",
               "notes": "Seafood restaurant on Riva waterfront",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "zrno soli split riva waterfront dining"
+              "image_keywords": "zrno soli split riva waterfront dining",
+              "cafe_id": "zrno_soli",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "A living Roman palace where locals hang laundry from ancient windows and cafés spill into 1,700-year-old courtyards."
@@ -978,7 +1548,32 @@
               "related_activities": [
                 "rovinj-2",
                 "rovinj-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 5,
+                "max": 5,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Walking",
+                "Photography",
+                "Romantic"
+              ],
+              "rating": 4.801459795761688,
+              "reviews": 298,
+              "sensory_subcopy": "The church bells ring. Fishing boats bob in the harbor. You climb narrow lanes..."
             },
             {
               "experience_id": "rovinj-2",
@@ -1024,7 +1619,32 @@
               "related_activities": [
                 "rovinj-1",
                 "rovinj-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Kayaking",
+                "Swimming",
+                "Nature"
+              ],
+              "rating": 4.845340551721168,
+              "reviews": 295,
+              "sensory_subcopy": "Your kayak glides over clear water. Red Island rises ahead, green and inviting. You..."
             },
             {
               "experience_id": "rovinj-3",
@@ -1070,7 +1690,32 @@
               "related_activities": [
                 "rovinj-1",
                 "rovinj-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 4,
+                "max": 4,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Food",
+                "Nature",
+                "Experience"
+              ],
+              "rating": 4.796690902372004,
+              "reviews": 478,
+              "sensory_subcopy": "The dog's nose works. Suddenly, it digs. The truffle emerges—earthy, precious. Later, you taste..."
             }
           ],
           "cafes": [
@@ -1078,19 +1723,58 @@
               "name": "Piassa Grande",
               "notes": "Italian-style gelato on main square",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "piassa grande rovinj gelato terrace"
+              "image_keywords": "piassa grande rovinj gelato terrace",
+              "cafe_id": "piassa_grande",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Monte",
               "notes": "Michelin-starred restaurant with tasting menus",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "monte restaurant rovinj fine dining"
+              "image_keywords": "monte restaurant rovinj fine dining",
+              "cafe_id": "monte",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Valentino Champagne Bar",
               "notes": "Waterfront bar with sunset cushions",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "valentino rovinj sunset champagne waterfront"
+              "image_keywords": "valentino rovinj sunset champagne waterfront",
+              "cafe_id": "valentino_champagne_bar",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Istria's jewel—a fishing village of pastel houses, cobblestone hills, and the scent of truffles in the air."
@@ -1195,7 +1879,33 @@
               "related_activities": [
                 "canggu-2",
                 "canggu-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Surfing",
+                "Beach",
+                "Adventure"
+              ],
+              "rating": 4.589906709842147,
+              "reviews": 496,
+              "sensory_subcopy": "The ocean roars. Instructors guide you into position. You paddle, pop up, and suddenly—you're..."
             },
             {
               "experience_id": "canggu-2",
@@ -1242,7 +1952,33 @@
               "related_activities": [
                 "canggu-1",
                 "canggu-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 4,
+                "max": 4,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Beach",
+                "Relaxation",
+                "Social"
+              ],
+              "rating": 4.582274434025578,
+              "reviews": 420,
+              "sensory_subcopy": "You float in an infinity pool, drink in hand, as the sun dips low...."
             },
             {
               "experience_id": "canggu-3",
@@ -1289,7 +2025,33 @@
               "related_activities": [
                 "canggu-1",
                 "canggu-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 5,
+                "max": 5,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Yoga",
+                "Wellness",
+                "Sunset"
+              ],
+              "rating": 4.559569724176447,
+              "reviews": 253,
+              "sensory_subcopy": "The mat beneath you. The horizon ahead. You breathe, stretch, balance. As the class..."
             }
           ],
           "cafes": [
@@ -1297,19 +2059,58 @@
               "name": "Crate Café",
               "notes": "Healthy bowls and specialty coffee",
               "vibe": "Social, health-conscious, energetic",
-              "image_keywords": "crate cafe canggu interior bali breakfast"
+              "image_keywords": "crate cafe canggu interior bali breakfast",
+              "cafe_id": "crate_caf_",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Betelnut Café",
               "notes": "Plant-based café with garden seating",
               "vibe": "Peaceful, vegan-friendly, green",
-              "image_keywords": "betelnut cafe canggu garden vegetarian"
+              "image_keywords": "betelnut cafe canggu garden vegetarian",
+              "cafe_id": "betelnut_caf_",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Revolver Espresso",
               "notes": "Melbourne-style coffee in Seminyak",
               "vibe": "Minimalist, serious coffee, efficient",
-              "image_keywords": "revolver espresso bali coffee shop"
+              "image_keywords": "revolver espresso bali coffee shop",
+              "cafe_id": "revolver_espresso",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Bali's laid-back surf town where digital nomads, surfers, and yogis gather by the sea."
@@ -1364,7 +2165,33 @@
               "related_activities": [
                 "ubud-2",
                 "ubud-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Nature",
+                "Photography",
+                "Walking"
+              ],
+              "rating": 4.562224228599343,
+              "reviews": 239,
+              "sensory_subcopy": "Mist hangs low in the valley. Rice stalks sway. The terraces cascade like green..."
             },
             {
               "experience_id": "ubud-2",
@@ -1411,7 +2238,33 @@
               "related_activities": [
                 "ubud-1",
                 "ubud-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 5,
+                "max": 5,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Wildlife",
+                "Nature",
+                "Photography"
+              ],
+              "rating": 4.65953087922991,
+              "reviews": 205,
+              "sensory_subcopy": "Monkeys leap between moss-covered statues. Stone temples crumble under vines. The forest feels alive—playful,..."
             },
             {
               "experience_id": "ubud-3",
@@ -1458,7 +2311,33 @@
               "related_activities": [
                 "ubud-1",
                 "ubud-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 4,
+                "max": 4,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Food",
+                "Culture",
+                "Experience"
+              ],
+              "rating": 4.569981494513347,
+              "reviews": 495,
+              "sensory_subcopy": "You start at dawn in Ubud's market—sampling, haggling, laughing with vendors. Then, in a..."
             }
           ],
           "cafes": [
@@ -1466,19 +2345,58 @@
               "name": "Café Organic",
               "notes": "Farm-to-table healthy bowls in rice fields",
               "vibe": "Tranquil, nourishing, Instagram-ready",
-              "image_keywords": "cafe organic ubud rice field view bali"
+              "image_keywords": "cafe organic ubud rice field view bali",
+              "cafe_id": "caf_organic",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Clear Café",
               "notes": "Raw vegan café with jungle views",
               "vibe": "Zen, wellness-focused, calm",
-              "image_keywords": "clear cafe ubud vegetarian bali interior"
+              "image_keywords": "clear cafe ubud vegetarian bali interior",
+              "cafe_id": "clear_caf_",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Seniman Coffee Studio",
               "notes": "Specialty coffee roastery and training center",
               "vibe": "Professional, artisan, community-driven",
-              "image_keywords": "seniman coffee ubud roastery bali"
+              "image_keywords": "seniman coffee ubud roastery bali",
+              "cafe_id": "seniman_coffee_studio",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Bali's cultural heart—where jungle, art, and spirituality converge in terraced green valleys."
@@ -1527,7 +2445,33 @@
                 }
               ],
               "nearby_cafes": [],
-              "related_activities": []
+              "related_activities": [],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Beach",
+                "Nightlife",
+                "Sunset"
+              ],
+              "rating": 4.885692066896975,
+              "reviews": 381,
+              "sensory_subcopy": "Discover the magic of Sunset Beach Club Crawl. An unforgettable experience awaits."
             },
             {
               "experience_id": "seminyak-2",
@@ -1568,7 +2512,33 @@
                 }
               ],
               "nearby_cafes": [],
-              "related_activities": []
+              "related_activities": [],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Wellness",
+                "Relaxation",
+                "Spa"
+              ],
+              "rating": 4.576874082784329,
+              "reviews": 450,
+              "sensory_subcopy": "Discover the magic of Spa & Wellness Day. An unforgettable experience awaits."
             },
             {
               "experience_id": "seminyak-3",
@@ -1609,7 +2579,33 @@
                 }
               ],
               "nearby_cafes": [],
-              "related_activities": []
+              "related_activities": [],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "May",
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "activity_tags": [
+                "Shopping",
+                "Fashion",
+                "Culture"
+              ],
+              "rating": 4.529307220561577,
+              "reviews": 266,
+              "sensory_subcopy": "Discover the magic of Boutique Shopping Tour. An unforgettable experience awaits."
             }
           ],
           "cafes": [
@@ -1617,19 +2613,58 @@
               "name": "Revolver Espresso",
               "notes": "Cult Melbourne-style coffee shop",
               "vibe": "Minimalist, serious coffee, efficient",
-              "image_keywords": "revolver espresso seminyak coffee bali"
+              "image_keywords": "revolver espresso seminyak coffee bali",
+              "cafe_id": "revolver_espresso",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Sisterfields",
               "notes": "All-day brunch spot with Aussie vibes",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "sisterfields seminyak brunch bali interior"
+              "image_keywords": "sisterfields seminyak brunch bali interior",
+              "cafe_id": "sisterfields",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "La Plancha",
               "notes": "Colorful beanbag beach bar",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "la plancha seminyak beach colorful sunset"
+              "image_keywords": "la plancha seminyak beach colorful sunset",
+              "cafe_id": "la_plancha",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Where Bali gets polished—beach clubs, boutique shopping, and sunsets served with champagne."
@@ -1729,7 +2764,32 @@
               "related_activities": [
                 "bangkok-2",
                 "bangkok-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "November",
+                "December",
+                "January",
+                "February"
+              ],
+              "activity_tags": [
+                "Culture",
+                "History",
+                "Photography"
+              ],
+              "rating": 4.639171402226547,
+              "reviews": 228,
+              "sensory_subcopy": "The Grand Palace shimmers—gold everywhere. Tourists gasp. The Emerald Buddha sits serene. You're surrounded..."
             },
             {
               "experience_id": "bangkok-2",
@@ -1775,7 +2835,32 @@
               "related_activities": [
                 "bangkok-1",
                 "bangkok-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 4,
+                "max": 4,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "November",
+                "December",
+                "January",
+                "February"
+              ],
+              "activity_tags": [
+                "Market",
+                "Culture",
+                "Food"
+              ],
+              "rating": 4.678391897077109,
+              "reviews": 347,
+              "sensory_subcopy": "The longtail boat putters forward. Vendors paddle up, offering mangoes, coconut pancakes. The water..."
             },
             {
               "experience_id": "bangkok-3",
@@ -1821,7 +2906,32 @@
               "related_activities": [
                 "bangkok-1",
                 "bangkok-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "November",
+                "December",
+                "January",
+                "February"
+              ],
+              "activity_tags": [
+                "Nightlife",
+                "Sunset",
+                "City Views"
+              ],
+              "rating": 4.780374514934514,
+              "reviews": 459,
+              "sensory_subcopy": "The elevator rises. Doors open to sky. Bangkok sprawls in every direction, a sea..."
             }
           ],
           "cafes": [
@@ -1829,19 +2939,58 @@
               "name": "Roast Coffee & Eatery",
               "notes": "Third-wave coffee in vintage shophouse",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "roast coffee bangkok interior specialty"
+              "image_keywords": "roast coffee bangkok interior specialty",
+              "cafe_id": "roast_coffee_eatery",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "The Commons",
               "notes": "Hip food hall with multiple vendors",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "the commons bangkok food hall modern"
+              "image_keywords": "the commons bangkok food hall modern",
+              "cafe_id": "the_commons",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Rocket Coffeebar S12",
               "notes": "Specialty coffee near Asok BTS",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "rocket coffeebar bangkok minimal design"
+              "image_keywords": "rocket coffeebar bangkok minimal design",
+              "cafe_id": "rocket_coffeebar_s12",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Chaos and calm collide—street vendors next to golden spires, tuk-tuks weaving through temple-lined streets."
@@ -1895,7 +3044,32 @@
               "related_activities": [
                 "chiangmai-2",
                 "chiangmai-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 6,
+                "max": 6,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "November",
+                "December",
+                "January",
+                "February"
+              ],
+              "activity_tags": [
+                "Wildlife",
+                "Nature",
+                "Ethical"
+              ],
+              "rating": 4.654184028809434,
+              "reviews": 447,
+              "sensory_subcopy": "You meet the elephants—gentle giants with soulful eyes. You feed them, bathe them in..."
             },
             {
               "experience_id": "chiangmai-2",
@@ -1942,7 +3116,32 @@
               "related_activities": [
                 "chiangmai-1",
                 "chiangmai-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 4,
+                "max": 4,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "November",
+                "December",
+                "January",
+                "February"
+              ],
+              "activity_tags": [
+                "Food",
+                "Culture",
+                "Experience"
+              ],
+              "rating": 4.533006984853971,
+              "reviews": 360,
+              "sensory_subcopy": "The market overflows with color. You learn to pick the freshest herbs. Then, in..."
             },
             {
               "experience_id": "chiangmai-3",
@@ -1988,7 +3187,32 @@
               "related_activities": [
                 "chiangmai-1",
                 "chiangmai-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "November",
+                "December",
+                "January",
+                "February"
+              ],
+              "activity_tags": [
+                "Food",
+                "Market",
+                "Nightlife"
+              ],
+              "rating": 4.808418624209218,
+              "reviews": 292,
+              "sensory_subcopy": "The night bazaar hums. Vendors grill, fry, steam. You taste everything—spicy, sweet, sour. This..."
             }
           ],
           "cafes": [
@@ -1996,19 +3220,58 @@
               "name": "Ristr8to",
               "notes": "Award-winning latte art and specialty coffee",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "ristr8to chiang mai coffee latte art"
+              "image_keywords": "ristr8to chiang mai coffee latte art",
+              "cafe_id": "ristr8to",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Graph Café",
               "notes": "Minimalist café with courtyard garden",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "graph cafe chiang mai garden interior"
+              "image_keywords": "graph cafe chiang mai garden interior",
+              "cafe_id": "graph_caf_",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Rustic & Blue",
               "notes": "Farm café surrounded by rice fields",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "rustic blue cafe chiang mai rice field"
+              "image_keywords": "rustic blue cafe chiang mai rice field",
+              "cafe_id": "rustic_blue",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Northern Thailand's heart—mountain air, night bazaars, and elephants roaming ethical sanctuaries."
@@ -2062,7 +3325,32 @@
               "related_activities": [
                 "phuket-2",
                 "phuket-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 8,
+                "max": 8,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "November",
+                "December",
+                "January",
+                "February"
+              ],
+              "activity_tags": [
+                "Boat",
+                "Islands",
+                "Snorkeling"
+              ],
+              "rating": 4.644435160091648,
+              "reviews": 300,
+              "sensory_subcopy": "The boat slices through turquoise water. Phi Phi Islands rise—dramatic, otherworldly. You snorkel, you..."
             },
             {
               "experience_id": "phuket-2",
@@ -2108,7 +3396,32 @@
               "related_activities": [
                 "phuket-1",
                 "phuket-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 6,
+                "max": 6,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "November",
+                "December",
+                "January",
+                "February"
+              ],
+              "activity_tags": [
+                "Diving",
+                "Adventure",
+                "Marine Life"
+              ],
+              "rating": 4.5563695992896776,
+              "reviews": 293,
+              "sensory_subcopy": "You sink beneath the surface. Coral gardens sprawl. Fish dart in rainbow schools. Maybe..."
             },
             {
               "experience_id": "phuket-3",
@@ -2154,7 +3467,32 @@
               "related_activities": [
                 "phuket-1",
                 "phuket-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "November",
+                "December",
+                "January",
+                "February"
+              ],
+              "activity_tags": [
+                "Culture",
+                "Photography",
+                "Walking"
+              ],
+              "rating": 4.6614295995727,
+              "reviews": 208,
+              "sensory_subcopy": "Every building is a different shade—pink, yellow, turquoise. Street art pops from walls. Cafés..."
             }
           ],
           "cafes": [
@@ -2162,19 +3500,58 @@
               "name": "Gallery Café",
               "notes": "Art gallery café in old town",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "gallery cafe phuket old town interior"
+              "image_keywords": "gallery cafe phuket old town interior",
+              "cafe_id": "gallery_caf_",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "The Coffee Club Patong",
               "notes": "Beachfront café with ocean views",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "coffee club phuket patong beach view"
+              "image_keywords": "coffee club phuket patong beach view",
+              "cafe_id": "the_coffee_club_patong",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Bookhemian",
               "notes": "Bookstore café with vintage vibes",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "bookhemian phuket bookstore cafe interior"
+              "image_keywords": "bookhemian phuket bookstore cafe interior",
+              "cafe_id": "bookhemian",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Thailand's largest island—from party beaches to hidden coves, with turquoise waters all around."
@@ -2277,7 +3654,32 @@
               "related_activities": [
                 "queenstown-2",
                 "queenstown-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "December",
+                "January",
+                "February",
+                "March"
+              ],
+              "activity_tags": [
+                "Adventure",
+                "Adrenaline",
+                "Iconic"
+              ],
+              "rating": 4.714401626068495,
+              "reviews": 381,
+              "sensory_subcopy": "Your heart pounds. You stand on the edge. The river rushes far below. Then..."
             },
             {
               "experience_id": "queenstown-2",
@@ -2323,7 +3725,32 @@
               "related_activities": [
                 "queenstown-1",
                 "queenstown-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 12,
+                "max": 12,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "December",
+                "January",
+                "February",
+                "March"
+              ],
+              "activity_tags": [
+                "Fjords",
+                "Nature",
+                "Cruise"
+              ],
+              "rating": 4.695957156756124,
+              "reviews": 343,
+              "sensory_subcopy": "The road winds through mountains. Then Milford Sound appears—waterfalls tumbling from cliffs, mist hanging..."
             },
             {
               "experience_id": "queenstown-3",
@@ -2369,7 +3796,32 @@
               "related_activities": [
                 "queenstown-1",
                 "queenstown-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "December",
+                "January",
+                "February",
+                "March"
+              ],
+              "activity_tags": [
+                "Views",
+                "Family",
+                "Activity"
+              ],
+              "rating": 4.892931460751026,
+              "reviews": 429,
+              "sensory_subcopy": "The gondola climbs. The view opens—lake, mountains, sky. Then you hop on a luge..."
             }
           ],
           "cafes": [
@@ -2377,19 +3829,58 @@
               "name": "Joe's Garage",
               "notes": "All-day breakfast spot with lake views",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "joes garage queenstown breakfast interior"
+              "image_keywords": "joes garage queenstown breakfast interior",
+              "cafe_id": "joe_s_garage",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Vudu Café & Larder",
               "notes": "Specialty coffee and artisan food",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "vudu cafe queenstown specialty coffee"
+              "image_keywords": "vudu cafe queenstown specialty coffee",
+              "cafe_id": "vudu_caf_larder",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Patagonia Chocolates",
               "notes": "Ice cream and hot chocolate haven",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "patagonia chocolates queenstown ice cream"
+              "image_keywords": "patagonia chocolates queenstown ice cream",
+              "cafe_id": "patagonia_chocolates",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Adventure capital of the world—bungy jumps, fjord cruises, and views that belong on postcards."
@@ -2443,7 +3934,32 @@
               "related_activities": [
                 "auckland-2",
                 "auckland-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 6,
+                "max": 6,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "December",
+                "January",
+                "February",
+                "March"
+              ],
+              "activity_tags": [
+                "Wine",
+                "Islands",
+                "Scenic"
+              ],
+              "rating": 4.783670939764547,
+              "reviews": 484,
+              "sensory_subcopy": "The ferry departs. Thirty-five minutes later, you're on Waiheke—vineyards cascading to the sea. You..."
             },
             {
               "experience_id": "auckland-2",
@@ -2489,7 +4005,32 @@
               "related_activities": [
                 "auckland-1",
                 "auckland-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 4,
+                "max": 4,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "December",
+                "January",
+                "February",
+                "March"
+              ],
+              "activity_tags": [
+                "Hiking",
+                "Nature",
+                "Volcano"
+              ],
+              "rating": 4.565015718157385,
+              "reviews": 277,
+              "sensory_subcopy": "The trail winds through volcanic rock and hardy plants. At the summit, Auckland sprawls..."
             },
             {
               "experience_id": "auckland-3",
@@ -2535,7 +4076,32 @@
               "related_activities": [
                 "auckland-1",
                 "auckland-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "December",
+                "January",
+                "February",
+                "March"
+              ],
+              "activity_tags": [
+                "Views",
+                "Dining",
+                "City"
+              ],
+              "rating": 4.568009055336084,
+              "reviews": 478,
+              "sensory_subcopy": "You step out onto the platform—nothing but sky and a harness. The SkyWalk is..."
             }
           ],
           "cafes": [
@@ -2543,19 +4109,58 @@
               "name": "Best Ugly Bagels",
               "notes": "NYC-style bagels in trendy space",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "best ugly bagels auckland interior"
+              "image_keywords": "best ugly bagels auckland interior",
+              "cafe_id": "best_ugly_bagels",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Espresso Workshop",
               "notes": "Specialty coffee roastery",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "espresso workshop auckland coffee roastery"
+              "image_keywords": "espresso workshop auckland coffee roastery",
+              "cafe_id": "espresso_workshop",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Ortolana",
               "notes": "Farm-to-table dining in Britomart",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "ortolana auckland restaurant interior garden"
+              "image_keywords": "ortolana auckland restaurant interior garden",
+              "cafe_id": "ortolana",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "City of sails—volcanic islands, harbor views, and wineries just a ferry ride away."
@@ -2609,7 +4214,32 @@
               "related_activities": [
                 "rotorua-2",
                 "rotorua-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "December",
+                "January",
+                "February",
+                "March"
+              ],
+              "activity_tags": [
+                "Culture",
+                "Maori",
+                "Geothermal"
+              ],
+              "rating": 4.647550381545191,
+              "reviews": 333,
+              "sensory_subcopy": "Steam hisses from the ground. A geyser erupts. Then the cultural show begins—haka, poi,..."
             },
             {
               "experience_id": "rotorua-2",
@@ -2655,7 +4285,32 @@
               "related_activities": [
                 "rotorua-1",
                 "rotorua-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "December",
+                "January",
+                "February",
+                "March"
+              ],
+              "activity_tags": [
+                "Geothermal",
+                "Nature",
+                "Photography"
+              ],
+              "rating": 4.813596369490937,
+              "reviews": 478,
+              "sensory_subcopy": "Sulfur hangs in the air. The Champagne Pool sparkles orange and gold. Steam rises..."
             },
             {
               "experience_id": "rotorua-3",
@@ -2701,7 +4356,32 @@
               "related_activities": [
                 "rotorua-1",
                 "rotorua-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 5,
+                "max": 5,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "December",
+                "January",
+                "February",
+                "March"
+              ],
+              "activity_tags": [
+                "Nature",
+                "Night",
+                "Forest"
+              ],
+              "rating": 4.5134540165823696,
+              "reviews": 261,
+              "sensory_subcopy": "Night falls. The forest lights up—suspended walkways glow in rainbow colors. You walk among..."
             }
           ],
           "cafes": [
@@ -2709,19 +4389,58 @@
               "name": "Capers Café",
               "notes": "Local café with lakefront views",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "capers cafe rotorua lake view"
+              "image_keywords": "capers cafe rotorua lake view",
+              "cafe_id": "capers_caf_",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Third Place Café",
               "notes": "Specialty coffee and brunch",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "third place cafe rotorua interior"
+              "image_keywords": "third place cafe rotorua interior",
+              "cafe_id": "third_place_caf_",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Lime Caffeteria",
               "notes": "Modern café in city center",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "lime caffeteria rotorua coffee"
+              "image_keywords": "lime caffeteria rotorua coffee",
+              "cafe_id": "lime_caffeteria",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Where the earth bubbles and steams—geothermal wonders meet Māori traditions."
@@ -2822,7 +4541,34 @@
               "related_activities": [
                 "capetown-2",
                 "capetown-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 4,
+                "max": 4,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "September",
+                "October",
+                "November",
+                "March",
+                "April",
+                "May"
+              ],
+              "activity_tags": [
+                "Hiking",
+                "Views",
+                "Iconic"
+              ],
+              "rating": 4.7070329379648435,
+              "reviews": 248,
+              "sensory_subcopy": "The cable car rotates as it climbs. The city shrinks below. At the top,..."
             },
             {
               "experience_id": "capetown-2",
@@ -2868,7 +4614,34 @@
               "related_activities": [
                 "capetown-1",
                 "capetown-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 8,
+                "max": 8,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "September",
+                "October",
+                "November",
+                "March",
+                "April",
+                "May"
+              ],
+              "activity_tags": [
+                "Adventure",
+                "Wildlife",
+                "Ocean"
+              ],
+              "rating": 4.658500088899866,
+              "reviews": 406,
+              "sensory_subcopy": "You lower into the cage. Cold water rushes in. Then—a shadow. The great white..."
             },
             {
               "experience_id": "capetown-3",
@@ -2914,7 +4687,34 @@
               "related_activities": [
                 "capetown-1",
                 "capetown-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 8,
+                "max": 8,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "September",
+                "October",
+                "November",
+                "March",
+                "April",
+                "May"
+              ],
+              "activity_tags": [
+                "Nature",
+                "Wildlife",
+                "Scenic Drive"
+              ],
+              "rating": 4.855199728558638,
+              "reviews": 412,
+              "sensory_subcopy": "Chapman's Peak hugs the cliff. Below, waves crash. You stop at Boulders Beach—African penguins..."
             }
           ],
           "cafes": [
@@ -2922,19 +4722,58 @@
               "name": "Truth Coffee",
               "notes": "Steampunk-themed specialty coffee roastery",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "truth coffee cape town steampunk interior"
+              "image_keywords": "truth coffee cape town steampunk interior",
+              "cafe_id": "truth_coffee",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Jason Bakery",
               "notes": "Artisan bakery and café in Greenpoint",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "jason bakery cape town artisan bread"
+              "image_keywords": "jason bakery cape town artisan bread",
+              "cafe_id": "jason_bakery",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Orphanage Cocktail Emporium",
               "notes": "Speakeasy-style bar with craft cocktails",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "orphanage cocktail cape town bar interior"
+              "image_keywords": "orphanage cocktail cape town bar interior",
+              "cafe_id": "orphanage_cocktail_emporium",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Table Mountain watches over this coastal city—where ocean meets mountain, and every view is breathtaking."
@@ -2988,7 +4827,34 @@
               "related_activities": [
                 "stellenbosch-2",
                 "stellenbosch-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 6,
+                "max": 6,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "September",
+                "October",
+                "November",
+                "March",
+                "April",
+                "May"
+              ],
+              "activity_tags": [
+                "Wine",
+                "Scenic",
+                "Culinary"
+              ],
+              "rating": 4.608992621147634,
+              "reviews": 203,
+              "sensory_subcopy": "Vineyards roll to the horizon. You swirl, sniff, taste—Pinotage, Chenin Blanc, Cabernet. Each estate..."
             },
             {
               "experience_id": "stellenbosch-2",
@@ -3034,7 +4900,34 @@
               "related_activities": [
                 "stellenbosch-1",
                 "stellenbosch-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 4,
+                "max": 4,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "September",
+                "October",
+                "November",
+                "March",
+                "April",
+                "May"
+              ],
+              "activity_tags": [
+                "Hiking",
+                "Nature",
+                "Mountains"
+              ],
+              "rating": 4.606147194891523,
+              "reviews": 418,
+              "sensory_subcopy": "The trail climbs steeply. Proteas bloom. At the top, a waterfall cascades into a..."
             },
             {
               "experience_id": "stellenbosch-3",
@@ -3080,7 +4973,34 @@
               "related_activities": [
                 "stellenbosch-1",
                 "stellenbosch-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 5,
+                "max": 20,
+                "level": "low"
+              },
+              "duration_min_max": {
+                "min": 2,
+                "max": 2,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "September",
+                "October",
+                "November",
+                "March",
+                "April",
+                "May"
+              ],
+              "activity_tags": [
+                "Art",
+                "Culture",
+                "Walking"
+              ],
+              "rating": 4.54617328135101,
+              "reviews": 490,
+              "sensory_subcopy": "Oak-lined streets. White-gabled buildings. You wander galleries, sip coffee, browse art. Stellenbosch feels genteel,..."
             }
           ],
           "cafes": [
@@ -3088,19 +5008,58 @@
               "name": "Schoon De Companje",
               "notes": "Historic café on Dorp Street",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "schoon de companje stellenbosch cafe"
+              "image_keywords": "schoon de companje stellenbosch cafe",
+              "cafe_id": "schoon_de_companje",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Healthy bowls"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Café Felix",
               "notes": "Artisan bakery and coffee shop",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "cafe felix stellenbosch pastries"
+              "image_keywords": "cafe felix stellenbosch pastries",
+              "cafe_id": "caf_felix",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "De Warenmarkt",
               "notes": "Food market with multiple vendors",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "de warenmarkt stellenbosch market"
+              "image_keywords": "de warenmarkt stellenbosch market",
+              "cafe_id": "de_warenmarkt",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "Wine country at its finest—Cape Dutch architecture, endless vineyards, and world-class tastings."
@@ -3154,7 +5113,34 @@
               "related_activities": [
                 "kruger-2",
                 "kruger-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 8,
+                "max": 8,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "September",
+                "October",
+                "November",
+                "March",
+                "April",
+                "May"
+              ],
+              "activity_tags": [
+                "Safari",
+                "Wildlife",
+                "Photography"
+              ],
+              "rating": 4.6730177781419675,
+              "reviews": 329,
+              "sensory_subcopy": "The jeep rumbles. Ahead—a lioness crouches in tall grass. Your guide whispers. You hold..."
             },
             {
               "experience_id": "kruger-2",
@@ -3200,7 +5186,34 @@
               "related_activities": [
                 "kruger-1",
                 "kruger-3"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 15,
+                "max": 40,
+                "level": "mid"
+              },
+              "duration_min_max": {
+                "min": 3,
+                "max": 3,
+                "unit": "hours"
+              },
+              "crowd_score": 50,
+              "best_months": [
+                "September",
+                "October",
+                "November",
+                "March",
+                "April",
+                "May"
+              ],
+              "activity_tags": [
+                "Walking",
+                "Wildlife",
+                "Adventure"
+              ],
+              "rating": 4.780287823678969,
+              "reviews": 367,
+              "sensory_subcopy": "No vehicle. Just your feet, the ranger, and the wild. You walk quietly, spotting..."
             },
             {
               "experience_id": "kruger-3",
@@ -3246,7 +5259,34 @@
               "related_activities": [
                 "kruger-1",
                 "kruger-2"
-              ]
+              ],
+              "cost_estimate": {
+                "min": 50,
+                "max": 100,
+                "level": "high"
+              },
+              "duration_min_max": {
+                "min": 4,
+                "max": 4,
+                "unit": "hours"
+              },
+              "crowd_score": 40,
+              "best_months": [
+                "September",
+                "October",
+                "November",
+                "March",
+                "April",
+                "May"
+              ],
+              "activity_tags": [
+                "Safari",
+                "Sunset",
+                "Luxury"
+              ],
+              "rating": 4.554038625784384,
+              "reviews": 227,
+              "sensory_subcopy": "The jeep stops on a hill. The ranger pours gin and tonics. The sun..."
             }
           ],
           "cafes": [
@@ -3254,19 +5294,58 @@
               "name": "Cattle Baron Skukuza",
               "notes": "Steakhouse at main rest camp",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "cattle baron skukuza kruger restaurant"
+              "image_keywords": "cattle baron skukuza kruger restaurant",
+              "cafe_id": "cattle_baron_skukuza",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Fresh pastries"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Mugg & Bean Hazyview",
               "notes": "Family restaurant near park entrance",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "mugg bean hazyview south africa"
+              "image_keywords": "mugg bean hazyview south africa",
+              "cafe_id": "mugg_bean_hazyview",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             },
             {
               "name": "Pioneer's Grill",
               "notes": "Traditional South African braai",
               "vibe": "Relaxed, welcoming",
-              "image_keywords": "pioneers grill kruger south african food"
+              "image_keywords": "pioneers grill kruger south african food",
+              "cafe_id": "pioneer_s_grill",
+              "price_level": "mid",
+              "open_hours": "08:00-20:00",
+              "features": [
+                "wifi",
+                "outdoor",
+                "coffee"
+              ],
+              "menu_highlights": [
+                "Specialty coffee"
+              ],
+              "dietary_friendly": [],
+              "noise_level": "moderate"
             }
           ],
           "description": "One of Africa's greatest game reserves—where lions roam, elephants gather, and every drive is an adventure."
