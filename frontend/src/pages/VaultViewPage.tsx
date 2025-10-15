@@ -1,7 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Map, { Source, Layer } from 'react-map-gl'
-import 'mapbox-gl/dist/mapbox-gl.css'
 
 // Mock vault data - will be replaced with API calls
 const MOCK_VAULTS = [
