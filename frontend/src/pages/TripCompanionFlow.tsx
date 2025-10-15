@@ -244,7 +244,7 @@ export const TripCompanionFlow: React.FC = () => {
 
   const renderPhaseContent = () => {
     switch (phase) {
-      case 'context':
+      case 'when':
         return (
           <div className="min-h-screen bg-black text-white flex flex-col">
             {/* Hero Destination Card */}
@@ -255,8 +255,8 @@ export const TripCompanionFlow: React.FC = () => {
               </div>
             </div>
 
-            {/* Question 1: When */}
-            <div className="flex-1 p-6 space-y-8 animate-fade-in">
+            {/* Question: When */}
+            <div className="flex-1 p-6 flex flex-col justify-center animate-fade-in">
               <div>
                 <div className="flex items-center gap-2 mb-6">
                   <Sparkles size={20} className="text-yellow-200" />
