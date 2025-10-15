@@ -269,6 +269,38 @@ export const NeighborhoodDetailPage: React.FC = () => {
               </div>
             </div>
           )}
+            </>
+          )}
+
+          {/* Activities Tab */}
+          {activeTab === 'activities' && (
+            <div className="text-center py-12">
+              <p className="text-gray-400 mb-6">
+                Discover activities in {neighborhood.name}
+              </p>
+              <button
+                onClick={() => navigate(`/vault/${neighborhood.country.toLowerCase()}/city/${neighborhood.city.toLowerCase()}`, { state: { tab: 'activities', neighborhood: neighborhoodId } })}
+                className="bg-yellow-200 hover:bg-yellow-300 text-black font-semibold px-8 py-4 rounded-full transition-all"
+              >
+                View Activities Feed
+              </button>
+            </div>
+          )}
+
+          {/* Cafes Tab */}
+          {activeTab === 'cafes' && (
+            <div className="text-center py-12">
+              <p className="text-gray-400 mb-6">
+                Explore cafés in {neighborhood.name}
+              </p>
+              <button
+                onClick={() => navigate(`/vault/${neighborhood.country.toLowerCase()}/city/${neighborhood.city.toLowerCase()}`, { state: { tab: 'cafes', neighborhood: neighborhoodId } })}
+                className="bg-yellow-200 hover:bg-yellow-300 text-black font-semibold px-8 py-4 rounded-full transition-all"
+              >
+                View Cafés Feed
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Sticky CTA Bar */}
