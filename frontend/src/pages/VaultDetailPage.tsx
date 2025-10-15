@@ -6,19 +6,7 @@ import { fetchPexelsImages, type PexelsPhoto } from '../services/pexels'
 // Mock vault data - matches with VaultViewPage and Explore page
 const MOCK_VAULT_DATA: Record<string, any> = {
   '1': {
-    name: 'Croatia',
-    country: 'Croatia',
-    flag: '🇭🇷',
-    cities: ['Dubrovnik', 'Split', 'Zagreb'],
-    categories: ['Coastal Escapes', 'Heritage Trails', 'Island Hopping', 'Local Cuisine'],
-    seasons: [
-      { month: 'June', highlight: 'Perfect Beach Season', activities: ['Island hopping', 'Coastal sailing', 'Beach clubs'] },
-      { month: 'September', highlight: 'Harvest & Wine Season', activities: ['Wine tasting', 'Food festivals', 'Fewer crowds'] },
-      { month: 'October', highlight: 'Autumn Colors', activities: ['Heritage tours', 'Hiking trails', 'City exploration'] }
-    ]
-  },
-  '2': {
-    name: 'Japan',
+    name: 'Japan Food Crawl',
     country: 'Japan',
     flag: '🇯🇵',
     cities: ['Tokyo', 'Kyoto', 'Osaka'],
@@ -29,8 +17,8 @@ const MOCK_VAULT_DATA: Record<string, any> = {
       { month: 'October', highlight: 'Autumn Colors', activities: ['Food tours', 'Harvest festivals', 'Mountain hikes'] }
     ]
   },
-  '3': {
-    name: 'Bali',
+  '2': {
+    name: 'Bali Week',
     country: 'Bali',
     flag: '🇮🇩',
     cities: ['Ubud', 'Seminyak', 'Canggu'],
@@ -41,8 +29,8 @@ const MOCK_VAULT_DATA: Record<string, any> = {
       { month: 'September', highlight: 'Perfect Weather', activities: ['Island hopping', 'Sunset spots', 'Rice terrace walks'] }
     ]
   },
-  '4': {
-    name: 'Thailand',
+  '3': {
+    name: 'Coldplay Bangkok',
     country: 'Thailand',
     flag: '🇹🇭',
     cities: ['Bangkok', 'Phuket', 'Chiang Mai'],
@@ -53,8 +41,8 @@ const MOCK_VAULT_DATA: Record<string, any> = {
       { month: 'January', highlight: 'Perfect Weather', activities: ['Outdoor events', 'River cruises', 'Island hopping'] }
     ]
   },
-  '5': {
-    name: 'Italy',
+  '4': {
+    name: 'Italy Vault',
     country: 'Italy',
     flag: '🇮🇹',
     cities: ['Rome', 'Florence', 'Venice'],
@@ -63,6 +51,42 @@ const MOCK_VAULT_DATA: Record<string, any> = {
       { month: 'April', highlight: 'Spring Blooms', activities: ['City walks', 'Outdoor dining', 'Art galleries'] },
       { month: 'September', highlight: 'Harvest Season', activities: ['Wine tours', 'Food festivals', 'Countryside trips'] },
       { month: 'October', highlight: 'Autumn Colors', activities: ['Art galleries', 'Countryside trips', 'Food tours'] }
+    ]
+  },
+  '5': {
+    name: 'Croatia',
+    country: 'Croatia',
+    flag: '🇭🇷',
+    cities: ['Dubrovnik', 'Split', 'Rovinj'],
+    categories: ['Coastal Escapes', 'Heritage Trails', 'Island Hopping', 'Local Cuisine'],
+    seasons: [
+      { month: 'June', highlight: 'Perfect Beach Season', activities: ['Island hopping', 'Coastal sailing', 'Beach clubs'] },
+      { month: 'September', highlight: 'Harvest & Wine Season', activities: ['Wine tasting', 'Food festivals', 'Fewer crowds'] },
+      { month: 'October', highlight: 'Autumn Colors', activities: ['Heritage tours', 'Hiking trails', 'City exploration'] }
+    ]
+  },
+  '6': {
+    name: 'New Zealand',
+    country: 'New Zealand',
+    flag: '🇳🇿',
+    cities: ['Queenstown', 'Auckland', 'Rotorua'],
+    categories: ['Adventure Sports', 'Fjords', 'Wine Tasting', 'Maori Culture'],
+    seasons: [
+      { month: 'December', highlight: 'Summer Season', activities: ['Hiking', 'Water sports', 'Beach activities'] },
+      { month: 'March', highlight: 'Autumn Colors', activities: ['Wine tours', 'Scenic drives', 'Hiking'] },
+      { month: 'September', highlight: 'Spring Blooms', activities: ['Wildlife tours', 'Adventure sports', 'City exploration'] }
+    ]
+  },
+  '7': {
+    name: 'South Africa',
+    country: 'South Africa',
+    flag: '🇿🇦',
+    cities: ['Cape Town', 'Stellenbosch', 'Kruger'],
+    categories: ['Safari', 'Wine Estates', 'Coastal Drives', 'Adventure'],
+    seasons: [
+      { month: 'September', highlight: 'Spring Wildlife Season', activities: ['Safari drives', 'Whale watching', 'Hiking'] },
+      { month: 'November', highlight: 'Perfect Weather', activities: ['Beach days', 'Wine tours', 'City exploration'] },
+      { month: 'March', highlight: 'Harvest Season', activities: ['Wine tasting', 'Vineyard tours', 'Food festivals'] }
     ]
   }
 }
