@@ -100,7 +100,7 @@
 
 #====================================================================================================
 
-## user_problem_statement: Build Verso mobile-first travel organizer with Google sign-in, manual inspiration adding, organized collections by country/city, and an AI co-pilot using Emergent LLM key.
+## user_problem_statement: Build Verso mobile-first travel organizer. Recently completed: TripBottomSheet integration in TripPlanningPage and new companion-led trip creation flow (TripCompanionFlow) with 6 phases: context, neighborhood, stay, flight, visa, and logistics.
 
 ## backend:
 ##   - task: "Create Inspirations CRUD + Collections summaries"
