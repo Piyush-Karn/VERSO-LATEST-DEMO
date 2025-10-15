@@ -410,9 +410,10 @@ export const CityFeedView: React.FC = () => {
       {/* Feed Cards Container */}
       <div 
         ref={containerRef}
-        className="absolute inset-0 overflow-hidden"
+        className="absolute inset-0 overflow-hidden touch-none"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
+        style={{ touchAction: 'pan-y' }}
       >
         {activities.map((activity, index) => (
           <div
