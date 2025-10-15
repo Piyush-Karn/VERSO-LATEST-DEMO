@@ -153,48 +153,56 @@ export const VaultDetailPage: React.FC = () => {
             )}
             {!loading && (
               <div className="space-y-6">
-                {vaultData.cities.map((city: string) => (
+                {vaultData.cities.map((city: string, idx: number) => (
                   <button
                     key={city}
-                    onClick={() => navigate(`/vault/${vaultId}/city/${city}`)}
-                    className="w-full bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all hover:scale-[1.02]"
+                    onClick={() => navigate(`/vault/${vaultId}/city/${encodeURIComponent(city)}`)}
+                    className="w-full bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 hover:border-yellow-200/30 transition-all duration-700 hover:scale-[1.02] group"
                   >
-                    {/* Image Gallery */}
-                    <div className="relative h-48 bg-gray-800">
+                    {/* Full-bleed Hero Visual */}
+                    <div className="relative h-64 bg-gray-800 overflow-hidden">
                       {cityImages[city] && cityImages[city].length > 0 ? (
-                        <div className="grid grid-cols-5 h-full gap-px">
-                          {cityImages[city].slice(0, 5).map((photo, idx) => (
+                        <div className="relative h-full">
+                          {/* Main hero image */}
+                          <img
+                            src={cityImages[city][0].src.large}
+                            alt={city}
+                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-[900ms]"
+                          />
+                          {/* Collage effect - small images overlaid */}
+                          {cityImages[city].slice(1, 3).map((photo, collageIdx) => (
                             <div
                               key={photo.id}
-                              className="relative overflow-hidden"
+                              className="absolute w-20 h-20 rounded-lg overflow-hidden border-2 border-white/20 shadow-xl"
                               style={{
-                                gridColumn: idx === 0 ? 'span 2' : 'span 1',
-                                gridRow: idx === 0 ? 'span 2' : 'span 1',
+                                bottom: '12px',
+                                right: collageIdx === 0 ? '12px' : '96px',
+                                opacity: 0.9
                               }}
                             >
                               <img
-                                src={photo.src.medium}
-                                alt={`${city} ${idx + 1}`}
-                                className="absolute inset-0 w-full h-full object-cover"
+                                src={photo.src.small}
+                                alt={`${city} ${collageIdx + 2}`}
+                                className="w-full h-full object-cover"
                               />
                             </div>
                           ))}
                         </div>
                       ) : (
                         <div className="flex items-center justify-center h-full">
-                          <MapPin className="text-gray-600" size={48} />
+                          <MapPin className="text-gray-600" size={64} />
                         </div>
                       )}
                       {/* Gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    </div>
-                    
-                    {/* City Info */}
-                    <div className="p-4 text-left">
-                      <h3 className="font-bold text-lg text-white mb-1">{city}</h3>
-                      <p className="text-gray-400 text-sm">
-                        {Math.floor(Math.random() * 10) + 3} spots saved
-                      </p>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                      
+                      {/* Overlay Metadata */}
+                      <div className="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 className="text-2xl font-bold text-white mb-2">{city}</h3>
+                        <p className="text-gray-300 text-sm">
+                          Curated from {Math.floor(Math.random() * 20) + 10} saved inspirations · {Math.floor(Math.random() * 3) + 1} contributor{Math.floor(Math.random() * 3) + 1 > 1 ? 's' : ''}
+                        </p>
+                      </div>
                     </div>
                   </button>
                 ))}
