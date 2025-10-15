@@ -618,21 +618,21 @@
               "specific_options": [
                 {
                   "title": "Pile Gate Entrance",
-                  "description": "Experience Pile Gate Entrance",
+                  "description": "Begin at the main western entrance—iconic stone archway leading into old town",
                   "location": "West Entrance",
                   "duration": "1 hr",
                   "image_keywords": "pile gate entrance west entrance"
                 },
                 {
                   "title": "Fort Minceta Tower",
-                  "description": "Experience Fort Minceta Tower",
+                  "description": "Climb to the highest point for commanding views over land and sea",
                   "location": "Highest Point",
                   "duration": "1 hr",
                   "image_keywords": "fort minceta tower highest point"
                 },
                 {
                   "title": "Bokar Fortress",
-                  "description": "Experience Bokar Fortress",
+                  "description": "Explore the cylindrical fortress jutting out toward the waves",
                   "location": "Sea-facing Bastion",
                   "duration": "1 hr",
                   "image_keywords": "bokar fortress sea-facing bastion"
@@ -665,21 +665,21 @@
               "specific_options": [
                 {
                   "title": "Dead Sea Saltwater Lake",
-                  "description": "Experience Dead Sea Saltwater Lake",
+                  "description": "Float effortlessly in this mineral-rich inland pool—surprisingly therapeutic",
                   "location": "Island Center",
                   "duration": "1 hr",
                   "image_keywords": "dead sea saltwater lake island center"
                 },
                 {
                   "title": "Benedictine Monastery",
-                  "description": "Experience Benedictine Monastery",
+                  "description": "Wander peaceful cloisters and gardens dating back centuries",
                   "location": "Island North",
                   "duration": "1 hr",
                   "image_keywords": "benedictine monastery island north"
                 },
                 {
                   "title": "Peacock Gardens",
-                  "description": "Experience Peacock Gardens",
+                  "description": "Encounter free-roaming peacocks in lush Mediterranean gardens",
                   "location": "Forest Paths",
                   "duration": "1 hr",
                   "image_keywords": "peacock gardens forest paths"
@@ -712,21 +712,21 @@
               "specific_options": [
                 {
                   "title": "Sunset Kayak Tour",
-                  "description": "Experience Sunset Kayak Tour",
+                  "description": "Paddle along the city walls as the sun sets behind fortress silhouettes",
                   "location": "Pile Beach",
                   "duration": "1 hr",
                   "image_keywords": "sunset kayak tour pile beach"
                 },
                 {
                   "title": "Cave Snorkeling",
-                  "description": "Experience Cave Snorkeling",
+                  "description": "Duck into Betina Cave for crystal-clear snorkeling in hidden azure waters",
                   "location": "Betina Cave",
                   "duration": "1 hr",
                   "image_keywords": "cave snorkeling betina cave"
                 },
                 {
                   "title": "Banje Beach Stop",
-                  "description": "Experience Banje Beach Stop",
+                  "description": "Rest at Dubrovnik's most popular beach with city wall views",
                   "location": "Eastern Coast",
                   "duration": "1 hr",
                   "image_keywords": "banje beach stop eastern coast"
@@ -786,21 +786,21 @@
               "specific_options": [
                 {
                   "title": "Underground Cellars",
-                  "description": "Experience Underground Cellars",
+                  "description": "Descend into Diocletian's basement—atmospheric Roman chambers now a museum",
                   "location": "Palace Basement",
                   "duration": "1 hr",
                   "image_keywords": "underground cellars palace basement"
                 },
                 {
                   "title": "Peristyle Square",
-                  "description": "Experience Peristyle Square",
+                  "description": "The palace's central courtyard, still the beating heart of Split",
                   "location": "Central Courtyard",
                   "duration": "1 hr",
                   "image_keywords": "peristyle square central courtyard"
                 },
                 {
                   "title": "Cathedral Bell Tower",
-                  "description": "Experience Cathedral Bell Tower",
+                  "description": "Climb narrow stairs for sweeping views over Split and the Adriatic",
                   "location": "St. Domnius",
                   "duration": "1 hr",
                   "image_keywords": "cathedral bell tower st. domnius"
@@ -832,21 +832,21 @@
               "specific_options": [
                 {
                   "title": "Telegrin Peak",
-                  "description": "Experience Telegrin Peak",
+                  "description": "Reach Marjan's highest viewpoint for epic panoramic sunset vistas",
                   "location": "Highest Viewpoint",
                   "duration": "1 hr",
                   "image_keywords": "telegrin peak highest viewpoint"
                 },
                 {
                   "title": "Jewish Cemetery Trail",
-                  "description": "Experience Jewish Cemetery Trail",
+                  "description": "A peaceful, lesser-known path through history and nature",
                   "location": "Western Path",
                   "duration": "1 hr",
                   "image_keywords": "jewish cemetery trail western path"
                 },
                 {
                   "title": "Vidilica Café Stop",
-                  "description": "Experience Vidilica Café Stop",
+                  "description": "Refuel mid-hike with coffee and views at this hilltop café",
                   "location": "Mid-Hill",
                   "duration": "1 hr",
                   "image_keywords": "vidilica café stop mid-hill"
@@ -878,21 +878,21 @@
               "specific_options": [
                 {
                   "title": "Blue Lagoon Swim",
-                  "description": "Experience Blue Lagoon Swim",
+                  "description": "Swim in impossibly turquoise shallows—pristine and postcard-perfect",
                   "location": "Drvenik Mali",
                   "duration": "1 hr",
                   "image_keywords": "blue lagoon swim drvenik mali"
                 },
                 {
                   "title": "Šolta Island Stop",
-                  "description": "Experience Šolta Island Stop",
+                  "description": "Visit this quiet island's charming fishing village",
                   "location": "Maslinica Bay",
                   "duration": "1 hr",
                   "image_keywords": "šolta island stop maslinica bay"
                 },
                 {
                   "title": "Nečujam Beach",
-                  "description": "Experience Nečujam Beach",
+                  "description": "Relax on Šolta's sandy southern beach—calm, clear, and crowd-free",
                   "location": "Šolta South",
                   "duration": "1 hr",
                   "image_keywords": "nečujam beach šolta south"
@@ -952,21 +952,21 @@
               "specific_options": [
                 {
                   "title": "St. Euphemia Church",
-                  "description": "Experience St. Euphemia Church",
+                  "description": "Climb the bell tower of Rovinj's hilltop Baroque church",
                   "location": "Hilltop",
                   "duration": "1 hr",
                   "image_keywords": "st. euphemia church hilltop"
                 },
                 {
                   "title": "Grisia Street Art Walk",
-                  "description": "Experience Grisia Street Art Walk",
+                  "description": "Stroll the artists' quarter lined with galleries and studios",
                   "location": "Artists Quarter",
                   "duration": "1 hr",
                   "image_keywords": "grisia street art walk artists quarter"
                 },
                 {
                   "title": "Harbor Sunset Spot",
-                  "description": "Experience Harbor Sunset Spot",
+                  "description": "Find your perfect perch along the waterfront promenade",
                   "location": "Riva Promenade",
                   "duration": "1 hr",
                   "image_keywords": "harbor sunset spot riva promenade"
@@ -998,21 +998,21 @@
               "specific_options": [
                 {
                   "title": "St. Andrew Island",
-                  "description": "Experience St. Andrew Island",
+                  "description": "Kayak to Red Island's main isle for swimming and exploring",
                   "location": "Main Island",
                   "duration": "1 hr",
                   "image_keywords": "st. andrew island main island"
                 },
                 {
                   "title": "Maskin Forest Park",
-                  "description": "Experience Maskin Forest Park",
+                  "description": "Wander forested trails on this peaceful nature reserve island",
                   "location": "Island Interior",
                   "duration": "1 hr",
                   "image_keywords": "maskin forest park island interior"
                 },
                 {
                   "title": "Secluded Bay Swim",
-                  "description": "Experience Secluded Bay Swim",
+                  "description": "Discover your own private cove for quiet swimming",
                   "location": "Eastern Coast",
                   "duration": "1 hr",
                   "image_keywords": "secluded bay swim eastern coast"
@@ -1044,21 +1044,21 @@
               "specific_options": [
                 {
                   "title": "Motovun Forest Hunt",
-                  "description": "Experience Motovun Forest Hunt",
+                  "description": "Search for truffles in the mystical Motovun woods with trained dogs",
                   "location": "Motovun Woods",
                   "duration": "1 hr",
                   "image_keywords": "motovun forest hunt motovun woods"
                 },
                 {
                   "title": "Truffle Tasting Lunch",
-                  "description": "Experience Truffle Tasting Lunch",
+                  "description": "Feast on fresh truffles shaved over pasta in a traditional konoba",
                   "location": "Livade Village",
                   "duration": "1 hr",
                   "image_keywords": "truffle tasting lunch livade village"
                 },
                 {
                   "title": "Istrian Wine Pairing",
-                  "description": "Experience Istrian Wine Pairing",
+                  "description": "Sample local Malvazija and Teran wines alongside truffle dishes",
                   "location": "Local Konoba",
                   "duration": "1 hr",
                   "image_keywords": "istrian wine pairing local konoba"
@@ -1702,21 +1702,21 @@
               "specific_options": [
                 {
                   "title": "Emerald Buddha Temple",
-                  "description": "Experience Emerald Buddha Temple",
+                  "description": "Marvel at Thailand's most sacred Buddha image—carved from single jade block",
                   "location": "Main Complex",
                   "duration": "1 hr",
                   "image_keywords": "emerald buddha temple main complex"
                 },
                 {
                   "title": "Chakri Maha Prasat",
-                  "description": "Experience Chakri Maha Prasat",
+                  "description": "Explore the Grand Palace's throne hall blending Thai and European architecture",
                   "location": "Throne Hall",
                   "duration": "1 hr",
                   "image_keywords": "chakri maha prasat throne hall"
                 },
                 {
                   "title": "Temple of the Reclining Buddha",
-                  "description": "Experience Temple of the Reclining Buddha",
+                  "description": "Visit Wat Pho to see the massive 46-meter gold-plated Buddha",
                   "location": "Wat Pho",
                   "duration": "1 hr",
                   "image_keywords": "temple of the reclining buddha wat pho"
@@ -1749,21 +1749,21 @@
               "specific_options": [
                 {
                   "title": "Boat Tour",
-                  "description": "Experience Boat Tour",
+                  "description": "Cruise the narrow canals in a traditional longtail boat",
                   "location": "Main Canal",
                   "duration": "1 hr",
                   "image_keywords": "boat tour main canal"
                 },
                 {
                   "title": "Fresh Fruit Tasting",
-                  "description": "Experience Fresh Fruit Tasting",
+                  "description": "Sample tropical fruits straight from floating vendors—mango, rambutan, dragon fruit",
                   "location": "Vendor Boats",
                   "duration": "1 hr",
                   "image_keywords": "fresh fruit tasting vendor boats"
                 },
                 {
                   "title": "Traditional Thai Desserts",
-                  "description": "Experience Traditional Thai Desserts",
+                  "description": "Try sticky coconut sweets and other floating market specialties",
                   "location": "Market Stalls",
                   "duration": "1 hr",
                   "image_keywords": "traditional thai desserts market stalls"
@@ -1795,21 +1795,21 @@
               "specific_options": [
                 {
                   "title": "Sky Bar at Lebua",
-                  "description": "Experience Sky Bar at Lebua",
+                  "description": "Sip cocktails 820 feet up at the world-famous rooftop bar",
                   "location": "State Tower",
                   "duration": "1 hr",
                   "image_keywords": "sky bar at lebua state tower"
                 },
                 {
                   "title": "Octave Rooftop Bar",
-                  "description": "Experience Octave Rooftop Bar",
+                  "description": "Enjoy 360° views from this three-level open-air venue",
                   "location": "Marriott Sukhumvit",
                   "duration": "1 hr",
                   "image_keywords": "octave rooftop bar marriott sukhumvit"
                 },
                 {
                   "title": "Vertigo & Moon Bar",
-                  "description": "Experience Vertigo & Moon Bar",
+                  "description": "Dine and drink at the edge of Banyan Tree's 61st floor",
                   "location": "Banyan Tree",
                   "duration": "1 hr",
                   "image_keywords": "vertigo & moon bar banyan tree"
@@ -1869,21 +1869,21 @@
               "specific_options": [
                 {
                   "title": "Elephant Nature Park",
-                  "description": "Experience Elephant Nature Park",
+                  "description": "Spend the day at this renowned ethical elephant rescue sanctuary",
                   "location": "Mae Taeng",
                   "duration": "1 hr",
                   "image_keywords": "elephant nature park mae taeng"
                 },
                 {
                   "title": "Elephant Jungle Sanctuary",
-                  "description": "Experience Elephant Jungle Sanctuary",
+                  "description": "Get closer to elephants in a more interactive half-day program",
                   "location": "Mae Rim Valley",
                   "duration": "1 hr",
                   "image_keywords": "elephant jungle sanctuary mae rim valley"
                 },
                 {
                   "title": "Boon Lott's Elephant Sanctuary",
-                  "description": "Experience Boon Lott's Elephant Sanctuary",
+                  "description": "Visit this intimate, rescue-focused sanctuary (advance booking required)",
                   "location": "Sukhothai",
                   "duration": "1 hr",
                   "image_keywords": "boon lott's elephant sanctuary sukhothai"
@@ -1915,21 +1915,21 @@
               "specific_options": [
                 {
                   "title": "Thai Farm Cooking School",
-                  "description": "Experience Thai Farm Cooking School",
+                  "description": "Learn to cook on an organic farm surrounded by rice paddies",
                   "location": "Organic Farm",
                   "duration": "1 hr",
                   "image_keywords": "thai farm cooking school organic farm"
                 },
                 {
                   "title": "Asia Scenic Thai Cooking",
-                  "description": "Experience Asia Scenic Thai Cooking",
+                  "description": "Market visit followed by hands-on cooking in a Thai home",
                   "location": "Mae Rim",
                   "duration": "1 hr",
                   "image_keywords": "asia scenic thai cooking mae rim"
                 },
                 {
                   "title": "Basil Cookery School",
-                  "description": "Experience Basil Cookery School",
+                  "description": "Popular Old City class with vegetarian/vegan options available",
                   "location": "Old City",
                   "duration": "1 hr",
                   "image_keywords": "basil cookery school old city"
@@ -1962,21 +1962,21 @@
               "specific_options": [
                 {
                   "title": "Kalare Night Bazaar",
-                  "description": "Experience Kalare Night Bazaar",
+                  "description": "Explore the main night market with food courts and handicrafts",
                   "location": "Main Market",
                   "duration": "1 hr",
                   "image_keywords": "kalare night bazaar main market"
                 },
                 {
                   "title": "Saturday Walking Street",
-                  "description": "Experience Saturday Walking Street",
+                  "description": "Wualai Road transforms into a massive weekend market",
                   "location": "Wualai Road",
                   "duration": "1 hr",
                   "image_keywords": "saturday walking street wualai road"
                 },
                 {
                   "title": "Sunday Walking Street",
-                  "description": "Experience Sunday Walking Street",
+                  "description": "The biggest walking street—Rachadamnoen fills with vendors and performers",
                   "location": "Rachadamnoen Road",
                   "duration": "1 hr",
                   "image_keywords": "sunday walking street rachadamnoen road"
@@ -2036,21 +2036,21 @@
               "specific_options": [
                 {
                   "title": "Maya Bay Visit",
-                  "description": "Experience Maya Bay Visit",
+                  "description": "Step foot in the famous beach from \"The Beach\" (now with visitor limits)",
                   "location": "Phi Phi Leh",
                   "duration": "1 hr",
                   "image_keywords": "maya bay visit phi phi leh"
                 },
                 {
                   "title": "Pileh Lagoon Swim",
-                  "description": "Experience Pileh Lagoon Swim",
+                  "description": "Swim in an enclosed emerald lagoon surrounded by towering cliffs",
                   "location": "Phi Phi Leh",
                   "duration": "1 hr",
                   "image_keywords": "pileh lagoon swim phi phi leh"
                 },
                 {
                   "title": "Monkey Beach",
-                  "description": "Experience Monkey Beach",
+                  "description": "Visit the beach inhabited by playful (and mischievous) macaques",
                   "location": "Phi Phi Don",
                   "duration": "1 hr",
                   "image_keywords": "monkey beach phi phi don"
@@ -2082,21 +2082,21 @@
               "specific_options": [
                 {
                   "title": "Shark Point Dive",
-                  "description": "Experience Shark Point Dive",
+                  "description": "Two dives at one of Phuket's best sites—leopard sharks and abundant marine life",
                   "location": "15km South of Phuket",
                   "duration": "1 hr",
                   "image_keywords": "shark point dive 15km south of phuket"
                 },
                 {
                   "title": "Racha Noi Island",
-                  "description": "Experience Racha Noi Island",
+                  "description": "Advanced dive site with manta ray sightings and dramatic drop-offs",
                   "location": "Deep Dive Site",
                   "duration": "1 hr",
                   "image_keywords": "racha noi island deep dive site"
                 },
                 {
                   "title": "King Cruiser Wreck",
-                  "description": "Experience King Cruiser Wreck",
+                  "description": "Explore a sunken ferry now teeming with marine life",
                   "location": "Wreck Dive",
                   "duration": "1 hr",
                   "image_keywords": "king cruiser wreck wreck dive"
@@ -2128,21 +2128,21 @@
               "specific_options": [
                 {
                   "title": "Thalang Road",
-                  "description": "Experience Thalang Road",
+                  "description": "Walk the main heritage street lined with Sino-Portuguese shophouses",
                   "location": "Main Heritage Street",
                   "duration": "1 hr",
                   "image_keywords": "thalang road main heritage street"
                 },
                 {
                   "title": "Soi Romanee",
-                  "description": "Experience Soi Romanee",
+                  "description": "Discover the most charming and photogenic lane in old town",
                   "location": "Historic Quarter",
                   "duration": "1 hr",
                   "image_keywords": "soi romanee historic quarter"
                 },
                 {
                   "title": "Sunday Market",
-                  "description": "Experience Sunday Market",
+                  "description": "Browse the Lard Yai walking street market for food and crafts",
                   "location": "Lard Yai Market",
                   "duration": "1 hr",
                   "image_keywords": "sunday market lard yai market"
@@ -2251,21 +2251,21 @@
               "specific_options": [
                 {
                   "title": "Original Bungy (43m)",
-                  "description": "Experience Original Bungy (43m)",
+                  "description": "The world's first commercial bungy jump—iconic and exhilarating",
                   "location": "Kawarau Bridge",
                   "duration": "1 hr",
                   "image_keywords": "original bungy (43m) kawarau bridge"
                 },
                 {
                   "title": "Ledge Bungy (47m)",
-                  "description": "Experience Ledge Bungy (47m)",
+                  "description": "Jump over Queenstown with stunning lake and mountain views",
                   "location": "Bob's Peak",
                   "duration": "1 hr",
                   "image_keywords": "ledge bungy (47m) bob's peak"
                 },
                 {
                   "title": "Nevis Bungy (134m)",
-                  "description": "Experience Nevis Bungy (134m)",
+                  "description": "New Zealand's highest bungy—not for the faint of heart",
                   "location": "Nevis Valley",
                   "duration": "1 hr",
                   "image_keywords": "nevis bungy (134m) nevis valley"
@@ -2297,21 +2297,21 @@
               "specific_options": [
                 {
                   "title": "Scenic Cruise",
-                  "description": "Experience Scenic Cruise",
+                  "description": "Traditional boat cruise through Milford Sound's dramatic fjord",
                   "location": "Milford Sound",
                   "duration": "1 hr",
                   "image_keywords": "scenic cruise milford sound"
                 },
                 {
                   "title": "Kayaking Tour",
-                  "description": "Experience Kayaking Tour",
+                  "description": "Paddle right up to waterfalls and seal colonies",
                   "location": "Milford Sound",
                   "duration": "1 hr",
                   "image_keywords": "kayaking tour milford sound"
                 },
                 {
                   "title": "Helicopter Flight",
-                  "description": "Experience Helicopter Flight",
+                  "description": "Fly over Milford Sound and land on a glacier (weather permitting)",
                   "location": "Aerial Tour",
                   "duration": "1 hr",
                   "image_keywords": "helicopter flight aerial tour"
@@ -2343,21 +2343,21 @@
               "specific_options": [
                 {
                   "title": "Gondola Ride",
-                  "description": "Experience Gondola Ride",
+                  "description": "Ascend Bob's Peak in a glass cabin for panoramic views",
                   "location": "Bob's Peak Summit",
                   "duration": "1 hr",
                   "image_keywords": "gondola ride bob's peak summit"
                 },
                 {
                   "title": "Luge Tracks",
-                  "description": "Experience Luge Tracks",
+                  "description": "Race down three different tracks on gravity-powered go-karts",
                   "location": "3 Track Options",
                   "duration": "1 hr",
                   "image_keywords": "luge tracks 3 track options"
                 },
                 {
                   "title": "Stratosfare Restaurant",
-                  "description": "Experience Stratosfare Restaurant",
+                  "description": "Fine dining with floor-to-ceiling views over Lake Wakatipu",
                   "location": "Summit Dining",
                   "duration": "1 hr",
                   "image_keywords": "stratosfare restaurant summit dining"
@@ -2417,21 +2417,21 @@
               "specific_options": [
                 {
                   "title": "Cable Bay Vineyards",
-                  "description": "Experience Cable Bay Vineyards",
+                  "description": "Award-winning wines with stunning Hauraki Gulf views",
                   "location": "North Coast",
                   "duration": "1 hr",
                   "image_keywords": "cable bay vineyards north coast"
                 },
                 {
                   "title": "Mudbrick Vineyard",
-                  "description": "Experience Mudbrick Vineyard",
+                  "description": "Family-owned vineyard with acclaimed restaurant and sculpture park",
                   "location": "Onetangi",
                   "duration": "1 hr",
                   "image_keywords": "mudbrick vineyard onetangi"
                 },
                 {
                   "title": "Man O' War",
-                  "description": "Experience Man O' War",
+                  "description": "Boutique winery on the eastern peninsula—intimate tastings, exceptional wines",
                   "location": "Eastern Peninsula",
                   "duration": "1 hr",
                   "image_keywords": "man o' war eastern peninsula"
@@ -2463,21 +2463,21 @@
               "specific_options": [
                 {
                   "title": "Summit Track",
-                  "description": "Experience Summit Track",
+                  "description": "Hike to Rangitoto's 259-meter summit through volcanic landscape",
                   "location": "Main Trail",
                   "duration": "1 hr",
                   "image_keywords": "summit track main trail"
                 },
                 {
                   "title": "Lava Caves",
-                  "description": "Experience Lava Caves",
+                  "description": "Explore eerie underground caves formed by molten lava",
                   "location": "Coastal Path",
                   "duration": "1 hr",
                   "image_keywords": "lava caves coastal path"
                 },
                 {
                   "title": "Pohutukawa Grove",
-                  "description": "Experience Pohutukawa Grove",
+                  "description": "Walk through native New Zealand Christmas tree forest",
                   "location": "Forest Loop",
                   "duration": "1 hr",
                   "image_keywords": "pohutukawa grove forest loop"
@@ -2509,21 +2509,21 @@
               "specific_options": [
                 {
                   "title": "Sky Walk",
-                  "description": "Experience Sky Walk",
+                  "description": "Circle the Sky Tower's exterior platform 192 meters above the city",
                   "location": "External Platform",
                   "duration": "1 hr",
                   "image_keywords": "sky walk external platform"
                 },
                 {
                   "title": "Orbit 360° Restaurant",
-                  "description": "Experience Orbit 360° Restaurant",
+                  "description": "Dine as the restaurant slowly rotates, revealing ever-changing views",
                   "location": "Rotating Dining",
                   "duration": "1 hr",
                   "image_keywords": "orbit 360° restaurant rotating dining"
                 },
                 {
                   "title": "Observation Deck",
-                  "description": "Experience Observation Deck",
+                  "description": "Simply take in Auckland's skyline from the main viewing level",
                   "location": "Main Deck",
                   "duration": "1 hr",
                   "image_keywords": "observation deck main deck"
@@ -2583,21 +2583,21 @@
               "specific_options": [
                 {
                   "title": "Maori Cultural Show",
-                  "description": "Experience Maori Cultural Show",
+                  "description": "Watch powerful haka, poi dancing, and traditional storytelling",
                   "location": "Te Aronui a Rua",
                   "duration": "1 hr",
                   "image_keywords": "maori cultural show te aronui a rua"
                 },
                 {
                   "title": "Pohutu Geyser",
-                  "description": "Experience Pohutu Geyser",
+                  "description": "See New Zealand's most active geyser erupt up to 30 meters high",
                   "location": "Geothermal Valley",
                   "duration": "1 hr",
                   "image_keywords": "pohutu geyser geothermal valley"
                 },
                 {
                   "title": "Kiwi Conservation",
-                  "description": "Experience Kiwi Conservation",
+                  "description": "Spot New Zealand's national bird in a nocturnal viewing house",
                   "location": "Nocturnal House",
                   "duration": "1 hr",
                   "image_keywords": "kiwi conservation nocturnal house"
@@ -2629,21 +2629,21 @@
               "specific_options": [
                 {
                   "title": "Champagne Pool",
-                  "description": "Experience Champagne Pool",
+                  "description": "Marvel at the vibrant orange and yellow geothermal pool",
                   "location": "Main Loop",
                   "duration": "1 hr",
                   "image_keywords": "champagne pool main loop"
                 },
                 {
                   "title": "Artist's Palette",
-                  "description": "Experience Artist's Palette",
+                  "description": "Walk among rainbow-colored mineral terraces",
                   "location": "Mineral Terraces",
                   "duration": "1 hr",
                   "image_keywords": "artist's palette mineral terraces"
                 },
                 {
                   "title": "Lady Knox Geyser",
-                  "description": "Experience Lady Knox Geyser",
+                  "description": "Watch the daily 10:15 AM eruption of this soap-induced geyser",
                   "location": "Morning Eruption",
                   "duration": "1 hr",
                   "image_keywords": "lady knox geyser morning eruption"
@@ -2675,21 +2675,21 @@
               "specific_options": [
                 {
                   "title": "Treewalk Night Lights",
-                  "description": "Experience Treewalk Night Lights",
+                  "description": "Walk suspended bridges lit by thousands of colorful lanterns",
                   "location": "Suspended Walkways",
                   "duration": "1 hr",
                   "image_keywords": "treewalk night lights suspended walkways"
                 },
                 {
                   "title": "Day Treewalk",
-                  "description": "Experience Day Treewalk",
+                  "description": "Experience the canopy walk in natural daylight",
                   "location": "Forest Canopy",
                   "duration": "1 hr",
                   "image_keywords": "day treewalk forest canopy"
                 },
                 {
                   "title": "Mountain Biking",
-                  "description": "Experience Mountain Biking",
+                  "description": "Ride through the redwood forest on world-class single-track trails",
                   "location": "Forest Trails",
                   "duration": "1 hr",
                   "image_keywords": "mountain biking forest trails"
@@ -2796,21 +2796,21 @@
               "specific_options": [
                 {
                   "title": "Cable Car Ride",
-                  "description": "Experience Cable Car Ride",
+                  "description": "Ascend Table Mountain in a rotating cable car (weather dependent)",
                   "location": "Lower Station",
                   "duration": "1 hr",
                   "image_keywords": "cable car ride lower station"
                 },
                 {
                   "title": "Platteklip Gorge Hike",
-                  "description": "Experience Platteklip Gorge Hike",
+                  "description": "The most direct hiking route up the mountain—steep but rewarding",
                   "location": "Hiking Trail",
                   "duration": "1 hr",
                   "image_keywords": "platteklip gorge hike hiking trail"
                 },
                 {
                   "title": "India Venster Route",
-                  "description": "Experience India Venster Route",
+                  "description": "Advanced scramble combining hiking and rock climbing",
                   "location": "Advanced Trail",
                   "duration": "1 hr",
                   "image_keywords": "india venster route advanced trail"
@@ -2842,21 +2842,21 @@
               "specific_options": [
                 {
                   "title": "Great White Encounter",
-                  "description": "Experience Great White Encounter",
+                  "description": "Descend in a cage for face-to-face encounters with great whites",
                   "location": "Shark Alley",
                   "duration": "1 hr",
                   "image_keywords": "great white encounter shark alley"
                 },
                 {
                   "title": "Boat-based Viewing",
-                  "description": "Experience Boat-based Viewing",
+                  "description": "Stay on deck to watch sharks from the boat (no cage)",
                   "location": "Dyer Island",
                   "duration": "1 hr",
                   "image_keywords": "boat-based viewing dyer island"
                 },
                 {
                   "title": "Marine Big 5 Tour",
-                  "description": "Experience Marine Big 5 Tour",
+                  "description": "Spot whales, dolphins, seals, penguins, and sharks in one trip",
                   "location": "Gansbaai Coast",
                   "duration": "1 hr",
                   "image_keywords": "marine big 5 tour gansbaai coast"
@@ -2888,21 +2888,21 @@
               "specific_options": [
                 {
                   "title": "Cape of Good Hope",
-                  "description": "Experience Cape of Good Hope",
+                  "description": "Visit the iconic southwestern point of Africa",
                   "location": "Southernmost Point",
                   "duration": "1 hr",
                   "image_keywords": "cape of good hope southernmost point"
                 },
                 {
                   "title": "Boulders Beach Penguins",
-                  "description": "Experience Boulders Beach Penguins",
+                  "description": "Walk among thousands of adorable African penguins",
                   "location": "Simon's Town",
                   "duration": "1 hr",
                   "image_keywords": "boulders beach penguins simon's town"
                 },
                 {
                   "title": "Chapman's Peak Drive",
-                  "description": "Experience Chapman's Peak Drive",
+                  "description": "Drive one of the world's most scenic coastal roads",
                   "location": "Coastal Road",
                   "duration": "1 hr",
                   "image_keywords": "chapman's peak drive coastal road"
@@ -2962,21 +2962,21 @@
               "specific_options": [
                 {
                   "title": "Delaire Graff Estate",
-                  "description": "Experience Delaire Graff Estate",
+                  "description": "Luxury wine estate with art gallery and mountain lodge",
                   "location": "Helshoogte Pass",
                   "duration": "1 hr",
                   "image_keywords": "delaire graff estate helshoogte pass"
                 },
                 {
                   "title": "Tokara Wine Estate",
-                  "description": "Experience Tokara Wine Estate",
+                  "description": "Modern tasting room with olive oil and deli tastings",
                   "location": "Helshoogte",
                   "duration": "1 hr",
                   "image_keywords": "tokara wine estate helshoogte"
                 },
                 {
                   "title": "Waterford Estate",
-                  "description": "Experience Waterford Estate",
+                  "description": "Innovative wine and chocolate pairing experiences",
                   "location": "Blaauwklippen Road",
                   "duration": "1 hr",
                   "image_keywords": "waterford estate blaauwklippen road"
@@ -3008,21 +3008,21 @@
               "specific_options": [
                 {
                   "title": "Swartboskloof Trail",
-                  "description": "Experience Swartboskloof Trail",
+                  "description": "Scenic valley hike through indigenous forest",
                   "location": "Main Valley",
                   "duration": "1 hr",
                   "image_keywords": "swartboskloof trail main valley"
                 },
                 {
                   "title": "Panorama Trail",
-                  "description": "Experience Panorama Trail",
+                  "description": "Ridge walk offering sweeping vineyard and mountain views",
                   "location": "Ridge Route",
                   "duration": "1 hr",
                   "image_keywords": "panorama trail ridge route"
                 },
                 {
                   "title": "Waterfall Trail",
-                  "description": "Experience Waterfall Trail",
+                  "description": "Follow the river to cascading mountain waterfalls",
                   "location": "River Path",
                   "duration": "1 hr",
                   "image_keywords": "waterfall trail river path"
@@ -3054,21 +3054,21 @@
               "specific_options": [
                 {
                   "title": "Rupert Museum",
-                  "description": "Experience Rupert Museum",
+                  "description": "South African art collection in historic Stellenbosch",
                   "location": "Dorp Street",
                   "duration": "1 hr",
                   "image_keywords": "rupert museum dorp street"
                 },
                 {
                   "title": "Stellenbosch University Museum",
-                  "description": "Experience Stellenbosch University Museum",
+                  "description": "Dutch colonial artifacts and cultural history",
                   "location": "Ryneveld Street",
                   "duration": "1 hr",
                   "image_keywords": "stellenbosch university museum ryneveld street"
                 },
                 {
                   "title": "Village Museum",
-                  "description": "Experience Village Museum",
+                  "description": "Four historic houses showing 200 years of Cape life",
                   "location": "Historic Houses",
                   "duration": "1 hr",
                   "image_keywords": "village museum historic houses"
@@ -3128,21 +3128,21 @@
               "specific_options": [
                 {
                   "title": "Early Morning Drive",
-                  "description": "Experience Early Morning Drive",
+                  "description": "Best time to spot predators returning from night hunts",
                   "location": "Skukuza Area",
                   "duration": "1 hr",
                   "image_keywords": "early morning drive skukuza area"
                 },
                 {
                   "title": "Full Day Safari",
-                  "description": "Experience Full Day Safari",
+                  "description": "Cover more ground with packed breakfast, lunch, and two game drives",
                   "location": "Southern Circuit",
                   "duration": "1 hr",
                   "image_keywords": "full day safari southern circuit"
                 },
                 {
                   "title": "Night Drive",
-                  "description": "Experience Night Drive",
+                  "description": "Spotlights reveal nocturnal wildlife—hyenas, civets, bushbabies",
                   "location": "Nocturnal Wildlife",
                   "duration": "1 hr",
                   "image_keywords": "night drive nocturnal wildlife"
@@ -3174,21 +3174,21 @@
               "specific_options": [
                 {
                   "title": "Wilderness Trail",
-                  "description": "Experience Wilderness Trail",
+                  "description": "Multi-day walking safari staying in rustic bush camps",
                   "location": "Guided Walk",
                   "duration": "1 hr",
                   "image_keywords": "wilderness trail guided walk"
                 },
                 {
                   "title": "Tracker Experience",
-                  "description": "Experience Tracker Experience",
+                  "description": "Learn to read animal signs and tracks with expert guides",
                   "location": "Private Reserve",
                   "duration": "1 hr",
                   "image_keywords": "tracker experience private reserve"
                 },
                 {
                   "title": "Bushcraft Skills",
-                  "description": "Experience Bushcraft Skills",
+                  "description": "Ranger training in survival, tracking, and bushcraft",
                   "location": "Ranger Training",
                   "duration": "1 hr",
                   "image_keywords": "bushcraft skills ranger training"
@@ -3220,21 +3220,21 @@
               "specific_options": [
                 {
                   "title": "Sunset Drive & Drinks",
-                  "description": "Experience Sunset Drive & Drinks",
+                  "description": "Game drive ending with sundowners overlooking the savanna",
                   "location": "Sabi Sands",
                   "duration": "1 hr",
                   "image_keywords": "sunset drive & drinks sabi sands"
                 },
                 {
                   "title": "Bush Dinner",
-                  "description": "Experience Bush Dinner",
+                  "description": "Dine under the stars around a fire in the African wilderness",
                   "location": "Under the Stars",
                   "duration": "1 hr",
                   "image_keywords": "bush dinner under the stars"
                 },
                 {
                   "title": "Luxury Lodge Experience",
-                  "description": "Experience Luxury Lodge Experience",
+                  "description": "Stay in a five-star private game lodge with gourmet dining",
                   "location": "Private Reserve",
                   "duration": "1 hr",
                   "image_keywords": "luxury lodge experience private reserve"
