@@ -17,6 +17,7 @@ import { NeighborhoodDetailPage } from './pages/NeighborhoodDetailPage'
 import { CityDetailPage } from './pages/CityDetailPage'
 import { TripPlanningPage } from './pages/TripPlanningPage'
 import { TripCompanionFlow } from './pages/TripCompanionFlow'
+import { TripCompanionFlowPhase1 } from './pages/TripCompanionFlowPhase1'
 
 // Simple Ask Verso placeholder
 const AskVersoPage = () => (
