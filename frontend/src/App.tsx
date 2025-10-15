@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Layout } from './components/Layout'
-import { VaultViewPage } from './pages/VaultViewPage'
+import { GlobeExplorePage } from './pages/GlobeExplorePage'
 import { VaultDetailPage } from './pages/VaultDetailPage'
 import { TripPageSimple } from './pages/TripPageSimple'
 import { InterestsPage } from './pages/InterestsPage'
@@ -34,7 +34,7 @@ function App() {
       <Routes>
         {/* Main Layout Routes */}
         <Route path="/" element={<Layout />}>
-          <Route index element={<VaultViewPage />} />
+          <Route index element={<GlobeExplorePage />} />
           <Route path="vault/:vaultId" element={<VaultDetailPage />} />
           <Route path="trip" element={<TripPageSimple />} />
           <Route path="ask-verso" element={<AskVersoPage />} />
