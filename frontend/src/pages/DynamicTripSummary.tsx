@@ -465,7 +465,7 @@ export const DynamicTripSummary: React.FC = () => {
                     </div>
                   ))}
                 </div>
-                <button onClick={() => handleCityDetail(city)} className="w-full bg-yellow-200 hover:bg-yellow-300 text-black text-sm font-semibold py-3 rounded-full transition-colors">
+                <button onClick={() => navigate(`/trip/city/${city.id}?name=${city.name}&days=${city.days}`)} className="w-full bg-yellow-200 hover:bg-yellow-300 text-black text-sm font-semibold py-3 rounded-full transition-colors">
                   Explore {city.name}
                 </button>
               </div>
