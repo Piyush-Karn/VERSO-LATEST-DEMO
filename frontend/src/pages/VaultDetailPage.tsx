@@ -413,7 +413,7 @@ export const VaultDetailPage: React.FC = () => {
       {/* Plan Your Trip CTA */}
       <div className="fixed bottom-20 left-4 right-4">
         <button 
-          onClick={() => navigate(`/trip/questionnaire?vault=${encodeURIComponent(vaultData.name)}`)}
+          onClick={() => navigate(`/trip/create?destination=${encodeURIComponent(vaultData.country)}&vault=${encodeURIComponent(vaultData.name)}`)}
           className="w-full bg-yellow-200 hover:bg-yellow-100 text-black font-bold py-4 rounded-full transition-all shadow-xl hover:shadow-2xl hover:scale-[1.02]"
         >
           <div className="flex items-center justify-center gap-2">
