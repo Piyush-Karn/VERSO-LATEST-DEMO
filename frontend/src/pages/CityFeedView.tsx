@@ -366,7 +366,7 @@ export const CityFeedView: React.FC = () => {
   const currentActivity = activities[currentIndex]
 
   return (
-    <div className="fixed inset-0 bg-black z-50">
+    <div className="fixed inset-0 bg-black z-40">
       {/* Background Map Layer (blurred) */}
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black opacity-25 blur-sm" />
 
