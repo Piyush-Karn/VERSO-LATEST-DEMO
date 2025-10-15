@@ -265,7 +265,7 @@ export const TripCompanionFlow: React.FC = () => {
                   </p>
                 </div>
                 
-                <div className="grid grid-cols-4 gap-3 mb-4">
+                <div className="grid grid-cols-4 gap-3">
                   {MONTHS.map((month) => (
                     <button
                       key={month}
@@ -282,13 +282,38 @@ export const TripCompanionFlow: React.FC = () => {
                 </div>
                 
                 {tripContext.travelMonth === 'Mar' && (
-                  <p className="text-gray-400 text-sm italic">
-                    ✨ Perfect choice — March is ideal for cherry blossoms
+                  <p className="text-gray-400 text-sm italic mt-4">
+                    March is ideal for cherry blossoms
                   </p>
                 )}
               </div>
+            </div>
 
-              {/* Question 2: Who */}
+            {/* Bottom CTA */}
+            <div className="p-6 border-t border-gray-800">
+              <button
+                onClick={() => setPhase('who')}
+                className="w-full bg-yellow-200 hover:bg-yellow-300 text-black font-semibold py-4 rounded-full transition-all hover:scale-105"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+        )
+
+      case 'who':
+        return (
+          <div className="min-h-screen bg-black text-white flex flex-col">
+            {/* Hero Destination Card */}
+            <div className="p-6 border-b border-gray-800">
+              <div className="bg-gradient-to-br from-yellow-900/20 to-purple-900/20 rounded-2xl p-6 border border-yellow-500/20">
+                <h1 className="text-3xl font-bold mb-2">{tripContext.destination}</h1>
+                <p className="text-gray-400 text-sm">Let's shape your journey together</p>
+              </div>
+            </div>
+
+            {/* Question: Who */}
+            <div className="flex-1 p-6 flex flex-col justify-center animate-fade-in">
               <div>
                 <div className="flex items-center gap-2 mb-6">
                   <Users size={20} className="text-yellow-200" />
