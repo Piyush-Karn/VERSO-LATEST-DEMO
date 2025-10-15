@@ -59,8 +59,44 @@ export const VaultDetailPage: React.FC = () => {
   const { vaultId } = useParams<{ vaultId: string }>()
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState<'cities' | 'categories' | 'seasons'>('cities')
+  const [cityImages, setCityImages] = useState<Record<string, PexelsPhoto[]>>({})
+  const [categoryImages, setCategoryImages] = useState<Record<string, PexelsPhoto[]>>({})
+  const [loading, setLoading] = useState(false)
 
   const vaultData = vaultId ? MOCK_VAULT_DATA[vaultId] : null
+
+  // Fetch images when tab changes
+  useEffect(() => {
+    if (!vaultData) return
+
+    const loadImages = async () => {
+      setLoading(true)
+      
+      if (activeTab === 'cities' && Object.keys(cityImages).length === 0) {
+        // Fetch images for all cities
+        const images: Record<string, PexelsPhoto[]> = {}
+        for (const city of vaultData.cities) {
+          const photos = await fetchPexelsImages(`${city} ${vaultData.country} travel`, 5)
+          images[city] = photos
+        }
+        setCityImages(images)
+      }
+
+      if (activeTab === 'categories' && Object.keys(categoryImages).length === 0) {
+        // Fetch images for all categories
+        const images: Record<string, PexelsPhoto[]> = {}
+        for (const category of vaultData.categories) {
+          const photos = await fetchPexelsImages(`${category} ${vaultData.country}`, 5)
+          images[category] = photos
+        }
+        setCategoryImages(images)
+      }
+
+      setLoading(false)
+    }
+
+    loadImages()
+  }, [activeTab, vaultData])
 
   if (!vaultId || !vaultData) {
     return (
