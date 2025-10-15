@@ -316,48 +316,6 @@ export const VaultDetailPage: React.FC = () => {
           </div>
         )}
 
-        {activeTab === 'neighborhoods' && (
-          <div>
-            <p className="text-gray-400 text-sm mb-6">
-              Discover where to stay in {vaultData.country}
-            </p>
-            {(() => {
-              // Get neighborhoods for this country/city
-              const countryKey = vaultData.country?.toLowerCase() || ''
-              const citiesData = vaultData.cities || []
-              
-              // Aggregate neighborhoods from all cities
-              const allNeighborhoods: any[] = []
-              citiesData.forEach((city: string) => {
-                const cityKey = city.toLowerCase()
-                const hoods = (neighborhoodsData.neighborhoods as any)[cityKey] || []
-                allNeighborhoods.push(...hoods)
-              })
-
-              if (allNeighborhoods.length === 0) {
-                return (
-                  <div className="text-center py-12">
-                    <MapPin size={48} className="text-gray-600 mx-auto mb-4" />
-                    <p className="text-gray-500">No neighborhoods data available yet</p>
-                  </div>
-                )
-              }
-
-              return (
-                <div className="space-y-6">
-                  {allNeighborhoods.map((neighborhood) => (
-                    <NeighborhoodCard
-                      key={neighborhood.neighbourhood_id}
-                      neighborhood={neighborhood}
-                      onClick={() => navigate(`/neighborhood/${neighborhood.city.toLowerCase()}/${neighborhood.neighbourhood_id}`)}
-                    />
-                  ))}
-                </div>
-              )
-            })()}
-          </div>
-        )}
-
         {activeTab === 'things_to_do' && (
           <div>
             <p className="text-gray-400 text-sm mb-4">
