@@ -82,9 +82,12 @@ const DEMO_STAYS: StayOption[] = [
 
 export const TripCompanionFlow: React.FC = () => {
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
+  const destinationParam = searchParams.get('destination') || 'Kyoto'
+  
   const [phase, setPhase] = useState<FlowPhase>('context')
   const [tripContext, setTripContext] = useState<TripContext>({
-    destination: 'Kyoto',
+    destination: destinationParam,
     travelMonth: 'Mar',
     travelers: 'couple',
     duration: 7,
