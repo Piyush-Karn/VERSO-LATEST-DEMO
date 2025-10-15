@@ -124,7 +124,30 @@ export const NeighborhoodDetailPage: React.FC = () => {
 
       {/* Content */}
       <div className="relative -mt-6 bg-gray-900 rounded-t-3xl z-20">
+        {/* Tab Navigation */}
+        <div className="flex border-b border-gray-800 sticky top-0 bg-gray-900 z-10">
+          {[
+            { key: 'overview', label: 'Overview' },
+            { key: 'activities', label: 'Activities' },
+            { key: 'cafes', label: 'Cafés' }
+          ].map((tab) => (
+            <button
+              key={tab.key}
+              onClick={() => setActiveTab(tab.key as any)}
+              className={`flex-1 py-3 px-4 transition-colors ${
+                activeTab === tab.key 
+                  ? 'border-b-2 border-yellow-200 text-yellow-200' 
+                  : 'text-gray-400 hover:text-gray-300'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
         <div className="p-6 space-y-6">
+          {activeTab === 'overview' && (
+            <>
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-4">
             <div className="bg-gray-800 rounded-xl p-4 text-center">
