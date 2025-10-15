@@ -19,6 +19,7 @@ import { TripPlanningPage } from './pages/TripPlanningPage'
 import { TripCompanionFlow } from './pages/TripCompanionFlow'
 import { TripCompanionFlowPhase1 } from './pages/TripCompanionFlowPhase1'
 import { DynamicTripSummary } from './pages/DynamicTripSummary'
+import { CityExplorationPage } from './pages/CityExplorationPage'
 
 // Simple Ask Verso placeholder
 const AskVersoPage = () => (
