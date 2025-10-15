@@ -357,13 +357,19 @@ export const VaultDetailPage: React.FC = () => {
           </div>
         )}
 
-        {activeTab === 'seasons' && (
+        {activeTab === 'things_to_do' && (
           <div>
-            <p className="text-gray-400 text-sm mb-6">
-              Best times to visit {vaultData.country}
+            <p className="text-gray-400 text-sm mb-4">
+              Experiences and activities across {vaultData.country}
             </p>
-            <div className="space-y-6">
-              {vaultData.seasons.map((season: any, idx: number) => (
+            {loading && (
+              <div className="flex items-center justify-center py-12">
+                <Loader2 className="animate-spin text-yellow-200" size={32} />
+              </div>
+            )}
+            {!loading && (
+              <div className="space-y-4">
+                {vaultData.categories.map((category: string, idx: number) => (
                 <div 
                   key={season.month} 
                   className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-6 border border-gray-700 overflow-hidden"
