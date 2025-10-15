@@ -208,28 +208,52 @@ export const VaultDetailPage: React.FC = () => {
             <p className="text-gray-400 text-sm mb-4">
               Browse by type of experience
             </p>
-            <div className="grid grid-cols-2 gap-4">
-              {vaultData.categories.map((category: string, idx: number) => (
-                <button
-                  key={category}
-                  onClick={() => navigate(`/vault/${vaultId}/category/${encodeURIComponent(category)}`)}
-                  className="bg-gray-900 rounded-xl p-6 hover:bg-gray-800 transition-all hover:scale-105 border border-gray-800"
-                >
-                  <div 
-                    className={`w-14 h-14 rounded-lg mx-auto mb-3 ${
-                      idx % 4 === 0 ? 'bg-gradient-to-br from-blue-500 to-purple-600' :
-                      idx % 4 === 1 ? 'bg-gradient-to-br from-green-500 to-teal-600' :
-                      idx % 4 === 2 ? 'bg-gradient-to-br from-orange-500 to-red-600' :
-                      'bg-gradient-to-br from-pink-500 to-purple-600'
-                    }`}
-                  />
-                  <h3 className="font-semibold text-white text-sm">{category}</h3>
-                  <p className="text-gray-400 text-xs mt-1">
-                    {Math.floor(Math.random() * 8) + 2} saved
-                  </p>
-                </button>
-              ))}
-            </div>
+            {loading && (
+              <div className="flex items-center justify-center py-12">
+                <Loader2 className="animate-spin text-yellow-200" size={32} />
+              </div>
+            )}
+            {!loading && (
+              <div className="space-y-4">
+                {vaultData.categories.map((category: string) => (
+                  <button
+                    key={category}
+                    onClick={() => navigate(`/vault/${vaultId}/category/${encodeURIComponent(category)}`)}
+                    className="w-full bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all hover:scale-[1.02]"
+                  >
+                    {/* Horizontal Image Scroll */}
+                    <div className="flex overflow-x-auto gap-1 h-32 bg-gray-800 scrollbar-hide">
+                      {categoryImages[category] && categoryImages[category].length > 0 ? (
+                        categoryImages[category].slice(0, 5).map((photo) => (
+                          <div
+                            key={photo.id}
+                            className="flex-shrink-0 w-32 h-full relative"
+                          >
+                            <img
+                              src={photo.src.small}
+                              alt={category}
+                              className="absolute inset-0 w-full h-full object-cover"
+                            />
+                          </div>
+                        ))
+                      ) : (
+                        <div className="flex items-center justify-center w-full h-full">
+                          <Compass className="text-gray-600" size={36} />
+                        </div>
+                      )}
+                    </div>
+                    
+                    {/* Category Info */}
+                    <div className="p-4 text-left">
+                      <h3 className="font-bold text-white mb-1">{category}</h3>
+                      <p className="text-gray-400 text-sm">
+                        {Math.floor(Math.random() * 8) + 2} places saved
+                      </p>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         )}
 
