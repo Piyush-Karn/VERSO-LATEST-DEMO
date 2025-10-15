@@ -53,12 +53,12 @@
             {
               "experience_id": "tokyo-1",
               "title": "Shibuya Crossing Food Tour",
-              "subtitle": "Experience Shibuya Crossing Food Tour",
-              "description": "Discover the magic of Shibuya Crossing Food Tour. An unforgettable experience awaits.",
+              "subtitle": "Navigate the world's busiest intersection, then disappear into hidden alleys",
+              "description": "The scramble of a thousand footsteps fades as you slip into narrow lanes. Steam rises from ramen bowls. Tiny izakayas hum with quiet laughter. This is Tokyo at street level—alive, intimate, delicious.",
               "location": "Shibuya",
               "duration": "2 hrs",
               "cost_range": "low-mid",
-              "best_time": "Anytime",
+              "best_time": "Evening (6-9 PM)",
               "tags": [
                 "Food",
                 "Culture",
@@ -68,38 +68,44 @@
               "specific_options": [
                 {
                   "title": "Ichiran Ramen Experience",
-                  "description": "Experience Ichiran Ramen Experience",
+                  "description": "Solo dining booths, personal attention, perfect tonkotsu broth",
                   "location": "Shibuya Center-gai",
-                  "duration": "1 hr",
-                  "image_keywords": "ichiran ramen experience shibuya center-gai"
+                  "duration": "45 min",
+                  "image_keywords": "ichiran ramen shibuya solo booth tokyo"
                 },
                 {
                   "title": "Takoyaki Stand Tour",
-                  "description": "Experience Takoyaki Stand Tour",
+                  "description": "Crispy octopus balls fresh off the griddle, bonito flakes dancing in the heat",
                   "location": "Shibuya Station Exit 8",
-                  "duration": "1 hr",
-                  "image_keywords": "takoyaki stand tour shibuya station exit 8"
+                  "duration": "30 min",
+                  "image_keywords": "takoyaki street food tokyo crispy octopus"
                 },
                 {
                   "title": "Izakaya Hopping",
-                  "description": "Experience Izakaya Hopping",
+                  "description": "Tiny bars, cold beer, locals at the counter—the real Tokyo nightlife",
                   "location": "Nonbei Yokocho Alley",
-                  "duration": "1 hr",
-                  "image_keywords": "izakaya hopping nonbei yokocho alley"
+                  "duration": "1.5 hrs",
+                  "image_keywords": "nonbei yokocho tokyo izakaya bar alley night"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Fuglen Tokyo for morning coffee",
+                "%Arabica Tokyo for minimalist views"
+              ],
+              "related_activities": [
+                "tokyo-2",
+                "tokyo-3"
+              ]
             },
             {
               "experience_id": "tokyo-2",
               "title": "Senso-ji Temple & Asakusa",
-              "subtitle": "Experience Senso-ji Temple & Asakusa",
-              "description": "Discover the magic of Senso-ji Temple & Asakusa. An unforgettable experience awaits.",
+              "subtitle": "Tokyo's oldest temple, where pilgrims and tourists walk the same path",
+              "description": "Incense smoke curls upward. Red lanterns glow against morning sky. Nakamise Street hums with vendors selling traditional sweets. Here, old Tokyo persists—unhurried, reverent, timeless.",
               "location": "Asakusa",
               "duration": "3 hrs",
               "cost_range": "low",
-              "best_time": "Anytime",
+              "best_time": "Early morning (7-9 AM)",
               "tags": [
                 "Culture",
                 "History",
@@ -109,38 +115,44 @@
               "specific_options": [
                 {
                   "title": "Temple Morning Prayer",
-                  "description": "Experience Temple Morning Prayer",
+                  "description": "Join monks in chanting as sunrise light filters through temple gates",
                   "location": "Senso-ji Main Hall",
-                  "duration": "1 hr",
-                  "image_keywords": "temple morning prayer senso-ji main hall"
+                  "duration": "30 min",
+                  "image_keywords": "sensoji temple morning prayer tokyo monks"
                 },
                 {
                   "title": "Nakamise Street Shopping",
-                  "description": "Experience Nakamise Street Shopping",
+                  "description": "250 meters of tradition—handmade crafts, sweet bean cakes, vintage postcards",
                   "location": "Nakamise-dori",
                   "duration": "1 hr",
-                  "image_keywords": "nakamise street shopping nakamise-dori"
+                  "image_keywords": "nakamise street asakusa shopping traditional tokyo"
                 },
                 {
                   "title": "Rickshaw Tour",
-                  "description": "Experience Rickshaw Tour",
+                  "description": "Glide through backstreets while your guide shares neighborhood secrets",
                   "location": "Asakusa Station",
-                  "duration": "1 hr",
-                  "image_keywords": "rickshaw tour asakusa station"
+                  "duration": "30-60 min",
+                  "image_keywords": "asakusa rickshaw tour tokyo traditional"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Blue Bottle Roppongi",
+                "Local tea houses on temple grounds"
+              ],
+              "related_activities": [
+                "tokyo-1",
+                "tokyo-3"
+              ]
             },
             {
               "experience_id": "tokyo-3",
               "title": "TeamLab Borderless",
-              "subtitle": "Experience TeamLab Borderless",
-              "description": "Discover the magic of TeamLab Borderless. An unforgettable experience awaits.",
+              "subtitle": "Step into a living digital dreamscape where art flows around you",
+              "description": "Walls dissolve. Flowers bloom across your feet. Light cascades like water. This isn't a museum—it's an alternate universe where technology breathes, and wonder is the only rule.",
               "location": "Odaiba",
               "duration": "3 hrs",
               "cost_range": "mid-high",
-              "best_time": "Anytime",
+              "best_time": "Weekday afternoons (fewer crowds)",
               "tags": [
                 "Art",
                 "Technology",
@@ -150,47 +162,53 @@
               "specific_options": [
                 {
                   "title": "Crystal Universe",
-                  "description": "Experience Crystal Universe",
+                  "description": "Walk among infinite LED lights, creating constellations with your smartphone",
                   "location": "Main Gallery",
-                  "duration": "1 hr",
-                  "image_keywords": "crystal universe main gallery"
+                  "duration": "20 min",
+                  "image_keywords": "teamlab crystal universe tokyo led lights infinite"
                 },
                 {
                   "title": "Forest of Resonating Lamps",
-                  "description": "Experience Forest of Resonating Lamps",
+                  "description": "Lanterns glow and ripple outward as you pass, creating waves of light",
                   "location": "East Wing",
-                  "duration": "1 hr",
-                  "image_keywords": "forest of resonating lamps east wing"
+                  "duration": "15 min",
+                  "image_keywords": "teamlab forest lamps tokyo glowing interactive"
                 },
                 {
                   "title": "Athletics Forest",
-                  "description": "Experience Athletics Forest",
+                  "description": "Playful installations that respond to movement—climb, jump, slide through art",
                   "location": "Interactive Zone",
-                  "duration": "1 hr",
-                  "image_keywords": "athletics forest interactive zone"
+                  "duration": "45 min",
+                  "image_keywords": "teamlab athletics forest tokyo interactive play"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "EN Tea room inside TeamLab",
+                "Waterfront cafés in Odaiba"
+              ],
+              "related_activities": [
+                "tokyo-1",
+                "tokyo-2"
+              ]
             }
           ],
           "cafes": [
             {
               "name": "%Arabica Tokyo",
               "notes": "Minimalist specialty coffee with city views",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Quiet, focused, modern",
               "image_keywords": "arabica coffee tokyo minimalist interior"
             },
             {
               "name": "Fuglen Tokyo",
               "notes": "Norwegian-Japanese coffee bar in Shibuya",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Eclectic, warm, timeless",
               "image_keywords": "fuglen tokyo coffee bar interior"
             },
             {
               "name": "Blue Bottle Roppongi",
               "notes": "Sleek café in art district",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Calm, refined, artistic",
               "image_keywords": "blue bottle tokyo roppongi cafe"
             }
           ],
@@ -204,12 +222,12 @@
             {
               "experience_id": "kyoto-1",
               "title": "Fushimi Inari Shrine Hike",
-              "subtitle": "Experience Fushimi Inari Shrine Hike",
-              "description": "Discover the magic of Fushimi Inari Shrine Hike. An unforgettable experience awaits.",
+              "subtitle": "Ten thousand vermillion gates lead you up the sacred mountain",
+              "description": "Each torii gate is a donated prayer. As you climb, the crowd thins. By mid-mountain, there's only birdsong, mossy stone foxes, and endless red tunnels glowing in dappled light.",
               "location": "Fushimi",
               "duration": "3 hrs",
               "cost_range": "low",
-              "best_time": "Anytime",
+              "best_time": "Early morning (6-8 AM) or late afternoon",
               "tags": [
                 "Hiking",
                 "Culture",
@@ -219,38 +237,44 @@
               "specific_options": [
                 {
                   "title": "Full Mountain Circuit",
-                  "description": "Experience Full Mountain Circuit",
+                  "description": "Complete the sacred loop to the summit—4km of gates, forest, and foxes",
                   "location": "Summit Path",
-                  "duration": "1 hr",
-                  "image_keywords": "full mountain circuit summit path"
+                  "duration": "2-3 hrs",
+                  "image_keywords": "fushimi inari summit hike kyoto mountain torii"
                 },
                 {
                   "title": "Lower Shrine Tour",
-                  "description": "Experience Lower Shrine Tour",
+                  "description": "Stay below for the iconic gates and temple complex—easier, still magical",
                   "location": "Main Gates",
                   "duration": "1 hr",
-                  "image_keywords": "lower shrine tour main gates"
+                  "image_keywords": "fushimi inari main shrine kyoto gates entrance"
                 },
                 {
                   "title": "Sunrise Photography",
-                  "description": "Experience Sunrise Photography",
+                  "description": "Arrive before dawn to catch golden hour light streaming through the gates",
                   "location": "Mid-Mountain Viewpoint",
-                  "duration": "1 hr",
-                  "image_keywords": "sunrise photography mid-mountain viewpoint"
+                  "duration": "1.5 hrs",
+                  "image_keywords": "fushimi inari sunrise golden hour kyoto photography"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "%Arabica Kyoto near Yasaka Pagoda",
+                "Traditional tea stalls at mountain rest points"
+              ],
+              "related_activities": [
+                "kyoto-2",
+                "kyoto-3"
+              ]
             },
             {
               "experience_id": "kyoto-2",
               "title": "Arashiyama Bamboo Grove",
-              "subtitle": "Experience Arashiyama Bamboo Grove",
-              "description": "Discover the magic of Arashiyama Bamboo Grove. An unforgettable experience awaits.",
+              "subtitle": "Walk through towering green stalks that creak and whisper in the wind",
+              "description": "Sunlight filters green. The air cools. Bamboo rises like cathedral columns, swaying, creaking, alive. It's otherworldly—a forest that feels like walking into a scroll painting.",
               "location": "Arashiyama",
               "duration": "2 hrs",
               "cost_range": "low",
-              "best_time": "Anytime",
+              "best_time": "Early morning (7-9 AM)",
               "tags": [
                 "Nature",
                 "Photography",
@@ -260,38 +284,44 @@
               "specific_options": [
                 {
                   "title": "Morning Grove Walk",
-                  "description": "Experience Morning Grove Walk",
+                  "description": "Stroll the main path before crowds arrive—serene, silent, surreal",
                   "location": "Main Path",
-                  "duration": "1 hr",
-                  "image_keywords": "morning grove walk main path"
+                  "duration": "30 min",
+                  "image_keywords": "arashiyama bamboo pathway morning kyoto quiet empty"
                 },
                 {
                   "title": "Tenryu-ji Temple Visit",
-                  "description": "Experience Tenryu-ji Temple Visit",
+                  "description": "A UNESCO World Heritage site with a pond garden designed for walking meditation",
                   "location": "Temple Entrance",
-                  "duration": "1 hr",
-                  "image_keywords": "tenryu-ji temple visit temple entrance"
+                  "duration": "45 min",
+                  "image_keywords": "tenryuji temple garden arashiyama kyoto pond zen"
                 },
                 {
                   "title": "Togetsukyo Bridge",
-                  "description": "Experience Togetsukyo Bridge",
+                  "description": "Cross the iconic wooden bridge over the Katsura River—mountain views all around",
                   "location": "River Crossing",
-                  "duration": "1 hr",
-                  "image_keywords": "togetsukyo bridge river crossing"
+                  "duration": "20 min",
+                  "image_keywords": "togetsukyo bridge arashiyama kyoto river wooden"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Weekenders Coffee in traditional machiya",
+                "%Arabica with Yasaka Pagoda views"
+              ],
+              "related_activities": [
+                "kyoto-1",
+                "kyoto-3"
+              ]
             },
             {
               "experience_id": "kyoto-3",
               "title": "Traditional Tea Ceremony",
-              "subtitle": "Experience Traditional Tea Ceremony",
-              "description": "Discover the magic of Traditional Tea Ceremony. An unforgettable experience awaits.",
+              "subtitle": "A quiet ritual of matcha, sweets, and centuries of mindfulness",
+              "description": "You kneel on tatami. A host whisks matcha in slow, deliberate arcs. Each gesture is precise, purposeful. For one hour, the world shrinks to the sound of bamboo on ceramic.",
               "location": "Gion",
               "duration": "1.5 hrs",
               "cost_range": "mid-high",
-              "best_time": "Anytime",
+              "best_time": "Afternoon (2-4 PM)",
               "tags": [
                 "Culture",
                 "Traditional",
@@ -301,47 +331,53 @@
               "specific_options": [
                 {
                   "title": "Camellia Tea House",
-                  "description": "Experience Camellia Tea House",
+                  "description": "Intimate ceremony in a restored machiya with English-speaking tea master",
                   "location": "Gion Higashiyama",
                   "duration": "1 hr",
-                  "image_keywords": "camellia tea house gion higashiyama"
+                  "image_keywords": "camellia tea house kyoto ceremony traditional matcha"
                 },
                 {
                   "title": "En Tea Ceremony",
-                  "description": "Experience En Tea Ceremony",
+                  "description": "Held within Kennin-ji Temple grounds—temple tour included",
                   "location": "Kennin-ji Temple",
-                  "duration": "1 hr",
-                  "image_keywords": "en tea ceremony kennin-ji temple"
+                  "duration": "1.5 hrs",
+                  "image_keywords": "kennin-ji temple tea ceremony kyoto zen garden"
                 },
                 {
                   "title": "Machiya Experience",
-                  "description": "Experience Machiya Experience",
+                  "description": "Private ceremony in a traditional wooden townhouse, Hanamikoji Street setting",
                   "location": "Hanamikoji Street",
                   "duration": "1 hr",
-                  "image_keywords": "machiya experience hanamikoji street"
+                  "image_keywords": "machiya tea ceremony gion kyoto traditional house"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Inoda Coffee Honten (historic since 1940)",
+                "Weekenders Coffee"
+              ],
+              "related_activities": [
+                "kyoto-1",
+                "kyoto-2"
+              ]
             }
           ],
           "cafes": [
             {
               "name": "%Arabica Kyoto",
               "notes": "Iconic coffee spot near Yasaka Pagoda",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Busy, photogenic, excellent espresso",
               "image_keywords": "arabica kyoto pagoda view coffee"
             },
             {
               "name": "Weekenders Coffee",
               "notes": "Specialty roastery in traditional house",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Peaceful, artisan, local favorite",
               "image_keywords": "weekenders coffee kyoto traditional interior"
             },
             {
               "name": "Inoda Coffee Honten",
               "notes": "Historic Kyoto coffee institution since 1940",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Nostalgic, warm, unhurried",
               "image_keywords": "inoda coffee kyoto vintage interior"
             }
           ],
@@ -355,12 +391,12 @@
             {
               "experience_id": "osaka-1",
               "title": "Dotonbori Food Street",
-              "subtitle": "Experience Dotonbori Food Street",
-              "description": "Discover the magic of Dotonbori Food Street. An unforgettable experience awaits.",
+              "subtitle": "Neon-lit chaos and the best street food in Japan",
+              "description": "Glowing billboards reflect in the canal. Crowds swarm. The air smells of grilled octopus and fried dough. Welcome to Osaka's kitchen—loud, delicious, unforgettable.",
               "location": "Namba",
               "duration": "2 hrs",
               "cost_range": "low-mid",
-              "best_time": "Anytime",
+              "best_time": "Evening (7-10 PM)",
               "tags": [
                 "Food",
                 "Nightlife",
@@ -390,18 +426,24 @@
                   "image_keywords": "kushikatsu alley shinsekai district"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Lilo Coffee Roasters",
+                "Mel Coffee Roasters"
+              ],
+              "related_activities": [
+                "osaka-2",
+                "osaka-3"
+              ]
             },
             {
               "experience_id": "osaka-2",
               "title": "Osaka Castle & Park",
-              "subtitle": "Experience Osaka Castle & Park",
-              "description": "Discover the magic of Osaka Castle & Park. An unforgettable experience awaits.",
+              "subtitle": "Golden castle rising from cherry blossom clouds",
+              "description": "The castle towers above, regal and gleaming. Below, cherry trees bloom in waves of pink. You walk the grounds, feeling centuries of history beneath your feet.",
               "location": "Chuo",
               "duration": "2.5 hrs",
               "cost_range": "low",
-              "best_time": "Anytime",
+              "best_time": "Spring (cherry blossom season)",
               "tags": [
                 "History",
                 "Architecture",
@@ -431,18 +473,23 @@
                   "image_keywords": "moat cruise castle waterway"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Brooklyn Roasting Company Kitahama"
+              ],
+              "related_activities": [
+                "osaka-1",
+                "osaka-3"
+              ]
             },
             {
               "experience_id": "osaka-3",
               "title": "Kuromon Ichiba Market",
-              "subtitle": "Experience Kuromon Ichiba Market",
-              "description": "Discover the magic of Kuromon Ichiba Market. An unforgettable experience awaits.",
+              "subtitle": "The beating heart of Osaka's food scene",
+              "description": "Vendors call out. Fresh fish glisten on ice. The smell of grilled seafood fills the air. You taste, you explore, you leave full and happy.",
               "location": "Nipponbashi",
               "duration": "1.5 hrs",
               "cost_range": "low-mid",
-              "best_time": "Anytime",
+              "best_time": "Morning (8-11 AM)",
               "tags": [
                 "Food",
                 "Market",
@@ -472,8 +519,13 @@
                   "image_keywords": "fruit parfait tour north section"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Lilo Coffee Roasters nearby"
+              ],
+              "related_activities": [
+                "osaka-1",
+                "osaka-2"
+              ]
             }
           ],
           "cafes": [
@@ -1054,12 +1106,12 @@
             {
               "experience_id": "canggu-1",
               "title": "Surf Lesson at Echo Beach",
-              "subtitle": "Experience Surf Lesson at Echo Beach",
-              "description": "Discover the magic of Surf Lesson at Echo Beach. An unforgettable experience awaits.",
+              "subtitle": "Ride your first wave on Bali's most iconic surf break",
+              "description": "The ocean roars. Instructors guide you into position. You paddle, pop up, and suddenly—you're gliding. The wave carries you, the beach rushes closer, and for ten seconds, everything else disappears.",
               "location": "Echo Beach",
               "duration": "2 hrs",
               "cost_range": "low-mid",
-              "best_time": "Anytime",
+              "best_time": "Morning (7-10 AM)",
               "tags": [
                 "Surfing",
                 "Beach",
@@ -1069,38 +1121,44 @@
               "specific_options": [
                 {
                   "title": "Beginner Group Lesson",
-                  "description": "Experience Beginner Group Lesson",
+                  "description": "Learn the basics in a supportive group—board, wetsuit, and encouragement included",
                   "location": "Echo Beach Surf School",
-                  "duration": "1 hr",
-                  "image_keywords": "beginner group lesson echo beach surf school"
+                  "duration": "2 hrs",
+                  "image_keywords": "canggu surf lesson group beginner echo beach bali"
                 },
                 {
                   "title": "Private Coaching",
-                  "description": "Experience Private Coaching",
+                  "description": "One-on-one instruction for faster progress—perfect for nervous first-timers",
                   "location": "Batu Bolong Beach",
-                  "duration": "1 hr",
-                  "image_keywords": "private coaching batu bolong beach"
+                  "duration": "2 hrs",
+                  "image_keywords": "bali surf private coaching canggu one-on-one instructor"
                 },
                 {
                   "title": "Advanced Reef Break",
-                  "description": "Experience Advanced Reef Break",
+                  "description": "For experienced surfers—tackle the faster, more challenging waves at Old Man's",
                   "location": "Old Man's",
-                  "duration": "1 hr",
-                  "image_keywords": "advanced reef break old man's"
+                  "duration": "2 hrs",
+                  "image_keywords": "old mans canggu reef break advanced surf bali"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Crate Café for post-surf açaí bowls",
+                "Betelnut Café garden seating"
+              ],
+              "related_activities": [
+                "canggu-2",
+                "canggu-3"
+              ]
             },
             {
               "experience_id": "canggu-2",
               "title": "Beach Club Hopping",
-              "subtitle": "Experience Beach Club Hopping",
-              "description": "Discover the magic of Beach Club Hopping. An unforgettable experience awaits.",
+              "subtitle": "Infinity pools, cold cocktails, and sunsets that melt into the ocean",
+              "description": "You float in an infinity pool, drink in hand, as the sun dips low. Music hums. Palm fronds sway. This is Bali at its most indulgent—effortlessly chic, perfectly lazy.",
               "location": "Canggu Coast",
               "duration": "4 hrs",
               "cost_range": "mid-high",
-              "best_time": "Anytime",
+              "best_time": "Afternoon to sunset (3-7 PM)",
               "tags": [
                 "Beach",
                 "Relaxation",
@@ -1110,38 +1168,44 @@
               "specific_options": [
                 {
                   "title": "Finns Beach Club",
-                  "description": "Experience Finns Beach Club",
+                  "description": "Massive beachfront complex—pools, cabanas, DJ sets, and Bali's longest waterslide",
                   "location": "Berawa Beach",
-                  "duration": "1 hr",
-                  "image_keywords": "finns beach club berawa beach"
+                  "duration": "2-3 hrs",
+                  "image_keywords": "finns beach club bali canggu pool sunset party"
                 },
                 {
                   "title": "The Lawn Canggu",
-                  "description": "Experience The Lawn Canggu",
+                  "description": "Boutique beach club with green lawn, ocean views, and relaxed bohemian vibes",
                   "location": "Echo Beach",
-                  "duration": "1 hr",
-                  "image_keywords": "the lawn canggu echo beach"
+                  "duration": "2 hrs",
+                  "image_keywords": "the lawn canggu beach club bali green grass ocean"
                 },
                 {
                   "title": "La Brisa",
-                  "description": "Experience La Brisa",
+                  "description": "Driftwood structures, beanbags on sand, seafood platters, and epic sunset views",
                   "location": "Echo Beach",
-                  "duration": "1 hr",
-                  "image_keywords": "la brisa echo beach"
+                  "duration": "2-3 hrs",
+                  "image_keywords": "la brisa bali canggu beach club driftwood sunset"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Revolver Espresso for morning fuel",
+                "Crate Café nearby"
+              ],
+              "related_activities": [
+                "canggu-1",
+                "canggu-3"
+              ]
             },
             {
               "experience_id": "canggu-3",
               "title": "Sunset Yoga Session",
-              "subtitle": "Experience Sunset Yoga Session",
-              "description": "Discover the magic of Sunset Yoga Session. An unforgettable experience awaits.",
+              "subtitle": "Flow through poses as the sky turns gold over the rice fields",
+              "description": "The mat beneath you. The horizon ahead. You breathe, stretch, balance. As the class ends, the sun sinks low, and you feel lighter—like you've shed something you didn't need.",
               "location": "Berawa Beach",
               "duration": "1.5 hrs",
               "cost_range": "low-mid",
-              "best_time": "Anytime",
+              "best_time": "Late afternoon (5-6:30 PM)",
               "tags": [
                 "Yoga",
                 "Wellness",
@@ -1151,47 +1215,53 @@
               "specific_options": [
                 {
                   "title": "The Practice Bali",
-                  "description": "Experience The Practice Bali",
+                  "description": "Popular yoga studio with rooftop shala—ocean breeze, sunset views, strong community",
                   "location": "Canggu Center",
-                  "duration": "1 hr",
-                  "image_keywords": "the practice bali canggu center"
+                  "duration": "1.5 hrs",
+                  "image_keywords": "the practice bali canggu yoga rooftop sunset class"
                 },
                 {
                   "title": "Desa Seni Village",
-                  "description": "Experience Desa Seni Village",
+                  "description": "Yoga retreat in traditional wooden houses—peaceful, grounded, authentic Bali",
                   "location": "North Canggu",
-                  "duration": "1 hr",
-                  "image_keywords": "desa seni village north canggu"
+                  "duration": "1.5 hrs",
+                  "image_keywords": "desa seni bali yoga village traditional canggu retreat"
                 },
                 {
                   "title": "Serenity Eco Guesthouse",
-                  "description": "Experience Serenity Eco Guesthouse",
+                  "description": "Small, intimate classes in a lush garden setting—ideal for beginners",
                   "location": "Berawa",
                   "duration": "1 hr",
-                  "image_keywords": "serenity eco guesthouse berawa"
+                  "image_keywords": "serenity eco guesthouse canggu yoga garden peaceful"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Betelnut Café for smoothie bowls",
+                "Crate Café post-yoga brunch"
+              ],
+              "related_activities": [
+                "canggu-1",
+                "canggu-2"
+              ]
             }
           ],
           "cafes": [
             {
               "name": "Crate Café",
               "notes": "Healthy bowls and specialty coffee",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Social, health-conscious, energetic",
               "image_keywords": "crate cafe canggu interior bali breakfast"
             },
             {
               "name": "Betelnut Café",
               "notes": "Plant-based café with garden seating",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Peaceful, vegan-friendly, green",
               "image_keywords": "betelnut cafe canggu garden vegetarian"
             },
             {
               "name": "Revolver Espresso",
               "notes": "Melbourne-style coffee in Seminyak",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Minimalist, serious coffee, efficient",
               "image_keywords": "revolver espresso bali coffee shop"
             }
           ],
@@ -1205,12 +1275,12 @@
             {
               "experience_id": "ubud-1",
               "title": "Tegalalang Rice Terrace Walk",
-              "subtitle": "Experience Tegalalang Rice Terrace Walk",
-              "description": "Discover the magic of Tegalalang Rice Terrace Walk. An unforgettable experience awaits.",
+              "subtitle": "Descend into emerald layers carved by generations of Balinese farmers",
+              "description": "Mist hangs low in the valley. Rice stalks sway. The terraces cascade like green stairs to the horizon. You walk narrow ridges, palms overhead, and realize this isn't a farm—it's a living sculpture.",
               "location": "Tegalalang",
               "duration": "2 hrs",
               "cost_range": "low",
-              "best_time": "Anytime",
+              "best_time": "Sunrise (6-8 AM)",
               "tags": [
                 "Nature",
                 "Photography",
@@ -1220,38 +1290,44 @@
               "specific_options": [
                 {
                   "title": "Sunrise Trek",
-                  "description": "Experience Sunrise Trek",
+                  "description": "Arrive at dawn to catch the golden light and mist rising off the paddies",
                   "location": "Main Terrace Path",
-                  "duration": "1 hr",
-                  "image_keywords": "sunrise trek main terrace path"
+                  "duration": "1.5 hrs",
+                  "image_keywords": "tegalalang rice terrace sunrise ubud golden light mist"
                 },
                 {
                   "title": "Jungle Swing",
-                  "description": "Experience Jungle Swing",
+                  "description": "Soar above the canopy on Bali's famous swings—thrilling, photogenic, unforgettable",
                   "location": "Terrace Edge",
-                  "duration": "1 hr",
-                  "image_keywords": "jungle swing terrace edge"
+                  "duration": "30 min",
+                  "image_keywords": "bali jungle swing tegalalang rice terrace flying"
                 },
                 {
                   "title": "Coffee Plantation Tour",
-                  "description": "Experience Coffee Plantation Tour",
+                  "description": "Taste the world's most expensive coffee (Luwak) and see how it's made",
                   "location": "Adjacent Farm",
-                  "duration": "1 hr",
-                  "image_keywords": "coffee plantation tour adjacent farm"
+                  "duration": "45 min",
+                  "image_keywords": "bali luwak coffee plantation ubud tasting farm"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Café Organic with rice field views",
+                "Seniman Coffee Studio roastery"
+              ],
+              "related_activities": [
+                "ubud-2",
+                "ubud-3"
+              ]
             },
             {
               "experience_id": "ubud-2",
               "title": "Sacred Monkey Forest",
-              "subtitle": "Experience Sacred Monkey Forest",
-              "description": "Discover the magic of Sacred Monkey Forest. An unforgettable experience awaits.",
+              "subtitle": "Ancient temple ruins overtaken by jungle—and hundreds of curious macaques",
+              "description": "Monkeys leap between moss-covered statues. Stone temples crumble under vines. The forest feels alive—playful, chaotic, deeply spiritual. Watch your sunglasses. They're faster than you think.",
               "location": "Ubud Center",
               "duration": "1.5 hrs",
               "cost_range": "low",
-              "best_time": "Anytime",
+              "best_time": "Morning (8-10 AM)",
               "tags": [
                 "Wildlife",
                 "Nature",
@@ -1261,38 +1337,44 @@
               "specific_options": [
                 {
                   "title": "Morning Monkey Encounter",
-                  "description": "Experience Morning Monkey Encounter",
+                  "description": "Walk the main forest paths while macaques play, eat, and occasionally photobomb you",
                   "location": "Main Forest",
-                  "duration": "1 hr",
-                  "image_keywords": "morning monkey encounter main forest"
+                  "duration": "45 min",
+                  "image_keywords": "ubud monkey forest macaques morning bali playful"
                 },
                 {
                   "title": "Pura Dalem Temple",
-                  "description": "Experience Pura Dalem Temple",
+                  "description": "Explore the ancient Temple of Death, guarded by monkeys and shrouded in banyan roots",
                   "location": "Temple of Death",
-                  "duration": "1 hr",
-                  "image_keywords": "pura dalem temple temple of death"
+                  "duration": "20 min",
+                  "image_keywords": "pura dalem temple ubud monkey forest ancient stone"
                 },
                 {
                   "title": "Dragon Bridge",
-                  "description": "Experience Dragon Bridge",
+                  "description": "Cross the iconic stone bridge flanked by dragon sculptures and flowing stream",
                   "location": "Forest Path",
-                  "duration": "1 hr",
-                  "image_keywords": "dragon bridge forest path"
+                  "duration": "10 min",
+                  "image_keywords": "dragon bridge ubud monkey forest stone sculpture"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Clear Café for raw vegan bowls",
+                "Café Organic in the rice fields"
+              ],
+              "related_activities": [
+                "ubud-1",
+                "ubud-3"
+              ]
             },
             {
               "experience_id": "ubud-3",
               "title": "Balinese Cooking Class",
-              "subtitle": "Experience Balinese Cooking Class",
-              "description": "Discover the magic of Balinese Cooking Class. An unforgettable experience awaits.",
+              "subtitle": "From morning market to your plate—learn the art of Balinese spice",
+              "description": "You start at dawn in Ubud's market—sampling, haggling, laughing with vendors. Then, in a traditional kitchen, you chop, grind, sauté. By noon, you're eating a feast you made yourself.",
               "location": "Ubud Village",
               "duration": "4 hrs",
               "cost_range": "low-mid",
-              "best_time": "Anytime",
+              "best_time": "Morning start (8 AM)",
               "tags": [
                 "Food",
                 "Culture",
@@ -1302,47 +1384,53 @@
               "specific_options": [
                 {
                   "title": "Paon Cooking Class",
-                  "description": "Experience Paon Cooking Class",
+                  "description": "Family-run class starting at Ubud Market—authentic, welcoming, delicious",
                   "location": "Ubud Market Start",
-                  "duration": "1 hr",
-                  "image_keywords": "paon cooking class ubud market start"
+                  "duration": "5 hrs",
+                  "image_keywords": "paon cooking class ubud market bali traditional family"
                 },
                 {
                   "title": "Casa Luna",
-                  "description": "Experience Casa Luna",
+                  "description": "Legendary cooking school by Janet DeNeefe—polished, professional, flavorful",
                   "location": "Honeymoon Guesthouse",
-                  "duration": "1 hr",
-                  "image_keywords": "casa luna honeymoon guesthouse"
+                  "duration": "4 hrs",
+                  "image_keywords": "casa luna cooking class ubud bali professional kitchen"
                 },
                 {
                   "title": "Mama's Warung",
-                  "description": "Experience Mama's Warung",
+                  "description": "Intimate village experience—cook in a local family's home, eat with them after",
                   "location": "Peliatan Village",
-                  "duration": "1 hr",
-                  "image_keywords": "mama's warung peliatan village"
+                  "duration": "4 hrs",
+                  "image_keywords": "mamas warung cooking class ubud village bali home"
                 }
               ],
-              "nearby_cafes": [],
-              "related_activities": []
+              "nearby_cafes": [
+                "Seniman Coffee Studio for post-class espresso",
+                "Clear Café for light meals"
+              ],
+              "related_activities": [
+                "ubud-1",
+                "ubud-2"
+              ]
             }
           ],
           "cafes": [
             {
               "name": "Café Organic",
               "notes": "Farm-to-table healthy bowls in rice fields",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Tranquil, nourishing, Instagram-ready",
               "image_keywords": "cafe organic ubud rice field view bali"
             },
             {
               "name": "Clear Café",
               "notes": "Raw vegan café with jungle views",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Zen, wellness-focused, calm",
               "image_keywords": "clear cafe ubud vegetarian bali interior"
             },
             {
               "name": "Seniman Coffee Studio",
               "notes": "Specialty coffee roastery and training center",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Professional, artisan, community-driven",
               "image_keywords": "seniman coffee ubud roastery bali"
             }
           ],
@@ -1481,7 +1569,7 @@
             {
               "name": "Revolver Espresso",
               "notes": "Cult Melbourne-style coffee shop",
-              "vibe": "Relaxed, welcoming",
+              "vibe": "Minimalist, serious coffee, efficient",
               "image_keywords": "revolver espresso seminyak coffee bali"
             },
             {
