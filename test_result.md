@@ -178,7 +178,8 @@
 ##
 ## test_plan:
 ##   current_focus:
-##     - "Create Inspirations CRUD + Collections summaries"
+##     - "Integrate TripBottomSheet in TripPlanningPage"
+##     - "Build Companion-led Trip Creation Flow (TripCompanionFlow)"
 ##   stuck_tasks:
 ##     - "None"
 ##   test_all: false
