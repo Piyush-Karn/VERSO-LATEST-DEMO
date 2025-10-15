@@ -427,7 +427,7 @@ export const ExplorePageCinematic: React.FC = () => {
                 {MOCK_COUNTRIES.map((country) => (
                   <button
                     key={country.id}
-                    onClick={() => navigate(`/country/${encodeURIComponent(country.name)}`)}
+                    onClick={() => navigate(`/vault/${country.id}`)}
                     className="flex-shrink-0 w-72 h-full rounded-2xl overflow-hidden bg-gray-900 border border-gray-800 hover:border-yellow-200/50 transition-all duration-600 hover:scale-[1.02] group"
                   >
                     <div className="relative h-2/3">
