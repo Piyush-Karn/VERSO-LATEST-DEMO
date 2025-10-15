@@ -40,11 +40,13 @@ const TRAVEL_DISTANCES = [
 ]
 
 const MOCK_COUNTRIES = [
-  { id: 1, name: 'Croatia', coords: [15.2, 45.1], image: 'https://images.unsplash.com/photo-1555990538-c7d2f78f5a6f?w=800', reason: 'Perfect June weather, crystal-clear Adriatic coast' },
-  { id: 2, name: 'Japan', coords: [138.2, 36.2], image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800', reason: 'Mountain temples meet modern cities' },
-  { id: 3, name: 'Bali', coords: [115.0, -8.3], image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800', reason: 'Lush rice terraces and beach sunsets' },
+  { id: 1, name: 'Japan', coords: [138.2, 36.2], image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800', reason: 'Ancient traditions meet neon-lit modernity' },
+  { id: 2, name: 'Bali', coords: [115.0, -8.3], image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800', reason: 'Island of gods with endless summer vibes' },
+  { id: 3, name: 'Thailand', coords: [100.5, 13.7], image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800', reason: 'Vibrant street food and tropical islands' },
   { id: 4, name: 'Italy', coords: [12.5, 41.8], image: 'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800', reason: 'Ancient heritage meets culinary paradise' },
-  { id: 5, name: 'Thailand', coords: [100.5, 13.7], image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800', reason: 'Vibrant street food and tropical islands' },
+  { id: 5, name: 'Croatia', coords: [15.2, 45.1], image: 'https://images.unsplash.com/photo-1555990538-c7d2f78f5a6f?w=800', reason: 'Adriatic jewel with turquoise waters' },
+  { id: 6, name: 'New Zealand', coords: [174.8, -41.3], image: 'https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800', reason: 'Land of fjords and endless adventure' },
+  { id: 7, name: 'South Africa', coords: [18.4, -33.9], image: 'https://images.unsplash.com/photo-1484318571209-661cf29a69c3?w=800', reason: 'Safari wilderness meets coastal beauty' },
 ]
 
 type FilterType = 'time' | 'theme' | 'distance' | 'surprise' | null
