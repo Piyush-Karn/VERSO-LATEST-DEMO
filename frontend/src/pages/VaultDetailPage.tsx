@@ -196,7 +196,7 @@ export const VaultDetailPage: React.FC = () => {
                 {vaultData.cities.map((city: string, idx: number) => (
                   <button
                     key={city}
-                    onClick={() => navigate(`/vault/${vaultId}/city/${encodeURIComponent(city)}`)}
+                    onClick={() => navigate(`/city/${vaultData.country.toLowerCase()}/${city.toLowerCase()}`)}
                     className="w-full bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 hover:border-yellow-200/30 transition-all duration-700 hover:scale-[1.02] group"
                   >
                     {/* Full-bleed Hero Visual */}
