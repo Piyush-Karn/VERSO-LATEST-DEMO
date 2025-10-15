@@ -35,6 +35,7 @@ function App() {
         {/* Main Layout Routes */}
         <Route path="/" element={<Layout />}>
           <Route index element={<GlobeExplorePage />} />
+          <Route path="collections" element={<VaultViewPage />} />
           <Route path="vault/:vaultId" element={<VaultDetailPage />} />
           <Route path="trip" element={<TripPageSimple />} />
           <Route path="ask-verso" element={<AskVersoPage />} />
