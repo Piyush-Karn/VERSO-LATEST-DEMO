@@ -369,54 +369,56 @@ export const VaultDetailPage: React.FC = () => {
             )}
             {!loading && (
               <div className="space-y-4">
-                {vaultData.categories.map((category: string, idx: number) => (
-                <div 
-                  key={season.month} 
-                  className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-6 border border-gray-700 overflow-hidden"
-                >
-                  {/* Decorative background element */}
-                  <div 
-                    className="absolute top-0 right-0 w-40 h-40 opacity-5"
-                    style={{
-                      background: idx % 3 === 0 ? 'radial-gradient(circle, #FDE68A 0%, transparent 70%)' :
-                                  idx % 3 === 1 ? 'radial-gradient(circle, #93C5FD 0%, transparent 70%)' :
-                                  'radial-gradient(circle, #FCA5A5 0%, transparent 70%)'
-                    }}
-                  />
-                  
-                  <div className="relative z-10">
-                    {/* Month Badge */}
-                    <div className="inline-flex items-center gap-2 bg-black/30 px-4 py-2 rounded-full mb-4">
-                      <Calendar size={16} className="text-yellow-200" />
-                      <span className="text-sm font-semibold text-white">{season.month}</span>
-                    </div>
-
-                    {/* Highlight */}
-                    <h3 className="text-xl font-bold text-white mb-4 leading-tight">
-                      {season.highlight}
-                    </h3>
-
-                    {/* Activities */}
-                    <div className="space-y-2">
-                      <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-3">
-                        What to do
-                      </p>
-                      <div className="grid grid-cols-1 gap-2">
-                        {season.activities.map((activity: string) => (
-                          <div 
-                            key={activity}
-                            className="flex items-center gap-3 bg-black/20 backdrop-blur-sm px-4 py-3 rounded-xl border border-gray-700/50"
+                {vaultData.categories.map((category: string) => (
+                  <button
+                    key={category}
+                    onClick={() => navigate(`/vault/${vaultId}/category/${encodeURIComponent(category)}`)}
+                    className="w-full bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all hover:scale-[1.02]"
+                  >
+                    {/* Horizontal Image Scroll */}
+                    <div className="flex overflow-x-auto gap-1 h-48 bg-gray-800 scrollbar-hide">
+                      {categoryImages[category] && categoryImages[category].length > 0 ? (
+                        categoryImages[category].slice(0, 5).map((photo) => (
+                          <div
+                            key={photo.id}
+                            className="flex-shrink-0 w-48 h-full relative"
                           >
-                            <div className="w-1.5 h-1.5 rounded-full bg-yellow-200" />
-                            <span className="text-sm text-gray-200">{activity}</span>
+                            <img
+                              src={photo.src.large}
+                              alt={category}
+                              className="absolute inset-0 w-full h-full object-cover"
+                            />
                           </div>
-                        ))}
-                      </div>
+                        ))
+                      ) : (
+                        <div className="flex items-center justify-center w-full h-full">
+                          <Compass className="text-gray-600" size={36} />
+                        </div>
+                      )}
+                      
+                      {/* Seasonality Chip Overlay */}
+                      {vaultData.seasons && vaultData.seasons.length > 0 && (
+                        <div className="absolute top-4 right-4">
+                          <div className="bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
+                            <span className="text-white text-xs font-medium">
+                              ☀️ Best in {vaultData.seasons[0].month}
+                            </span>
+                          </div>
+                        </div>
+                      )}
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+                    
+                    {/* Category Info */}
+                    <div className="p-4 text-left">
+                      <h3 className="font-bold text-white mb-1">{category}</h3>
+                      <p className="text-gray-400 text-sm">
+                        {Math.floor(Math.random() * 8) + 2} experiences saved
+                      </p>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         )}
       </div>
