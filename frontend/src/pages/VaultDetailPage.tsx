@@ -376,7 +376,7 @@ export const VaultDetailPage: React.FC = () => {
                     className="w-full bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all hover:scale-[1.02]"
                   >
                     {/* Horizontal Image Scroll */}
-                    <div className="flex overflow-x-auto gap-1 h-48 bg-gray-800 scrollbar-hide">
+                    <div className="relative flex overflow-x-auto gap-1 h-48 bg-gray-800 scrollbar-hide">
                       {categoryImages[category] && categoryImages[category].length > 0 ? (
                         categoryImages[category].slice(0, 5).map((photo) => (
                           <div
@@ -398,7 +398,7 @@ export const VaultDetailPage: React.FC = () => {
                       
                       {/* Seasonality Chip Overlay */}
                       {vaultData.seasons && vaultData.seasons.length > 0 && (
-                        <div className="absolute top-4 right-4">
+                        <div className="absolute top-4 right-4 z-10">
                           <div className="bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
                             <span className="text-white text-xs font-medium">
                               ☀️ Best in {vaultData.seasons[0].month}
