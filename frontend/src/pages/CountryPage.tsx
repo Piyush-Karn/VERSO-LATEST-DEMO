@@ -137,7 +137,7 @@ export const CountryPage: React.FC = () => {
       {/* Plan Your Trip CTA */}
       <div className="fixed bottom-20 left-4 right-4">
         <button 
-          onClick={() => navigate(`/trip/questionnaire?country=${encodeURIComponent(country)}`)}
+          onClick={() => navigate(`/trip/create?destination=${encodeURIComponent(country)}`)}
           className="w-full bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-4 rounded-full transition-colors"
         >
           Plan Your Trip to {country}
