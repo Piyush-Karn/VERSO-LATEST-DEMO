@@ -248,6 +248,14 @@ export const TripPlanningPage: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Bottom Sheet */}
+      <TripBottomSheet
+        isOpen={activeSheet !== null}
+        onClose={() => setActiveSheet(null)}
+        type={activeSheet || 'days'}
+        data={trip}
+      />
     </div>
   )
 }
