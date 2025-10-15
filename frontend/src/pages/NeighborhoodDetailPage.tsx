@@ -230,8 +230,8 @@ export const NeighborhoodDetailPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Hotels Preview - Overview Tab Only */}
-          {activeTab === 'overview' && hotels.length > 0 && (
+          {/* Hotels Preview */}
+          {hotels.length > 0 && (
             <div>
               <h3 className="text-xl font-bold text-white mb-4">
                 Where to stay ({hotels.length} options)
