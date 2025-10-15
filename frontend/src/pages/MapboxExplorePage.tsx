@@ -123,25 +123,7 @@ export const MapboxExplorePage: React.FC = () => {
       })
     })
 
-    // Auto-rotate globe slowly
-    let userInteracting = false
-    const rotateSpeed = 0.15
-
-    const rotateCamera = () => {
-      if (!map.current || userInteracting) return
-      const center = map.current.getCenter()
-      center.lng += rotateSpeed
-      map.current.setCenter(center)
-      requestAnimationFrame(rotateCamera)
-    }
-
-    map.current.on('mousedown', () => { userInteracting = true })
-    map.current.on('mouseup', () => { userInteracting = false })
-    map.current.on('touchstart', () => { userInteracting = true })
-    map.current.on('touchend', () => { userInteracting = false })
-
-    // Start rotation after a moment
-    setTimeout(() => rotateCamera(), 2000)
+    // Keep globe static (no auto-rotation)
 
     // Cleanup
     return () => {
