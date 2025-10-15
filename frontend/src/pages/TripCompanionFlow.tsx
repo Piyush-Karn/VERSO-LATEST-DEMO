@@ -196,6 +196,15 @@ export const TripCompanionFlow: React.FC = () => {
   const [stayImages, setStayImages] = useState<Record<string, string>>({})
   const [loading, setLoading] = useState(false)
 
+  // Get neighborhoods and stays based on destination
+  const getNeighborhoods = () => {
+    return NEIGHBORHOODS_BY_DESTINATION[tripContext.destination] || NEIGHBORHOODS_BY_DESTINATION['default']
+  }
+
+  const getStays = () => {
+    return STAYS_BY_DESTINATION[tripContext.destination] || STAYS_BY_DESTINATION['default']
+  }
+
   // Load images when phase changes
   useEffect(() => {
     if (phase === 'neighborhood') {
@@ -208,7 +217,8 @@ export const TripCompanionFlow: React.FC = () => {
   const loadNeighborhoodImages = async () => {
     setLoading(true)
     const images: Record<string, string> = {}
-    for (const neighborhood of DEMO_NEIGHBORHOODS) {
+    const neighborhoods = getNeighborhoods()
+    for (const neighborhood of neighborhoods) {
       const photos = await fetchPexelsImages(neighborhood.image_keywords, 1)
       if (photos.length > 0) {
         images[neighborhood.id] = photos[0].src.large2x
@@ -221,7 +231,8 @@ export const TripCompanionFlow: React.FC = () => {
   const loadStayImages = async () => {
     setLoading(true)
     const images: Record<string, string> = {}
-    for (const stay of DEMO_STAYS) {
+    const stays = getStays()
+    for (const stay of stays) {
       const photos = await fetchPexelsImages(stay.image_keywords, 1)
       if (photos.length > 0) {
         images[stay.id] = photos[0].src.large2x
