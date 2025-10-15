@@ -227,9 +227,16 @@ export const VaultViewPage: React.FC = () => {
                   </div>
 
                   {/* Trip Name */}
-                  <h2 className="text-white text-4xl font-bold mb-3 leading-tight tracking-tight">
+                  <h2 className="text-white text-4xl font-bold mb-2 leading-tight tracking-tight">
                     {vault.name}
                   </h2>
+
+                  {/* Ambient Intelligence Line */}
+                  <p className="text-gray-400 text-xs mb-3 italic">
+                    {vault.collaborators > 1 
+                      ? `${vault.collaborators} collaborators updated last week.`
+                      : 'Started planning 2 days ago.'}
+                  </p>
 
                   {/* Subtext */}
                   <p className="text-gray-300 text-sm">
