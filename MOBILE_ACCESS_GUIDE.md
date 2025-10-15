@@ -19,7 +19,7 @@ Verso is built with **Vite + React** (web technologies), not Expo React Native. 
 ### Option 2: Direct URL
 Simply open this URL in your mobile browser:
 ```
-https://travel-compass-13.preview.emergentagent.com
+https://cinematic-trips.preview.emergentagent.com
 ```
 
 ### Option 3: Share Link
@@ -148,5 +148,5 @@ If issues persist:
 3. Try incognito/private mode
 4. Test on different device/browser
 
-**App URL**: https://travel-compass-13.preview.emergentagent.com  
-**QR Code**: https://travel-compass-13.preview.emergentagent.com/qr
+**App URL**: https://cinematic-trips.preview.emergentagent.com  
+**QR Code**: https://cinematic-trips.preview.emergentagent.com/qr
