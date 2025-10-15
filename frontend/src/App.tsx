@@ -11,6 +11,7 @@ import { QuestionnaireStepByStep } from './pages/QuestionnaireStepByStep'
 import { ItineraryPage } from './pages/ItineraryPage'
 import { InterestsPage } from './pages/InterestsPage'
 import { AddPage } from './pages/AddPage'
+import { QRCodePage } from './pages/QRCodePage'
 
 // Simple Ask Verso placeholder
 const AskVersoPage = () => (
