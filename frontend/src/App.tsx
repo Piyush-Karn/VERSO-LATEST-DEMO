@@ -5,6 +5,8 @@ import { MapboxExplorePage } from './pages/MapboxExplorePage'
 import { VaultViewPage } from './pages/VaultViewPage'
 import { VaultDetailPage } from './pages/VaultDetailPage'
 import { TripPageSimple } from './pages/TripPageSimple'
+import { QuestionnairePage } from './pages/QuestionnairePage'
+import { ItineraryPage } from './pages/ItineraryPage'
 import { InterestsPage } from './pages/InterestsPage'
 import { AddPage } from './pages/AddPage'
 
