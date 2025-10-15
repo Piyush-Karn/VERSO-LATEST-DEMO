@@ -121,8 +121,8 @@ export const VaultDetailPage: React.FC = () => {
         setCityImages(images)
       }
 
-      if (activeTab === 'categories' && Object.keys(categoryImages).length === 0) {
-        // Fetch images for all categories
+      if (activeTab === 'things_to_do' && Object.keys(categoryImages).length === 0) {
+        // Fetch images for all activities/categories
         const images: Record<string, PexelsPhoto[]> = {}
         for (const category of vaultData.categories) {
           const photos = await fetchPexelsImages(`${category} ${vaultData.country}`, 5)
