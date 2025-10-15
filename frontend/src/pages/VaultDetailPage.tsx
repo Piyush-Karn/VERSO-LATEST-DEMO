@@ -96,7 +96,8 @@ const MOCK_VAULT_DATA: Record<string, any> = {
 export const VaultDetailPage: React.FC = () => {
   const { vaultId } = useParams<{ vaultId: string }>()
   const navigate = useNavigate()
-  const [activeTab, setActiveTab] = useState<'cities' | 'neighborhoods' | 'categories' | 'seasons'>('cities')
+  const [activeTab, setActiveTab] = useState<'cities' | 'neighborhoods' | 'things_to_do'>('cities')
+  const [showFilterModal, setShowFilterModal] = useState(false)
   const [cityImages, setCityImages] = useState<Record<string, PexelsPhoto[]>>({})
   const [categoryImages, setCategoryImages] = useState<Record<string, PexelsPhoto[]>>({})
   const [loading, setLoading] = useState(false)
