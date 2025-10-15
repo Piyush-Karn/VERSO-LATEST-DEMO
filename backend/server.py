@@ -168,6 +168,16 @@ async def city_items(country: str, city: str, type: Optional[str] = Query(defaul
     docs = await db.inspirations.find(q).sort("created_at", -1).to_list(1000)
     return [_doc_to_inspiration(d) for d in docs]
 
+# ---- Enriched Dataset Endpoint ----
+@api_router.get("/dataset")
+async def get_enriched_dataset():
+    """Serve the enriched Verso dataset with full storytelling"""
+    import json
+    dataset_path = Path(__file__).parent.parent / 'frontend' / 'src' / 'data' / 'verso_demo_dataset.json'
+    with open(dataset_path, 'r', encoding='utf-8') as f:
+        dataset = json.load(f)
+    return dataset
+
 # Include the router in the main app
 app.include_router(api_router)
 
