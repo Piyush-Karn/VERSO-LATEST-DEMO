@@ -1,0 +1,407 @@
+{
+  "neighborhoods": {
+    "tokyo": [
+      {
+        "neighbourhood_id": "shibuya",
+        "city": "Tokyo",
+        "country": "Japan",
+        "name": "Shibuya",
+        "tagline": "Neon-lit crossings, youth culture, and endless energy",
+        "image_keywords": "shibuya crossing tokyo night neon youth culture shopping",
+        "vibe": ["energetic", "youth", "shopping", "nightlife"],
+        "best_for": ["Nightlife", "Shopping", "Street food", "First-timers"],
+        "connectivity": {
+          "to_airport": "60min",
+          "to_city_center": "10min",
+          "transport_score": 5
+        },
+        "average_price_band": "mid-high",
+        "price_range": { "min": 80, "max": 200 },
+        "recommended_stay_types": ["Boutique hotel", "Capsule hotel", "Business hotel"],
+        "top_activities": ["tokyo-1", "tokyo-3"],
+        "top_cafes": ["Fuglen Tokyo", "%Arabica Tokyo"],
+        "seasonality": ["All year"],
+        "why_stay_here": [
+          "Heart of Tokyo's youth culture and fashion",
+          "Best nightlife and entertainment",
+          "Metro access to everywhere"
+        ]
+      },
+      {
+        "neighbourhood_id": "asakusa",
+        "city": "Tokyo",
+        "country": "Japan",
+        "name": "Asakusa",
+        "tagline": "Old Tokyo charm with temples, traditional streets, and timeless calm",
+        "image_keywords": "asakusa senso-ji temple tokyo traditional lanterns nakamise",
+        "vibe": ["traditional", "calm", "cultural", "historic"],
+        "best_for": ["Culture lovers", "History buffs", "Quiet mornings", "Temple walks"],
+        "connectivity": {
+          "to_airport": "50min",
+          "to_city_center": "20min",
+          "transport_score": 4
+        },
+        "average_price_band": "mid",
+        "price_range": { "min": 60, "max": 150 },
+        "recommended_stay_types": ["Ryokan", "Traditional inn", "Budget hotel"],
+        "top_activities": ["tokyo-2"],
+        "top_cafes": ["Blue Bottle Roppongi"],
+        "seasonality": ["March", "April", "October", "November"],
+        "why_stay_here": [
+          "Experience old Tokyo atmosphere",
+          "Walking distance to major temples",
+          "Quieter than central Tokyo"
+        ]
+      }
+    ],
+    "kyoto": [
+      {
+        "neighbourhood_id": "gion",
+        "city": "Kyoto",
+        "country": "Japan",
+        "name": "Gion",
+        "tagline": "Geisha district where wooden machiya houses line lantern-lit streets",
+        "image_keywords": "gion kyoto geisha district traditional streets machiya teahouse",
+        "vibe": ["traditional", "romantic", "cultural", "premium"],
+        "best_for": ["Cultural immersion", "Fine dining", "Temple visits", "Photo walks"],
+        "connectivity": {
+          "to_airport": "90min",
+          "to_city_center": "5min",
+          "transport_score": 4
+        },
+        "average_price_band": "high",
+        "price_range": { "min": 120, "max": 300 },
+        "recommended_stay_types": ["Luxury ryokan", "Boutique hotel", "Traditional machiya"],
+        "top_activities": ["kyoto-3"],
+        "top_cafes": ["%Arabica Kyoto", "Weekenders Coffee"],
+        "seasonality": ["March", "April", "October", "November"],
+        "why_stay_here": [
+          "Most atmospheric area in Kyoto",
+          "Geisha spotting in evening",
+          "Walking distance to temples"
+        ]
+      },
+      {
+        "neighbourhood_id": "arashiyama",
+        "city": "Kyoto",
+        "country": "Japan",
+        "name": "Arashiyama",
+        "tagline": "Bamboo groves, river views, and mountain serenity on Kyoto's edge",
+        "image_keywords": "arashiyama bamboo forest kyoto river mountains nature peaceful",
+        "vibe": ["nature", "peaceful", "scenic", "retreat"],
+        "best_for": ["Nature lovers", "Hiking", "Quiet retreats", "Photography"],
+        "connectivity": {
+          "to_airport": "100min",
+          "to_city_center": "30min",
+          "transport_score": 3
+        },
+        "average_price_band": "mid-high",
+        "price_range": { "min": 90, "max": 250 },
+        "recommended_stay_types": ["Mountain ryokan", "Riverside hotel", "Temple lodging"],
+        "top_activities": ["kyoto-2"],
+        "top_cafes": ["Weekenders Coffee"],
+        "seasonality": ["March", "April", "November"],
+        "why_stay_here": [
+          "Escape the city crowds",
+          "Wake up in bamboo forest",
+          "River and mountain views"
+        ]
+      }
+    ],
+    "ubud": [
+      {
+        "neighbourhood_id": "central_ubud",
+        "city": "Ubud",
+        "country": "Bali",
+        "name": "Central Ubud",
+        "tagline": "Art galleries, yoga studios, and the pulse of Bali's cultural heart",
+        "image_keywords": "ubud center bali art galleries yoga market rice fields culture",
+        "vibe": ["cultural", "artistic", "wellness", "vibrant"],
+        "best_for": ["Yoga retreats", "Art lovers", "Wellness seekers", "Market shopping"],
+        "connectivity": {
+          "to_airport": "90min",
+          "to_city_center": "0min",
+          "transport_score": 4
+        },
+        "average_price_band": "mid",
+        "price_range": { "min": 40, "max": 120 },
+        "recommended_stay_types": ["Boutique hotel", "Yoga retreat", "Guesthouse"],
+        "top_activities": ["ubud-1", "ubud-2", "ubud-3"],
+        "top_cafes": ["Café Organic", "Clear Café", "Seniman Coffee Studio"],
+        "seasonality": ["May", "June", "July", "August", "September"],
+        "why_stay_here": [
+          "Walking distance to everything",
+          "Best restaurants and cafés",
+          "Yoga studios and wellness centers"
+        ]
+      },
+      {
+        "neighbourhood_id": "tegalalang",
+        "city": "Ubud",
+        "country": "Bali",
+        "name": "Tegalalang",
+        "tagline": "Iconic rice terraces with jungle swings and Instagram-famous views",
+        "image_keywords": "tegalalang rice terraces ubud bali green jungle swing aerial",
+        "vibe": ["nature", "scenic", "romantic", "peaceful"],
+        "best_for": ["Photography", "Nature walks", "Romantic getaways", "Quiet stays"],
+        "connectivity": {
+          "to_airport": "100min",
+          "to_city_center": "15min",
+          "transport_score": 2
+        },
+        "average_price_band": "mid-high",
+        "price_range": { "min": 60, "max": 180 },
+        "recommended_stay_types": ["Jungle villa", "Eco lodge", "Treehouse resort"],
+        "top_activities": ["ubud-1"],
+        "top_cafes": ["Café Organic"],
+        "seasonality": ["April", "May", "June", "September"],
+        "why_stay_here": [
+          "Wake up to rice terrace views",
+          "Quieter than central Ubud",
+          "Perfect for nature immersion"
+        ]
+      }
+    ],
+    "canggu": [
+      {
+        "neighbourhood_id": "echo_beach",
+        "city": "Canggu",
+        "country": "Bali",
+        "name": "Echo Beach",
+        "tagline": "Surf breaks, beach clubs, and digital nomad energy by the coast",
+        "image_keywords": "echo beach canggu bali surf sunset beach club waves nomad",
+        "vibe": ["surf", "social", "beach", "nomad"],
+        "best_for": ["Surfing", "Beach clubs", "Remote work", "Sunset sessions"],
+        "connectivity": {
+          "to_airport": "60min",
+          "to_city_center": "10min",
+          "transport_score": 3
+        },
+        "average_price_band": "mid",
+        "price_range": { "min": 35, "max": 100 },
+        "recommended_stay_types": ["Surf hostel", "Beach villa", "Co-living space"],
+        "top_activities": ["canggu-1", "canggu-2"],
+        "top_cafes": ["Crate Café", "Betelnut Café"],
+        "seasonality": ["May", "June", "July", "August"],
+        "why_stay_here": [
+          "Best surf in Bali",
+          "Strong nomad community",
+          "Beach clubs for sunset"
+        ]
+      }
+    ],
+    "phuket": [
+      {
+        "neighbourhood_id": "kata_beach",
+        "city": "Phuket",
+        "country": "Thailand",
+        "name": "Kata Beach",
+        "tagline": "Laid-back surf energy, family-friendly shores, and sunset cafés",
+        "image_keywords": "kata beach phuket thailand surf family sunset sand tropical",
+        "vibe": ["beach", "family", "surf", "laid-back"],
+        "best_for": ["Beach stays", "Surfing", "Families", "Sunset dining"],
+        "connectivity": {
+          "to_airport": "50min",
+          "to_city_center": "25min",
+          "transport_score": 3
+        },
+        "average_price_band": "mid",
+        "price_range": { "min": 50, "max": 150 },
+        "recommended_stay_types": ["Beach resort", "Boutique hotel", "Surf hostel"],
+        "top_activities": ["phuket-1"],
+        "top_cafes": ["Gallery Café"],
+        "seasonality": ["November", "December", "January", "February"],
+        "why_stay_here": [
+          "Quieter than Patong",
+          "Great for families and couples",
+          "Surf-friendly beach"
+        ]
+      },
+      {
+        "neighbourhood_id": "old_phuket_town",
+        "city": "Phuket",
+        "country": "Thailand",
+        "name": "Old Phuket Town",
+        "tagline": "Colorful Sino-Portuguese streets with street art, cafés, and heritage vibes",
+        "image_keywords": "old phuket town colorful buildings sino-portuguese street art heritage",
+        "vibe": ["cultural", "artistic", "historic", "walkable"],
+        "best_for": ["Culture lovers", "Photography", "Weekend markets", "Café hopping"],
+        "connectivity": {
+          "to_airport": "30min",
+          "to_city_center": "0min",
+          "transport_score": 4
+        },
+        "average_price_band": "low-mid",
+        "price_range": { "min": 30, "max": 90 },
+        "recommended_stay_types": ["Boutique hotel", "Heritage guesthouse", "Hostel"],
+        "top_activities": ["phuket-3"],
+        "top_cafes": ["Bookhemian", "Gallery Café"],
+        "seasonality": ["November", "December", "January", "February"],
+        "why_stay_here": [
+          "Experience authentic Phuket",
+          "Walking distance to markets",
+          "Better value than beach areas"
+        ]
+      }
+    ],
+    "bangkok": [
+      {
+        "neighbourhood_id": "sukhumvit",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "name": "Sukhumvit",
+        "tagline": "Modern Bangkok with rooftop bars, international dining, and BTS convenience",
+        "image_keywords": "sukhumvit bangkok skyline rooftop bars bts modern skyscrapers night",
+        "vibe": ["modern", "nightlife", "international", "upscale"],
+        "best_for": ["Nightlife", "Business travelers", "Shopping", "Fine dining"],
+        "connectivity": {
+          "to_airport": "40min",
+          "to_city_center": "10min",
+          "transport_score": 5
+        },
+        "average_price_band": "mid-high",
+        "price_range": { "min": 60, "max": 180 },
+        "recommended_stay_types": ["Business hotel", "Luxury hotel", "Serviced apartment"],
+        "top_activities": ["bangkok-3"],
+        "top_cafes": ["Roast Coffee & Eatery", "The Commons"],
+        "seasonality": ["November", "December", "January", "February"],
+        "why_stay_here": [
+          "Best nightlife in Bangkok",
+          "Easy BTS access everywhere",
+          "International food scene"
+        ]
+      }
+    ]
+  },
+  "hotels": {
+    "shibuya": [
+      {
+        "hotel_id": "shibuya_hotel_1",
+        "name": "sequence MIYASHITA PARK",
+        "type": "Boutique hotel",
+        "image_keywords": "sequence miyashita park shibuya tokyo modern rooftop",
+        "rating": 4.6,
+        "reviews": 890,
+        "price_per_night": { "min": 120, "max": 200 },
+        "tagline": "Rooftop park views in the heart of Shibuya",
+        "features": ["Rooftop bar", "Park access", "Modern design"]
+      },
+      {
+        "hotel_id": "shibuya_hotel_2",
+        "name": "Shibuya Granbell Hotel",
+        "type": "Design hotel",
+        "image_keywords": "granbell hotel shibuya tokyo art design",
+        "rating": 4.5,
+        "reviews": 670,
+        "price_per_night": { "min": 100, "max": 180 },
+        "tagline": "Art-focused design hotel steps from the crossing",
+        "features": ["Art gallery", "Bar", "Central location"]
+      },
+      {
+        "hotel_id": "shibuya_hotel_3",
+        "name": "The Millennials Shibuya",
+        "type": "Capsule hotel",
+        "image_keywords": "millennials capsule hotel shibuya tokyo modern pod",
+        "rating": 4.3,
+        "reviews": 1240,
+        "price_per_night": { "min": 40, "max": 70 },
+        "tagline": "Smart capsules with adjustable beds and co-working",
+        "features": ["Co-working", "Smart pods", "Budget-friendly"]
+      }
+    ],
+    "gion": [
+      {
+        "hotel_id": "gion_hotel_1",
+        "name": "SOWAKA",
+        "type": "Luxury ryokan",
+        "image_keywords": "sowaka gion kyoto luxury ryokan traditional garden",
+        "rating": 4.9,
+        "reviews": 320,
+        "price_per_night": { "min": 400, "max": 800 },
+        "tagline": "Restored sukiya mansion in the heart of Gion",
+        "features": ["Private gardens", "Kaiseki dining", "Onsen"]
+      },
+      {
+        "hotel_id": "gion_hotel_2",
+        "name": "Gion Fukuzumi",
+        "type": "Traditional ryokan",
+        "image_keywords": "gion fukuzumi kyoto ryokan traditional tatami",
+        "rating": 4.7,
+        "reviews": 450,
+        "price_per_night": { "min": 200, "max": 400 },
+        "tagline": "Family-run ryokan with authentic hospitality",
+        "features": ["Traditional rooms", "Kaiseki meals", "Central Gion"]
+      }
+    ],
+    "central_ubud": [
+      {
+        "hotel_id": "ubud_hotel_1",
+        "name": "Bisma Eight",
+        "type": "Boutique hotel",
+        "image_keywords": "bisma eight ubud bali modern pool jungle view",
+        "rating": 4.8,
+        "reviews": 1120,
+        "price_per_night": { "min": 150, "max": 300 },
+        "tagline": "Modern luxury with rice field and jungle views",
+        "features": ["Infinity pool", "Spa", "Yoga studio"]
+      },
+      {
+        "hotel_id": "ubud_hotel_2",
+        "name": "Komaneka at Bisma",
+        "type": "Boutique resort",
+        "image_keywords": "komaneka bisma ubud bali pool valley view luxury",
+        "rating": 4.7,
+        "reviews": 980,
+        "price_per_night": { "min": 120, "max": 250 },
+        "tagline": "Valley-view suites with traditional Balinese touches",
+        "features": ["Valley views", "Art gallery", "Spa"]
+      },
+      {
+        "hotel_id": "ubud_hotel_3",
+        "name": "The Onion Collective",
+        "type": "Hostel",
+        "image_keywords": "onion collective ubud bali hostel social pool",
+        "rating": 4.5,
+        "reviews": 1450,
+        "price_per_night": { "min": 15, "max": 40 },
+        "tagline": "Social hostel with pool and nomad community",
+        "features": ["Pool", "Co-working", "Social events"]
+      }
+    ],
+    "kata_beach": [
+      {
+        "hotel_id": "kata_hotel_1",
+        "name": "Kata Rocks",
+        "type": "Luxury resort",
+        "image_keywords": "kata rocks phuket thailand luxury ocean view infinity pool",
+        "rating": 4.9,
+        "reviews": 560,
+        "price_per_night": { "min": 400, "max": 900 },
+        "tagline": "Ultra-luxury sky villas with ocean infinity pools",
+        "features": ["Private pools", "Ocean views", "Fine dining"]
+      },
+      {
+        "hotel_id": "kata_hotel_2",
+        "name": "Sugar Marina Resort - Surf",
+        "type": "Beach resort",
+        "image_keywords": "sugar marina kata beach phuket colorful pool family",
+        "rating": 4.4,
+        "reviews": 2340,
+        "price_per_night": { "min": 50, "max": 120 },
+        "tagline": "Colorful beachside resort perfect for families",
+        "features": ["Beachfront", "Pool", "Family-friendly"]
+      },
+      {
+        "hotel_id": "kata_hotel_3",
+        "name": "Kata Beachwalk Hotel",
+        "type": "Boutique hotel",
+        "image_keywords": "kata beachwalk hotel phuket modern clean beach access",
+        "rating": 4.5,
+        "reviews": 890,
+        "price_per_night": { "min": 70, "max": 140 },
+        "tagline": "Modern comfort steps from Kata Beach",
+        "features": ["Beach access", "Pool", "Modern design"]
+      }
+    ]
+  }
+}
