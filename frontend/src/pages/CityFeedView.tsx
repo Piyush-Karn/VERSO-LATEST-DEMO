@@ -347,6 +347,55 @@ export const CityFeedView: React.FC = () => {
     }
   }
 
+  const handleMouseDown = (e: React.MouseEvent) => {
+    startMouseY.current = e.clientY
+    startTime.current = Date.now()
+  }
+
+  const handleMouseUp = (e: React.MouseEvent) => {
+    const endY = e.clientY
+    const diff = startMouseY.current - endY
+    
+    // Require at least 50px movement
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        // Swipe up - next activity
+        if (currentIndex < activities.length - 1) {
+          setCurrentIndex(prev => prev + 1)
+        }
+      } else if (diff < 0) {
+        // Swipe down
+        if (currentIndex === 0) {
+          navigate(-1)
+        } else if (currentIndex > 0) {
+          setCurrentIndex(prev => prev - 1)
+        }
+      }
+    }
+  }
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        e.preventDefault()
+        if (currentIndex > 0) {
+          setCurrentIndex(prev => prev - 1)
+        }
+      } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+        e.preventDefault()
+        if (currentIndex < activities.length - 1) {
+          setCurrentIndex(prev => prev + 1)
+        }
+      } else if (e.key === 'Escape') {
+        navigate(-1)
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [currentIndex, activities.length, navigate])
+
   const handleLike = (activityId: string) => {
     setLiked(prev => {
       const newSet = new Set(prev)
