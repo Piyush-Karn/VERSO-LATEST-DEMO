@@ -264,25 +264,44 @@ const ACTIVITIES_BY_LOCATION: Record<string, Activity[]> = {
 }
 
 export const CityFeedView: React.FC = () => {
-  const { vaultId, cityName } = useParams<{ vaultId: string; cityName: string }>()
+  const { vaultId, cityName, categoryName } = useParams<{ vaultId: string; cityName?: string; categoryName?: string }>()
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState<'activities' | 'cafes'>('activities')
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [activities, setActivities] = useState<Activity[]>(MOCK_ACTIVITIES)
   const [selectedActivity, setSelectedActivity] = useState<Activity | null>(null)
   const [showDetails, setShowDetails] = useState(false)
   const [liked, setLiked] = useState<Set<string>>(new Set())
   const [images, setImages] = useState<Record<string, string>>({})
   const containerRef = useRef<HTMLDivElement>(null)
   const startY = useRef(0)
+  const startTime = useRef(0)
   const [activeReviewTab, setActiveReviewTab] = useState<'tripadvisor' | 'reddit' | 'google'>('tripadvisor')
+
+  // Get location name - either city or category
+  const locationKey = cityName || categoryName || 'default'
+  const displayName = decodeURIComponent(locationKey)
+  
+  // Get activities based on location
+  const getActivitiesForLocation = () => {
+    if (ACTIVITIES_BY_LOCATION[locationKey]) {
+      return ACTIVITIES_BY_LOCATION[locationKey]
+    }
+    return ACTIVITIES_BY_LOCATION['default']
+  }
+
+  const [activities, setActivities] = useState<Activity[]>(getActivitiesForLocation())
 
   // Fetch images for activities
   useEffect(() => {
     const loadImages = async () => {
       const newImages: Record<string, string> = {}
-      for (const activity of activities) {
-        const photos = await fetchPexelsImages(`${activity.title} ${cityName} Japan`, 1)
+      const currentActivities = getActivitiesForLocation()
+      
+      for (const activity of currentActivities) {
+        const searchQuery = categoryName 
+          ? `${activity.title} ${displayName}`
+          : `${activity.title} ${displayName}`
+        const photos = await fetchPexelsImages(searchQuery, 1)
         if (photos.length > 0) {
           newImages[activity.id] = photos[0].src.large
         }
@@ -290,13 +309,13 @@ export const CityFeedView: React.FC = () => {
       setImages(newImages)
       
       // Update activities with images
-      setActivities(prev => prev.map(act => ({
+      setActivities(currentActivities.map(act => ({
         ...act,
         image: newImages[act.id] || act.image
       })))
     }
     loadImages()
-  }, [cityName])
+  }, [cityName, categoryName])
 
   const handleTouchStart = (e: React.TouchEvent) => {
     startY.current = e.touches[0].clientY
