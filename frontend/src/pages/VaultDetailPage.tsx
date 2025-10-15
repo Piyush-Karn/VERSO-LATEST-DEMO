@@ -184,9 +184,23 @@ export const VaultDetailPage: React.FC = () => {
       <div className="p-4 pb-32">
         {activeTab === 'cities' && (
           <div>
-            <p className="text-gray-400 text-sm mb-4">
-              Explore your saved inspirations by city
-            </p>
+            <div className="flex items-center justify-between mb-6">
+              <p className="text-gray-400 text-sm">
+                Explore cities in {vaultData.country}
+              </p>
+              <button
+                onClick={() => setShowFilterModal(true)}
+                className="flex items-center gap-2 px-3 py-2 bg-gray-800 hover:bg-gray-750 rounded-full border border-gray-700 transition-colors"
+              >
+                <Filter size={16} className="text-yellow-200" />
+                <span className="text-sm text-white">
+                  {selectedMonth || 'When to travel'}
+                </span>
+                {selectedMonth && (
+                  <div className="w-2 h-2 bg-yellow-200 rounded-full" />
+                )}
+              </button>
+            </div>
             {loading && (
               <div className="flex items-center justify-center py-12">
                 <Loader2 className="animate-spin text-yellow-200" size={32} />
