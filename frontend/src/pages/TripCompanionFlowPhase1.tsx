@@ -22,18 +22,18 @@ interface TripContext {
 }
 
 const MONTH_DATA = [
-  { id: 'Jan', name: 'January', season: 'Winter', insight: 'Snow season in the mountains', gradient: 'from-blue-900 to-cyan-800', icon: '❄️' },
-  { id: 'Feb', name: 'February', season: 'Winter', insight: 'Plum blossom viewing begins', gradient: 'from-pink-900 to-purple-800', icon: '🌸' },
-  { id: 'Mar', name: 'March', season: 'Spring', insight: 'Ideal for cherry blossoms', gradient: 'from-pink-800 to-rose-700', icon: '🌸' },
-  { id: 'Apr', name: 'April', season: 'Spring', insight: 'Peak cherry blossom season', gradient: 'from-rose-700 to-pink-600', icon: '🌺' },
-  { id: 'May', name: 'May', season: 'Spring', insight: 'Golden Week festivals', gradient: 'from-green-800 to-emerald-700', icon: '🎋' },
-  { id: 'Jun', name: 'June', season: 'Summer', insight: 'Rainy season, lush gardens', gradient: 'from-teal-800 to-cyan-700', icon: '☔' },
-  { id: 'Jul', name: 'July', season: 'Summer', insight: 'Summer festivals begin', gradient: 'from-orange-700 to-amber-600', icon: '🎆' },
-  { id: 'Aug', name: 'August', season: 'Summer', insight: 'Fireworks festival season', gradient: 'from-red-700 to-orange-600', icon: '🎇' },
-  { id: 'Sep', name: 'September', season: 'Autumn', insight: 'Harvest moon viewing', gradient: 'from-yellow-800 to-orange-700', icon: '🌕' },
-  { id: 'Oct', name: 'October', season: 'Autumn', insight: 'Fall foliage begins', gradient: 'from-orange-800 to-red-700', icon: '🍁' },
-  { id: 'Nov', name: 'November', season: 'Autumn', insight: 'Peak autumn colors', gradient: 'from-red-800 to-amber-700', icon: '🍂' },
-  { id: 'Dec', name: 'December', season: 'Winter', insight: 'Winter illuminations', gradient: 'from-indigo-900 to-blue-800', icon: '✨' }
+  { id: 'Jan', name: 'January', season: 'Winter', insight: 'Snow season in the mountains', gradient: 'from-gray-900 to-gray-800', icon: '❄️' },
+  { id: 'Feb', name: 'February', season: 'Winter', insight: 'Plum blossom viewing begins', gradient: 'from-gray-900 to-gray-800', icon: '🌸' },
+  { id: 'Mar', name: 'March', season: 'Spring', insight: 'Ideal for cherry blossoms', gradient: 'from-yellow-900/40 to-amber-900/40', icon: '🌸' },
+  { id: 'Apr', name: 'April', season: 'Spring', insight: 'Peak cherry blossom season', gradient: 'from-yellow-900/40 to-amber-900/40', icon: '🌺' },
+  { id: 'May', name: 'May', season: 'Spring', insight: 'Golden Week festivals', gradient: 'from-yellow-900/40 to-amber-900/40', icon: '🎋' },
+  { id: 'Jun', name: 'June', season: 'Summer', insight: 'Rainy season, lush gardens', gradient: 'from-gray-900 to-gray-800', icon: '☔' },
+  { id: 'Jul', name: 'July', season: 'Summer', insight: 'Summer festivals begin', gradient: 'from-yellow-900/30 to-orange-900/30', icon: '🎆' },
+  { id: 'Aug', name: 'August', season: 'Summer', insight: 'Fireworks festival season', gradient: 'from-yellow-900/30 to-orange-900/30', icon: '🎇' },
+  { id: 'Sep', name: 'September', season: 'Autumn', insight: 'Harvest moon viewing', gradient: 'from-amber-900/30 to-yellow-900/30', icon: '🌕' },
+  { id: 'Oct', name: 'October', season: 'Autumn', insight: 'Fall foliage begins', gradient: 'from-amber-900/30 to-orange-900/30', icon: '🍁' },
+  { id: 'Nov', name: 'November', season: 'Autumn', insight: 'Peak autumn colors', gradient: 'from-amber-900/30 to-orange-900/30', icon: '🍂' },
+  { id: 'Dec', name: 'December', season: 'Winter', insight: 'Winter illuminations', gradient: 'from-gray-900 to-gray-800', icon: '✨' }
 ]
 
 const TRAVELER_OPTIONS = [
