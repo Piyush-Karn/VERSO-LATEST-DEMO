@@ -9,6 +9,7 @@ export const NeighborhoodDetailPage: React.FC = () => {
   const { city, neighborhoodId } = useParams<{ city: string; neighborhoodId: string }>()
   const navigate = useNavigate()
   
+  const [activeTab, setActiveTab] = useState<'overview' | 'activities' | 'cafes'>('overview')
   const [heroImages, setHeroImages] = useState<string[]>([])
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [showHotelSheet, setShowHotelSheet] = useState(false)
