@@ -146,21 +146,60 @@ export const VaultDetailPage: React.FC = () => {
             <p className="text-gray-400 text-sm mb-4">
               Explore your saved inspirations by city
             </p>
-            <div className="grid grid-cols-2 gap-4">
-              {vaultData.cities.map((city: string) => (
-                <button
-                  key={city}
-                  onClick={() => navigate(`/vault/${vaultId}/city/${city}`)}
-                  className="bg-gray-900 rounded-xl p-6 hover:bg-gray-800 transition-all hover:scale-105 border border-gray-800"
-                >
-                  <MapPin className="mx-auto mb-3 text-yellow-200" size={28} />
-                  <h3 className="font-semibold text-white">{city}</h3>
-                  <p className="text-gray-400 text-xs mt-1">
-                    {Math.floor(Math.random() * 10) + 3} spots saved
-                  </p>
-                </button>
-              ))}
-            </div>
+            {loading && (
+              <div className="flex items-center justify-center py-12">
+                <Loader2 className="animate-spin text-yellow-200" size={32} />
+              </div>
+            )}
+            {!loading && (
+              <div className="space-y-6">
+                {vaultData.cities.map((city: string) => (
+                  <button
+                    key={city}
+                    onClick={() => navigate(`/vault/${vaultId}/city/${city}`)}
+                    className="w-full bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all hover:scale-[1.02]"
+                  >
+                    {/* Image Gallery */}
+                    <div className="relative h-48 bg-gray-800">
+                      {cityImages[city] && cityImages[city].length > 0 ? (
+                        <div className="grid grid-cols-5 h-full gap-px">
+                          {cityImages[city].slice(0, 5).map((photo, idx) => (
+                            <div
+                              key={photo.id}
+                              className="relative overflow-hidden"
+                              style={{
+                                gridColumn: idx === 0 ? 'span 2' : 'span 1',
+                                gridRow: idx === 0 ? 'span 2' : 'span 1',
+                              }}
+                            >
+                              <img
+                                src={photo.src.medium}
+                                alt={`${city} ${idx + 1}`}
+                                className="absolute inset-0 w-full h-full object-cover"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="flex items-center justify-center h-full">
+                          <MapPin className="text-gray-600" size={48} />
+                        </div>
+                      )}
+                      {/* Gradient overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    </div>
+                    
+                    {/* City Info */}
+                    <div className="p-4 text-left">
+                      <h3 className="font-bold text-lg text-white mb-1">{city}</h3>
+                      <p className="text-gray-400 text-sm">
+                        {Math.floor(Math.random() * 10) + 3} spots saved
+                      </p>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         )}
 
