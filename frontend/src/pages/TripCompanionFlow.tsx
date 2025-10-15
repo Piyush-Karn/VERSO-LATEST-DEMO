@@ -564,7 +564,7 @@ export const TripCompanionFlow: React.FC = () => {
             {selectedStay && (
               <div className="p-6 border-t border-gray-800 animate-fade-in">
                 <p className="text-gray-400 text-sm italic mb-4 text-center">
-                  Beautiful. I've locked this stay for your time in {DEMO_NEIGHBORHOODS.find(n => n.id === selectedNeighborhood)?.name}
+                  Beautiful. I've locked this stay for your time in {getNeighborhoods().find(n => n.id === selectedNeighborhood)?.name}
                 </p>
                 <button
                   onClick={() => setPhase('flight')}
