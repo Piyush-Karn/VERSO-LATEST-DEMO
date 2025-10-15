@@ -473,7 +473,7 @@ export const TripCompanionFlow: React.FC = () => {
             {selectedNeighborhood && (
               <div className="p-6 border-t border-gray-800 animate-fade-in">
                 <p className="text-gray-400 text-sm italic mb-4 text-center">
-                  That's a lovely choice — {DEMO_NEIGHBORHOODS.find(n => n.id === selectedNeighborhood)?.name} has beautiful evening walks
+                  That's a lovely choice — {getNeighborhoods().find(n => n.id === selectedNeighborhood)?.name} has beautiful evening walks
                 </p>
                 <button
                   onClick={() => setPhase('stay')}
