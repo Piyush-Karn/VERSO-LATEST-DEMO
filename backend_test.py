@@ -11,7 +11,7 @@ from datetime import datetime
 from typing import Dict, Any, List
 
 # Use the production URL from frontend .env
-BASE_URL = "https://travel-vault.preview.emergentagent.com/api"
+BASE_URL = "https://travel-compass-13.preview.emergentagent.com/api"
 
 class BackendTester:
     def __init__(self):
