@@ -268,14 +268,6 @@ export const VaultViewPage: React.FC = () => {
         ))}
       </div>
 
-      {/* Floating "Ask Verso" Button */}
-      <button
-        className="absolute top-6 right-6 z-20 bg-yellow-200 hover:bg-yellow-100 text-black font-semibold px-4 py-2 rounded-full text-sm shadow-lg transition-all duration-200 hover:scale-105 active:scale-95"
-        onClick={() => alert('Ask Verso AI assistant')}
-      >
-        ✨ Ask Verso
-      </button>
-
       {/* Custom scrollbar hide */}
       <style>{`
         .scrollbar-hide::-webkit-scrollbar {
