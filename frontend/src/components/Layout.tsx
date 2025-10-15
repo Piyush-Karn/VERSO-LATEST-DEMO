@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
-import { Compass, MapPin } from 'lucide-react'
+import { Compass, MapPin, Sparkles } from 'lucide-react'
 
 export const Layout: React.FC = () => {
   const location = useLocation()
@@ -17,7 +17,7 @@ export const Layout: React.FC = () => {
         <Outlet />
       </div>
 
-      {/* Bottom Navigation - Original Style */}
+      {/* Bottom Navigation - 3 Tabs */}
       <div className="fixed bottom-0 left-0 right-0 bg-black border-t border-gray-800 px-4 py-2">
         <div className="flex items-center justify-around max-w-md mx-auto">
           <button
@@ -42,6 +42,18 @@ export const Layout: React.FC = () => {
           >
             <MapPin size={24} />
             <span className="text-xs mt-1 font-medium">Your Trip</span>
+          </button>
+
+          <button
+            onClick={() => navigate('/ask-verso')}
+            className={`flex flex-col items-center py-2 px-4 transition-colors ${
+              isActivePath('/ask-verso')
+                ? 'text-yellow-200' 
+                : 'text-gray-400'
+            }`}
+          >
+            <Sparkles size={24} />
+            <span className="text-xs mt-1 font-medium">Ask Verso</span>
           </button>
         </div>
       </div>
