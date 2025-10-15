@@ -4,1267 +4,3004 @@
       "country_id": "japan",
       "country_name": "Japan",
       "flag": "🇯🇵",
-      "hero_image_keywords": ["japan mount fuji cherry blossom sunset", "tokyo skyline night neon", "kyoto bamboo forest pathway"],
-      "seasonality": ["March", "April", "October", "November"],
-      "cost_range": "high",
-      "duration_hint": "10h+",
-      "themes": ["food_culture", "heritage", "onsen_escapes", "city_life", "nature_trails", "festivals", "nightlife"],
+      "hero_image_keywords": "japan mount fuji cherry blossom sunset tokyo skyline night neon kyoto bamboo forest pathway",
+      "seasonality": [
+        "March",
+        "April",
+        "October",
+        "November"
+      ],
+      "cost_range": "mid-high",
+      "duration_hint": "10-14 days",
+      "themes": [
+        {
+          "id": "food_culture",
+          "name": "Food Culture"
+        },
+        {
+          "id": "heritage",
+          "name": "Heritage Sites"
+        },
+        {
+          "id": "onsen_escapes",
+          "name": "Onsen Escapes"
+        },
+        {
+          "id": "city_life",
+          "name": "Urban Life"
+        },
+        {
+          "id": "nature_trails",
+          "name": "Nature Trails"
+        },
+        {
+          "id": "festivals",
+          "name": "Festivals"
+        },
+        {
+          "id": "nightlife",
+          "name": "Nightlife"
+        }
+      ],
       "subtitle": "Ancient traditions meet neon-lit modernity",
       "cities": {
         "tokyo": {
           "city_id": "tokyo",
           "city_name": "Tokyo",
-          "image_keywords": ["tokyo shibuya crossing night", "tokyo street neon lights", "tokyo tower cherry blossom"],
+          "image_keywords": "tokyo shibuya crossing night tokyo street neon lights tokyo tower cherry blossom",
           "things_to_do": [
             {
-              "id": "tokyo-1",
+              "experience_id": "tokyo-1",
               "title": "Shibuya Crossing Food Tour",
+              "subtitle": "Experience Shibuya Crossing Food Tour",
+              "description": "Discover the magic of Shibuya Crossing Food Tour. An unforgettable experience awaits.",
               "location": "Shibuya",
               "duration": "2 hrs",
-              "cost": "$$",
-              "tags": ["Food", "Culture", "Walking"],
-              "image_keywords": ["tokyo shibuya crossing night crowd", "shibuya street food stalls"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Food",
+                "Culture",
+                "Walking"
+              ],
+              "image_keywords": "tokyo shibuya crossing night crowd shibuya street food stalls",
               "specific_options": [
-                { "name": "Ichiran Ramen Experience", "location": "Shibuya Center-gai" },
-                { "name": "Takoyaki Stand Tour", "location": "Shibuya Station Exit 8" },
-                { "name": "Izakaya Hopping", "location": "Nonbei Yokocho Alley" }
-              ]
+                {
+                  "title": "Ichiran Ramen Experience",
+                  "description": "Experience Ichiran Ramen Experience",
+                  "location": "Shibuya Center-gai",
+                  "duration": "1 hr",
+                  "image_keywords": "ichiran ramen experience shibuya center-gai"
+                },
+                {
+                  "title": "Takoyaki Stand Tour",
+                  "description": "Experience Takoyaki Stand Tour",
+                  "location": "Shibuya Station Exit 8",
+                  "duration": "1 hr",
+                  "image_keywords": "takoyaki stand tour shibuya station exit 8"
+                },
+                {
+                  "title": "Izakaya Hopping",
+                  "description": "Experience Izakaya Hopping",
+                  "location": "Nonbei Yokocho Alley",
+                  "duration": "1 hr",
+                  "image_keywords": "izakaya hopping nonbei yokocho alley"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "tokyo-2",
+              "experience_id": "tokyo-2",
               "title": "Senso-ji Temple & Asakusa",
+              "subtitle": "Experience Senso-ji Temple & Asakusa",
+              "description": "Discover the magic of Senso-ji Temple & Asakusa. An unforgettable experience awaits.",
               "location": "Asakusa",
               "duration": "3 hrs",
-              "cost": "Free",
-              "tags": ["Culture", "History", "Photography"],
-              "image_keywords": ["tokyo sensoji temple red lantern", "asakusa nakamise shopping street"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Culture",
+                "History",
+                "Photography"
+              ],
+              "image_keywords": "tokyo sensoji temple red lantern asakusa nakamise shopping street",
               "specific_options": [
-                { "name": "Temple Morning Prayer", "location": "Senso-ji Main Hall" },
-                { "name": "Nakamise Street Shopping", "location": "Nakamise-dori" },
-                { "name": "Rickshaw Tour", "location": "Asakusa Station" }
-              ]
+                {
+                  "title": "Temple Morning Prayer",
+                  "description": "Experience Temple Morning Prayer",
+                  "location": "Senso-ji Main Hall",
+                  "duration": "1 hr",
+                  "image_keywords": "temple morning prayer senso-ji main hall"
+                },
+                {
+                  "title": "Nakamise Street Shopping",
+                  "description": "Experience Nakamise Street Shopping",
+                  "location": "Nakamise-dori",
+                  "duration": "1 hr",
+                  "image_keywords": "nakamise street shopping nakamise-dori"
+                },
+                {
+                  "title": "Rickshaw Tour",
+                  "description": "Experience Rickshaw Tour",
+                  "location": "Asakusa Station",
+                  "duration": "1 hr",
+                  "image_keywords": "rickshaw tour asakusa station"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "tokyo-3",
+              "experience_id": "tokyo-3",
               "title": "TeamLab Borderless",
+              "subtitle": "Experience TeamLab Borderless",
+              "description": "Discover the magic of TeamLab Borderless. An unforgettable experience awaits.",
               "location": "Odaiba",
               "duration": "3 hrs",
-              "cost": "$$$",
-              "tags": ["Art", "Technology", "Indoor"],
-              "image_keywords": ["teamlab borderless tokyo digital art", "odaiba futuristic museum"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Art",
+                "Technology",
+                "Indoor"
+              ],
+              "image_keywords": "teamlab borderless tokyo digital art odaiba futuristic museum",
               "specific_options": [
-                { "name": "Crystal Universe", "location": "Main Gallery" },
-                { "name": "Forest of Resonating Lamps", "location": "East Wing" },
-                { "name": "Athletics Forest", "location": "Interactive Zone" }
-              ]
+                {
+                  "title": "Crystal Universe",
+                  "description": "Experience Crystal Universe",
+                  "location": "Main Gallery",
+                  "duration": "1 hr",
+                  "image_keywords": "crystal universe main gallery"
+                },
+                {
+                  "title": "Forest of Resonating Lamps",
+                  "description": "Experience Forest of Resonating Lamps",
+                  "location": "East Wing",
+                  "duration": "1 hr",
+                  "image_keywords": "forest of resonating lamps east wing"
+                },
+                {
+                  "title": "Athletics Forest",
+                  "description": "Experience Athletics Forest",
+                  "location": "Interactive Zone",
+                  "duration": "1 hr",
+                  "image_keywords": "athletics forest interactive zone"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "%Arabica Tokyo",
               "notes": "Minimalist specialty coffee with city views",
-              "image_keywords": ["arabica coffee tokyo minimalist interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "arabica coffee tokyo minimalist interior"
             },
             {
               "name": "Fuglen Tokyo",
               "notes": "Norwegian-Japanese coffee bar in Shibuya",
-              "image_keywords": ["fuglen tokyo coffee bar interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "fuglen tokyo coffee bar interior"
             },
             {
               "name": "Blue Bottle Roppongi",
               "notes": "Sleek café in art district",
-              "image_keywords": ["blue bottle tokyo roppongi cafe"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "blue bottle tokyo roppongi cafe"
             }
-          ]
+          ],
+          "description": "A city that never sleeps, where vending machines serve hot ramen at 3 AM and serene shrines hide between skyscrapers."
         },
         "kyoto": {
           "city_id": "kyoto",
           "city_name": "Kyoto",
-          "image_keywords": ["kyoto fushimi inari torii gates", "kyoto bamboo grove arashiyama", "kyoto geisha gion district"],
+          "image_keywords": "kyoto fushimi inari torii gates kyoto bamboo grove arashiyama kyoto geisha gion district",
           "things_to_do": [
             {
-              "id": "kyoto-1",
+              "experience_id": "kyoto-1",
               "title": "Fushimi Inari Shrine Hike",
+              "subtitle": "Experience Fushimi Inari Shrine Hike",
+              "description": "Discover the magic of Fushimi Inari Shrine Hike. An unforgettable experience awaits.",
               "location": "Fushimi",
               "duration": "3 hrs",
-              "cost": "Free",
-              "tags": ["Hiking", "Culture", "Photography"],
-              "image_keywords": ["fushimi inari thousand torii gates path", "kyoto red shrine gates mountain"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Hiking",
+                "Culture",
+                "Photography"
+              ],
+              "image_keywords": "fushimi inari thousand torii gates path kyoto red shrine gates mountain",
               "specific_options": [
-                { "name": "Full Mountain Circuit", "location": "Summit Path" },
-                { "name": "Lower Shrine Tour", "location": "Main Gates" },
-                { "name": "Sunrise Photography", "location": "Mid-Mountain Viewpoint" }
-              ]
+                {
+                  "title": "Full Mountain Circuit",
+                  "description": "Experience Full Mountain Circuit",
+                  "location": "Summit Path",
+                  "duration": "1 hr",
+                  "image_keywords": "full mountain circuit summit path"
+                },
+                {
+                  "title": "Lower Shrine Tour",
+                  "description": "Experience Lower Shrine Tour",
+                  "location": "Main Gates",
+                  "duration": "1 hr",
+                  "image_keywords": "lower shrine tour main gates"
+                },
+                {
+                  "title": "Sunrise Photography",
+                  "description": "Experience Sunrise Photography",
+                  "location": "Mid-Mountain Viewpoint",
+                  "duration": "1 hr",
+                  "image_keywords": "sunrise photography mid-mountain viewpoint"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "kyoto-2",
+              "experience_id": "kyoto-2",
               "title": "Arashiyama Bamboo Grove",
+              "subtitle": "Experience Arashiyama Bamboo Grove",
+              "description": "Discover the magic of Arashiyama Bamboo Grove. An unforgettable experience awaits.",
               "location": "Arashiyama",
               "duration": "2 hrs",
-              "cost": "Free",
-              "tags": ["Nature", "Photography", "Walking"],
-              "image_keywords": ["arashiyama bamboo forest pathway kyoto", "bamboo grove green light"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Nature",
+                "Photography",
+                "Walking"
+              ],
+              "image_keywords": "arashiyama bamboo forest pathway kyoto bamboo grove green light",
               "specific_options": [
-                { "name": "Morning Grove Walk", "location": "Main Path" },
-                { "name": "Tenryu-ji Temple Visit", "location": "Temple Entrance" },
-                { "name": "Togetsukyo Bridge", "location": "River Crossing" }
-              ]
+                {
+                  "title": "Morning Grove Walk",
+                  "description": "Experience Morning Grove Walk",
+                  "location": "Main Path",
+                  "duration": "1 hr",
+                  "image_keywords": "morning grove walk main path"
+                },
+                {
+                  "title": "Tenryu-ji Temple Visit",
+                  "description": "Experience Tenryu-ji Temple Visit",
+                  "location": "Temple Entrance",
+                  "duration": "1 hr",
+                  "image_keywords": "tenryu-ji temple visit temple entrance"
+                },
+                {
+                  "title": "Togetsukyo Bridge",
+                  "description": "Experience Togetsukyo Bridge",
+                  "location": "River Crossing",
+                  "duration": "1 hr",
+                  "image_keywords": "togetsukyo bridge river crossing"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "kyoto-3",
+              "experience_id": "kyoto-3",
               "title": "Traditional Tea Ceremony",
+              "subtitle": "Experience Traditional Tea Ceremony",
+              "description": "Discover the magic of Traditional Tea Ceremony. An unforgettable experience awaits.",
               "location": "Gion",
               "duration": "1.5 hrs",
-              "cost": "$$$",
-              "tags": ["Culture", "Traditional", "Experience"],
-              "image_keywords": ["kyoto tea ceremony matcha traditional", "gion geisha district machiya"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Culture",
+                "Traditional",
+                "Experience"
+              ],
+              "image_keywords": "kyoto tea ceremony matcha traditional gion geisha district machiya",
               "specific_options": [
-                { "name": "Camellia Tea House", "location": "Gion Higashiyama" },
-                { "name": "En Tea Ceremony", "location": "Kennin-ji Temple" },
-                { "name": "Machiya Experience", "location": "Hanamikoji Street" }
-              ]
+                {
+                  "title": "Camellia Tea House",
+                  "description": "Experience Camellia Tea House",
+                  "location": "Gion Higashiyama",
+                  "duration": "1 hr",
+                  "image_keywords": "camellia tea house gion higashiyama"
+                },
+                {
+                  "title": "En Tea Ceremony",
+                  "description": "Experience En Tea Ceremony",
+                  "location": "Kennin-ji Temple",
+                  "duration": "1 hr",
+                  "image_keywords": "en tea ceremony kennin-ji temple"
+                },
+                {
+                  "title": "Machiya Experience",
+                  "description": "Experience Machiya Experience",
+                  "location": "Hanamikoji Street",
+                  "duration": "1 hr",
+                  "image_keywords": "machiya experience hanamikoji street"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "%Arabica Kyoto",
               "notes": "Iconic coffee spot near Yasaka Pagoda",
-              "image_keywords": ["arabica kyoto pagoda view coffee"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "arabica kyoto pagoda view coffee"
             },
             {
               "name": "Weekenders Coffee",
               "notes": "Specialty roastery in traditional house",
-              "image_keywords": ["weekenders coffee kyoto traditional interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "weekenders coffee kyoto traditional interior"
             },
             {
               "name": "Inoda Coffee Honten",
               "notes": "Historic Kyoto coffee institution since 1940",
-              "image_keywords": ["inoda coffee kyoto vintage interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "inoda coffee kyoto vintage interior"
             }
-          ]
+          ],
+          "description": "Japan's ancient capital where every corner reveals a temple, a garden, or a glimpse of geisha disappearing into wooden teahouses."
         },
         "osaka": {
           "city_id": "osaka",
           "city_name": "Osaka",
-          "image_keywords": ["osaka dotonbori neon lights canal", "osaka castle cherry blossom", "osaka street food takoyaki"],
+          "image_keywords": "osaka dotonbori neon lights canal osaka castle cherry blossom osaka street food takoyaki",
           "things_to_do": [
             {
-              "id": "osaka-1",
+              "experience_id": "osaka-1",
               "title": "Dotonbori Food Street",
+              "subtitle": "Experience Dotonbori Food Street",
+              "description": "Discover the magic of Dotonbori Food Street. An unforgettable experience awaits.",
               "location": "Namba",
               "duration": "2 hrs",
-              "cost": "$$",
-              "tags": ["Food", "Nightlife", "Culture"],
-              "image_keywords": ["dotonbori osaka neon signs night", "osaka street food vendors"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Food",
+                "Nightlife",
+                "Culture"
+              ],
+              "image_keywords": "dotonbori osaka neon signs night osaka street food vendors",
               "specific_options": [
-                { "name": "Ichiran Ramen", "location": "Dotonbori Main Street" },
-                { "name": "Takoyaki Museum", "location": "Nambaeki" },
-                { "name": "Kushikatsu Alley", "location": "Shinsekai District" }
-              ]
+                {
+                  "title": "Ichiran Ramen",
+                  "description": "Experience Ichiran Ramen",
+                  "location": "Dotonbori Main Street",
+                  "duration": "1 hr",
+                  "image_keywords": "ichiran ramen dotonbori main street"
+                },
+                {
+                  "title": "Takoyaki Museum",
+                  "description": "Experience Takoyaki Museum",
+                  "location": "Nambaeki",
+                  "duration": "1 hr",
+                  "image_keywords": "takoyaki museum nambaeki"
+                },
+                {
+                  "title": "Kushikatsu Alley",
+                  "description": "Experience Kushikatsu Alley",
+                  "location": "Shinsekai District",
+                  "duration": "1 hr",
+                  "image_keywords": "kushikatsu alley shinsekai district"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "osaka-2",
+              "experience_id": "osaka-2",
               "title": "Osaka Castle & Park",
+              "subtitle": "Experience Osaka Castle & Park",
+              "description": "Discover the magic of Osaka Castle & Park. An unforgettable experience awaits.",
               "location": "Chuo",
               "duration": "2.5 hrs",
-              "cost": "$",
-              "tags": ["History", "Architecture", "Park"],
-              "image_keywords": ["osaka castle golden architecture", "osaka castle park cherry blossom"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "History",
+                "Architecture",
+                "Park"
+              ],
+              "image_keywords": "osaka castle golden architecture osaka castle park cherry blossom",
               "specific_options": [
-                { "name": "Castle Museum Tour", "location": "Main Keep" },
-                { "name": "Nishinomaru Garden", "location": "West Grounds" },
-                { "name": "Moat Cruise", "location": "Castle Waterway" }
-              ]
+                {
+                  "title": "Castle Museum Tour",
+                  "description": "Experience Castle Museum Tour",
+                  "location": "Main Keep",
+                  "duration": "1 hr",
+                  "image_keywords": "castle museum tour main keep"
+                },
+                {
+                  "title": "Nishinomaru Garden",
+                  "description": "Experience Nishinomaru Garden",
+                  "location": "West Grounds",
+                  "duration": "1 hr",
+                  "image_keywords": "nishinomaru garden west grounds"
+                },
+                {
+                  "title": "Moat Cruise",
+                  "description": "Experience Moat Cruise",
+                  "location": "Castle Waterway",
+                  "duration": "1 hr",
+                  "image_keywords": "moat cruise castle waterway"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "osaka-3",
+              "experience_id": "osaka-3",
               "title": "Kuromon Ichiba Market",
+              "subtitle": "Experience Kuromon Ichiba Market",
+              "description": "Discover the magic of Kuromon Ichiba Market. An unforgettable experience awaits.",
               "location": "Nipponbashi",
               "duration": "1.5 hrs",
-              "cost": "$$",
-              "tags": ["Food", "Market", "Seafood"],
-              "image_keywords": ["kuromon market osaka seafood stalls", "osaka fresh fish market vendors"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Food",
+                "Market",
+                "Seafood"
+              ],
+              "image_keywords": "kuromon market osaka seafood stalls osaka fresh fish market vendors",
               "specific_options": [
-                { "name": "Fresh Sashimi Tasting", "location": "Market Center" },
-                { "name": "Grilled Seafood Stands", "location": "West End" },
-                { "name": "Fruit Parfait Tour", "location": "North Section" }
-              ]
+                {
+                  "title": "Fresh Sashimi Tasting",
+                  "description": "Experience Fresh Sashimi Tasting",
+                  "location": "Market Center",
+                  "duration": "1 hr",
+                  "image_keywords": "fresh sashimi tasting market center"
+                },
+                {
+                  "title": "Grilled Seafood Stands",
+                  "description": "Experience Grilled Seafood Stands",
+                  "location": "West End",
+                  "duration": "1 hr",
+                  "image_keywords": "grilled seafood stands west end"
+                },
+                {
+                  "title": "Fruit Parfait Tour",
+                  "description": "Experience Fruit Parfait Tour",
+                  "location": "North Section",
+                  "duration": "1 hr",
+                  "image_keywords": "fruit parfait tour north section"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Lilo Coffee Roasters",
               "notes": "Award-winning specialty coffee in Minami",
-              "image_keywords": ["lilo coffee osaka roastery interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "lilo coffee osaka roastery interior"
             },
             {
               "name": "Mel Coffee Roasters",
               "notes": "Industrial-chic café near Namba",
-              "image_keywords": ["mel coffee osaka industrial design"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "mel coffee osaka industrial design"
             },
             {
               "name": "Brooklyn Roasting Company Kitahama",
               "notes": "Spacious riverside café",
-              "image_keywords": ["brooklyn roasting osaka riverside cafe"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "brooklyn roasting osaka riverside cafe"
             }
-          ]
+          ],
+          "description": "Japan's kitchen—where neon-lit streets overflow with takoyaki stands, and locals live to eat, laugh, and celebrate."
         }
-      }
+      },
+      "description": "Where centuries-old temples meet neon-lit streets. A place where precision meets poetry, and every detail tells a story.",
+      "best_time": "Cherry blossoms in spring (March-April) or autumn foliage (October-November)"
     },
     "croatia": {
       "country_id": "croatia",
       "country_name": "Croatia",
       "flag": "🇭🇷",
-      "hero_image_keywords": ["croatia dubrovnik old town aerial", "croatia plitvice lakes waterfall", "croatia adriatic coast sunset"],
-      "seasonality": ["June", "July", "August", "September"],
-      "cost_range": "mid",
-      "duration_hint": "6-9h",
-      "themes": ["sailing", "heritage_towns", "national_parks", "seafood_dining", "hidden_villages", "water_sports"],
+      "hero_image_keywords": "croatia dubrovnik old town aerial croatia plitvice lakes waterfall croatia adriatic coast sunset",
+      "seasonality": [
+        "June",
+        "July",
+        "August",
+        "September"
+      ],
+      "cost_range": "low-mid",
+      "duration_hint": "7-10 days",
+      "themes": [
+        {
+          "id": "sailing",
+          "name": "Sailing & Islands"
+        },
+        {
+          "id": "heritage_towns",
+          "name": "Heritage Towns"
+        },
+        {
+          "id": "national_parks",
+          "name": "National Parks"
+        },
+        {
+          "id": "seafood_dining",
+          "name": "Seafood Dining"
+        },
+        {
+          "id": "hidden_villages",
+          "name": "Hidden Villages"
+        },
+        {
+          "id": "water_sports",
+          "name": "Water Sports"
+        }
+      ],
       "subtitle": "Adriatic jewel of medieval towns and turquoise waters",
       "cities": {
         "dubrovnik": {
           "city_id": "dubrovnik",
           "city_name": "Dubrovnik",
-          "image_keywords": ["dubrovnik old town walls aerial", "dubrovnik stradun marble street", "dubrovnik sunset fort lovrijenac"],
+          "image_keywords": "dubrovnik old town walls aerial dubrovnik stradun marble street dubrovnik sunset fort lovrijenac",
           "things_to_do": [
             {
-              "id": "dubrovnik-1",
+              "experience_id": "dubrovnik-1",
               "title": "City Walls Sunrise Walk",
+              "subtitle": "Experience City Walls Sunrise Walk",
+              "description": "Discover the magic of City Walls Sunrise Walk. An unforgettable experience awaits.",
               "location": "Old Town",
               "duration": "2 hrs",
-              "cost": "$$",
-              "tags": ["Walking", "History", "Photography"],
-              "image_keywords": ["dubrovnik city walls sunrise golden", "dubrovnik fortifications adriatic view"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Walking",
+                "History",
+                "Photography"
+              ],
+              "image_keywords": "dubrovnik city walls sunrise golden dubrovnik fortifications adriatic view",
               "specific_options": [
-                { "name": "Pile Gate Entrance", "location": "West Entrance" },
-                { "name": "Fort Minceta Tower", "location": "Highest Point" },
-                { "name": "Bokar Fortress", "location": "Sea-facing Bastion" }
-              ]
+                {
+                  "title": "Pile Gate Entrance",
+                  "description": "Experience Pile Gate Entrance",
+                  "location": "West Entrance",
+                  "duration": "1 hr",
+                  "image_keywords": "pile gate entrance west entrance"
+                },
+                {
+                  "title": "Fort Minceta Tower",
+                  "description": "Experience Fort Minceta Tower",
+                  "location": "Highest Point",
+                  "duration": "1 hr",
+                  "image_keywords": "fort minceta tower highest point"
+                },
+                {
+                  "title": "Bokar Fortress",
+                  "description": "Experience Bokar Fortress",
+                  "location": "Sea-facing Bastion",
+                  "duration": "1 hr",
+                  "image_keywords": "bokar fortress sea-facing bastion"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "dubrovnik-2",
+              "experience_id": "dubrovnik-2",
               "title": "Lokrum Island Swim",
+              "subtitle": "Experience Lokrum Island Swim",
+              "description": "Discover the magic of Lokrum Island Swim. An unforgettable experience awaits.",
               "location": "Lokrum",
               "duration": "4 hrs",
-              "cost": "$$",
-              "tags": ["Beach", "Nature", "Swimming"],
-              "image_keywords": ["lokrum island dubrovnik turquoise water", "dead sea lokrum swimming"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Beach",
+                "Nature",
+                "Swimming"
+              ],
+              "image_keywords": "lokrum island dubrovnik turquoise water dead sea lokrum swimming",
               "specific_options": [
-                { "name": "Dead Sea Saltwater Lake", "location": "Island Center" },
-                { "name": "Benedictine Monastery", "location": "Island North" },
-                { "name": "Peacock Gardens", "location": "Forest Paths" }
-              ]
+                {
+                  "title": "Dead Sea Saltwater Lake",
+                  "description": "Experience Dead Sea Saltwater Lake",
+                  "location": "Island Center",
+                  "duration": "1 hr",
+                  "image_keywords": "dead sea saltwater lake island center"
+                },
+                {
+                  "title": "Benedictine Monastery",
+                  "description": "Experience Benedictine Monastery",
+                  "location": "Island North",
+                  "duration": "1 hr",
+                  "image_keywords": "benedictine monastery island north"
+                },
+                {
+                  "title": "Peacock Gardens",
+                  "description": "Experience Peacock Gardens",
+                  "location": "Forest Paths",
+                  "duration": "1 hr",
+                  "image_keywords": "peacock gardens forest paths"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "dubrovnik-3",
+              "experience_id": "dubrovnik-3",
               "title": "Kayak to Betina Cave",
+              "subtitle": "Experience Kayak to Betina Cave",
+              "description": "Discover the magic of Kayak to Betina Cave. An unforgettable experience awaits.",
               "location": "Pile Bay",
               "duration": "3 hrs",
-              "cost": "$$$",
-              "tags": ["Adventure", "Water", "Caves"],
-              "image_keywords": ["dubrovnik kayaking old town view", "betina cave dubrovnik hidden beach"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Adventure",
+                "Water",
+                "Caves"
+              ],
+              "image_keywords": "dubrovnik kayaking old town view betina cave dubrovnik hidden beach",
               "specific_options": [
-                { "name": "Sunset Kayak Tour", "location": "Pile Beach" },
-                { "name": "Cave Snorkeling", "location": "Betina Cave" },
-                { "name": "Banje Beach Stop", "location": "Eastern Coast" }
-              ]
+                {
+                  "title": "Sunset Kayak Tour",
+                  "description": "Experience Sunset Kayak Tour",
+                  "location": "Pile Beach",
+                  "duration": "1 hr",
+                  "image_keywords": "sunset kayak tour pile beach"
+                },
+                {
+                  "title": "Cave Snorkeling",
+                  "description": "Experience Cave Snorkeling",
+                  "location": "Betina Cave",
+                  "duration": "1 hr",
+                  "image_keywords": "cave snorkeling betina cave"
+                },
+                {
+                  "title": "Banje Beach Stop",
+                  "description": "Experience Banje Beach Stop",
+                  "location": "Eastern Coast",
+                  "duration": "1 hr",
+                  "image_keywords": "banje beach stop eastern coast"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Buža Bar",
               "notes": "Cliffside bar with Adriatic sunset views",
-              "image_keywords": ["buza bar dubrovnik cliff sunset adriatic"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "buza bar dubrovnik cliff sunset adriatic"
             },
             {
               "name": "D'vino Wine Bar",
               "notes": "Croatian wine tasting in stone cellar",
-              "image_keywords": ["dvino wine bar dubrovnik cellar interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "dvino wine bar dubrovnik cellar interior"
             },
             {
               "name": "Festival Café",
               "notes": "Elegant terrace on Stradun marble street",
-              "image_keywords": ["festival cafe dubrovnik stradun terrace"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "festival cafe dubrovnik stradun terrace"
             }
-          ]
+          ],
+          "description": "The Pearl of the Adriatic—marble streets, fortress walls, and sunsets that stop you in your tracks."
         },
         "split": {
           "city_id": "split",
           "city_name": "Split",
-          "image_keywords": ["split diocletian palace aerial", "split riva promenade sunset", "split old town narrow streets"],
+          "image_keywords": "split diocletian palace aerial split riva promenade sunset split old town narrow streets",
           "things_to_do": [
             {
-              "id": "split-1",
+              "experience_id": "split-1",
               "title": "Diocletian's Palace Tour",
+              "subtitle": "Experience Diocletian's Palace Tour",
+              "description": "Discover the magic of Diocletian's Palace Tour. An unforgettable experience awaits.",
               "location": "Old Town",
               "duration": "2 hrs",
-              "cost": "$",
-              "tags": ["History", "Architecture", "UNESCO"],
-              "image_keywords": ["diocletian palace split roman ruins", "split palace underground cellars"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "History",
+                "Architecture",
+                "UNESCO"
+              ],
+              "image_keywords": "diocletian palace split roman ruins split palace underground cellars",
               "specific_options": [
-                { "name": "Underground Cellars", "location": "Palace Basement" },
-                { "name": "Peristyle Square", "location": "Central Courtyard" },
-                { "name": "Cathedral Bell Tower", "location": "St. Domnius" }
-              ]
+                {
+                  "title": "Underground Cellars",
+                  "description": "Experience Underground Cellars",
+                  "location": "Palace Basement",
+                  "duration": "1 hr",
+                  "image_keywords": "underground cellars palace basement"
+                },
+                {
+                  "title": "Peristyle Square",
+                  "description": "Experience Peristyle Square",
+                  "location": "Central Courtyard",
+                  "duration": "1 hr",
+                  "image_keywords": "peristyle square central courtyard"
+                },
+                {
+                  "title": "Cathedral Bell Tower",
+                  "description": "Experience Cathedral Bell Tower",
+                  "location": "St. Domnius",
+                  "duration": "1 hr",
+                  "image_keywords": "cathedral bell tower st. domnius"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "split-2",
+              "experience_id": "split-2",
               "title": "Marjan Hill Sunset Hike",
+              "subtitle": "Experience Marjan Hill Sunset Hike",
+              "description": "Discover the magic of Marjan Hill Sunset Hike. An unforgettable experience awaits.",
               "location": "Marjan Forest Park",
               "duration": "2.5 hrs",
-              "cost": "Free",
-              "tags": ["Hiking", "Nature", "Sunset"],
-              "image_keywords": ["marjan hill split panoramic view", "split marjan forest park hiking"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Hiking",
+                "Nature",
+                "Sunset"
+              ],
+              "image_keywords": "marjan hill split panoramic view split marjan forest park hiking",
               "specific_options": [
-                { "name": "Telegrin Peak", "location": "Highest Viewpoint" },
-                { "name": "Jewish Cemetery Trail", "location": "Western Path" },
-                { "name": "Vidilica Café Stop", "location": "Mid-Hill" }
-              ]
+                {
+                  "title": "Telegrin Peak",
+                  "description": "Experience Telegrin Peak",
+                  "location": "Highest Viewpoint",
+                  "duration": "1 hr",
+                  "image_keywords": "telegrin peak highest viewpoint"
+                },
+                {
+                  "title": "Jewish Cemetery Trail",
+                  "description": "Experience Jewish Cemetery Trail",
+                  "location": "Western Path",
+                  "duration": "1 hr",
+                  "image_keywords": "jewish cemetery trail western path"
+                },
+                {
+                  "title": "Vidilica Café Stop",
+                  "description": "Experience Vidilica Café Stop",
+                  "location": "Mid-Hill",
+                  "duration": "1 hr",
+                  "image_keywords": "vidilica café stop mid-hill"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "split-3",
+              "experience_id": "split-3",
               "title": "Blue Lagoon Boat Trip",
+              "subtitle": "Experience Blue Lagoon Boat Trip",
+              "description": "Discover the magic of Blue Lagoon Boat Trip. An unforgettable experience awaits.",
               "location": "Trogir Islands",
               "duration": "6 hrs",
-              "cost": "$$$",
-              "tags": ["Boat", "Swimming", "Islands"],
-              "image_keywords": ["blue lagoon croatia turquoise water", "split boat tour adriatic islands"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Boat",
+                "Swimming",
+                "Islands"
+              ],
+              "image_keywords": "blue lagoon croatia turquoise water split boat tour adriatic islands",
               "specific_options": [
-                { "name": "Blue Lagoon Swim", "location": "Drvenik Mali" },
-                { "name": "Šolta Island Stop", "location": "Maslinica Bay" },
-                { "name": "Nečujam Beach", "location": "Šolta South" }
-              ]
+                {
+                  "title": "Blue Lagoon Swim",
+                  "description": "Experience Blue Lagoon Swim",
+                  "location": "Drvenik Mali",
+                  "duration": "1 hr",
+                  "image_keywords": "blue lagoon swim drvenik mali"
+                },
+                {
+                  "title": "Šolta Island Stop",
+                  "description": "Experience Šolta Island Stop",
+                  "location": "Maslinica Bay",
+                  "duration": "1 hr",
+                  "image_keywords": "šolta island stop maslinica bay"
+                },
+                {
+                  "title": "Nečujam Beach",
+                  "description": "Experience Nečujam Beach",
+                  "location": "Šolta South",
+                  "duration": "1 hr",
+                  "image_keywords": "nečujam beach šolta south"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Fabrique Bakery",
               "notes": "Swedish-style bakery with sourdough breads",
-              "image_keywords": ["fabrique bakery split interior pastries"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "fabrique bakery split interior pastries"
             },
             {
               "name": "Lvxor Café",
               "notes": "Historic café on Peristyle Square",
-              "image_keywords": ["lvxor cafe split diocletian palace peristyle"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "lvxor cafe split diocletian palace peristyle"
             },
             {
               "name": "Zrno Soli",
               "notes": "Seafood restaurant on Riva waterfront",
-              "image_keywords": ["zrno soli split riva waterfront dining"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "zrno soli split riva waterfront dining"
             }
-          ]
+          ],
+          "description": "A living Roman palace where locals hang laundry from ancient windows and cafés spill into 1,700-year-old courtyards."
         },
         "rovinj": {
           "city_id": "rovinj",
           "city_name": "Rovinj",
-          "image_keywords": ["rovinj old town colorful harbor", "rovinj sunset istria", "rovinj narrow cobblestone streets"],
+          "image_keywords": "rovinj old town colorful harbor rovinj sunset istria rovinj narrow cobblestone streets",
           "things_to_do": [
             {
-              "id": "rovinj-1",
+              "experience_id": "rovinj-1",
               "title": "Old Town Sunset Wander",
+              "subtitle": "Experience Old Town Sunset Wander",
+              "description": "Discover the magic of Old Town Sunset Wander. An unforgettable experience awaits.",
               "location": "Historic Center",
               "duration": "1.5 hrs",
-              "cost": "Free",
-              "tags": ["Walking", "Photography", "Romantic"],
-              "image_keywords": ["rovinj sunset old town harbor", "rovinj cobblestone streets golden hour"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Walking",
+                "Photography",
+                "Romantic"
+              ],
+              "image_keywords": "rovinj sunset old town harbor rovinj cobblestone streets golden hour",
               "specific_options": [
-                { "name": "St. Euphemia Church", "location": "Hilltop" },
-                { "name": "Grisia Street Art Walk", "location": "Artists Quarter" },
-                { "name": "Harbor Sunset Spot", "location": "Riva Promenade" }
-              ]
+                {
+                  "title": "St. Euphemia Church",
+                  "description": "Experience St. Euphemia Church",
+                  "location": "Hilltop",
+                  "duration": "1 hr",
+                  "image_keywords": "st. euphemia church hilltop"
+                },
+                {
+                  "title": "Grisia Street Art Walk",
+                  "description": "Experience Grisia Street Art Walk",
+                  "location": "Artists Quarter",
+                  "duration": "1 hr",
+                  "image_keywords": "grisia street art walk artists quarter"
+                },
+                {
+                  "title": "Harbor Sunset Spot",
+                  "description": "Experience Harbor Sunset Spot",
+                  "location": "Riva Promenade",
+                  "duration": "1 hr",
+                  "image_keywords": "harbor sunset spot riva promenade"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "rovinj-2",
+              "experience_id": "rovinj-2",
               "title": "Kayak to Red Island",
+              "subtitle": "Experience Kayak to Red Island",
+              "description": "Discover the magic of Kayak to Red Island. An unforgettable experience awaits.",
               "location": "Red Island",
               "duration": "3 hrs",
-              "cost": "$$",
-              "tags": ["Kayaking", "Swimming", "Nature"],
-              "image_keywords": ["rovinj red island kayaking", "istria croatia island swimming"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Kayaking",
+                "Swimming",
+                "Nature"
+              ],
+              "image_keywords": "rovinj red island kayaking istria croatia island swimming",
               "specific_options": [
-                { "name": "St. Andrew Island", "location": "Main Island" },
-                { "name": "Maskin Forest Park", "location": "Island Interior" },
-                { "name": "Secluded Bay Swim", "location": "Eastern Coast" }
-              ]
+                {
+                  "title": "St. Andrew Island",
+                  "description": "Experience St. Andrew Island",
+                  "location": "Main Island",
+                  "duration": "1 hr",
+                  "image_keywords": "st. andrew island main island"
+                },
+                {
+                  "title": "Maskin Forest Park",
+                  "description": "Experience Maskin Forest Park",
+                  "location": "Island Interior",
+                  "duration": "1 hr",
+                  "image_keywords": "maskin forest park island interior"
+                },
+                {
+                  "title": "Secluded Bay Swim",
+                  "description": "Experience Secluded Bay Swim",
+                  "location": "Eastern Coast",
+                  "duration": "1 hr",
+                  "image_keywords": "secluded bay swim eastern coast"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "rovinj-3",
+              "experience_id": "rovinj-3",
               "title": "Truffle Hunting Experience",
+              "subtitle": "Experience Truffle Hunting Experience",
+              "description": "Discover the magic of Truffle Hunting Experience. An unforgettable experience awaits.",
               "location": "Istrian Countryside",
               "duration": "4 hrs",
-              "cost": "$$$",
-              "tags": ["Food", "Nature", "Experience"],
-              "image_keywords": ["istria truffle hunting forest", "rovinj istria countryside truffle"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Food",
+                "Nature",
+                "Experience"
+              ],
+              "image_keywords": "istria truffle hunting forest rovinj istria countryside truffle",
               "specific_options": [
-                { "name": "Motovun Forest Hunt", "location": "Motovun Woods" },
-                { "name": "Truffle Tasting Lunch", "location": "Livade Village" },
-                { "name": "Istrian Wine Pairing", "location": "Local Konoba" }
-              ]
+                {
+                  "title": "Motovun Forest Hunt",
+                  "description": "Experience Motovun Forest Hunt",
+                  "location": "Motovun Woods",
+                  "duration": "1 hr",
+                  "image_keywords": "motovun forest hunt motovun woods"
+                },
+                {
+                  "title": "Truffle Tasting Lunch",
+                  "description": "Experience Truffle Tasting Lunch",
+                  "location": "Livade Village",
+                  "duration": "1 hr",
+                  "image_keywords": "truffle tasting lunch livade village"
+                },
+                {
+                  "title": "Istrian Wine Pairing",
+                  "description": "Experience Istrian Wine Pairing",
+                  "location": "Local Konoba",
+                  "duration": "1 hr",
+                  "image_keywords": "istrian wine pairing local konoba"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Piassa Grande",
               "notes": "Italian-style gelato on main square",
-              "image_keywords": ["piassa grande rovinj gelato terrace"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "piassa grande rovinj gelato terrace"
             },
             {
               "name": "Monte",
               "notes": "Michelin-starred restaurant with tasting menus",
-              "image_keywords": ["monte restaurant rovinj fine dining"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "monte restaurant rovinj fine dining"
             },
             {
               "name": "Valentino Champagne Bar",
               "notes": "Waterfront bar with sunset cushions",
-              "image_keywords": ["valentino rovinj sunset champagne waterfront"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "valentino rovinj sunset champagne waterfront"
             }
-          ]
+          ],
+          "description": "Istria's jewel—a fishing village of pastel houses, cobblestone hills, and the scent of truffles in the air."
         }
-      }
+      },
+      "description": "Medieval towns tumble into turquoise waters. Ancient stone streets glow golden at dusk. This is the Adriatic at its most seductive.",
+      "best_time": "Shoulder seasons (May-June, September-October) for fewer crowds and perfect weather"
     },
     "bali": {
       "country_id": "bali",
       "country_name": "Bali",
       "flag": "🇮🇩",
-      "hero_image_keywords": ["bali uluwatu temple sunset cliff", "bali tegalalang rice terraces green", "bali beach sunset palm trees"],
-      "seasonality": ["May", "June", "July", "August", "September"],
-      "cost_range": "low",
-      "duration_hint": "10h+",
-      "themes": ["beach_escapes", "diving_surf", "temples", "rice_terraces", "jungle_wellness", "local_cuisine", "culture_nights"],
+      "hero_image_keywords": "bali uluwatu temple sunset cliff bali tegalalang rice terraces green bali beach sunset palm trees",
+      "seasonality": [
+        "May",
+        "June",
+        "July",
+        "August",
+        "September"
+      ],
+      "cost_range": "low-mid",
+      "duration_hint": "10-14 days",
+      "themes": [
+        {
+          "id": "beach_escapes",
+          "name": "Beach Escapes"
+        },
+        {
+          "id": "diving_surf",
+          "name": "Diving & Surf"
+        },
+        {
+          "id": "temples",
+          "name": "Sacred Temples"
+        },
+        {
+          "id": "rice_terraces",
+          "name": "Rice Terraces"
+        },
+        {
+          "id": "jungle_wellness",
+          "name": "Jungle Wellness"
+        },
+        {
+          "id": "local_cuisine",
+          "name": "Local Cuisine"
+        },
+        {
+          "id": "culture_nights",
+          "name": "Cultural Nights"
+        }
+      ],
       "subtitle": "Island of gods, rice terraces, and endless summer",
       "cities": {
         "canggu": {
           "city_id": "canggu",
           "city_name": "Canggu",
-          "image_keywords": ["canggu beach surf sunset bali", "canggu rice fields bicycle", "canggu echo beach waves"],
+          "image_keywords": "canggu beach surf sunset bali canggu rice fields bicycle canggu echo beach waves",
           "things_to_do": [
             {
-              "id": "canggu-1",
+              "experience_id": "canggu-1",
               "title": "Surf Lesson at Echo Beach",
+              "subtitle": "Experience Surf Lesson at Echo Beach",
+              "description": "Discover the magic of Surf Lesson at Echo Beach. An unforgettable experience awaits.",
               "location": "Echo Beach",
               "duration": "2 hrs",
-              "cost": "$$",
-              "tags": ["Surfing", "Beach", "Adventure"],
-              "image_keywords": ["echo beach canggu surf waves", "canggu surf school lesson"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Surfing",
+                "Beach",
+                "Adventure"
+              ],
+              "image_keywords": "echo beach canggu surf waves canggu surf school lesson",
               "specific_options": [
-                { "name": "Beginner Group Lesson", "location": "Echo Beach Surf School" },
-                { "name": "Private Coaching", "location": "Batu Bolong Beach" },
-                { "name": "Advanced Reef Break", "location": "Old Man's" }
-              ]
+                {
+                  "title": "Beginner Group Lesson",
+                  "description": "Experience Beginner Group Lesson",
+                  "location": "Echo Beach Surf School",
+                  "duration": "1 hr",
+                  "image_keywords": "beginner group lesson echo beach surf school"
+                },
+                {
+                  "title": "Private Coaching",
+                  "description": "Experience Private Coaching",
+                  "location": "Batu Bolong Beach",
+                  "duration": "1 hr",
+                  "image_keywords": "private coaching batu bolong beach"
+                },
+                {
+                  "title": "Advanced Reef Break",
+                  "description": "Experience Advanced Reef Break",
+                  "location": "Old Man's",
+                  "duration": "1 hr",
+                  "image_keywords": "advanced reef break old man's"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "canggu-2",
+              "experience_id": "canggu-2",
               "title": "Beach Club Hopping",
+              "subtitle": "Experience Beach Club Hopping",
+              "description": "Discover the magic of Beach Club Hopping. An unforgettable experience awaits.",
               "location": "Canggu Coast",
               "duration": "4 hrs",
-              "cost": "$$$",
-              "tags": ["Beach", "Relaxation", "Social"],
-              "image_keywords": ["canggu beach club pool sunset", "bali beach club infinity pool"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Beach",
+                "Relaxation",
+                "Social"
+              ],
+              "image_keywords": "canggu beach club pool sunset bali beach club infinity pool",
               "specific_options": [
-                { "name": "Finns Beach Club", "location": "Berawa Beach" },
-                { "name": "The Lawn Canggu", "location": "Echo Beach" },
-                { "name": "La Brisa", "location": "Echo Beach" }
-              ]
+                {
+                  "title": "Finns Beach Club",
+                  "description": "Experience Finns Beach Club",
+                  "location": "Berawa Beach",
+                  "duration": "1 hr",
+                  "image_keywords": "finns beach club berawa beach"
+                },
+                {
+                  "title": "The Lawn Canggu",
+                  "description": "Experience The Lawn Canggu",
+                  "location": "Echo Beach",
+                  "duration": "1 hr",
+                  "image_keywords": "the lawn canggu echo beach"
+                },
+                {
+                  "title": "La Brisa",
+                  "description": "Experience La Brisa",
+                  "location": "Echo Beach",
+                  "duration": "1 hr",
+                  "image_keywords": "la brisa echo beach"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "canggu-3",
+              "experience_id": "canggu-3",
               "title": "Sunset Yoga Session",
+              "subtitle": "Experience Sunset Yoga Session",
+              "description": "Discover the magic of Sunset Yoga Session. An unforgettable experience awaits.",
               "location": "Berawa Beach",
               "duration": "1.5 hrs",
-              "cost": "$$",
-              "tags": ["Yoga", "Wellness", "Sunset"],
-              "image_keywords": ["canggu beach yoga sunset bali", "bali yoga class rice field view"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Yoga",
+                "Wellness",
+                "Sunset"
+              ],
+              "image_keywords": "canggu beach yoga sunset bali bali yoga class rice field view",
               "specific_options": [
-                { "name": "The Practice Bali", "location": "Canggu Center" },
-                { "name": "Desa Seni Village", "location": "North Canggu" },
-                { "name": "Serenity Eco Guesthouse", "location": "Berawa" }
-              ]
+                {
+                  "title": "The Practice Bali",
+                  "description": "Experience The Practice Bali",
+                  "location": "Canggu Center",
+                  "duration": "1 hr",
+                  "image_keywords": "the practice bali canggu center"
+                },
+                {
+                  "title": "Desa Seni Village",
+                  "description": "Experience Desa Seni Village",
+                  "location": "North Canggu",
+                  "duration": "1 hr",
+                  "image_keywords": "desa seni village north canggu"
+                },
+                {
+                  "title": "Serenity Eco Guesthouse",
+                  "description": "Experience Serenity Eco Guesthouse",
+                  "location": "Berawa",
+                  "duration": "1 hr",
+                  "image_keywords": "serenity eco guesthouse berawa"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Crate Café",
               "notes": "Healthy bowls and specialty coffee",
-              "image_keywords": ["crate cafe canggu interior bali breakfast"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "crate cafe canggu interior bali breakfast"
             },
             {
               "name": "Betelnut Café",
               "notes": "Plant-based café with garden seating",
-              "image_keywords": ["betelnut cafe canggu garden vegetarian"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "betelnut cafe canggu garden vegetarian"
             },
             {
               "name": "Revolver Espresso",
               "notes": "Melbourne-style coffee in Seminyak",
-              "image_keywords": ["revolver espresso bali coffee shop"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "revolver espresso bali coffee shop"
             }
-          ]
+          ],
+          "description": "Bali's laid-back surf town where digital nomads, surfers, and yogis gather by the sea."
         },
         "ubud": {
           "city_id": "ubud",
           "city_name": "Ubud",
-          "image_keywords": ["ubud rice terraces morning mist", "ubud monkey forest temple", "ubud market traditional crafts"],
+          "image_keywords": "ubud rice terraces morning mist ubud monkey forest temple ubud market traditional crafts",
           "things_to_do": [
             {
-              "id": "ubud-1",
+              "experience_id": "ubud-1",
               "title": "Tegalalang Rice Terrace Walk",
+              "subtitle": "Experience Tegalalang Rice Terrace Walk",
+              "description": "Discover the magic of Tegalalang Rice Terrace Walk. An unforgettable experience awaits.",
               "location": "Tegalalang",
               "duration": "2 hrs",
-              "cost": "$",
-              "tags": ["Nature", "Photography", "Walking"],
-              "image_keywords": ["tegalalang rice terrace ubud green layers", "bali rice paddy terraces morning"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Nature",
+                "Photography",
+                "Walking"
+              ],
+              "image_keywords": "tegalalang rice terrace ubud green layers bali rice paddy terraces morning",
               "specific_options": [
-                { "name": "Sunrise Trek", "location": "Main Terrace Path" },
-                { "name": "Jungle Swing", "location": "Terrace Edge" },
-                { "name": "Coffee Plantation Tour", "location": "Adjacent Farm" }
-              ]
+                {
+                  "title": "Sunrise Trek",
+                  "description": "Experience Sunrise Trek",
+                  "location": "Main Terrace Path",
+                  "duration": "1 hr",
+                  "image_keywords": "sunrise trek main terrace path"
+                },
+                {
+                  "title": "Jungle Swing",
+                  "description": "Experience Jungle Swing",
+                  "location": "Terrace Edge",
+                  "duration": "1 hr",
+                  "image_keywords": "jungle swing terrace edge"
+                },
+                {
+                  "title": "Coffee Plantation Tour",
+                  "description": "Experience Coffee Plantation Tour",
+                  "location": "Adjacent Farm",
+                  "duration": "1 hr",
+                  "image_keywords": "coffee plantation tour adjacent farm"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "ubud-2",
+              "experience_id": "ubud-2",
               "title": "Sacred Monkey Forest",
+              "subtitle": "Experience Sacred Monkey Forest",
+              "description": "Discover the magic of Sacred Monkey Forest. An unforgettable experience awaits.",
               "location": "Ubud Center",
               "duration": "1.5 hrs",
-              "cost": "$",
-              "tags": ["Wildlife", "Nature", "Photography"],
-              "image_keywords": ["ubud monkey forest temple macaques", "sacred monkey forest bali stone temple"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Wildlife",
+                "Nature",
+                "Photography"
+              ],
+              "image_keywords": "ubud monkey forest temple macaques sacred monkey forest bali stone temple",
               "specific_options": [
-                { "name": "Morning Monkey Encounter", "location": "Main Forest" },
-                { "name": "Pura Dalem Temple", "location": "Temple of Death" },
-                { "name": "Dragon Bridge", "location": "Forest Path" }
-              ]
+                {
+                  "title": "Morning Monkey Encounter",
+                  "description": "Experience Morning Monkey Encounter",
+                  "location": "Main Forest",
+                  "duration": "1 hr",
+                  "image_keywords": "morning monkey encounter main forest"
+                },
+                {
+                  "title": "Pura Dalem Temple",
+                  "description": "Experience Pura Dalem Temple",
+                  "location": "Temple of Death",
+                  "duration": "1 hr",
+                  "image_keywords": "pura dalem temple temple of death"
+                },
+                {
+                  "title": "Dragon Bridge",
+                  "description": "Experience Dragon Bridge",
+                  "location": "Forest Path",
+                  "duration": "1 hr",
+                  "image_keywords": "dragon bridge forest path"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "ubud-3",
+              "experience_id": "ubud-3",
               "title": "Balinese Cooking Class",
+              "subtitle": "Experience Balinese Cooking Class",
+              "description": "Discover the magic of Balinese Cooking Class. An unforgettable experience awaits.",
               "location": "Ubud Village",
               "duration": "4 hrs",
-              "cost": "$$",
-              "tags": ["Food", "Culture", "Experience"],
-              "image_keywords": ["bali cooking class traditional kitchen", "ubud market fresh ingredients cooking"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Food",
+                "Culture",
+                "Experience"
+              ],
+              "image_keywords": "bali cooking class traditional kitchen ubud market fresh ingredients cooking",
               "specific_options": [
-                { "name": "Paon Cooking Class", "location": "Ubud Market Start" },
-                { "name": "Casa Luna", "location": "Honeymoon Guesthouse" },
-                { "name": "Mama's Warung", "location": "Peliatan Village" }
-              ]
+                {
+                  "title": "Paon Cooking Class",
+                  "description": "Experience Paon Cooking Class",
+                  "location": "Ubud Market Start",
+                  "duration": "1 hr",
+                  "image_keywords": "paon cooking class ubud market start"
+                },
+                {
+                  "title": "Casa Luna",
+                  "description": "Experience Casa Luna",
+                  "location": "Honeymoon Guesthouse",
+                  "duration": "1 hr",
+                  "image_keywords": "casa luna honeymoon guesthouse"
+                },
+                {
+                  "title": "Mama's Warung",
+                  "description": "Experience Mama's Warung",
+                  "location": "Peliatan Village",
+                  "duration": "1 hr",
+                  "image_keywords": "mama's warung peliatan village"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Café Organic",
               "notes": "Farm-to-table healthy bowls in rice fields",
-              "image_keywords": ["cafe organic ubud rice field view bali"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "cafe organic ubud rice field view bali"
             },
             {
               "name": "Clear Café",
               "notes": "Raw vegan café with jungle views",
-              "image_keywords": ["clear cafe ubud vegetarian bali interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "clear cafe ubud vegetarian bali interior"
             },
             {
               "name": "Seniman Coffee Studio",
               "notes": "Specialty coffee roastery and training center",
-              "image_keywords": ["seniman coffee ubud roastery bali"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "seniman coffee ubud roastery bali"
             }
-          ]
+          ],
+          "description": "Bali's cultural heart—where jungle, art, and spirituality converge in terraced green valleys."
         },
         "seminyak": {
           "city_id": "seminyak",
           "city_name": "Seminyak",
-          "image_keywords": ["seminyak beach sunset bali surfer", "seminyak shopping boutique street", "seminyak beach club infinity pool"],
+          "image_keywords": "seminyak beach sunset bali surfer seminyak shopping boutique street seminyak beach club infinity pool",
           "things_to_do": [
             {
-              "id": "seminyak-1",
+              "experience_id": "seminyak-1",
               "title": "Sunset Beach Club Crawl",
+              "subtitle": "Experience Sunset Beach Club Crawl",
+              "description": "Discover the magic of Sunset Beach Club Crawl. An unforgettable experience awaits.",
               "location": "Seminyak Beach",
               "duration": "3 hrs",
-              "cost": "$$$",
-              "tags": ["Beach", "Nightlife", "Sunset"],
-              "image_keywords": ["seminyak beach club sunset bali", "potato head beach club seminyak"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Beach",
+                "Nightlife",
+                "Sunset"
+              ],
+              "image_keywords": "seminyak beach club sunset bali potato head beach club seminyak",
               "specific_options": [
-                { "name": "Potato Head Beach Club", "location": "Petitenget Beach" },
-                { "name": "Ku De Ta", "location": "Main Beach" },
-                { "name": "Mrs Sippy", "location": "Petitenget" }
-              ]
+                {
+                  "title": "Potato Head Beach Club",
+                  "description": "Experience Potato Head Beach Club",
+                  "location": "Petitenget Beach",
+                  "duration": "1 hr",
+                  "image_keywords": "potato head beach club petitenget beach"
+                },
+                {
+                  "title": "Ku De Ta",
+                  "description": "Experience Ku De Ta",
+                  "location": "Main Beach",
+                  "duration": "1 hr",
+                  "image_keywords": "ku de ta main beach"
+                },
+                {
+                  "title": "Mrs Sippy",
+                  "description": "Experience Mrs Sippy",
+                  "location": "Petitenget",
+                  "duration": "1 hr",
+                  "image_keywords": "mrs sippy petitenget"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "seminyak-2",
+              "experience_id": "seminyak-2",
               "title": "Spa & Wellness Day",
+              "subtitle": "Experience Spa & Wellness Day",
+              "description": "Discover the magic of Spa & Wellness Day. An unforgettable experience awaits.",
               "location": "Seminyak Center",
               "duration": "3 hrs",
-              "cost": "$$$",
-              "tags": ["Wellness", "Relaxation", "Spa"],
-              "image_keywords": ["seminyak spa massage bali traditional", "bali spa treatment tropical garden"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Wellness",
+                "Relaxation",
+                "Spa"
+              ],
+              "image_keywords": "seminyak spa massage bali traditional bali spa treatment tropical garden",
               "specific_options": [
-                { "name": "Prana Spa", "location": "Seminyak Square" },
-                { "name": "Bodyworks Spa", "location": "Jl. Petitenget" },
-                { "name": "Taksu Spa", "location": "Jl. Goutama" }
-              ]
+                {
+                  "title": "Prana Spa",
+                  "description": "Experience Prana Spa",
+                  "location": "Seminyak Square",
+                  "duration": "1 hr",
+                  "image_keywords": "prana spa seminyak square"
+                },
+                {
+                  "title": "Bodyworks Spa",
+                  "description": "Experience Bodyworks Spa",
+                  "location": "Jl. Petitenget",
+                  "duration": "1 hr",
+                  "image_keywords": "bodyworks spa jl. petitenget"
+                },
+                {
+                  "title": "Taksu Spa",
+                  "description": "Experience Taksu Spa",
+                  "location": "Jl. Goutama",
+                  "duration": "1 hr",
+                  "image_keywords": "taksu spa jl. goutama"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "seminyak-3",
+              "experience_id": "seminyak-3",
               "title": "Boutique Shopping Tour",
+              "subtitle": "Experience Boutique Shopping Tour",
+              "description": "Discover the magic of Boutique Shopping Tour. An unforgettable experience awaits.",
               "location": "Seminyak Streets",
               "duration": "2 hrs",
-              "cost": "$$",
-              "tags": ["Shopping", "Fashion", "Culture"],
-              "image_keywords": ["seminyak boutique shopping bali fashion", "seminyak street shops colorful"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Shopping",
+                "Fashion",
+                "Culture"
+              ],
+              "image_keywords": "seminyak boutique shopping bali fashion seminyak street shops colorful",
               "specific_options": [
-                { "name": "Jalan Raya Seminyak", "location": "Main Shopping Street" },
-                { "name": "Jalan Laksmana", "location": "Eat Street Boutiques" },
-                { "name": "Jalan Kayu Aya", "location": "Designer District" }
-              ]
+                {
+                  "title": "Jalan Raya Seminyak",
+                  "description": "Experience Jalan Raya Seminyak",
+                  "location": "Main Shopping Street",
+                  "duration": "1 hr",
+                  "image_keywords": "jalan raya seminyak main shopping street"
+                },
+                {
+                  "title": "Jalan Laksmana",
+                  "description": "Experience Jalan Laksmana",
+                  "location": "Eat Street Boutiques",
+                  "duration": "1 hr",
+                  "image_keywords": "jalan laksmana eat street boutiques"
+                },
+                {
+                  "title": "Jalan Kayu Aya",
+                  "description": "Experience Jalan Kayu Aya",
+                  "location": "Designer District",
+                  "duration": "1 hr",
+                  "image_keywords": "jalan kayu aya designer district"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Revolver Espresso",
               "notes": "Cult Melbourne-style coffee shop",
-              "image_keywords": ["revolver espresso seminyak coffee bali"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "revolver espresso seminyak coffee bali"
             },
             {
               "name": "Sisterfields",
               "notes": "All-day brunch spot with Aussie vibes",
-              "image_keywords": ["sisterfields seminyak brunch bali interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "sisterfields seminyak brunch bali interior"
             },
             {
               "name": "La Plancha",
               "notes": "Colorful beanbag beach bar",
-              "image_keywords": ["la plancha seminyak beach colorful sunset"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "la plancha seminyak beach colorful sunset"
             }
-          ]
+          ],
+          "description": "Where Bali gets polished—beach clubs, boutique shopping, and sunsets served with champagne."
         }
-      }
+      },
+      "description": "An island where every sunrise feels sacred. Rice terraces ripple green, temples cling to cliffs, and the rhythm of life moves slower, sweeter.",
+      "best_time": "Dry season (May-September) for clear skies and calm seas"
     },
     "thailand": {
       "country_id": "thailand",
       "country_name": "Thailand",
       "flag": "🇹🇭",
-      "hero_image_keywords": ["thailand phi phi islands limestone cliffs", "bangkok grand palace golden temple", "thailand floating market boats"],
-      "seasonality": ["November", "December", "January", "February"],
+      "hero_image_keywords": "thailand phi phi islands limestone cliffs bangkok grand palace golden temple thailand floating market boats",
+      "seasonality": [
+        "November",
+        "December",
+        "January",
+        "February"
+      ],
       "cost_range": "low",
-      "duration_hint": "6-9h",
-      "themes": ["street_food", "island_hopping", "night_markets", "culture_temples", "water_adventures", "mountain_treks"],
+      "duration_hint": "10-14 days",
+      "themes": [
+        {
+          "id": "street_food",
+          "name": "Street Food"
+        },
+        {
+          "id": "island_hopping",
+          "name": "Island Hopping"
+        },
+        {
+          "id": "night_markets",
+          "name": "Night Markets"
+        },
+        {
+          "id": "culture_temples",
+          "name": "Temple Culture"
+        },
+        {
+          "id": "water_adventures",
+          "name": "Water Adventures"
+        },
+        {
+          "id": "mountain_treks",
+          "name": "Mountain Treks"
+        }
+      ],
       "subtitle": "Land of smiles, street food, and turquoise islands",
       "cities": {
         "bangkok": {
           "city_id": "bangkok",
           "city_name": "Bangkok",
-          "image_keywords": ["bangkok grand palace golden temple", "bangkok street market night neon", "bangkok tuk tuk traffic"],
+          "image_keywords": "bangkok grand palace golden temple bangkok street market night neon bangkok tuk tuk traffic",
           "things_to_do": [
             {
-              "id": "bangkok-1",
+              "experience_id": "bangkok-1",
               "title": "Grand Palace & Wat Phra Kaew",
+              "subtitle": "Experience Grand Palace & Wat Phra Kaew",
+              "description": "Discover the magic of Grand Palace & Wat Phra Kaew. An unforgettable experience awaits.",
               "location": "Old Bangkok",
               "duration": "3 hrs",
-              "cost": "$$",
-              "tags": ["Culture", "History", "Photography"],
-              "image_keywords": ["grand palace bangkok golden temple", "wat phra kaew emerald buddha bangkok"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Culture",
+                "History",
+                "Photography"
+              ],
+              "image_keywords": "grand palace bangkok golden temple wat phra kaew emerald buddha bangkok",
               "specific_options": [
-                { "name": "Emerald Buddha Temple", "location": "Main Complex" },
-                { "name": "Chakri Maha Prasat", "location": "Throne Hall" },
-                { "name": "Temple of the Reclining Buddha", "location": "Wat Pho" }
-              ]
+                {
+                  "title": "Emerald Buddha Temple",
+                  "description": "Experience Emerald Buddha Temple",
+                  "location": "Main Complex",
+                  "duration": "1 hr",
+                  "image_keywords": "emerald buddha temple main complex"
+                },
+                {
+                  "title": "Chakri Maha Prasat",
+                  "description": "Experience Chakri Maha Prasat",
+                  "location": "Throne Hall",
+                  "duration": "1 hr",
+                  "image_keywords": "chakri maha prasat throne hall"
+                },
+                {
+                  "title": "Temple of the Reclining Buddha",
+                  "description": "Experience Temple of the Reclining Buddha",
+                  "location": "Wat Pho",
+                  "duration": "1 hr",
+                  "image_keywords": "temple of the reclining buddha wat pho"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "bangkok-2",
+              "experience_id": "bangkok-2",
               "title": "Floating Market Morning",
+              "subtitle": "Experience Floating Market Morning",
+              "description": "Discover the magic of Floating Market Morning. An unforgettable experience awaits.",
               "location": "Damnoen Saduak",
               "duration": "4 hrs",
-              "cost": "$$",
-              "tags": ["Market", "Culture", "Food"],
-              "image_keywords": ["damnoen saduak floating market boats", "bangkok floating market vendors thailand"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Market",
+                "Culture",
+                "Food"
+              ],
+              "image_keywords": "damnoen saduak floating market boats bangkok floating market vendors thailand",
               "specific_options": [
-                { "name": "Boat Tour", "location": "Main Canal" },
-                { "name": "Fresh Fruit Tasting", "location": "Vendor Boats" },
-                { "name": "Traditional Thai Desserts", "location": "Market Stalls" }
-              ]
+                {
+                  "title": "Boat Tour",
+                  "description": "Experience Boat Tour",
+                  "location": "Main Canal",
+                  "duration": "1 hr",
+                  "image_keywords": "boat tour main canal"
+                },
+                {
+                  "title": "Fresh Fruit Tasting",
+                  "description": "Experience Fresh Fruit Tasting",
+                  "location": "Vendor Boats",
+                  "duration": "1 hr",
+                  "image_keywords": "fresh fruit tasting vendor boats"
+                },
+                {
+                  "title": "Traditional Thai Desserts",
+                  "description": "Experience Traditional Thai Desserts",
+                  "location": "Market Stalls",
+                  "duration": "1 hr",
+                  "image_keywords": "traditional thai desserts market stalls"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "bangkok-3",
+              "experience_id": "bangkok-3",
               "title": "Rooftop Bar Sunset Tour",
+              "subtitle": "Experience Rooftop Bar Sunset Tour",
+              "description": "Discover the magic of Rooftop Bar Sunset Tour. An unforgettable experience awaits.",
               "location": "Sukhumvit",
               "duration": "3 hrs",
-              "cost": "$$$",
-              "tags": ["Nightlife", "Sunset", "City Views"],
-              "image_keywords": ["bangkok rooftop bar skyline sunset", "bangkok sky bar night lights"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Nightlife",
+                "Sunset",
+                "City Views"
+              ],
+              "image_keywords": "bangkok rooftop bar skyline sunset bangkok sky bar night lights",
               "specific_options": [
-                { "name": "Sky Bar at Lebua", "location": "State Tower" },
-                { "name": "Octave Rooftop Bar", "location": "Marriott Sukhumvit" },
-                { "name": "Vertigo & Moon Bar", "location": "Banyan Tree" }
-              ]
+                {
+                  "title": "Sky Bar at Lebua",
+                  "description": "Experience Sky Bar at Lebua",
+                  "location": "State Tower",
+                  "duration": "1 hr",
+                  "image_keywords": "sky bar at lebua state tower"
+                },
+                {
+                  "title": "Octave Rooftop Bar",
+                  "description": "Experience Octave Rooftop Bar",
+                  "location": "Marriott Sukhumvit",
+                  "duration": "1 hr",
+                  "image_keywords": "octave rooftop bar marriott sukhumvit"
+                },
+                {
+                  "title": "Vertigo & Moon Bar",
+                  "description": "Experience Vertigo & Moon Bar",
+                  "location": "Banyan Tree",
+                  "duration": "1 hr",
+                  "image_keywords": "vertigo & moon bar banyan tree"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Roast Coffee & Eatery",
               "notes": "Third-wave coffee in vintage shophouse",
-              "image_keywords": ["roast coffee bangkok interior specialty"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "roast coffee bangkok interior specialty"
             },
             {
               "name": "The Commons",
               "notes": "Hip food hall with multiple vendors",
-              "image_keywords": ["the commons bangkok food hall modern"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "the commons bangkok food hall modern"
             },
             {
               "name": "Rocket Coffeebar S12",
               "notes": "Specialty coffee near Asok BTS",
-              "image_keywords": ["rocket coffeebar bangkok minimal design"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "rocket coffeebar bangkok minimal design"
             }
-          ]
+          ],
+          "description": "Chaos and calm collide—street vendors next to golden spires, tuk-tuks weaving through temple-lined streets."
         },
         "chiang_mai": {
           "city_id": "chiang_mai",
           "city_name": "Chiang Mai",
-          "image_keywords": ["chiang mai doi suthep temple golden", "chiang mai night bazaar lanterns", "chiang mai elephant sanctuary"],
+          "image_keywords": "chiang mai doi suthep temple golden chiang mai night bazaar lanterns chiang mai elephant sanctuary",
           "things_to_do": [
             {
-              "id": "chiangmai-1",
+              "experience_id": "chiangmai-1",
               "title": "Elephant Sanctuary Visit",
+              "subtitle": "Experience Elephant Sanctuary Visit",
+              "description": "Discover the magic of Elephant Sanctuary Visit. An unforgettable experience awaits.",
               "location": "Mae Rim",
               "duration": "6 hrs",
-              "cost": "$$$",
-              "tags": ["Wildlife", "Nature", "Ethical"],
-              "image_keywords": ["chiang mai elephant sanctuary bathing", "thailand elephant ethical tourism"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Wildlife",
+                "Nature",
+                "Ethical"
+              ],
+              "image_keywords": "chiang mai elephant sanctuary bathing thailand elephant ethical tourism",
               "specific_options": [
-                { "name": "Elephant Nature Park", "location": "Mae Taeng" },
-                { "name": "Elephant Jungle Sanctuary", "location": "Mae Rim Valley" },
-                { "name": "Boon Lott's Elephant Sanctuary", "location": "Sukhothai" }
-              ]
+                {
+                  "title": "Elephant Nature Park",
+                  "description": "Experience Elephant Nature Park",
+                  "location": "Mae Taeng",
+                  "duration": "1 hr",
+                  "image_keywords": "elephant nature park mae taeng"
+                },
+                {
+                  "title": "Elephant Jungle Sanctuary",
+                  "description": "Experience Elephant Jungle Sanctuary",
+                  "location": "Mae Rim Valley",
+                  "duration": "1 hr",
+                  "image_keywords": "elephant jungle sanctuary mae rim valley"
+                },
+                {
+                  "title": "Boon Lott's Elephant Sanctuary",
+                  "description": "Experience Boon Lott's Elephant Sanctuary",
+                  "location": "Sukhothai",
+                  "duration": "1 hr",
+                  "image_keywords": "boon lott's elephant sanctuary sukhothai"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "chiangmai-2",
+              "experience_id": "chiangmai-2",
               "title": "Thai Cooking Class",
+              "subtitle": "Experience Thai Cooking Class",
+              "description": "Discover the magic of Thai Cooking Class. An unforgettable experience awaits.",
               "location": "Old City",
               "duration": "4 hrs",
-              "cost": "$$",
-              "tags": ["Food", "Culture", "Experience"],
-              "image_keywords": ["chiang mai cooking class thai food", "thailand cooking school market tour"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Food",
+                "Culture",
+                "Experience"
+              ],
+              "image_keywords": "chiang mai cooking class thai food thailand cooking school market tour",
               "specific_options": [
-                { "name": "Thai Farm Cooking School", "location": "Organic Farm" },
-                { "name": "Asia Scenic Thai Cooking", "location": "Mae Rim" },
-                { "name": "Basil Cookery School", "location": "Old City" }
-              ]
+                {
+                  "title": "Thai Farm Cooking School",
+                  "description": "Experience Thai Farm Cooking School",
+                  "location": "Organic Farm",
+                  "duration": "1 hr",
+                  "image_keywords": "thai farm cooking school organic farm"
+                },
+                {
+                  "title": "Asia Scenic Thai Cooking",
+                  "description": "Experience Asia Scenic Thai Cooking",
+                  "location": "Mae Rim",
+                  "duration": "1 hr",
+                  "image_keywords": "asia scenic thai cooking mae rim"
+                },
+                {
+                  "title": "Basil Cookery School",
+                  "description": "Experience Basil Cookery School",
+                  "location": "Old City",
+                  "duration": "1 hr",
+                  "image_keywords": "basil cookery school old city"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "chiangmai-3",
+              "experience_id": "chiangmai-3",
               "title": "Night Bazaar Food Walk",
+              "subtitle": "Experience Night Bazaar Food Walk",
+              "description": "Discover the magic of Night Bazaar Food Walk. An unforgettable experience awaits.",
               "location": "Chang Klan Road",
               "duration": "2 hrs",
-              "cost": "$",
-              "tags": ["Food", "Market", "Nightlife"],
-              "image_keywords": ["chiang mai night bazaar street food", "chiang mai market vendors night"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Food",
+                "Market",
+                "Nightlife"
+              ],
+              "image_keywords": "chiang mai night bazaar street food chiang mai market vendors night",
               "specific_options": [
-                { "name": "Kalare Night Bazaar", "location": "Main Market" },
-                { "name": "Saturday Walking Street", "location": "Wualai Road" },
-                { "name": "Sunday Walking Street", "location": "Rachadamnoen Road" }
-              ]
+                {
+                  "title": "Kalare Night Bazaar",
+                  "description": "Experience Kalare Night Bazaar",
+                  "location": "Main Market",
+                  "duration": "1 hr",
+                  "image_keywords": "kalare night bazaar main market"
+                },
+                {
+                  "title": "Saturday Walking Street",
+                  "description": "Experience Saturday Walking Street",
+                  "location": "Wualai Road",
+                  "duration": "1 hr",
+                  "image_keywords": "saturday walking street wualai road"
+                },
+                {
+                  "title": "Sunday Walking Street",
+                  "description": "Experience Sunday Walking Street",
+                  "location": "Rachadamnoen Road",
+                  "duration": "1 hr",
+                  "image_keywords": "sunday walking street rachadamnoen road"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Ristr8to",
               "notes": "Award-winning latte art and specialty coffee",
-              "image_keywords": ["ristr8to chiang mai coffee latte art"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "ristr8to chiang mai coffee latte art"
             },
             {
               "name": "Graph Café",
               "notes": "Minimalist café with courtyard garden",
-              "image_keywords": ["graph cafe chiang mai garden interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "graph cafe chiang mai garden interior"
             },
             {
               "name": "Rustic & Blue",
               "notes": "Farm café surrounded by rice fields",
-              "image_keywords": ["rustic blue cafe chiang mai rice field"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "rustic blue cafe chiang mai rice field"
             }
-          ]
+          ],
+          "description": "Northern Thailand's heart—mountain air, night bazaars, and elephants roaming ethical sanctuaries."
         },
         "phuket": {
           "city_id": "phuket",
           "city_name": "Phuket",
-          "image_keywords": ["phuket patong beach sunset thailand", "phuket phi phi islands boat tour", "phuket old town colorful buildings"],
+          "image_keywords": "phuket patong beach sunset thailand phuket phi phi islands boat tour phuket old town colorful buildings",
           "things_to_do": [
             {
-              "id": "phuket-1",
+              "experience_id": "phuket-1",
               "title": "Phi Phi Islands Day Trip",
+              "subtitle": "Experience Phi Phi Islands Day Trip",
+              "description": "Discover the magic of Phi Phi Islands Day Trip. An unforgettable experience awaits.",
               "location": "Phi Phi Islands",
               "duration": "8 hrs",
-              "cost": "$$$",
-              "tags": ["Boat", "Islands", "Snorkeling"],
-              "image_keywords": ["phi phi islands maya bay thailand", "phuket island hopping turquoise water"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Boat",
+                "Islands",
+                "Snorkeling"
+              ],
+              "image_keywords": "phi phi islands maya bay thailand phuket island hopping turquoise water",
               "specific_options": [
-                { "name": "Maya Bay Visit", "location": "Phi Phi Leh" },
-                { "name": "Pileh Lagoon Swim", "location": "Phi Phi Leh" },
-                { "name": "Monkey Beach", "location": "Phi Phi Don" }
-              ]
+                {
+                  "title": "Maya Bay Visit",
+                  "description": "Experience Maya Bay Visit",
+                  "location": "Phi Phi Leh",
+                  "duration": "1 hr",
+                  "image_keywords": "maya bay visit phi phi leh"
+                },
+                {
+                  "title": "Pileh Lagoon Swim",
+                  "description": "Experience Pileh Lagoon Swim",
+                  "location": "Phi Phi Leh",
+                  "duration": "1 hr",
+                  "image_keywords": "pileh lagoon swim phi phi leh"
+                },
+                {
+                  "title": "Monkey Beach",
+                  "description": "Experience Monkey Beach",
+                  "location": "Phi Phi Don",
+                  "duration": "1 hr",
+                  "image_keywords": "monkey beach phi phi don"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "phuket-2",
+              "experience_id": "phuket-2",
               "title": "Scuba Diving at Shark Point",
+              "subtitle": "Experience Scuba Diving at Shark Point",
+              "description": "Discover the magic of Scuba Diving at Shark Point. An unforgettable experience awaits.",
               "location": "Andaman Sea",
               "duration": "6 hrs",
-              "cost": "$$$",
-              "tags": ["Diving", "Adventure", "Marine Life"],
-              "image_keywords": ["phuket scuba diving coral reef", "thailand diving shark point underwater"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Diving",
+                "Adventure",
+                "Marine Life"
+              ],
+              "image_keywords": "phuket scuba diving coral reef thailand diving shark point underwater",
               "specific_options": [
-                { "name": "Shark Point Dive", "location": "15km South of Phuket" },
-                { "name": "Racha Noi Island", "location": "Deep Dive Site" },
-                { "name": "King Cruiser Wreck", "location": "Wreck Dive" }
-              ]
+                {
+                  "title": "Shark Point Dive",
+                  "description": "Experience Shark Point Dive",
+                  "location": "15km South of Phuket",
+                  "duration": "1 hr",
+                  "image_keywords": "shark point dive 15km south of phuket"
+                },
+                {
+                  "title": "Racha Noi Island",
+                  "description": "Experience Racha Noi Island",
+                  "location": "Deep Dive Site",
+                  "duration": "1 hr",
+                  "image_keywords": "racha noi island deep dive site"
+                },
+                {
+                  "title": "King Cruiser Wreck",
+                  "description": "Experience King Cruiser Wreck",
+                  "location": "Wreck Dive",
+                  "duration": "1 hr",
+                  "image_keywords": "king cruiser wreck wreck dive"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "phuket-3",
+              "experience_id": "phuket-3",
               "title": "Old Phuket Town Walking Tour",
+              "subtitle": "Experience Old Phuket Town Walking Tour",
+              "description": "Discover the magic of Old Phuket Town Walking Tour. An unforgettable experience awaits.",
               "location": "Phuket Town",
               "duration": "2 hrs",
-              "cost": "$",
-              "tags": ["Culture", "Photography", "Walking"],
-              "image_keywords": ["phuket old town colorful sino-portuguese", "phuket town street art murals"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Culture",
+                "Photography",
+                "Walking"
+              ],
+              "image_keywords": "phuket old town colorful sino-portuguese phuket town street art murals",
               "specific_options": [
-                { "name": "Thalang Road", "location": "Main Heritage Street" },
-                { "name": "Soi Romanee", "location": "Historic Quarter" },
-                { "name": "Sunday Market", "location": "Lard Yai Market" }
-              ]
+                {
+                  "title": "Thalang Road",
+                  "description": "Experience Thalang Road",
+                  "location": "Main Heritage Street",
+                  "duration": "1 hr",
+                  "image_keywords": "thalang road main heritage street"
+                },
+                {
+                  "title": "Soi Romanee",
+                  "description": "Experience Soi Romanee",
+                  "location": "Historic Quarter",
+                  "duration": "1 hr",
+                  "image_keywords": "soi romanee historic quarter"
+                },
+                {
+                  "title": "Sunday Market",
+                  "description": "Experience Sunday Market",
+                  "location": "Lard Yai Market",
+                  "duration": "1 hr",
+                  "image_keywords": "sunday market lard yai market"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Gallery Café",
               "notes": "Art gallery café in old town",
-              "image_keywords": ["gallery cafe phuket old town interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "gallery cafe phuket old town interior"
             },
             {
               "name": "The Coffee Club Patong",
               "notes": "Beachfront café with ocean views",
-              "image_keywords": ["coffee club phuket patong beach view"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "coffee club phuket patong beach view"
             },
             {
               "name": "Bookhemian",
               "notes": "Bookstore café with vintage vibes",
-              "image_keywords": ["bookhemian phuket bookstore cafe interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "bookhemian phuket bookstore cafe interior"
             }
-          ]
+          ],
+          "description": "Thailand's largest island—from party beaches to hidden coves, with turquoise waters all around."
         }
-      }
+      },
+      "description": "Golden temples, floating markets, and limestone islands rising from emerald seas. The Land of Smiles lives up to its name.",
+      "best_time": "Cool and dry season (November-February)"
     },
     "new_zealand": {
       "country_id": "new_zealand",
       "country_name": "New Zealand",
       "flag": "🇳🇿",
-      "hero_image_keywords": ["new zealand milford sound fjord mountains", "new zealand mount cook aoraki sunset", "new zealand hobbiton shire green hills"],
-      "seasonality": ["December", "January", "February", "March"],
-      "cost_range": "high",
-      "duration_hint": "10h+",
-      "themes": ["fjords", "adventure", "maori_culture", "wine_routes", "road_trips", "coastal_wildlife", "alpine_hikes"],
+      "hero_image_keywords": "new zealand milford sound fjord mountains new zealand mount cook aoraki sunset new zealand hobbiton shire green hills",
+      "seasonality": [
+        "December",
+        "January",
+        "February",
+        "March"
+      ],
+      "cost_range": "mid-high",
+      "duration_hint": "12-16 days",
+      "themes": [
+        {
+          "id": "fjords",
+          "name": "Fjords & Sounds"
+        },
+        {
+          "id": "adventure",
+          "name": "Adventure Sports"
+        },
+        {
+          "id": "maori_culture",
+          "name": "Māori Culture"
+        },
+        {
+          "id": "wine_routes",
+          "name": "Wine Routes"
+        },
+        {
+          "id": "road_trips",
+          "name": "Epic Road Trips"
+        },
+        {
+          "id": "coastal_wildlife",
+          "name": "Coastal Wildlife"
+        },
+        {
+          "id": "alpine_hikes",
+          "name": "Alpine Hikes"
+        }
+      ],
       "subtitle": "Land of fjords, adventure, and endless horizons",
       "cities": {
         "queenstown": {
           "city_id": "queenstown",
           "city_name": "Queenstown",
-          "image_keywords": ["queenstown lake wakatipu mountains", "queenstown bungy jump kawarau bridge", "queenstown remarkables ski sunset"],
+          "image_keywords": "queenstown lake wakatipu mountains queenstown bungy jump kawarau bridge queenstown remarkables ski sunset",
           "things_to_do": [
             {
-              "id": "queenstown-1",
+              "experience_id": "queenstown-1",
               "title": "Bungy Jump at Kawarau Bridge",
+              "subtitle": "Experience Bungy Jump at Kawarau Bridge",
+              "description": "Discover the magic of Bungy Jump at Kawarau Bridge. An unforgettable experience awaits.",
               "location": "Kawarau Gorge",
               "duration": "2 hrs",
-              "cost": "$$$",
-              "tags": ["Adventure", "Adrenaline", "Iconic"],
-              "image_keywords": ["kawarau bridge bungy jump queenstown", "new zealand bungy jumping river"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Adventure",
+                "Adrenaline",
+                "Iconic"
+              ],
+              "image_keywords": "kawarau bridge bungy jump queenstown new zealand bungy jumping river",
               "specific_options": [
-                { "name": "Original Bungy (43m)", "location": "Kawarau Bridge" },
-                { "name": "Ledge Bungy (47m)", "location": "Bob's Peak" },
-                { "name": "Nevis Bungy (134m)", "location": "Nevis Valley" }
-              ]
+                {
+                  "title": "Original Bungy (43m)",
+                  "description": "Experience Original Bungy (43m)",
+                  "location": "Kawarau Bridge",
+                  "duration": "1 hr",
+                  "image_keywords": "original bungy (43m) kawarau bridge"
+                },
+                {
+                  "title": "Ledge Bungy (47m)",
+                  "description": "Experience Ledge Bungy (47m)",
+                  "location": "Bob's Peak",
+                  "duration": "1 hr",
+                  "image_keywords": "ledge bungy (47m) bob's peak"
+                },
+                {
+                  "title": "Nevis Bungy (134m)",
+                  "description": "Experience Nevis Bungy (134m)",
+                  "location": "Nevis Valley",
+                  "duration": "1 hr",
+                  "image_keywords": "nevis bungy (134m) nevis valley"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "queenstown-2",
+              "experience_id": "queenstown-2",
               "title": "Milford Sound Cruise",
+              "subtitle": "Experience Milford Sound Cruise",
+              "description": "Discover the magic of Milford Sound Cruise. An unforgettable experience awaits.",
               "location": "Fiordland",
               "duration": "12 hrs",
-              "cost": "$$$",
-              "tags": ["Fjords", "Nature", "Cruise"],
-              "image_keywords": ["milford sound fiordland fjord waterfall", "new zealand milford sound cruise mountains"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Fjords",
+                "Nature",
+                "Cruise"
+              ],
+              "image_keywords": "milford sound fiordland fjord waterfall new zealand milford sound cruise mountains",
               "specific_options": [
-                { "name": "Scenic Cruise", "location": "Milford Sound" },
-                { "name": "Kayaking Tour", "location": "Milford Sound" },
-                { "name": "Helicopter Flight", "location": "Aerial Tour" }
-              ]
+                {
+                  "title": "Scenic Cruise",
+                  "description": "Experience Scenic Cruise",
+                  "location": "Milford Sound",
+                  "duration": "1 hr",
+                  "image_keywords": "scenic cruise milford sound"
+                },
+                {
+                  "title": "Kayaking Tour",
+                  "description": "Experience Kayaking Tour",
+                  "location": "Milford Sound",
+                  "duration": "1 hr",
+                  "image_keywords": "kayaking tour milford sound"
+                },
+                {
+                  "title": "Helicopter Flight",
+                  "description": "Experience Helicopter Flight",
+                  "location": "Aerial Tour",
+                  "duration": "1 hr",
+                  "image_keywords": "helicopter flight aerial tour"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "queenstown-3",
+              "experience_id": "queenstown-3",
               "title": "Skyline Gondola & Luge",
+              "subtitle": "Experience Skyline Gondola & Luge",
+              "description": "Discover the magic of Skyline Gondola & Luge. An unforgettable experience awaits.",
               "location": "Bob's Peak",
               "duration": "2 hrs",
-              "cost": "$$",
-              "tags": ["Views", "Family", "Activity"],
-              "image_keywords": ["queenstown skyline gondola view lake", "queenstown luge track mountain"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Views",
+                "Family",
+                "Activity"
+              ],
+              "image_keywords": "queenstown skyline gondola view lake queenstown luge track mountain",
               "specific_options": [
-                { "name": "Gondola Ride", "location": "Bob's Peak Summit" },
-                { "name": "Luge Tracks", "location": "3 Track Options" },
-                { "name": "Stratosfare Restaurant", "location": "Summit Dining" }
-              ]
+                {
+                  "title": "Gondola Ride",
+                  "description": "Experience Gondola Ride",
+                  "location": "Bob's Peak Summit",
+                  "duration": "1 hr",
+                  "image_keywords": "gondola ride bob's peak summit"
+                },
+                {
+                  "title": "Luge Tracks",
+                  "description": "Experience Luge Tracks",
+                  "location": "3 Track Options",
+                  "duration": "1 hr",
+                  "image_keywords": "luge tracks 3 track options"
+                },
+                {
+                  "title": "Stratosfare Restaurant",
+                  "description": "Experience Stratosfare Restaurant",
+                  "location": "Summit Dining",
+                  "duration": "1 hr",
+                  "image_keywords": "stratosfare restaurant summit dining"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Joe's Garage",
               "notes": "All-day breakfast spot with lake views",
-              "image_keywords": ["joes garage queenstown breakfast interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "joes garage queenstown breakfast interior"
             },
             {
               "name": "Vudu Café & Larder",
               "notes": "Specialty coffee and artisan food",
-              "image_keywords": ["vudu cafe queenstown specialty coffee"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "vudu cafe queenstown specialty coffee"
             },
             {
               "name": "Patagonia Chocolates",
               "notes": "Ice cream and hot chocolate haven",
-              "image_keywords": ["patagonia chocolates queenstown ice cream"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "patagonia chocolates queenstown ice cream"
             }
-          ]
+          ],
+          "description": "Adventure capital of the world—bungy jumps, fjord cruises, and views that belong on postcards."
         },
         "auckland": {
           "city_id": "auckland",
           "city_name": "Auckland",
-          "image_keywords": ["auckland sky tower harbor skyline", "auckland waiheke island vineyard", "auckland mission bay beach"],
+          "image_keywords": "auckland sky tower harbor skyline auckland waiheke island vineyard auckland mission bay beach",
           "things_to_do": [
             {
-              "id": "auckland-1",
+              "experience_id": "auckland-1",
               "title": "Waiheke Island Wine Tour",
+              "subtitle": "Experience Waiheke Island Wine Tour",
+              "description": "Discover the magic of Waiheke Island Wine Tour. An unforgettable experience awaits.",
               "location": "Waiheke Island",
               "duration": "6 hrs",
-              "cost": "$$$",
-              "tags": ["Wine", "Islands", "Scenic"],
-              "image_keywords": ["waiheke island vineyard auckland", "new zealand wine tasting ocean view"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Wine",
+                "Islands",
+                "Scenic"
+              ],
+              "image_keywords": "waiheke island vineyard auckland new zealand wine tasting ocean view",
               "specific_options": [
-                { "name": "Cable Bay Vineyards", "location": "North Coast" },
-                { "name": "Mudbrick Vineyard", "location": "Onetangi" },
-                { "name": "Man O' War", "location": "Eastern Peninsula" }
-              ]
+                {
+                  "title": "Cable Bay Vineyards",
+                  "description": "Experience Cable Bay Vineyards",
+                  "location": "North Coast",
+                  "duration": "1 hr",
+                  "image_keywords": "cable bay vineyards north coast"
+                },
+                {
+                  "title": "Mudbrick Vineyard",
+                  "description": "Experience Mudbrick Vineyard",
+                  "location": "Onetangi",
+                  "duration": "1 hr",
+                  "image_keywords": "mudbrick vineyard onetangi"
+                },
+                {
+                  "title": "Man O' War",
+                  "description": "Experience Man O' War",
+                  "location": "Eastern Peninsula",
+                  "duration": "1 hr",
+                  "image_keywords": "man o' war eastern peninsula"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "auckland-2",
+              "experience_id": "auckland-2",
               "title": "Rangitoto Island Hike",
+              "subtitle": "Experience Rangitoto Island Hike",
+              "description": "Discover the magic of Rangitoto Island Hike. An unforgettable experience awaits.",
               "location": "Rangitoto Island",
               "duration": "4 hrs",
-              "cost": "$",
-              "tags": ["Hiking", "Nature", "Volcano"],
-              "image_keywords": ["rangitoto island volcano auckland", "new zealand volcanic island hike"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Hiking",
+                "Nature",
+                "Volcano"
+              ],
+              "image_keywords": "rangitoto island volcano auckland new zealand volcanic island hike",
               "specific_options": [
-                { "name": "Summit Track", "location": "Main Trail" },
-                { "name": "Lava Caves", "location": "Coastal Path" },
-                { "name": "Pohutukawa Grove", "location": "Forest Loop" }
-              ]
+                {
+                  "title": "Summit Track",
+                  "description": "Experience Summit Track",
+                  "location": "Main Trail",
+                  "duration": "1 hr",
+                  "image_keywords": "summit track main trail"
+                },
+                {
+                  "title": "Lava Caves",
+                  "description": "Experience Lava Caves",
+                  "location": "Coastal Path",
+                  "duration": "1 hr",
+                  "image_keywords": "lava caves coastal path"
+                },
+                {
+                  "title": "Pohutukawa Grove",
+                  "description": "Experience Pohutukawa Grove",
+                  "location": "Forest Loop",
+                  "duration": "1 hr",
+                  "image_keywords": "pohutukawa grove forest loop"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "auckland-3",
+              "experience_id": "auckland-3",
               "title": "Sky Tower Walk & Dinner",
+              "subtitle": "Experience Sky Tower Walk & Dinner",
+              "description": "Discover the magic of Sky Tower Walk & Dinner. An unforgettable experience awaits.",
               "location": "Auckland CBD",
               "duration": "2 hrs",
-              "cost": "$$$",
-              "tags": ["Views", "Dining", "City"],
-              "image_keywords": ["auckland sky tower night city lights", "sky tower restaurant dining view"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Views",
+                "Dining",
+                "City"
+              ],
+              "image_keywords": "auckland sky tower night city lights sky tower restaurant dining view",
               "specific_options": [
-                { "name": "Sky Walk", "location": "External Platform" },
-                { "name": "Orbit 360° Restaurant", "location": "Rotating Dining" },
-                { "name": "Observation Deck", "location": "Main Deck" }
-              ]
+                {
+                  "title": "Sky Walk",
+                  "description": "Experience Sky Walk",
+                  "location": "External Platform",
+                  "duration": "1 hr",
+                  "image_keywords": "sky walk external platform"
+                },
+                {
+                  "title": "Orbit 360° Restaurant",
+                  "description": "Experience Orbit 360° Restaurant",
+                  "location": "Rotating Dining",
+                  "duration": "1 hr",
+                  "image_keywords": "orbit 360° restaurant rotating dining"
+                },
+                {
+                  "title": "Observation Deck",
+                  "description": "Experience Observation Deck",
+                  "location": "Main Deck",
+                  "duration": "1 hr",
+                  "image_keywords": "observation deck main deck"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Best Ugly Bagels",
               "notes": "NYC-style bagels in trendy space",
-              "image_keywords": ["best ugly bagels auckland interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "best ugly bagels auckland interior"
             },
             {
               "name": "Espresso Workshop",
               "notes": "Specialty coffee roastery",
-              "image_keywords": ["espresso workshop auckland coffee roastery"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "espresso workshop auckland coffee roastery"
             },
             {
               "name": "Ortolana",
               "notes": "Farm-to-table dining in Britomart",
-              "image_keywords": ["ortolana auckland restaurant interior garden"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "ortolana auckland restaurant interior garden"
             }
-          ]
+          ],
+          "description": "City of sails—volcanic islands, harbor views, and wineries just a ferry ride away."
         },
         "rotorua": {
           "city_id": "rotorua",
           "city_name": "Rotorua",
-          "image_keywords": ["rotorua geothermal pool steam", "rotorua maori cultural performance", "rotorua champagne pool colorful"],
+          "image_keywords": "rotorua geothermal pool steam rotorua maori cultural performance rotorua champagne pool colorful",
           "things_to_do": [
             {
-              "id": "rotorua-1",
+              "experience_id": "rotorua-1",
               "title": "Te Puia Maori Cultural Experience",
+              "subtitle": "Experience Te Puia Maori Cultural Experience",
+              "description": "Discover the magic of Te Puia Maori Cultural Experience. An unforgettable experience awaits.",
               "location": "Te Puia",
               "duration": "3 hrs",
-              "cost": "$$",
-              "tags": ["Culture", "Maori", "Geothermal"],
-              "image_keywords": ["te puia rotorua maori performance", "rotorua pohutu geyser geothermal"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Culture",
+                "Maori",
+                "Geothermal"
+              ],
+              "image_keywords": "te puia rotorua maori performance rotorua pohutu geyser geothermal",
               "specific_options": [
-                { "name": "Maori Cultural Show", "location": "Te Aronui a Rua" },
-                { "name": "Pohutu Geyser", "location": "Geothermal Valley" },
-                { "name": "Kiwi Conservation", "location": "Nocturnal House" }
-              ]
+                {
+                  "title": "Maori Cultural Show",
+                  "description": "Experience Maori Cultural Show",
+                  "location": "Te Aronui a Rua",
+                  "duration": "1 hr",
+                  "image_keywords": "maori cultural show te aronui a rua"
+                },
+                {
+                  "title": "Pohutu Geyser",
+                  "description": "Experience Pohutu Geyser",
+                  "location": "Geothermal Valley",
+                  "duration": "1 hr",
+                  "image_keywords": "pohutu geyser geothermal valley"
+                },
+                {
+                  "title": "Kiwi Conservation",
+                  "description": "Experience Kiwi Conservation",
+                  "location": "Nocturnal House",
+                  "duration": "1 hr",
+                  "image_keywords": "kiwi conservation nocturnal house"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "rotorua-2",
+              "experience_id": "rotorua-2",
               "title": "Wai-O-Tapu Thermal Wonderland",
+              "subtitle": "Experience Wai-O-Tapu Thermal Wonderland",
+              "description": "Discover the magic of Wai-O-Tapu Thermal Wonderland. An unforgettable experience awaits.",
               "location": "Wai-O-Tapu",
               "duration": "2 hrs",
-              "cost": "$$",
-              "tags": ["Geothermal", "Nature", "Photography"],
-              "image_keywords": ["wai o tapu champagne pool rotorua", "rotorua thermal pool colorful sulfur"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Geothermal",
+                "Nature",
+                "Photography"
+              ],
+              "image_keywords": "wai o tapu champagne pool rotorua rotorua thermal pool colorful sulfur",
               "specific_options": [
-                { "name": "Champagne Pool", "location": "Main Loop" },
-                { "name": "Artist's Palette", "location": "Mineral Terraces" },
-                { "name": "Lady Knox Geyser", "location": "Morning Eruption" }
-              ]
+                {
+                  "title": "Champagne Pool",
+                  "description": "Experience Champagne Pool",
+                  "location": "Main Loop",
+                  "duration": "1 hr",
+                  "image_keywords": "champagne pool main loop"
+                },
+                {
+                  "title": "Artist's Palette",
+                  "description": "Experience Artist's Palette",
+                  "location": "Mineral Terraces",
+                  "duration": "1 hr",
+                  "image_keywords": "artist's palette mineral terraces"
+                },
+                {
+                  "title": "Lady Knox Geyser",
+                  "description": "Experience Lady Knox Geyser",
+                  "location": "Morning Eruption",
+                  "duration": "1 hr",
+                  "image_keywords": "lady knox geyser morning eruption"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "rotorua-3",
+              "experience_id": "rotorua-3",
               "title": "Redwoods Treewalk Night",
+              "subtitle": "Experience Redwoods Treewalk Night",
+              "description": "Discover the magic of Redwoods Treewalk Night. An unforgettable experience awaits.",
               "location": "Redwoods Forest",
               "duration": "1.5 hrs",
-              "cost": "$$",
-              "tags": ["Nature", "Night", "Forest"],
-              "image_keywords": ["redwoods treewalk rotorua night lights", "rotorua forest suspension bridge"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Nature",
+                "Night",
+                "Forest"
+              ],
+              "image_keywords": "redwoods treewalk rotorua night lights rotorua forest suspension bridge",
               "specific_options": [
-                { "name": "Treewalk Night Lights", "location": "Suspended Walkways" },
-                { "name": "Day Treewalk", "location": "Forest Canopy" },
-                { "name": "Mountain Biking", "location": "Forest Trails" }
-              ]
+                {
+                  "title": "Treewalk Night Lights",
+                  "description": "Experience Treewalk Night Lights",
+                  "location": "Suspended Walkways",
+                  "duration": "1 hr",
+                  "image_keywords": "treewalk night lights suspended walkways"
+                },
+                {
+                  "title": "Day Treewalk",
+                  "description": "Experience Day Treewalk",
+                  "location": "Forest Canopy",
+                  "duration": "1 hr",
+                  "image_keywords": "day treewalk forest canopy"
+                },
+                {
+                  "title": "Mountain Biking",
+                  "description": "Experience Mountain Biking",
+                  "location": "Forest Trails",
+                  "duration": "1 hr",
+                  "image_keywords": "mountain biking forest trails"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Capers Café",
               "notes": "Local café with lakefront views",
-              "image_keywords": ["capers cafe rotorua lake view"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "capers cafe rotorua lake view"
             },
             {
               "name": "Third Place Café",
               "notes": "Specialty coffee and brunch",
-              "image_keywords": ["third place cafe rotorua interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "third place cafe rotorua interior"
             },
             {
               "name": "Lime Caffeteria",
               "notes": "Modern café in city center",
-              "image_keywords": ["lime caffeteria rotorua coffee"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "lime caffeteria rotorua coffee"
             }
-          ]
+          ],
+          "description": "Where the earth bubbles and steams—geothermal wonders meet Māori traditions."
         }
-      }
+      },
+      "description": "Fjords carved by ice, mountains kissed by clouds, and a sense that Middle-earth was never just fiction.",
+      "best_time": "Summer (December-February) for hiking and adventure"
     },
     "south_africa": {
       "country_id": "south_africa",
       "country_name": "South Africa",
       "flag": "🇿🇦",
-      "hero_image_keywords": ["south africa table mountain cape town sunset", "south africa kruger safari elephant", "south africa cape point ocean cliffs"],
-      "seasonality": ["September", "October", "November", "March", "April", "May"],
-      "cost_range": "mid",
-      "duration_hint": "10h+",
-      "themes": ["safari", "coastlines", "winelands", "cultural_tours", "garden_route", "adventure_sports"],
+      "hero_image_keywords": "south africa table mountain cape town sunset south africa kruger safari elephant south africa cape point ocean cliffs",
+      "seasonality": [
+        "September",
+        "October",
+        "November",
+        "March",
+        "April",
+        "May"
+      ],
+      "cost_range": "low-mid",
+      "duration_hint": "10-14 days",
+      "themes": [
+        {
+          "id": "safari",
+          "name": "Safari & Wildlife"
+        },
+        {
+          "id": "coastlines",
+          "name": "Dramatic Coastlines"
+        },
+        {
+          "id": "winelands",
+          "name": "Winelands"
+        },
+        {
+          "id": "cultural_tours",
+          "name": "Cultural Tours"
+        },
+        {
+          "id": "garden_route",
+          "name": "Garden Route"
+        },
+        {
+          "id": "adventure_sports",
+          "name": "Adventure Sports"
+        }
+      ],
       "subtitle": "Rainbow nation of safaris, vineyards, and two oceans",
       "cities": {
         "cape_town": {
           "city_id": "cape_town",
           "city_name": "Cape Town",
-          "image_keywords": ["cape town table mountain clouds", "cape town waterfront harbor sunset", "cape town twelve apostles coastline"],
+          "image_keywords": "cape town table mountain clouds cape town waterfront harbor sunset cape town twelve apostles coastline",
           "things_to_do": [
             {
-              "id": "capetown-1",
+              "experience_id": "capetown-1",
               "title": "Table Mountain Cable Car & Hike",
+              "subtitle": "Experience Table Mountain Cable Car & Hike",
+              "description": "Discover the magic of Table Mountain Cable Car & Hike. An unforgettable experience awaits.",
               "location": "Table Mountain",
               "duration": "4 hrs",
-              "cost": "$$",
-              "tags": ["Hiking", "Views", "Iconic"],
-              "image_keywords": ["table mountain cape town cable car", "cape town table mountain summit view"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Hiking",
+                "Views",
+                "Iconic"
+              ],
+              "image_keywords": "table mountain cape town cable car cape town table mountain summit view",
               "specific_options": [
-                { "name": "Cable Car Ride", "location": "Lower Station" },
-                { "name": "Platteklip Gorge Hike", "location": "Hiking Trail" },
-                { "name": "India Venster Route", "location": "Advanced Trail" }
-              ]
+                {
+                  "title": "Cable Car Ride",
+                  "description": "Experience Cable Car Ride",
+                  "location": "Lower Station",
+                  "duration": "1 hr",
+                  "image_keywords": "cable car ride lower station"
+                },
+                {
+                  "title": "Platteklip Gorge Hike",
+                  "description": "Experience Platteklip Gorge Hike",
+                  "location": "Hiking Trail",
+                  "duration": "1 hr",
+                  "image_keywords": "platteklip gorge hike hiking trail"
+                },
+                {
+                  "title": "India Venster Route",
+                  "description": "Experience India Venster Route",
+                  "location": "Advanced Trail",
+                  "duration": "1 hr",
+                  "image_keywords": "india venster route advanced trail"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "capetown-2",
+              "experience_id": "capetown-2",
               "title": "Shark Cage Diving",
+              "subtitle": "Experience Shark Cage Diving",
+              "description": "Discover the magic of Shark Cage Diving. An unforgettable experience awaits.",
               "location": "Gansbaai",
               "duration": "8 hrs",
-              "cost": "$$$",
-              "tags": ["Adventure", "Wildlife", "Ocean"],
-              "image_keywords": ["gansbaai shark cage diving great white", "south africa shark diving underwater"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Adventure",
+                "Wildlife",
+                "Ocean"
+              ],
+              "image_keywords": "gansbaai shark cage diving great white south africa shark diving underwater",
               "specific_options": [
-                { "name": "Great White Encounter", "location": "Shark Alley" },
-                { "name": "Boat-based Viewing", "location": "Dyer Island" },
-                { "name": "Marine Big 5 Tour", "location": "Gansbaai Coast" }
-              ]
+                {
+                  "title": "Great White Encounter",
+                  "description": "Experience Great White Encounter",
+                  "location": "Shark Alley",
+                  "duration": "1 hr",
+                  "image_keywords": "great white encounter shark alley"
+                },
+                {
+                  "title": "Boat-based Viewing",
+                  "description": "Experience Boat-based Viewing",
+                  "location": "Dyer Island",
+                  "duration": "1 hr",
+                  "image_keywords": "boat-based viewing dyer island"
+                },
+                {
+                  "title": "Marine Big 5 Tour",
+                  "description": "Experience Marine Big 5 Tour",
+                  "location": "Gansbaai Coast",
+                  "duration": "1 hr",
+                  "image_keywords": "marine big 5 tour gansbaai coast"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "capetown-3",
+              "experience_id": "capetown-3",
               "title": "Cape Point & Penguins Day Trip",
+              "subtitle": "Experience Cape Point & Penguins Day Trip",
+              "description": "Discover the magic of Cape Point & Penguins Day Trip. An unforgettable experience awaits.",
               "location": "Cape Peninsula",
               "duration": "8 hrs",
-              "cost": "$$",
-              "tags": ["Nature", "Wildlife", "Scenic Drive"],
-              "image_keywords": ["cape point lighthouse ocean cliffs", "boulders beach penguins cape town"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Nature",
+                "Wildlife",
+                "Scenic Drive"
+              ],
+              "image_keywords": "cape point lighthouse ocean cliffs boulders beach penguins cape town",
               "specific_options": [
-                { "name": "Cape of Good Hope", "location": "Southernmost Point" },
-                { "name": "Boulders Beach Penguins", "location": "Simon's Town" },
-                { "name": "Chapman's Peak Drive", "location": "Coastal Road" }
-              ]
+                {
+                  "title": "Cape of Good Hope",
+                  "description": "Experience Cape of Good Hope",
+                  "location": "Southernmost Point",
+                  "duration": "1 hr",
+                  "image_keywords": "cape of good hope southernmost point"
+                },
+                {
+                  "title": "Boulders Beach Penguins",
+                  "description": "Experience Boulders Beach Penguins",
+                  "location": "Simon's Town",
+                  "duration": "1 hr",
+                  "image_keywords": "boulders beach penguins simon's town"
+                },
+                {
+                  "title": "Chapman's Peak Drive",
+                  "description": "Experience Chapman's Peak Drive",
+                  "location": "Coastal Road",
+                  "duration": "1 hr",
+                  "image_keywords": "chapman's peak drive coastal road"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Truth Coffee",
               "notes": "Steampunk-themed specialty coffee roastery",
-              "image_keywords": ["truth coffee cape town steampunk interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "truth coffee cape town steampunk interior"
             },
             {
               "name": "Jason Bakery",
               "notes": "Artisan bakery and café in Greenpoint",
-              "image_keywords": ["jason bakery cape town artisan bread"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "jason bakery cape town artisan bread"
             },
             {
               "name": "Orphanage Cocktail Emporium",
               "notes": "Speakeasy-style bar with craft cocktails",
-              "image_keywords": ["orphanage cocktail cape town bar interior"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "orphanage cocktail cape town bar interior"
             }
-          ]
+          ],
+          "description": "Table Mountain watches over this coastal city—where ocean meets mountain, and every view is breathtaking."
         },
         "stellenbosch": {
           "city_id": "stellenbosch",
           "city_name": "Stellenbosch",
-          "image_keywords": ["stellenbosch vineyard mountains cape", "stellenbosch wine estate architecture", "stellenbosch oak tree avenue"],
+          "image_keywords": "stellenbosch vineyard mountains cape stellenbosch wine estate architecture stellenbosch oak tree avenue",
           "things_to_do": [
             {
-              "id": "stellenbosch-1",
+              "experience_id": "stellenbosch-1",
               "title": "Wine Estate Hopping",
+              "subtitle": "Experience Wine Estate Hopping",
+              "description": "Discover the magic of Wine Estate Hopping. An unforgettable experience awaits.",
               "location": "Stellenbosch Winelands",
               "duration": "6 hrs",
-              "cost": "$$$",
-              "tags": ["Wine", "Scenic", "Culinary"],
-              "image_keywords": ["stellenbosch wine tasting vineyard", "south africa wine estate mountains"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Wine",
+                "Scenic",
+                "Culinary"
+              ],
+              "image_keywords": "stellenbosch wine tasting vineyard south africa wine estate mountains",
               "specific_options": [
-                { "name": "Delaire Graff Estate", "location": "Helshoogte Pass" },
-                { "name": "Tokara Wine Estate", "location": "Helshoogte" },
-                { "name": "Waterford Estate", "location": "Blaauwklippen Road" }
-              ]
+                {
+                  "title": "Delaire Graff Estate",
+                  "description": "Experience Delaire Graff Estate",
+                  "location": "Helshoogte Pass",
+                  "duration": "1 hr",
+                  "image_keywords": "delaire graff estate helshoogte pass"
+                },
+                {
+                  "title": "Tokara Wine Estate",
+                  "description": "Experience Tokara Wine Estate",
+                  "location": "Helshoogte",
+                  "duration": "1 hr",
+                  "image_keywords": "tokara wine estate helshoogte"
+                },
+                {
+                  "title": "Waterford Estate",
+                  "description": "Experience Waterford Estate",
+                  "location": "Blaauwklippen Road",
+                  "duration": "1 hr",
+                  "image_keywords": "waterford estate blaauwklippen road"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "stellenbosch-2",
+              "experience_id": "stellenbosch-2",
               "title": "Jonkershoek Valley Hike",
+              "subtitle": "Experience Jonkershoek Valley Hike",
+              "description": "Discover the magic of Jonkershoek Valley Hike. An unforgettable experience awaits.",
               "location": "Jonkershoek",
               "duration": "4 hrs",
-              "cost": "$",
-              "tags": ["Hiking", "Nature", "Mountains"],
-              "image_keywords": ["jonkershoek valley stellenbosch mountain", "south africa hiking trail forest"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Hiking",
+                "Nature",
+                "Mountains"
+              ],
+              "image_keywords": "jonkershoek valley stellenbosch mountain south africa hiking trail forest",
               "specific_options": [
-                { "name": "Swartboskloof Trail", "location": "Main Valley" },
-                { "name": "Panorama Trail", "location": "Ridge Route" },
-                { "name": "Waterfall Trail", "location": "River Path" }
-              ]
+                {
+                  "title": "Swartboskloof Trail",
+                  "description": "Experience Swartboskloof Trail",
+                  "location": "Main Valley",
+                  "duration": "1 hr",
+                  "image_keywords": "swartboskloof trail main valley"
+                },
+                {
+                  "title": "Panorama Trail",
+                  "description": "Experience Panorama Trail",
+                  "location": "Ridge Route",
+                  "duration": "1 hr",
+                  "image_keywords": "panorama trail ridge route"
+                },
+                {
+                  "title": "Waterfall Trail",
+                  "description": "Experience Waterfall Trail",
+                  "location": "River Path",
+                  "duration": "1 hr",
+                  "image_keywords": "waterfall trail river path"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "stellenbosch-3",
+              "experience_id": "stellenbosch-3",
               "title": "Art Gallery Walk",
+              "subtitle": "Experience Art Gallery Walk",
+              "description": "Discover the magic of Art Gallery Walk. An unforgettable experience awaits.",
               "location": "Stellenbosch Town",
               "duration": "2 hrs",
-              "cost": "Free",
-              "tags": ["Art", "Culture", "Walking"],
-              "image_keywords": ["stellenbosch art gallery village", "south africa cape dutch architecture"],
+              "cost_range": "low",
+              "best_time": "Anytime",
+              "tags": [
+                "Art",
+                "Culture",
+                "Walking"
+              ],
+              "image_keywords": "stellenbosch art gallery village south africa cape dutch architecture",
               "specific_options": [
-                { "name": "Rupert Museum", "location": "Dorp Street" },
-                { "name": "Stellenbosch University Museum", "location": "Ryneveld Street" },
-                { "name": "Village Museum", "location": "Historic Houses" }
-              ]
+                {
+                  "title": "Rupert Museum",
+                  "description": "Experience Rupert Museum",
+                  "location": "Dorp Street",
+                  "duration": "1 hr",
+                  "image_keywords": "rupert museum dorp street"
+                },
+                {
+                  "title": "Stellenbosch University Museum",
+                  "description": "Experience Stellenbosch University Museum",
+                  "location": "Ryneveld Street",
+                  "duration": "1 hr",
+                  "image_keywords": "stellenbosch university museum ryneveld street"
+                },
+                {
+                  "title": "Village Museum",
+                  "description": "Experience Village Museum",
+                  "location": "Historic Houses",
+                  "duration": "1 hr",
+                  "image_keywords": "village museum historic houses"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Schoon De Companje",
               "notes": "Historic café on Dorp Street",
-              "image_keywords": ["schoon de companje stellenbosch cafe"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "schoon de companje stellenbosch cafe"
             },
             {
               "name": "Café Felix",
               "notes": "Artisan bakery and coffee shop",
-              "image_keywords": ["cafe felix stellenbosch pastries"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "cafe felix stellenbosch pastries"
             },
             {
               "name": "De Warenmarkt",
               "notes": "Food market with multiple vendors",
-              "image_keywords": ["de warenmarkt stellenbosch market"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "de warenmarkt stellenbosch market"
             }
-          ]
+          ],
+          "description": "Wine country at its finest—Cape Dutch architecture, endless vineyards, and world-class tastings."
         },
         "kruger": {
           "city_id": "kruger",
           "city_name": "Kruger National Park",
-          "image_keywords": ["kruger national park safari elephant", "south africa lion kruger sunset", "kruger park big five wildlife"],
+          "image_keywords": "kruger national park safari elephant south africa lion kruger sunset kruger park big five wildlife",
           "things_to_do": [
             {
-              "id": "kruger-1",
+              "experience_id": "kruger-1",
               "title": "Big Five Safari Drive",
+              "subtitle": "Experience Big Five Safari Drive",
+              "description": "Discover the magic of Big Five Safari Drive. An unforgettable experience awaits.",
               "location": "Kruger Park",
               "duration": "8 hrs",
-              "cost": "$$$",
-              "tags": ["Safari", "Wildlife", "Photography"],
-              "image_keywords": ["kruger national park safari game drive", "south africa big five lion elephant"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Safari",
+                "Wildlife",
+                "Photography"
+              ],
+              "image_keywords": "kruger national park safari game drive south africa big five lion elephant",
               "specific_options": [
-                { "name": "Early Morning Drive", "location": "Skukuza Area" },
-                { "name": "Full Day Safari", "location": "Southern Circuit" },
-                { "name": "Night Drive", "location": "Nocturnal Wildlife" }
-              ]
+                {
+                  "title": "Early Morning Drive",
+                  "description": "Experience Early Morning Drive",
+                  "location": "Skukuza Area",
+                  "duration": "1 hr",
+                  "image_keywords": "early morning drive skukuza area"
+                },
+                {
+                  "title": "Full Day Safari",
+                  "description": "Experience Full Day Safari",
+                  "location": "Southern Circuit",
+                  "duration": "1 hr",
+                  "image_keywords": "full day safari southern circuit"
+                },
+                {
+                  "title": "Night Drive",
+                  "description": "Experience Night Drive",
+                  "location": "Nocturnal Wildlife",
+                  "duration": "1 hr",
+                  "image_keywords": "night drive nocturnal wildlife"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "kruger-2",
+              "experience_id": "kruger-2",
               "title": "Walking Safari with Rangers",
+              "subtitle": "Experience Walking Safari with Rangers",
+              "description": "Discover the magic of Walking Safari with Rangers. An unforgettable experience awaits.",
               "location": "Private Reserves",
               "duration": "3 hrs",
-              "cost": "$$",
-              "tags": ["Walking", "Wildlife", "Adventure"],
-              "image_keywords": ["kruger walking safari ranger guide", "south africa bush walk wildlife track"],
+              "cost_range": "low-mid",
+              "best_time": "Anytime",
+              "tags": [
+                "Walking",
+                "Wildlife",
+                "Adventure"
+              ],
+              "image_keywords": "kruger walking safari ranger guide south africa bush walk wildlife track",
               "specific_options": [
-                { "name": "Wilderness Trail", "location": "Guided Walk" },
-                { "name": "Tracker Experience", "location": "Private Reserve" },
-                { "name": "Bushcraft Skills", "location": "Ranger Training" }
-              ]
+                {
+                  "title": "Wilderness Trail",
+                  "description": "Experience Wilderness Trail",
+                  "location": "Guided Walk",
+                  "duration": "1 hr",
+                  "image_keywords": "wilderness trail guided walk"
+                },
+                {
+                  "title": "Tracker Experience",
+                  "description": "Experience Tracker Experience",
+                  "location": "Private Reserve",
+                  "duration": "1 hr",
+                  "image_keywords": "tracker experience private reserve"
+                },
+                {
+                  "title": "Bushcraft Skills",
+                  "description": "Experience Bushcraft Skills",
+                  "location": "Ranger Training",
+                  "duration": "1 hr",
+                  "image_keywords": "bushcraft skills ranger training"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             },
             {
-              "id": "kruger-3",
+              "experience_id": "kruger-3",
               "title": "Sundowner Safari",
+              "subtitle": "Experience Sundowner Safari",
+              "description": "Discover the magic of Sundowner Safari. An unforgettable experience awaits.",
               "location": "Private Game Reserve",
               "duration": "4 hrs",
-              "cost": "$$$",
-              "tags": ["Safari", "Sunset", "Luxury"],
-              "image_keywords": ["kruger sundowner safari sunset drinks", "south africa game drive golden hour"],
+              "cost_range": "mid-high",
+              "best_time": "Anytime",
+              "tags": [
+                "Safari",
+                "Sunset",
+                "Luxury"
+              ],
+              "image_keywords": "kruger sundowner safari sunset drinks south africa game drive golden hour",
               "specific_options": [
-                { "name": "Sunset Drive & Drinks", "location": "Sabi Sands" },
-                { "name": "Bush Dinner", "location": "Under the Stars" },
-                { "name": "Luxury Lodge Experience", "location": "Private Reserve" }
-              ]
+                {
+                  "title": "Sunset Drive & Drinks",
+                  "description": "Experience Sunset Drive & Drinks",
+                  "location": "Sabi Sands",
+                  "duration": "1 hr",
+                  "image_keywords": "sunset drive & drinks sabi sands"
+                },
+                {
+                  "title": "Bush Dinner",
+                  "description": "Experience Bush Dinner",
+                  "location": "Under the Stars",
+                  "duration": "1 hr",
+                  "image_keywords": "bush dinner under the stars"
+                },
+                {
+                  "title": "Luxury Lodge Experience",
+                  "description": "Experience Luxury Lodge Experience",
+                  "location": "Private Reserve",
+                  "duration": "1 hr",
+                  "image_keywords": "luxury lodge experience private reserve"
+                }
+              ],
+              "nearby_cafes": [],
+              "related_activities": []
             }
           ],
           "cafes": [
             {
               "name": "Cattle Baron Skukuza",
               "notes": "Steakhouse at main rest camp",
-              "image_keywords": ["cattle baron skukuza kruger restaurant"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "cattle baron skukuza kruger restaurant"
             },
             {
               "name": "Mugg & Bean Hazyview",
               "notes": "Family restaurant near park entrance",
-              "image_keywords": ["mugg bean hazyview south africa"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "mugg bean hazyview south africa"
             },
             {
               "name": "Pioneer's Grill",
               "notes": "Traditional South African braai",
-              "image_keywords": ["pioneers grill kruger south african food"]
+              "vibe": "Relaxed, welcoming",
+              "image_keywords": "pioneers grill kruger south african food"
             }
-          ]
+          ],
+          "description": "One of Africa's greatest game reserves—where lions roam, elephants gather, and every drive is an adventure."
         }
-      }
+      },
+      "description": "Safari sunsets, vineyard valleys, and two oceans meeting at the tip of a continent. A place of staggering beauty and deep resilience.",
+      "best_time": "Spring (September-November) or autumn (March-May)"
     }
   }
 }
