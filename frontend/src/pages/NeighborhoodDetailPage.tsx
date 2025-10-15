@@ -310,7 +310,7 @@ export const NeighborhoodDetailPage: React.FC = () => {
             className="flex-1 bg-yellow-200 hover:bg-yellow-300 text-black font-semibold py-4 rounded-full transition-all shadow-lg flex items-center justify-center gap-2"
           >
             <Home size={18} />
-            Book a stay in {neighborhood.name}
+            Find a stay in {neighborhood.name}
           </button>
           <button
             onClick={() => navigate(`/vault/${neighborhood.country.toLowerCase()}/city/${neighborhood.city.toLowerCase()}`)}
