@@ -69,24 +69,24 @@ export const GlobeExplorePage: React.FC = () => {
           {/* Latitude/Longitude lines */}
           <g stroke="#2a2a2a" strokeWidth="0.5" opacity="0.3">
             {/* Longitude lines */}
-            {[0, 30, 60, 90, 120, 150].map((angle) => (
+            {[0, 30, 60].map((angle) => (
               <ellipse
                 key={`lng-${angle}`}
                 cx="300"
                 cy="300"
-                rx={220 * Math.cos((angle * Math.PI) / 180)}
+                rx={Math.abs(220 * Math.cos((angle * Math.PI) / 180))}
                 ry="220"
                 fill="none"
               />
             ))}
             {/* Latitude lines */}
-            {[-60, -30, 0, 30, 60].map((lat) => (
+            {[-30, 0, 30].map((lat) => (
               <ellipse
                 key={`lat-${lat}`}
                 cx="300"
                 cy="300"
                 rx="220"
-                ry={220 * Math.cos((lat * Math.PI) / 180)}
+                ry={Math.abs(220 * Math.cos((lat * Math.PI) / 180))}
                 fill="none"
               />
             ))}
