@@ -32,53 +32,150 @@ interface StayOption {
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 const DURATION_OPTIONS = [3, 5, 7, 10, 14, 21]
 
-const DEMO_NEIGHBORHOODS: NeighborhoodOption[] = [
-  {
-    id: 'gion',
-    name: 'Gion',
-    vibe: 'Cultural · Riverside calm',
-    tags: ['Best for Couples', 'Traditional'],
-    image_keywords: 'gion kyoto geisha district evening'
-  },
-  {
-    id: 'arashiyama',
-    name: 'Arashiyama',
-    vibe: 'Nature · Peaceful retreat',
-    tags: ['Best for Nature Lovers', 'Scenic'],
-    image_keywords: 'arashiyama bamboo forest mountain'
-  },
-  {
-    id: 'pontocho',
-    name: 'Pontocho',
-    vibe: 'Dining · Nightlife hub',
-    tags: ['Best for Foodies', 'Vibrant'],
-    image_keywords: 'pontocho kyoto alley restaurants night'
-  }
-]
+// Neighborhood and Stay data by destination
+const NEIGHBORHOODS_BY_DESTINATION: Record<string, NeighborhoodOption[]> = {
+  'Kyoto': [
+    {
+      id: 'gion',
+      name: 'Gion',
+      vibe: 'Cultural · Riverside calm',
+      tags: ['Best for Couples', 'Traditional'],
+      image_keywords: 'gion kyoto geisha district evening'
+    },
+    {
+      id: 'arashiyama',
+      name: 'Arashiyama',
+      vibe: 'Nature · Peaceful retreat',
+      tags: ['Best for Nature Lovers', 'Scenic'],
+      image_keywords: 'arashiyama bamboo forest mountain'
+    },
+    {
+      id: 'pontocho',
+      name: 'Pontocho',
+      vibe: 'Dining · Nightlife hub',
+      tags: ['Best for Foodies', 'Vibrant'],
+      image_keywords: 'pontocho kyoto alley restaurants night'
+    }
+  ],
+  'Japan': [
+    {
+      id: 'shibuya',
+      name: 'Shibuya',
+      vibe: 'Urban energy · Neon nights',
+      tags: ['Best for Nightlife', 'Shopping'],
+      image_keywords: 'shibuya tokyo crossing night neon'
+    },
+    {
+      id: 'asakusa',
+      name: 'Asakusa',
+      vibe: 'Traditional · Temple district',
+      tags: ['Best for Culture', 'Historic'],
+      image_keywords: 'asakusa tokyo sensoji temple traditional'
+    },
+    {
+      id: 'harajuku',
+      name: 'Harajuku',
+      vibe: 'Youth culture · Fashion hub',
+      tags: ['Best for Shopping', 'Trendy'],
+      image_keywords: 'harajuku tokyo fashion street colorful'
+    }
+  ],
+  'default': [
+    {
+      id: 'downtown',
+      name: 'Downtown',
+      vibe: 'Urban center · Vibrant energy',
+      tags: ['Best for First-timers', 'Central'],
+      image_keywords: 'city center downtown urban night'
+    },
+    {
+      id: 'historic',
+      name: 'Historic Quarter',
+      vibe: 'Cultural heritage · Old town charm',
+      tags: ['Best for Culture', 'Traditional'],
+      image_keywords: 'historic quarter old town streets'
+    },
+    {
+      id: 'waterfront',
+      name: 'Waterfront',
+      vibe: 'Scenic views · Relaxed atmosphere',
+      tags: ['Best for Relaxation', 'Scenic'],
+      image_keywords: 'waterfront harbor ocean view sunset'
+    }
+  ]
+}
 
-const DEMO_STAYS: StayOption[] = [
-  {
-    id: 'gion_house',
-    name: 'The Gion House',
-    description: 'Charming townhouse with local breakfast',
-    amenities: ['Traditional rooms', 'Breakfast included', '5 min walk to temples'],
-    image_keywords: 'traditional japanese house gion interior'
-  },
-  {
-    id: 'hyatt_kyoto',
-    name: 'Hyatt Centric Kyoto',
-    description: 'Modern design, 5 mins from train',
-    amenities: ['Rooftop bar', 'Gym & spa', 'Central location'],
-    image_keywords: 'modern hotel kyoto interior design'
-  },
-  {
-    id: 'machiya_retreat',
-    name: 'Machiya Retreat',
-    description: 'Authentic wooden home, quiet alleyway',
-    amenities: ['Private courtyard', 'Tatami rooms', 'Tea ceremony space'],
-    image_keywords: 'machiya house kyoto wooden interior'
-  }
-]
+const STAYS_BY_DESTINATION: Record<string, StayOption[]> = {
+  'Kyoto': [
+    {
+      id: 'gion_house',
+      name: 'The Gion House',
+      description: 'Charming townhouse with local breakfast',
+      amenities: ['Traditional rooms', 'Breakfast included', '5 min walk to temples'],
+      image_keywords: 'traditional japanese house gion interior'
+    },
+    {
+      id: 'hyatt_kyoto',
+      name: 'Hyatt Centric Kyoto',
+      description: 'Modern design, 5 mins from train',
+      amenities: ['Rooftop bar', 'Gym & spa', 'Central location'],
+      image_keywords: 'modern hotel kyoto interior design'
+    },
+    {
+      id: 'machiya_retreat',
+      name: 'Machiya Retreat',
+      description: 'Authentic wooden home, quiet alleyway',
+      amenities: ['Private courtyard', 'Tatami rooms', 'Tea ceremony space'],
+      image_keywords: 'machiya house kyoto wooden interior'
+    }
+  ],
+  'Japan': [
+    {
+      id: 'tokyo_modern',
+      name: 'Park Hyatt Tokyo',
+      description: 'Luxury in the sky with city views',
+      amenities: ['Peak fitness center', 'New York Grill', 'Pool & spa'],
+      image_keywords: 'park hyatt tokyo luxury hotel interior'
+    },
+    {
+      id: 'capsule_zen',
+      name: 'Nine Hours Capsule',
+      description: 'Minimalist capsule hotel experience',
+      amenities: ['Ultra-modern pods', 'Shared lounge', 'Budget-friendly'],
+      image_keywords: 'capsule hotel tokyo modern minimalist'
+    },
+    {
+      id: 'ryokan_tokyo',
+      name: 'Hoshinoya Tokyo',
+      description: 'Traditional ryokan in modern Tokyo',
+      amenities: ['Onsen baths', 'Kaiseki dining', 'Tatami rooms'],
+      image_keywords: 'ryokan tokyo traditional japanese interior'
+    }
+  ],
+  'default': [
+    {
+      id: 'boutique',
+      name: 'Boutique Central Hotel',
+      description: 'Design-forward hotel in prime location',
+      amenities: ['Rooftop terrace', 'Restaurant & bar', 'Central location'],
+      image_keywords: 'boutique hotel modern interior design'
+    },
+    {
+      id: 'heritage',
+      name: 'Heritage House',
+      description: 'Historic property with modern comforts',
+      amenities: ['Traditional architecture', 'Local breakfast', 'Cultural experience'],
+      image_keywords: 'heritage hotel traditional architecture interior'
+    },
+    {
+      id: 'modern_stay',
+      name: 'Modern Stay',
+      description: 'Contemporary rooms with all amenities',
+      amenities: ['Gym & pool', 'Business center', 'Fast WiFi'],
+      image_keywords: 'modern hotel room contemporary interior'
+    }
+  ]
+}
 
 export const TripCompanionFlow: React.FC = () => {
   const navigate = useNavigate()
