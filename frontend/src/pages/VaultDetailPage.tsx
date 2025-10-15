@@ -3,54 +3,66 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { ArrowLeft, Calendar, MapPin, Compass, Loader2 } from 'lucide-react'
 import { fetchPexelsImages, type PexelsPhoto } from '../services/pexels'
 
-// Mock vault data - matches with VaultViewPage
+// Mock vault data - matches with VaultViewPage and Explore page
 const MOCK_VAULT_DATA: Record<string, any> = {
   '1': {
-    name: 'Japan Food Crawl',
-    country: 'Japan',
-    flag: '🇯🇵',
-    cities: ['Tokyo', 'Kyoto', 'Osaka'],
-    categories: ['Ramen Spots', 'Sushi Bars', 'Street Food', 'Tea Ceremonies'],
+    name: 'Croatia',
+    country: 'Croatia',
+    flag: '🇭🇷',
+    cities: ['Dubrovnik', 'Split', 'Zagreb'],
+    categories: ['Coastal Escapes', 'Heritage Trails', 'Island Hopping', 'Local Cuisine'],
     seasons: [
-      { month: 'March', highlight: 'Cherry Blossom Season', activities: ['Hanami picnics', 'Spring festivals'] },
-      { month: 'June', highlight: 'Rainy Season', activities: ['Indoor dining', 'Izakaya hopping'] },
-      { month: 'October', highlight: 'Autumn Colors', activities: ['Food tours', 'Harvest festivals'] }
+      { month: 'June', highlight: 'Perfect Beach Season', activities: ['Island hopping', 'Coastal sailing', 'Beach clubs'] },
+      { month: 'September', highlight: 'Harvest & Wine Season', activities: ['Wine tasting', 'Food festivals', 'Fewer crowds'] },
+      { month: 'October', highlight: 'Autumn Colors', activities: ['Heritage tours', 'Hiking trails', 'City exploration'] }
     ]
   },
   '2': {
-    name: 'Bali Week',
-    country: 'Bali',
-    flag: '🇮🇩',
-    cities: ['Ubud', 'Seminyak', 'Canggu', 'Uluwatu'],
-    categories: ['Beach Clubs', 'Yoga Studios', 'Temples', 'Cafés'],
+    name: 'Japan',
+    country: 'Japan',
+    flag: '🇯🇵',
+    cities: ['Tokyo', 'Kyoto', 'Osaka'],
+    categories: ['Ramen Spots', 'Sushi Bars', 'Tea Ceremonies', 'Temples'],
     seasons: [
-      { month: 'April', highlight: 'Dry Season Begins', activities: ['Beach days', 'Temple tours'] },
-      { month: 'July', highlight: 'Peak Season', activities: ['Surfing', 'Yoga retreats'] },
-      { month: 'September', highlight: 'Perfect Weather', activities: ['Island hopping', 'Sunset spots'] }
+      { month: 'March', highlight: 'Cherry Blossom Season', activities: ['Hanami picnics', 'Spring festivals', 'Temple visits'] },
+      { month: 'June', highlight: 'Rainy Season', activities: ['Indoor dining', 'Izakaya hopping', 'Museums'] },
+      { month: 'October', highlight: 'Autumn Colors', activities: ['Food tours', 'Harvest festivals', 'Mountain hikes'] }
     ]
   },
   '3': {
-    name: 'Coldplay Bangkok',
-    country: 'Thailand',
-    flag: '🇹🇭',
-    cities: ['Bangkok', 'Pattaya'],
-    categories: ['Concert Venues', 'Night Markets', 'Rooftop Bars', 'Street Food'],
+    name: 'Bali',
+    country: 'Bali',
+    flag: '🇮🇩',
+    cities: ['Ubud', 'Seminyak', 'Canggu'],
+    categories: ['Beach Clubs', 'Yoga Studios', 'Temples', 'Surf Spots'],
     seasons: [
-      { month: 'November', highlight: 'Cool Season', activities: ['Concert prep', 'Market exploration'] },
-      { month: 'December', highlight: 'Festival Season', activities: ['Live music', 'Night markets'] },
-      { month: 'January', highlight: 'Perfect Weather', activities: ['Outdoor events', 'River cruises'] }
+      { month: 'April', highlight: 'Dry Season Begins', activities: ['Beach days', 'Temple tours', 'Surfing'] },
+      { month: 'July', highlight: 'Peak Season', activities: ['Surfing', 'Yoga retreats', 'Beach clubs'] },
+      { month: 'September', highlight: 'Perfect Weather', activities: ['Island hopping', 'Sunset spots', 'Rice terrace walks'] }
     ]
   },
   '4': {
-    name: 'Italy Vault',
+    name: 'Thailand',
+    country: 'Thailand',
+    flag: '🇹🇭',
+    cities: ['Bangkok', 'Phuket', 'Chiang Mai'],
+    categories: ['Street Food', 'Night Markets', 'Temples', 'Beach Clubs'],
+    seasons: [
+      { month: 'November', highlight: 'Cool Season', activities: ['Market exploration', 'Temple visits', 'Street food tours'] },
+      { month: 'December', highlight: 'Festival Season', activities: ['Live music', 'Night markets', 'Beach parties'] },
+      { month: 'January', highlight: 'Perfect Weather', activities: ['Outdoor events', 'River cruises', 'Island hopping'] }
+    ]
+  },
+  '5': {
+    name: 'Italy',
     country: 'Italy',
     flag: '🇮🇹',
-    cities: ['Rome', 'Florence', 'Venice', 'Milan'],
+    cities: ['Rome', 'Florence', 'Venice'],
     categories: ['Historic Sites', 'Restaurants', 'Art Museums', 'Wine Tasting'],
     seasons: [
-      { month: 'April', highlight: 'Spring Blooms', activities: ['City walks', 'Outdoor dining'] },
-      { month: 'September', highlight: 'Harvest Season', activities: ['Wine tours', 'Food festivals'] },
-      { month: 'October', highlight: 'Autumn Colors', activities: ['Art galleries', 'Countryside trips'] }
+      { month: 'April', highlight: 'Spring Blooms', activities: ['City walks', 'Outdoor dining', 'Art galleries'] },
+      { month: 'September', highlight: 'Harvest Season', activities: ['Wine tours', 'Food festivals', 'Countryside trips'] },
+      { month: 'October', highlight: 'Autumn Colors', activities: ['Art galleries', 'Countryside trips', 'Food tours'] }
     ]
   }
 }
