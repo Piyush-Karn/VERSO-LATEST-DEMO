@@ -7,6 +7,17 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
+    host: '0.0.0.0',
+    strictPort: true,
+    hmr: {
+      clientPort: 443,
+      protocol: 'wss'
+    },
+    allowedHosts: [
+      'travel-vault.preview.emergentagent.com',
+      '.preview.emergentagent.com',
+      'localhost',
+    ],
     proxy: {
       '/api': {
         target: 'http://localhost:8001',
