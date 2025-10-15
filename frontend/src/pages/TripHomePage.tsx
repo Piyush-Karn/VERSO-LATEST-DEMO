@@ -124,7 +124,10 @@ export const TripHomePage: React.FC = () => {
           
           <h1 className="text-xl font-bold text-white">Your Trips</h1>
           
-          <button className="p-2 hover:bg-gray-800 rounded-full transition-colors">
+          <button 
+            onClick={() => navigate('/trip/create')}
+            className="p-2 hover:bg-gray-800 rounded-full transition-colors"
+          >
             <Plus size={20} className="text-white" />
           </button>
         </div>
