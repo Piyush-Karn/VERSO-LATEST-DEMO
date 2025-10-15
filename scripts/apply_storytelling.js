@@ -6,7 +6,7 @@ const dataPath = path.join(__dirname, '../frontend/src/data/verso_demo_dataset.j
 const dataset = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
 // Load storytelling enrichments
-const enrichmentsPath = path.join(__dirname, 'storytelling_enrichments.json');
+const enrichmentsPath = path.join(__dirname, 'complete_storytelling.json');
 const storytelling = JSON.parse(fs.readFileSync(enrichmentsPath, 'utf8'));
 
 // Apply storytelling enrichments
