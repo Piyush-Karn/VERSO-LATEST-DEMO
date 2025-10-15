@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { ArrowLeft, MapPin, Calendar, Users, Heart, Plus, ChevronRight, Sparkles } from 'lucide-react'
+import { useNavigate, useParams } from 'react-router-dom'
+import { ArrowLeft, MapPin, Calendar, Users, Heart, Plus, ChevronRight, Sparkles, Plane, Train, Home, Coffee } from 'lucide-react'
 import { fetchPexelsImages } from '../services/pexels'
+import { TripBottomSheet } from '../components/TripBottomSheet'
 import tripData from '../data/trip_data.json'
 
 export const TripPlanningPage: React.FC = () => {
