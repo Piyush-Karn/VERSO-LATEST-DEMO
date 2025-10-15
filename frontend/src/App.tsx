@@ -18,6 +18,7 @@ import { CityDetailPage } from './pages/CityDetailPage'
 import { TripPlanningPage } from './pages/TripPlanningPage'
 import { TripCompanionFlow } from './pages/TripCompanionFlow'
 import { TripCompanionFlowPhase1 } from './pages/TripCompanionFlowPhase1'
+import { DynamicTripSummary } from './pages/DynamicTripSummary'
 
 // Simple Ask Verso placeholder
 const AskVersoPage = () => (
