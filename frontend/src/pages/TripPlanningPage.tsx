@@ -61,28 +61,40 @@ export const TripPlanningPage: React.FC = () => {
           </p>
         </div>
 
-        {/* Macro Stats */}
+        {/* Macro Stats - Interactive */}
         <div className="grid grid-cols-4 gap-3 mb-6">
-          <div className="bg-gray-900 rounded-xl p-3 text-center border border-gray-800">
+          <button
+            onClick={() => setActiveSheet('days')}
+            className="bg-gray-900 hover:bg-gray-850 rounded-xl p-3 text-center border border-gray-800 hover:border-yellow-200/50 transition-all hover:scale-105"
+          >
             <Calendar size={18} className="text-yellow-200 mx-auto mb-1" />
             <p className="text-2xl font-bold text-white">{trip.overview.total_days}</p>
             <p className="text-xs text-gray-400">days</p>
-          </div>
-          <div className="bg-gray-900 rounded-xl p-3 text-center border border-gray-800">
+          </button>
+          <button
+            onClick={() => setActiveSheet('cities')}
+            className="bg-gray-900 hover:bg-gray-850 rounded-xl p-3 text-center border border-gray-800 hover:border-yellow-200/50 transition-all hover:scale-105"
+          >
             <MapPin size={18} className="text-yellow-200 mx-auto mb-1" />
             <p className="text-2xl font-bold text-white">{trip.overview.total_cities}</p>
             <p className="text-xs text-gray-400">cities</p>
-          </div>
-          <div className="bg-gray-900 rounded-xl p-3 text-center border border-gray-800">
+          </button>
+          <button
+            onClick={() => setActiveSheet('saved')}
+            className="bg-gray-900 hover:bg-gray-850 rounded-xl p-3 text-center border border-gray-800 hover:border-yellow-200/50 transition-all hover:scale-105"
+          >
             <Heart size={18} className="text-yellow-200 mx-auto mb-1" />
             <p className="text-2xl font-bold text-white">{trip.overview.saved_experiences}</p>
             <p className="text-xs text-gray-400">saved</p>
-          </div>
-          <div className="bg-gray-900 rounded-xl p-3 text-center border border-gray-800">
+          </button>
+          <button
+            onClick={() => setActiveSheet('people')}
+            className="bg-gray-900 hover:bg-gray-850 rounded-xl p-3 text-center border border-gray-800 hover:border-yellow-200/50 transition-all hover:scale-105"
+          >
             <Users size={18} className="text-yellow-200 mx-auto mb-1" />
             <p className="text-2xl font-bold text-white">{trip.overview.companions}</p>
             <p className="text-xs text-gray-400">people</p>
-          </div>
+          </button>
         </div>
 
         {/* Route Overview */}
