@@ -275,6 +275,7 @@ export const CityFeedView: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null)
   const startY = useRef(0)
   const startTime = useRef(0)
+  const startMouseY = useRef(0)
   const [activeReviewTab, setActiveReviewTab] = useState<'tripadvisor' | 'reddit' | 'google'>('tripadvisor')
 
   // Get location name - either city or category
