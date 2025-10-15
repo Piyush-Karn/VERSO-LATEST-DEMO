@@ -235,11 +235,22 @@ export const VaultDetailPage: React.FC = () => {
                       {/* Gradient overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                       
+                      {/* Seasonality Chip (top-right) */}
+                      {vaultData.seasons && vaultData.seasons.length > 0 && (
+                        <div className="absolute top-4 right-4">
+                          <div className="bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
+                            <span className="text-white text-xs font-medium">
+                              ☀️ Best in {vaultData.seasons[0].month}
+                            </span>
+                          </div>
+                        </div>
+                      )}
+
                       {/* Overlay Metadata */}
                       <div className="absolute bottom-0 left-0 right-0 p-6">
                         <h3 className="text-2xl font-bold text-white mb-2">{city}</h3>
                         <p className="text-gray-300 text-sm">
-                          Curated from {Math.floor(Math.random() * 20) + 10} saved inspirations · {Math.floor(Math.random() * 3) + 1} contributor{Math.floor(Math.random() * 3) + 1 > 1 ? 's' : ''}
+                          Curated from {Math.floor(Math.random() * 20) + 5} saved inspirations
                         </p>
                       </div>
                     </div>
