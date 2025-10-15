@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 import { Calendar, Users, MapPin, Plane, Train, CheckCircle, ArrowRight, Sparkles, Home } from 'lucide-react'
 import { fetchPexelsImages } from '../services/pexels'
 
-type FlowPhase = 'context' | 'neighborhood' | 'stay' | 'flight' | 'visa' | 'logistics' | 'complete'
+type FlowPhase = 'when' | 'who' | 'duration' | 'home' | 'neighborhood' | 'stay' | 'flight' | 'visa' | 'logistics' | 'generating' | 'complete'
 
 interface TripContext {
   destination: string
