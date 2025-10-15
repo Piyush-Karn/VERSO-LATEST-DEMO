@@ -259,28 +259,54 @@ export const VaultDetailPage: React.FC = () => {
 
         {activeTab === 'seasons' && (
           <div>
-            <p className="text-gray-400 text-sm mb-4">
-              Best times to visit and seasonal highlights
+            <p className="text-gray-400 text-sm mb-6">
+              Best times to visit {vaultData.country}
             </p>
-            <div className="space-y-4">
-              {vaultData.seasons.map((season: any) => (
-                <div key={season.month} className="bg-gray-900 rounded-xl p-5 border border-gray-800">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Calendar size={20} className="text-yellow-200" />
-                    <div>
-                      <h3 className="font-semibold text-white">{season.month}</h3>
-                      <p className="text-gray-400 text-sm">{season.highlight}</p>
+            <div className="space-y-6">
+              {vaultData.seasons.map((season: any, idx: number) => (
+                <div 
+                  key={season.month} 
+                  className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-6 border border-gray-700 overflow-hidden"
+                >
+                  {/* Decorative background element */}
+                  <div 
+                    className="absolute top-0 right-0 w-40 h-40 opacity-5"
+                    style={{
+                      background: idx % 3 === 0 ? 'radial-gradient(circle, #FDE68A 0%, transparent 70%)' :
+                                  idx % 3 === 1 ? 'radial-gradient(circle, #93C5FD 0%, transparent 70%)' :
+                                  'radial-gradient(circle, #FCA5A5 0%, transparent 70%)'
+                    }}
+                  />
+                  
+                  <div className="relative z-10">
+                    {/* Month Badge */}
+                    <div className="inline-flex items-center gap-2 bg-black/30 px-4 py-2 rounded-full mb-4">
+                      <Calendar size={16} className="text-yellow-200" />
+                      <span className="text-sm font-semibold text-white">{season.month}</span>
                     </div>
-                  </div>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    {season.activities.map((activity: string) => (
-                      <span 
-                        key={activity} 
-                        className="bg-gray-800 px-3 py-1.5 rounded-full text-sm text-gray-300 border border-gray-700"
-                      >
-                        {activity}
-                      </span>
-                    ))}
+
+                    {/* Highlight */}
+                    <h3 className="text-xl font-bold text-white mb-4 leading-tight">
+                      {season.highlight}
+                    </h3>
+
+                    {/* Activities */}
+                    <div className="space-y-2">
+                      <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-3">
+                        What to do
+                      </p>
+                      <div className="grid grid-cols-1 gap-2">
+                        {season.activities.map((activity: string) => (
+                          <div 
+                            key={activity}
+                            className="flex items-center gap-3 bg-black/20 backdrop-blur-sm px-4 py-3 rounded-xl border border-gray-700/50"
+                          >
+                            <div className="w-1.5 h-1.5 rounded-full bg-yellow-200" />
+                            <span className="text-sm text-gray-200">{activity}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
