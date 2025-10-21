@@ -158,6 +158,12 @@ export const VaultViewPage: React.FC = () => {
         </svg>
       </div>
 
+      {/* Floating Header */}
+      <div className="absolute top-8 left-6 right-6 z-20 animate-fade-in">
+        <h1 className="text-2xl font-bold text-white mb-1">Explorer,</h1>
+        <p className="text-gray-400 text-sm">We have your saved inspirations</p>
+      </div>
+
       {/* Vault Cards - Horizontal Scroll */}
       <div
         ref={scrollRef}
