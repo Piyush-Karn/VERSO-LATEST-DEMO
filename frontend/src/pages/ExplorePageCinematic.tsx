@@ -63,6 +63,7 @@ export const ExplorePageCinematic: React.FC = () => {
   const [isFiltered, setIsFiltered] = useState(false)
   const [surpriseLocation, setSurpriseLocation] = useState<any>(null)
   const [isSpinning, setIsSpinning] = useState(false)
+  const [showProfileModal, setShowProfileModal] = useState(false)
 
   // Initialize Mapbox globe
   useEffect(() => {
