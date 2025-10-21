@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import mapboxgl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import { Calendar, Compass, Clock, Sparkles, X, ChevronRight } from 'lucide-react'
+import { Calendar, Compass, Clock, Sparkles, X, ChevronRight, User, Settings, LogOut, RefreshCw } from 'lucide-react'
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN
 
