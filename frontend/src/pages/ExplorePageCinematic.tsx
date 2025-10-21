@@ -230,9 +230,89 @@ export const ExplorePageCinematic: React.FC = () => {
 
       {/* Title (only when not filtered) */}
       {!isFiltered && (
-        <div className="absolute top-8 left-6 right-6 z-10 animate-fade-in">
-          <h1 className="text-3xl font-bold text-white mb-2">Explore</h1>
-          <p className="text-gray-300 text-sm">Wander before you wonder</p>
+        <div className="absolute top-8 left-6 right-6 z-10 animate-fade-in flex items-start justify-between">
+          <div>
+            <h1 className="text-3xl font-bold text-white mb-2">Explore</h1>
+            <p className="text-gray-300 text-sm">Wander before you wonder</p>
+          </div>
+          <button
+            onClick={() => setShowProfileModal(true)}
+            className="p-3 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full border border-white/20 transition-all hover:scale-110"
+          >
+            <User size={20} className="text-white" />
+          </button>
+        </div>
+      )}
+
+      {/* Profile Modal */}
+      {showProfileModal && (
+        <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in" onClick={() => setShowProfileModal(false)}>
+          <div className="bg-gray-900 rounded-3xl w-full max-w-md m-4 p-6 border border-gray-800 animate-slide-up" onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-bold text-white">Profile</h2>
+              <button onClick={() => setShowProfileModal(false)} className="p-2 hover:bg-gray-800 rounded-full transition-colors">
+                <X size={20} className="text-gray-400" />
+              </button>
+            </div>
+
+            <div className="space-y-4">
+              {/* User Info */}
+              <div className="bg-gradient-to-br from-yellow-900/20 to-amber-900/20 rounded-2xl p-6 border border-yellow-500/20">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-yellow-200/20 rounded-full flex items-center justify-center">
+                    <User size={32} className="text-yellow-200" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-lg">Explorer</p>
+                    <p className="text-gray-400 text-sm">Travel enthusiast</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-black/30 rounded-xl p-3">
+                    <p className="text-yellow-200 text-2xl font-bold">5</p>
+                    <p className="text-gray-400 text-xs">Regions visited</p>
+                  </div>
+                  <div className="bg-black/30 rounded-xl p-3">
+                    <p className="text-yellow-200 text-2xl font-bold">12</p>
+                    <p className="text-gray-400 text-xs">Saved places</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Actions */}
+              <div className="space-y-2">
+                <button
+                  onClick={() => {
+                    setShowProfileModal(false)
+                    navigate('/onboarding')
+                  }}
+                  className="w-full flex items-center gap-3 p-4 bg-gray-800/50 hover:bg-gray-800 rounded-xl transition-colors text-left border border-gray-700"
+                >
+                  <RefreshCw size={20} className="text-yellow-200" />
+                  <div>
+                    <p className="text-white font-medium">Update Preferences</p>
+                    <p className="text-gray-400 text-xs">Retake onboarding</p>
+                  </div>
+                </button>
+
+                <button className="w-full flex items-center gap-3 p-4 bg-gray-800/50 hover:bg-gray-800 rounded-xl transition-colors text-left border border-gray-700">
+                  <Settings size={20} className="text-gray-400" />
+                  <div>
+                    <p className="text-white font-medium">Settings</p>
+                    <p className="text-gray-400 text-xs">Preferences and privacy</p>
+                  </div>
+                </button>
+
+                <button className="w-full flex items-center gap-3 p-4 bg-gray-800/50 hover:bg-gray-800 rounded-xl transition-colors text-left border border-gray-700">
+                  <LogOut size={20} className="text-gray-400" />
+                  <div>
+                    <p className="text-white font-medium">Sign out</p>
+                    <p className="text-gray-400 text-xs">See you soon</p>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       )}
 
