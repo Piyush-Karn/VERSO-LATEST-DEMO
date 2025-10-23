@@ -192,8 +192,7 @@
 ##
 ## test_plan:
 ##   current_focus:
-##     - "Integrate TripBottomSheet in TripPlanningPage"
-##     - "Build Companion-led Trip Creation Flow (TripCompanionFlow)"
+##     - "Integrate CinematicItinerary navigation"
 ##   stuck_tasks:
 ##     - "None"
 ##   test_all: false
