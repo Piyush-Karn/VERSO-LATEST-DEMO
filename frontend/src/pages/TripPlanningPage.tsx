@@ -170,15 +170,23 @@ export const TripPlanningPage: React.FC = () => {
 
             return (
               <div key={city.city_id}>
-                {/* Travel Separator */}
+                {/* Travel Separator with Connector */}
                 {cityIdx > 0 && !isExpanded && (
-                  <div className="flex items-center gap-3 py-3 mb-4">
-                    <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-700 to-gray-700/50" />
-                    <div className="flex items-center gap-2 px-4 py-1.5 bg-gray-900 rounded-full border border-gray-700">
-                      <span className="text-lg">{city.travel_from_previous.mode}</span>
-                      <span className="text-gray-400 text-xs">{city.travel_from_previous.duration}</span>
+                  <div className="relative">
+                    {/* Vertical Connector Line */}
+                    <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-8 bg-gradient-to-b from-gray-700 to-transparent -top-8" />
+                    
+                    <div className="flex items-center gap-3 py-3 mb-4">
+                      <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-700 to-gray-700/50" />
+                      <div className="flex items-center gap-2 px-4 py-1.5 bg-gray-900 rounded-full border border-gray-700 shadow-lg relative z-10">
+                        <span className="text-lg">{city.travel_from_previous.mode}</span>
+                        <span className="text-gray-400 text-xs">{city.travel_from_previous.duration}</span>
+                      </div>
+                      <div className="flex-1 h-px bg-gradient-to-l from-transparent via-gray-700 to-gray-700/50" />
                     </div>
-                    <div className="flex-1 h-px bg-gradient-to-l from-transparent via-gray-700 to-gray-700/50" />
+                    
+                    {/* Vertical Connector Line to Next Card */}
+                    <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-8 bg-gradient-to-b from-transparent to-gray-700 -bottom-8" />
                   </div>
                 )}
 
