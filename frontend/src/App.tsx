@@ -22,6 +22,7 @@ import { DynamicTripSummary } from './pages/DynamicTripSummary'
 import { CityExplorationPage } from './pages/CityExplorationPage'
 import { OnboardingFlow } from './pages/OnboardingFlow'
 import { CinematicItinerary } from './pages/CinematicItinerary'
+import { VersoItinerary } from './pages/VersoItinerary'
 
 // Simple Ask Verso placeholder
 const AskVersoPage = () => (
