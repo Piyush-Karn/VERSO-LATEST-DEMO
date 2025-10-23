@@ -146,7 +146,7 @@ export const TripPlanningPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Your Journey - Cinematic City Cards */}
+      {/* Your Journey - Deck Style Cards */}
       <div className="p-4 pb-6">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-lg font-bold text-white">Your Journey</h2>
@@ -156,135 +156,175 @@ export const TripPlanningPage: React.FC = () => {
           </button>
         </div>
 
-        <div className="space-y-8">
-          {trip.route.map((city, cityIdx) => (
-            <div key={city.city_id} className="space-y-4">
-              {/* Travel Separator */}
-              {cityIdx > 0 && (
-                <div className="flex items-center gap-3 py-6">
-                  <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-700 to-gray-700/50" />
-                  <div className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-gray-900 to-gray-800 rounded-full border border-gray-700 shadow-lg">
-                    <span className="text-2xl">{city.travel_from_previous.mode}</span>
-                    <span className="text-gray-300 text-sm font-medium">{city.travel_from_previous.duration}</span>
-                  </div>
-                  <div className="flex-1 h-px bg-gradient-to-l from-transparent via-gray-700 to-gray-700/50" />
-                </div>
-              )}
+        <div className="space-y-4">
+          {trip.route.map((city, cityIdx) => {
+            const isExpanded = selectedCity === city.city_id
+            const cityColors = [
+              'from-purple-500/20 to-purple-600/10 border-purple-500/30',
+              'from-pink-500/20 to-pink-600/10 border-pink-500/30',
+              'from-amber-500/20 to-orange-600/10 border-amber-500/30',
+              'from-blue-500/20 to-blue-600/10 border-blue-500/30',
+              'from-green-500/20 to-green-600/10 border-green-500/30'
+            ]
+            const colorClass = cityColors[cityIdx % cityColors.length]
 
-              {/* City Card - Magazine Style */}
-              <div className="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl group hover:border-yellow-200/30 transition-all duration-700">
-                {/* Hero Image */}
-                <div 
-                  onClick={() => {
-                    console.log('Clicked city:', city.city_id, 'Current selected:', selectedCity)
-                    setSelectedCity(selectedCity === city.city_id ? null : city.city_id)
-                  }}
-                  className="w-full relative cursor-pointer"
-                >
-                  <div className="relative h-80 overflow-hidden">
-                    {cityImages[city.city_id] ? (
-                      <img 
-                        src={cityImages[city.city_id]} 
-                        alt={city.city_name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[3000ms]"
-                      />
-                    ) : (
-                      <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                        <MapPin size={64} className="text-gray-600" />
-                      </div>
-                    )}
-                    
-                    {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-                    
-                    {/* Days Badge */}
-                    <div className="absolute top-6 left-6">
-                      <div className="bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/30">
-                        <span className="text-white text-sm font-semibold">{city.days} Days</span>
-                      </div>
+            return (
+              <div key={city.city_id}>
+                {/* Travel Separator */}
+                {cityIdx > 0 && !isExpanded && (
+                  <div className="flex items-center gap-3 py-3 mb-4">
+                    <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-700 to-gray-700/50" />
+                    <div className="flex items-center gap-2 px-4 py-1.5 bg-gray-900 rounded-full border border-gray-700">
+                      <span className="text-lg">{city.travel_from_previous.mode}</span>
+                      <span className="text-gray-400 text-xs">{city.travel_from_previous.duration}</span>
                     </div>
-
-                    {/* City Title Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-8">
-                      <div className="flex items-end justify-between">
-                        <div className="flex-1">
-                          <h3 className="text-4xl font-bold text-white mb-2 leading-tight">{city.city_name}</h3>
-                          <p className="text-yellow-200/90 text-base font-light italic mb-3">{city.vibe}</p>
-                          <div className="flex items-center gap-3 text-white/70 text-sm">
-                            <span>{city.experiences.length} experiences</span>
-                            {city.open_slots > 0 && (
-                              <>
-                                <span>·</span>
-                                <span className="text-yellow-200">{city.open_slots} open slots</span>
-                              </>
-                            )}
-                          </div>
-                        </div>
-                        <ChevronRight 
-                          size={32} 
-                          className={`text-white transition-transform duration-500 ${selectedCity === city.city_id ? 'rotate-90' : ''}`}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Expanded Experiences */}
-                {selectedCity === city.city_id && (
-                  <div className="p-6 space-y-4 animate-fade-in border-t border-gray-800">
-                    <p className="text-gray-500 text-xs uppercase tracking-wider mb-4">Day-by-Day Itinerary</p>
-                    
-                    {city.experiences.map((exp, expIdx) => (
-                      <div
-                        key={exp.experience_id || exp.cafe_id}
-                        className="group/exp flex items-start gap-4 p-4 rounded-2xl bg-gray-800/50 hover:bg-gray-800 border border-gray-700/50 hover:border-yellow-200/30 transition-all duration-500 cursor-pointer"
-                      >
-                        {/* Day Badge */}
-                        <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-yellow-200/20 to-yellow-300/10 rounded-full flex items-center justify-center border border-yellow-200/30 shadow-lg">
-                          <span className="text-yellow-200 text-sm font-bold">D{exp.day}</span>
-                        </div>
-
-                        {/* Experience Details */}
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-start justify-between gap-3 mb-2">
-                            <div className="flex-1">
-                              <h4 className="text-white font-semibold text-base mb-1 group-hover/exp:text-yellow-200 transition-colors">
-                                {exp.title}
-                              </h4>
-                              <div className="flex items-center gap-2 text-xs text-gray-400">
-                                <Clock size={12} />
-                                <span className="capitalize">{exp.time_of_day}</span>
-                                <span>·</span>
-                                <span className="capitalize px-2 py-0.5 bg-gray-700 rounded-full">{exp.type}</span>
-                              </div>
-                            </div>
-                            <Heart 
-                              size={20} 
-                              className={`flex-shrink-0 transition-all ${
-                                exp.status === 'saved' 
-                                  ? 'text-red-400 fill-red-400' 
-                                  : 'text-gray-600 group-hover/exp:text-gray-500'
-                              }`} 
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-
-                    {/* Actions */}
-                    <div className="flex gap-3 pt-2">
-                      <button className="flex-1 bg-gray-800 hover:bg-gray-750 text-white text-sm font-medium py-3 rounded-full transition-all border border-gray-700 hover:border-gray-600">
-                        Add experience
-                      </button>
-                      <button className="flex-1 bg-yellow-200 hover:bg-yellow-300 text-black text-sm font-bold py-3 rounded-full transition-all shadow-lg shadow-yellow-200/20">
-                        Explore {city.city_name}
-                      </button>
-                    </div>
+                    <div className="flex-1 h-px bg-gradient-to-l from-transparent via-gray-700 to-gray-700/50" />
                   </div>
                 )}
+
+                {/* City Card */}
+                <div className={`bg-gradient-to-br ${colorClass} backdrop-blur-sm rounded-2xl border overflow-hidden transition-all duration-500 ${isExpanded ? 'shadow-2xl' : 'shadow-lg'}`}>
+                  {/* Collapsed State - Compact Card */}
+                  {!isExpanded && (
+                    <div
+                      onClick={() => {
+                        setSelectedCity(city.city_id)
+                        setSelectedActivity(null)
+                      }}
+                      className="p-5 cursor-pointer"
+                    >
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center gap-3">
+                          <Calendar size={18} className="text-white/70" />
+                          <span className="text-white/60 text-sm">{city.days} Days</span>
+                        </div>
+                        <ChevronRight size={20} className="text-white/70" />
+                      </div>
+                      <h3 className="text-2xl font-bold text-white mb-2">{city.city_name}</h3>
+                      <p className="text-white/80 text-sm mb-3 italic">{city.vibe}</p>
+                      <button
+                        onClick={(e) => e.stopPropagation()}
+                        className="w-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white text-sm font-medium py-2.5 rounded-xl border border-white/20 transition-all flex items-center justify-center gap-2"
+                      >
+                        <Plus size={16} />
+                        Add a first activity
+                      </button>
+                    </div>
+                  )}
+
+                  {/* Expanded State - Activities List */}
+                  {isExpanded && (
+                    <div className="animate-fade-in">
+                      {/* Header */}
+                      <div
+                        onClick={() => {
+                          setSelectedCity(null)
+                          setSelectedActivity(null)
+                        }}
+                        className="p-5 cursor-pointer border-b border-white/10"
+                      >
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-3">
+                            <Calendar size={18} className="text-white/70" />
+                            <span className="text-white/60 text-sm">{city.days} Days</span>
+                          </div>
+                          <ChevronRight size={20} className="text-white/70 rotate-90" />
+                        </div>
+                        <h3 className="text-2xl font-bold text-white">{city.city_name}</h3>
+                      </div>
+
+                      {/* Activities List */}
+                      <div className="p-4 space-y-3">
+                        {city.experiences.map((exp) => {
+                          const activityId = exp.experience_id || exp.cafe_id
+                          const isActivityExpanded = selectedActivity === activityId
+
+                          return (
+                            <div key={activityId}>
+                              {/* Activity Compact */}
+                              {!isActivityExpanded && (
+                                <div
+                                  onClick={() => setSelectedActivity(activityId)}
+                                  className="flex items-center gap-3 p-3 bg-white/10 hover:bg-white/15 backdrop-blur-sm rounded-xl border border-white/20 cursor-pointer transition-all"
+                                >
+                                  {cityImages[city.city_id] && (
+                                    <img
+                                      src={cityImages[city.city_id]}
+                                      alt={exp.title}
+                                      className="w-16 h-16 rounded-lg object-cover"
+                                    />
+                                  )}
+                                  <div className="flex-1 min-w-0">
+                                    <h4 className="text-white font-medium text-sm truncate">{exp.title}</h4>
+                                    <p className="text-white/60 text-xs capitalize">{exp.time_of_day}</p>
+                                  </div>
+                                  <ChevronRight size={18} className="text-white/60 flex-shrink-0" />
+                                </div>
+                              )}
+
+                              {/* Activity Expanded Detail */}
+                              {isActivityExpanded && (
+                                <div className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 overflow-hidden animate-fade-in">
+                                  {/* Hero Image */}
+                                  {cityImages[city.city_id] && (
+                                    <div className="relative h-48">
+                                      <img
+                                        src={cityImages[city.city_id]}
+                                        alt={exp.title}
+                                        className="w-full h-full object-cover"
+                                      />
+                                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                      <button
+                                        onClick={() => setSelectedActivity(null)}
+                                        className="absolute top-3 left-3 p-2 bg-black/50 backdrop-blur-md rounded-full"
+                                      >
+                                        <ChevronRight size={18} className="text-white rotate-180" />
+                                      </button>
+                                    </div>
+                                  )}
+
+                                  {/* Details */}
+                                  <div className="p-5">
+                                    <h4 className="text-white font-bold text-lg mb-2">{exp.title}</h4>
+                                    <div className="flex flex-wrap items-center gap-3 mb-4 text-xs text-white/70">
+                                      <div className="flex items-center gap-1">
+                                        <Clock size={14} />
+                                        <span className="capitalize">{exp.time_of_day}</span>
+                                      </div>
+                                      <span className="w-1 h-1 bg-white/30 rounded-full" />
+                                      <span className="px-2 py-1 bg-white/10 rounded-full capitalize">{exp.type}</span>
+                                      <span className="w-1 h-1 bg-white/30 rounded-full" />
+                                      <span>Day {exp.day}</span>
+                                    </div>
+
+                                    {/* Action Buttons */}
+                                    <div className="flex gap-2">
+                                      <button className="flex-1 bg-white/10 hover:bg-white/20 text-white text-sm font-medium py-2.5 rounded-xl border border-white/20 transition-all">
+                                        Edit
+                                      </button>
+                                      <button className="flex-1 bg-white text-black text-sm font-bold py-2.5 rounded-xl transition-all hover:bg-white/90">
+                                        View Details
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          )
+                        })}
+
+                        {/* Add Activity Button */}
+                        <button className="w-full bg-white/10 hover:bg-white/15 text-white text-sm font-medium py-3 rounded-xl border border-white/20 border-dashed transition-all flex items-center justify-center gap-2">
+                          <Plus size={16} />
+                          Add activity
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
 
