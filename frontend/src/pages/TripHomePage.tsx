@@ -222,7 +222,7 @@ export const TripHomePage: React.FC = () => {
                   
                   {/* Start Date */}
                   {vault.start_date && (
-                    <p className="text-gray-500 text-xs mt-3">
+                    <p className="text-gray-500 text-xs mt-3 mb-3">
                       Starts {new Date(vault.start_date).toLocaleDateString('en-US', { 
                         month: 'short', 
                         day: 'numeric', 
@@ -230,6 +230,29 @@ export const TripHomePage: React.FC = () => {
                       })}
                     </p>
                   )}
+
+                  {/* Action Buttons */}
+                  <div className="flex gap-2 mt-3">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        navigate(`/itinerary/${vault.id}`)
+                      }}
+                      className="flex-1 bg-yellow-200 hover:bg-yellow-300 text-black font-semibold py-2.5 px-4 rounded-full transition-all text-sm flex items-center justify-center gap-2"
+                    >
+                      <Sparkles size={16} />
+                      View Journey
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        navigate(`/trip/${vault.id}`)
+                      }}
+                      className="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-medium py-2.5 px-4 rounded-full transition-all text-sm border border-gray-700"
+                    >
+                      Edit Plan
+                    </button>
+                  </div>
                 </div>
               </div>
             </button>
