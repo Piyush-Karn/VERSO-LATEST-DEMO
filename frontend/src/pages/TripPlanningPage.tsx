@@ -145,6 +145,21 @@ export const TripPlanningPage: React.FC = () => {
         </div>
       </div>
 
+      {/* View Full Journey CTA */}
+      <div className="p-4 border-b border-gray-800">
+        <button
+          onClick={() => navigate(`/itinerary/${tripId}`)}
+          className="w-full bg-gradient-to-r from-yellow-200 to-yellow-300 hover:from-yellow-300 hover:to-yellow-400 text-black font-bold py-4 px-6 rounded-2xl transition-all hover:scale-[1.02] shadow-lg shadow-yellow-200/20 flex items-center justify-center gap-3"
+        >
+          <Sparkles size={20} />
+          <span>View Your Complete Journey</span>
+          <ChevronRight size={20} />
+        </button>
+        <p className="text-gray-500 text-xs text-center mt-2">
+          Experience your trip as a cinematic story
+        </p>
+      </div>
+
       {/* City Cards */}
       <div className="p-4 space-y-4">
         <div className="flex items-center justify-between mb-2">
