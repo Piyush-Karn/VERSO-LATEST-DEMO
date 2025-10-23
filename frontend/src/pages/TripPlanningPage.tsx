@@ -173,9 +173,12 @@ export const TripPlanningPage: React.FC = () => {
               {/* City Card - Magazine Style */}
               <div className="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl group hover:border-yellow-200/30 transition-all duration-700">
                 {/* Hero Image */}
-                <button
-                  onClick={() => setSelectedCity(selectedCity === city.city_id ? null : city.city_id)}
-                  className="w-full relative"
+                <div 
+                  onClick={() => {
+                    console.log('Clicked city:', city.city_id, 'Current selected:', selectedCity)
+                    setSelectedCity(selectedCity === city.city_id ? null : city.city_id)
+                  }}
+                  className="w-full relative cursor-pointer"
                 >
                   <div className="relative h-80 overflow-hidden">
                     {cityImages[city.city_id] ? (
@@ -223,7 +226,7 @@ export const TripPlanningPage: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                </button>
+                </div>
 
                 {/* Expanded Experiences */}
                 {selectedCity === city.city_id && (
