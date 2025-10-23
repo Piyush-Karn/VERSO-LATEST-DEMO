@@ -356,7 +356,7 @@ export const TripCompanionFlow: React.FC = () => {
               </div>
               <h1 className="text-3xl font-bold mb-4">Your journey is ready</h1>
               <p className="text-gray-400 mb-8 leading-relaxed">Everything flows naturally — just as you imagined</p>
-              <button onClick={() => navigate('/trip/1')} className="w-full bg-yellow-200 hover:bg-yellow-300 text-black font-semibold py-4 rounded-full transition-all mb-3">View Your Journey</button>
+              <button onClick={() => navigate('/itinerary/1')} className="w-full bg-yellow-200 hover:bg-yellow-300 text-black font-semibold py-4 rounded-full transition-all mb-3">View Your Journey</button>
               <button onClick={() => navigate('/collections')} className="w-full bg-gray-900 hover:bg-gray-850 text-white font-medium py-4 rounded-full transition-colors border border-gray-700">Back to Collections</button>
             </div>
           </div>
