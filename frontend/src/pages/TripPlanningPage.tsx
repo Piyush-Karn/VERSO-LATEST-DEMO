@@ -145,98 +145,140 @@ export const TripPlanningPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Your Journey - Cinematic Day-by-Day View */}
+      {/* Your Journey - Cinematic City Cards */}
       <div className="p-4 pb-6">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-lg font-bold text-white">Your Journey</h2>
           <button className="flex items-center gap-2 px-3 py-2 bg-yellow-200/10 hover:bg-yellow-200/20 rounded-full border border-yellow-200/30 transition-colors">
             <Plus size={16} className="text-yellow-200" />
-            <span className="text-xs text-yellow-200 font-medium">Add day</span>
+            <span className="text-xs text-yellow-200 font-medium">Add city</span>
           </button>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-8">
           {trip.route.map((city, cityIdx) => (
             <div key={city.city_id} className="space-y-4">
-              {/* City Separator with Travel Info */}
+              {/* Travel Separator */}
               {cityIdx > 0 && (
-                <div className="flex items-center gap-3 py-4">
-                  <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900 rounded-full border border-gray-700">
-                    <span className="text-lg">{city.travel_from_previous.mode}</span>
-                    <span className="text-gray-400 text-sm">{city.travel_from_previous.duration}</span>
+                <div className="flex items-center gap-3 py-6">
+                  <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-700 to-gray-700/50" />
+                  <div className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-gray-900 to-gray-800 rounded-full border border-gray-700 shadow-lg">
+                    <span className="text-2xl">{city.travel_from_previous.mode}</span>
+                    <span className="text-gray-300 text-sm font-medium">{city.travel_from_previous.duration}</span>
                   </div>
-                  <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
+                  <div className="flex-1 h-px bg-gradient-to-l from-transparent via-gray-700 to-gray-700/50" />
                 </div>
               )}
 
-              {/* City Name Header */}
-              <div className="flex items-center gap-3 mb-4">
-                <MapPin size={20} className="text-yellow-200" />
-                <div>
-                  <h3 className="text-xl font-bold text-white">{city.city_name}</h3>
-                  <p className="text-gray-400 text-sm">{city.vibe} · {city.days} days</p>
-                </div>
-              </div>
-
-              {/* Experiences for this city */}
-              <div className="space-y-3">
-                {city.experiences.map((exp, expIdx) => (
-                  <div
-                    key={exp.experience_id || exp.cafe_id}
-                    className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all"
-                  >
-                    {/* Experience Header */}
-                    <div className="p-4">
-                      <div className="flex items-start justify-between mb-3">
-                        <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 bg-yellow-200/10 rounded-full flex items-center justify-center border border-yellow-200/30">
-                            <span className="text-yellow-200 text-sm font-semibold">D{exp.day}</span>
-                          </div>
-                          <div>
-                            <h4 className="text-white font-semibold">{exp.title}</h4>
-                            <p className="text-gray-400 text-xs">{exp.time_of_day}</p>
-                          </div>
-                        </div>
-                        <Heart size={18} className={exp.status === 'saved' ? 'text-red-400 fill-red-400' : 'text-gray-500'} />
-                      </div>
-
-                      {/* Experience Type Badge */}
-                      {exp.type && (
-                        <div className="mt-2">
-                          <span className="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400 capitalize">
-                            {exp.type}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Experience Image */}
-                    {cityImages[city.city_id] && expIdx === 0 && (
-                      <div className="relative h-48 overflow-hidden">
-                        <img 
-                          src={cityImages[city.city_id]} 
-                          alt={exp.title}
-                          className="w-full h-full object-cover opacity-60"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent" />
+              {/* City Card - Magazine Style */}
+              <div className="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl group hover:border-yellow-200/30 transition-all duration-700">
+                {/* Hero Image */}
+                <button
+                  onClick={() => setSelectedCity(selectedCity === city.city_id ? null : city.city_id)}
+                  className="w-full relative"
+                >
+                  <div className="relative h-80 overflow-hidden">
+                    {cityImages[city.city_id] ? (
+                      <img 
+                        src={cityImages[city.city_id]} 
+                        alt={city.city_name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[3000ms]"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                        <MapPin size={64} className="text-gray-600" />
                       </div>
                     )}
-                  </div>
-                ))}
-              </div>
+                    
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+                    
+                    {/* Days Badge */}
+                    <div className="absolute top-6 left-6">
+                      <div className="bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/30">
+                        <span className="text-white text-sm font-semibold">{city.days} Days</span>
+                      </div>
+                    </div>
 
-              {/* Open slots */}
-              {city.open_slots > 0 && (
-                <div className="bg-yellow-200/10 border border-yellow-200/30 rounded-xl p-4">
-                  <div className="flex items-center justify-between">
-                    <p className="text-yellow-200 text-sm">
-                      <span className="font-semibold">{city.open_slots} open slots</span> in {city.city_name}
-                    </p>
-                    <button className="text-yellow-200 text-xs hover:underline">Add more</button>
+                    {/* City Title Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 p-8">
+                      <div className="flex items-end justify-between">
+                        <div className="flex-1">
+                          <h3 className="text-4xl font-bold text-white mb-2 leading-tight">{city.city_name}</h3>
+                          <p className="text-yellow-200/90 text-base font-light italic mb-3">{city.vibe}</p>
+                          <div className="flex items-center gap-3 text-white/70 text-sm">
+                            <span>{city.experiences.length} experiences</span>
+                            {city.open_slots > 0 && (
+                              <>
+                                <span>·</span>
+                                <span className="text-yellow-200">{city.open_slots} open slots</span>
+                              </>
+                            )}
+                          </div>
+                        </div>
+                        <ChevronRight 
+                          size={32} 
+                          className={`text-white transition-transform duration-500 ${selectedCity === city.city_id ? 'rotate-90' : ''}`}
+                        />
+                      </div>
+                    </div>
                   </div>
-                </div>
-              )}
+                </button>
+
+                {/* Expanded Experiences */}
+                {selectedCity === city.city_id && (
+                  <div className="p-6 space-y-4 animate-fade-in border-t border-gray-800">
+                    <p className="text-gray-500 text-xs uppercase tracking-wider mb-4">Day-by-Day Itinerary</p>
+                    
+                    {city.experiences.map((exp, expIdx) => (
+                      <div
+                        key={exp.experience_id || exp.cafe_id}
+                        className="group/exp flex items-start gap-4 p-4 rounded-2xl bg-gray-800/50 hover:bg-gray-800 border border-gray-700/50 hover:border-yellow-200/30 transition-all duration-500 cursor-pointer"
+                      >
+                        {/* Day Badge */}
+                        <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-yellow-200/20 to-yellow-300/10 rounded-full flex items-center justify-center border border-yellow-200/30 shadow-lg">
+                          <span className="text-yellow-200 text-sm font-bold">D{exp.day}</span>
+                        </div>
+
+                        {/* Experience Details */}
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-start justify-between gap-3 mb-2">
+                            <div className="flex-1">
+                              <h4 className="text-white font-semibold text-base mb-1 group-hover/exp:text-yellow-200 transition-colors">
+                                {exp.title}
+                              </h4>
+                              <div className="flex items-center gap-2 text-xs text-gray-400">
+                                <Clock size={12} />
+                                <span className="capitalize">{exp.time_of_day}</span>
+                                <span>·</span>
+                                <span className="capitalize px-2 py-0.5 bg-gray-700 rounded-full">{exp.type}</span>
+                              </div>
+                            </div>
+                            <Heart 
+                              size={20} 
+                              className={`flex-shrink-0 transition-all ${
+                                exp.status === 'saved' 
+                                  ? 'text-red-400 fill-red-400' 
+                                  : 'text-gray-600 group-hover/exp:text-gray-500'
+                              }`} 
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+
+                    {/* Actions */}
+                    <div className="flex gap-3 pt-2">
+                      <button className="flex-1 bg-gray-800 hover:bg-gray-750 text-white text-sm font-medium py-3 rounded-full transition-all border border-gray-700 hover:border-gray-600">
+                        Add experience
+                      </button>
+                      <button className="flex-1 bg-yellow-200 hover:bg-yellow-300 text-black text-sm font-bold py-3 rounded-full transition-all shadow-lg shadow-yellow-200/20">
+                        Explore {city.city_name}
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
