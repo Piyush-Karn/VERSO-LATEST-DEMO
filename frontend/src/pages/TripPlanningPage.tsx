@@ -145,135 +145,118 @@ export const TripPlanningPage: React.FC = () => {
         </div>
       </div>
 
-      {/* View Full Journey CTA */}
-      <div className="p-4 border-b border-gray-800">
-        <button
-          onClick={() => navigate(`/itinerary/${tripId}`)}
-          className="w-full bg-gradient-to-r from-yellow-200 to-yellow-300 hover:from-yellow-300 hover:to-yellow-400 text-black font-bold py-4 px-6 rounded-2xl transition-all hover:scale-[1.02] shadow-lg shadow-yellow-200/20 flex items-center justify-center gap-3"
-        >
-          <Sparkles size={20} />
-          <span>View Your Complete Journey</span>
-          <ChevronRight size={20} />
-        </button>
-        <p className="text-gray-500 text-xs text-center mt-2">
-          Experience your trip as a cinematic story
-        </p>
-      </div>
-
-      {/* City Cards */}
-      <div className="p-4 space-y-4">
-        <div className="flex items-center justify-between mb-2">
-          <h2 className="text-lg font-bold text-white">Your Cities</h2>
+      {/* Your Journey - Cinematic Day-by-Day View */}
+      <div className="p-4 pb-6">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-lg font-bold text-white">Your Journey</h2>
           <button className="flex items-center gap-2 px-3 py-2 bg-yellow-200/10 hover:bg-yellow-200/20 rounded-full border border-yellow-200/30 transition-colors">
             <Plus size={16} className="text-yellow-200" />
-            <span className="text-xs text-yellow-200 font-medium">Add city</span>
+            <span className="text-xs text-yellow-200 font-medium">Add day</span>
           </button>
         </div>
 
-        {trip.route.map((city, idx) => (
-          <div
-            key={city.city_id}
-            className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all"
-          >
-            {/* City Header */}
-            <button
-              onClick={() => setSelectedCity(selectedCity === city.city_id ? null : city.city_id)}
-              className="w-full"
-            >
-              <div className="relative h-48">
-                {cityImages[city.city_id] ? (
-                  <img 
-                    src={cityImages[city.city_id]} 
-                    alt={city.city_name}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-gray-800 flex items-center justify-center">
-                    <MapPin size={36} className="text-gray-600" />
+        <div className="space-y-6">
+          {trip.route.map((city, cityIdx) => (
+            <div key={city.city_id} className="space-y-4">
+              {/* City Separator with Travel Info */}
+              {cityIdx > 0 && (
+                <div className="flex items-center gap-3 py-4">
+                  <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900 rounded-full border border-gray-700">
+                    <span className="text-lg">{city.travel_from_previous.mode}</span>
+                    <span className="text-gray-400 text-sm">{city.travel_from_previous.duration}</span>
                   </div>
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-                
-                {/* Day badge */}
-                <div className="absolute top-4 left-4">
-                  <div className="bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
-                    <span className="text-white text-xs font-medium">{city.days} Days</span>
-                  </div>
+                  <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
                 </div>
+              )}
 
-                {/* Travel mode badge */}
-                {idx > 0 && (
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
-                      <span className="text-white text-xs">{city.travel_from_previous.mode} {city.travel_from_previous.duration}</span>
-                    </div>
-                  </div>
-                )}
-                
-                {/* City info overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-1">{city.city_name}</h3>
-                      <p className="text-white/80 text-sm">{city.vibe}</p>
-                    </div>
-                    <ChevronRight 
-                      size={24} 
-                      className={`text-white transition-transform ${selectedCity === city.city_id ? 'rotate-90' : ''}`}
-                    />
-                  </div>
+              {/* City Name Header */}
+              <div className="flex items-center gap-3 mb-4">
+                <MapPin size={20} className="text-yellow-200" />
+                <div>
+                  <h3 className="text-xl font-bold text-white">{city.city_name}</h3>
+                  <p className="text-gray-400 text-sm">{city.vibe} · {city.days} days</p>
                 </div>
               </div>
-            </button>
 
-            {/* Expanded Content */}
-            {selectedCity === city.city_id && (
-              <div className="p-4 border-t border-gray-800 animate-fade-in">
-                <p className="text-gray-400 text-xs mb-4 uppercase tracking-wide">
-                  What you'll experience here
-                </p>
-                
-                {/* Experience Cards */}
-                <div className="space-y-3 mb-4">
-                  {city.experiences.map((exp) => (
-                    <div 
-                      key={exp.experience_id || exp.cafe_id}
-                      className="flex items-center gap-3 bg-gray-800/50 p-3 rounded-xl border border-gray-700/50"
-                    >
-                      <div className={`w-2 h-2 rounded-full ${exp.status === 'saved' ? 'bg-green-400' : 'bg-yellow-400'}`} />
-                      <div className="flex-1">
-                        <p className="text-white text-sm font-medium">{exp.title}</p>
-                        <p className="text-gray-400 text-xs">
-                          Day {exp.day} · {exp.time_of_day}
-                        </p>
+              {/* Experiences for this city */}
+              <div className="space-y-3">
+                {city.experiences.map((exp, expIdx) => (
+                  <div
+                    key={exp.experience_id || exp.cafe_id}
+                    className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all"
+                  >
+                    {/* Experience Header */}
+                    <div className="p-4">
+                      <div className="flex items-start justify-between mb-3">
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 bg-yellow-200/10 rounded-full flex items-center justify-center border border-yellow-200/30">
+                            <span className="text-yellow-200 text-sm font-semibold">D{exp.day}</span>
+                          </div>
+                          <div>
+                            <h4 className="text-white font-semibold">{exp.title}</h4>
+                            <p className="text-gray-400 text-xs">{exp.time_of_day}</p>
+                          </div>
+                        </div>
+                        <Heart size={18} className={exp.status === 'saved' ? 'text-red-400 fill-red-400' : 'text-gray-500'} />
                       </div>
-                      <Heart size={16} className={exp.status === 'saved' ? 'text-red-400 fill-red-400' : 'text-gray-500'} />
+
+                      {/* Experience Meta */}
+                      <div className="flex items-center gap-4 text-xs text-gray-500">
+                        {exp.category && (
+                          <span className="px-2 py-1 bg-gray-800 rounded-full">{exp.category}</span>
+                        )}
+                        {exp.duration && (
+                          <span className="flex items-center gap-1">
+                            <Clock size={12} />
+                            {exp.duration}
+                          </span>
+                        )}
+                        {exp.cost && (
+                          <span className="flex items-center gap-1">
+                            <DollarSign size={12} />
+                            {exp.cost}
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Description */}
+                      {exp.description && (
+                        <p className="text-gray-400 text-sm mt-3 leading-relaxed">
+                          {exp.description}
+                        </p>
+                      )}
                     </div>
-                  ))}
-                </div>
 
-                {/* Open slots */}
-                {city.open_slots > 0 && (
-                  <div className="bg-yellow-200/10 border border-yellow-200/30 rounded-xl p-3 mb-4">
-                    <p className="text-yellow-200 text-xs">
-                      <span className="font-semibold">{city.open_slots} open slots</span> — add more experiences or leave time to explore.
-                    </p>
+                    {/* Experience Image */}
+                    {cityImages[city.city_id] && expIdx === 0 && (
+                      <div className="relative h-48 overflow-hidden">
+                        <img 
+                          src={cityImages[city.city_id]} 
+                          alt={exp.title}
+                          className="w-full h-full object-cover opacity-60"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent" />
+                      </div>
+                    )}
                   </div>
-                )}
-
-                {/* Actions */}
-                <div className="flex gap-2">
-                  <button className="flex-1 bg-gray-800 hover:bg-gray-750 text-white text-sm font-medium py-3 rounded-full transition-colors border border-gray-700">
-                    Add experience
-                  </button>
-                  <button className="flex-1 bg-yellow-200 hover:bg-yellow-300 text-black text-sm font-semibold py-3 rounded-full transition-colors">
-                    Explore {city.city_name}
-                  </button>
-                </div>
+                ))}
               </div>
-            )}
-          </div>
-        ))}
+
+              {/* Open slots */}
+              {city.open_slots > 0 && (
+                <div className="bg-yellow-200/10 border border-yellow-200/30 rounded-xl p-4">
+                  <div className="flex items-center justify-between">
+                    <p className="text-yellow-200 text-sm">
+                      <span className="font-semibold">{city.open_slots} open slots</span> in {city.city_name}
+                    </p>
+                    <button className="text-yellow-200 text-xs hover:underline">Add more</button>
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Companion Notes */}
