@@ -172,7 +172,7 @@
 ##         -working: "NA"
 ##         -agent: "main"
 ##         -comment: "Need to add month selection dropdown and improve season guide interaction"
-##   - task: "Integrate CinematicItinerary navigation"
+##   - task: "Embed Cinematic Itinerary in TripPlanningPage"
 ##     implemented: true
 ##     working: "NA"
 ##     file: "/app/frontend/src/pages/TripPlanningPage.tsx, /app/frontend/src/pages/TripCompanionFlow.tsx, /app/frontend/src/pages/TripHomePage.tsx"
@@ -182,13 +182,13 @@
 ##     status_history:
 ##         -working: "NA"
 ##         -agent: "main"
-##         -comment: "Adding prominent 'View Journey' button in TripPlanningPage to navigate to /itinerary/:tripId. Updating TripCompanionFlow to navigate to cinematic itinerary instead of old planning page. Route already exists in App.tsx line 69."
-##         -working: "NA"
-##         -agent: "main"
-##         -comment: "IMPLEMENTATION COMPLETE: (1) Added prominent 'View Your Complete Journey' CTA button in TripPlanningPage with gradient styling and cinematic description. (2) Updated TripCompanionFlow final screen to navigate to /itinerary/1 instead of /trip/1. (3) Added two action buttons in TripHomePage vault cards: 'View Journey' (navigates to cinematic itinerary) and 'Edit Plan' (navigates to planning page). All buttons use proper navigation with tripId/vaultId parameters. Frontend restarted successfully."
+##         -comment: "Initial implementation with separate itinerary page and CTA buttons."
 ##         -working: true
 ##         -agent: "testing"
-##         -comment: "Backend testing completed successfully. All 12 endpoints tested and passing: Health Check, Status CRUD, Inspirations CRUD with filtering, Collections Summary (3 countries), Country Cities (5 cities for Japan), City Items (12 items for Tokyo), Dataset endpoint, and error handling. Backend has healthy data with 228 inspirations across Japan, Thailand, Indonesia. No backend issues found - frontend navigation changes did not affect backend functionality."
+##         -comment: "Backend testing completed successfully. All 12 endpoints tested and passing."
+##         -working: "NA"
+##         -agent: "main"
+##         -comment: "USER FEEDBACK: Two redundant sections - expandable city cards and separate itinerary page causing confusion. REDESIGN: (1) Removed 'View Your Complete Journey' CTA button. (2) Replaced expandable 'Your Cities' section with embedded cinematic day-by-day view directly in TripPlanningPage. (3) Added travel time badges (e.g., '2.5 hrs by Shinkansen', '30 mins by train') between cities. (4) Kept 'Verso adjusted your plan' section. (5) Updated TripHomePage to single 'View Trip' button. (6) Reverted TripCompanionFlow to navigate to /trip/1. New flow: scrollable journey view with city separators showing travel modes and durations, individual experience cards with day badges, type labels, and status indicators."
 ##
 ## metadata:
 ##   created_by: "main_agent"
