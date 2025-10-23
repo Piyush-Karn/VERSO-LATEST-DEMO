@@ -189,6 +189,9 @@
 ##         -working: "NA"
 ##         -agent: "main"
 ##         -comment: "USER FEEDBACK: Two redundant sections - expandable city cards and separate itinerary page causing confusion. REDESIGN: (1) Removed 'View Your Complete Journey' CTA button. (2) Replaced expandable 'Your Cities' section with embedded cinematic day-by-day view directly in TripPlanningPage. (3) Added travel time badges (e.g., '2.5 hrs by Shinkansen', '30 mins by train') between cities. (4) Kept 'Verso adjusted your plan' section. (5) Updated TripHomePage to single 'View Trip' button. (6) Reverted TripCompanionFlow to navigate to /trip/1. New flow: scrollable journey view with city separators showing travel modes and durations, individual experience cards with day badges, type labels, and status indicators."
+##         -working: "NA"
+##         -agent: "main"
+##         -comment: "USER FEEDBACK 2: View was too dull, static, and lacked cinematic quality/interactions. ENHANCED IMPLEMENTATION: (1) Magazine-style city cards with large hero images (h-80). (2) Hover effects: image scale on 3s duration, border color transitions. (3) Travel separators with gradient lines and elevated badges showing mode emoji + duration. (4) Expandable city cards - click to reveal day-by-day itinerary. (5) Experience cards with gradient day badges, hover states, type pills, heart icons. (6) 4xl bold city titles, italic vibes, experience counts. (7) Action buttons: Add experience + Explore city. (8) Smooth animations: rotate chevron, fade-in content, scale transforms. Kept travel time badges and Verso notes section."
 ##
 ## metadata:
 ##   created_by: "main_agent"
