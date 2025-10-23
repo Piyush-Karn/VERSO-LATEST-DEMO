@@ -65,6 +65,7 @@ function App() {
           <Route path="trip/summary/:summaryId" element={<DynamicTripSummary />} />
           <Route path="trip/city/:cityId" element={<CityExplorationPage />} />
           <Route path="onboarding" element={<OnboardingFlow />} />
+          <Route path="itinerary/:tripId" element={<CinematicItinerary />} />
           <Route path="trip/itinerary" element={<ItineraryPage />} />
           <Route path="ask-verso" element={<AskVersoPage />} />
           <Route path="organize/interests" element={<InterestsPage />} />
