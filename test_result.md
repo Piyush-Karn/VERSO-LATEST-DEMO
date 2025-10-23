@@ -188,5 +188,7 @@
 ## agent_communication:
 ##     -agent: "main"
 ##     -message: "Completed TripBottomSheet integration in TripPlanningPage with all interactive elements (macro stats, route icons, visa section) opening respective bottom sheets. Created comprehensive companion-led trip creation flow (TripCompanionFlow) with 6 cinematic phases replacing the old transactional questionnaire. All features tested via screenshots and working correctly. Added custom CSS animations for smooth transitions."
+##     -agent: "main"
+##     -message: "Starting integration of CinematicItinerary route and navigation. Will add prominent button in TripPlanningPage to navigate to cinematic itinerary view, and update TripCompanionFlow final screen to navigate to new itinerary instead of old planning page."
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
