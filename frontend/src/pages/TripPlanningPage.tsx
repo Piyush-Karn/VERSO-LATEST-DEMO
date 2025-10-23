@@ -201,30 +201,13 @@ export const TripPlanningPage: React.FC = () => {
                         <Heart size={18} className={exp.status === 'saved' ? 'text-red-400 fill-red-400' : 'text-gray-500'} />
                       </div>
 
-                      {/* Experience Meta */}
-                      <div className="flex items-center gap-4 text-xs text-gray-500">
-                        {exp.category && (
-                          <span className="px-2 py-1 bg-gray-800 rounded-full">{exp.category}</span>
-                        )}
-                        {exp.duration && (
-                          <span className="flex items-center gap-1">
-                            <Clock size={12} />
-                            {exp.duration}
+                      {/* Experience Type Badge */}
+                      {exp.type && (
+                        <div className="mt-2">
+                          <span className="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400 capitalize">
+                            {exp.type}
                           </span>
-                        )}
-                        {exp.cost && (
-                          <span className="flex items-center gap-1">
-                            <DollarSign size={12} />
-                            {exp.cost}
-                          </span>
-                        )}
-                      </div>
-
-                      {/* Description */}
-                      {exp.description && (
-                        <p className="text-gray-400 text-sm mt-3 leading-relaxed">
-                          {exp.description}
-                        </p>
+                        </div>
                       )}
                     </div>
 
