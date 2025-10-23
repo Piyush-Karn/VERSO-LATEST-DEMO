@@ -201,14 +201,7 @@ export const TripPlanningPage: React.FC = () => {
                         <ChevronRight size={20} className="text-white/70" />
                       </div>
                       <h3 className="text-2xl font-bold text-white mb-2">{city.city_name}</h3>
-                      <p className="text-white/80 text-sm mb-3 italic">{city.vibe}</p>
-                      <button
-                        onClick={(e) => e.stopPropagation()}
-                        className="w-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white text-sm font-medium py-2.5 rounded-xl border border-white/20 transition-all flex items-center justify-center gap-2"
-                      >
-                        <Plus size={16} />
-                        Add a first activity
-                      </button>
+                      <p className="text-white/80 text-sm italic">{city.vibe}</p>
                     </div>
                   )}
 
