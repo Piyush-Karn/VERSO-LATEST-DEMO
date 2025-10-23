@@ -169,6 +169,17 @@
 ##         -working: "NA"
 ##         -agent: "main"
 ##         -comment: "Need to add month selection dropdown and improve season guide interaction"
+##   - task: "Integrate CinematicItinerary navigation"
+##     implemented: false
+##     working: "NA"
+##     file: "/app/frontend/src/pages/TripPlanningPage.tsx, /app/frontend/src/pages/TripCompanionFlow.tsx"
+##     stuck_count: 0
+##     priority: "high"
+##     needs_retesting: true
+##     status_history:
+##         -working: "NA"
+##         -agent: "main"
+##         -comment: "Adding prominent 'View Journey' button in TripPlanningPage to navigate to /itinerary/:tripId. Updating TripCompanionFlow to navigate to cinematic itinerary instead of old planning page. Route already exists in App.tsx line 69."
 ##
 ## metadata:
 ##   created_by: "main_agent"
