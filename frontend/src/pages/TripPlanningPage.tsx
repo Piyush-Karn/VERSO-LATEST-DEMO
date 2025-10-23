@@ -9,6 +9,7 @@ export const TripPlanningPage: React.FC = () => {
   const navigate = useNavigate()
   const { tripId } = useParams<{ tripId: string }>()
   const [selectedCity, setSelectedCity] = useState<string | null>(null)
+  const [selectedActivity, setSelectedActivity] = useState<string | null>(null)
   const [cityImages, setCityImages] = useState<Record<string, string>>({})
   const [loading, setLoading] = useState(true)
   const [activeSheet, setActiveSheet] = useState<'days' | 'cities' | 'saved' | 'people' | 'flight' | 'train' | 'visa' | null>(null)
