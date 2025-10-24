@@ -140,7 +140,7 @@ export const NeighborhoodDetailModal: React.FC<NeighborhoodDetailModalProps> = (
               { key: 'overview', label: 'Overview', icon: MapPin },
               { key: 'hotels', label: 'Hotels', icon: Home },
               { key: 'things_to_do', label: 'Things to Do', icon: Activity },
-              { key: 'cafes', label: 'Cafes', icon: Coffee }
+              { key: 'restaurants', label: 'Restaurants', icon: Coffee }
             ].map((tab) => {
               const Icon = tab.icon
               return (
