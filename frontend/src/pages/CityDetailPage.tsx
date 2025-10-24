@@ -163,7 +163,7 @@ export const CityDetailPage: React.FC = () => {
                   <NeighborhoodCard
                     key={neighborhood.neighbourhood_id}
                     neighborhood={neighborhood}
-                    onClick={() => navigate(`/neighborhood/${cityKey}/${neighborhood.neighbourhood_id}`)}
+                    onClick={() => navigate(`/neighbourhoods/${cityKey}`)}
                   />
                 ))}
               </div>
