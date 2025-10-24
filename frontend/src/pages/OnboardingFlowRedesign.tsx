@@ -386,9 +386,6 @@ export const OnboardingFlowRedesign: React.FC = () => {
                 >
                   <span className="mr-2">{country.emoji}</span>
                   {country.name}
-                  {igConnected && country.saves && (
-                    <span className="ml-2 text-xs opacity-60">({country.saves} saved)</span>
-                  )}
                 </button>
               )
             })}
