@@ -69,7 +69,8 @@ function App() {
           <Route path="trip/city/:cityId" element={<CityExplorationPage />} />
           <Route path="onboarding" element={<OnboardingFlowRedesign />} />
           <Route path="itinerary/:tripId" element={<CinematicItinerary />} />
-          <Route path="trip/itinerary" element={<ItineraryPage />} />
+          {/* Legacy route - redirect to unified trip planning page */}
+          <Route path="trip/itinerary" element={<Navigate to="/trip/1" replace />} />
           <Route path="ask-verso" element={<AskVersoPage />} />
           <Route path="organize/interests" element={<InterestsPage />} />
           <Route path="add" element={<AddPage />} />
