@@ -15,7 +15,6 @@ export const CityDetailPage: React.FC = () => {
   const [loading, setLoading] = useState(true)
   const [showFilter, setShowFilter] = useState(false)
   const [travelingWith, setTravelingWith] = useState<string>('')
-  const [neighborhoodImages, setNeighborhoodImages] = useState<Record<string, string>>({})
   const [activityImages, setActivityImages] = useState<PexelsPhoto[]>([])
   const [restaurantImages, setRestaurantImages] = useState<PexelsPhoto[]>([])
 
