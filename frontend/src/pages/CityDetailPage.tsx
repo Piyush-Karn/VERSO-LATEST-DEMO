@@ -53,29 +53,6 @@ export const CityDetailPage: React.FC = () => {
     }
   }, [activeTab, cityName, neighborhoods.length, activities.length, restaurants.length, cityKey, navigate])
 
-  // Filter neighborhoods by traveling companion
-  const filteredNeighborhoods = React.useMemo(() => {
-    if (!travelingWith) return neighborhoods
-    
-    return neighborhoods.filter((n: any) => {
-      const vibes = n.vibe || []
-      const bestFor = n.best_for || []
-      
-      if (travelingWith === 'solo') {
-        return vibes.some((v: string) => ['social', 'nomad', 'vibrant'].includes(v.toLowerCase()))
-      } else if (travelingWith === 'couple') {
-        return vibes.some((v: string) => ['romantic', 'peaceful', 'calm', 'premium'].includes(v.toLowerCase()))
-      } else if (travelingWith === 'family') {
-        return bestFor.some((b: string) => b.toLowerCase().includes('family')) || 
-               vibes.some((v: string) => v.toLowerCase().includes('family'))
-      } else if (travelingWith === 'friends') {
-        return vibes.some((v: string) => ['energetic', 'nightlife', 'social', 'beach'].includes(v.toLowerCase()))
-      }
-      
-      return true
-    })
-  }, [neighborhoods, travelingWith])
-
   return (
     <div className="min-h-screen bg-black">
       {/* Header */}
