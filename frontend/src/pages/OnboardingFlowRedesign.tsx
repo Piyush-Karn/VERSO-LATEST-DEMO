@@ -111,6 +111,14 @@ export const OnboardingFlowRedesign: React.FC = () => {
   const [countrySearch, setCountrySearch] = useState('')
   const [showPassportFlip, setShowPassportFlip] = useState(false)
 
+  // Trigger passport animation when reaching that step
+  useEffect(() => {
+    if (step === 'passport-reveal') {
+      setShowPassportFlip(false)
+      setTimeout(() => setShowPassportFlip(true), 500)
+    }
+  }, [step])
+
   // Screen A: Landing
   const renderLanding = () => (
     <div className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center p-6" style={{ backgroundColor: '#0B0B0E' }}>
