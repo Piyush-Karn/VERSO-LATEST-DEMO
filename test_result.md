@@ -192,6 +192,20 @@
 ##         -working: "NA"
 ##         -agent: "main"
 ##         -comment: "USER FEEDBACK 2: View was too dull, static, and lacked cinematic quality/interactions. ENHANCED IMPLEMENTATION: (1) Magazine-style city cards with large hero images (h-80). (2) Hover effects: image scale on 3s duration, border color transitions. (3) Travel separators with gradient lines and elevated badges showing mode emoji + duration. (4) Expandable city cards - click to reveal day-by-day itinerary. (5) Experience cards with gradient day badges, hover states, type pills, heart icons. (6) 4xl bold city titles, italic vibes, experience counts. (7) Action buttons: Add experience + Explore city. (8) Smooth animations: rotate chevron, fade-in content, scale transforms. Kept travel time badges and Verso notes section."
+##   - task: "Cinematic Neighbourhood Detail Page Redesign"
+##     implemented: true
+##     working: true
+##     file: "/app/frontend/src/pages/NeighborhoodDetailPage.tsx"
+##     stuck_count: 0
+##     priority: "high"
+##     needs_retesting: false
+##     status_history:
+##         -working: "NA"
+##         -agent: "main"
+##         -comment: "Complete cinematic redesign of NeighborhoodDetailPage to create immersive, editorial exploration experience. Implemented: (1) Parallax hero section with Ken Burns zoom effect (1→1.05 scale over 8s) and rotating hero images. (2) Navy gradient background (#0B0B0E → #18181B) with gold accents (#FFD15C). (3) Glassmorphic UI elements with backdrop-blur-xl and 65% opacity. (4) Animated breadcrumb bar (Vaults › City › Neighbourhoods) appearing after 200px scroll with progress indicator. (5) Sticky tab navigation (Overview, Cafés, Hotels, Activities) with icons and gold underline. (6) Editorial content sections: Why stay here (bullet points with gold dots), Vibe tags (rounded pills), Perfect for grid (2-column), Recommended stays (horizontal scroll), Hotels preview (glassmorphic cards with ratings). (7) Floating bottom CTA bar with gradient gold buttons. (8) All animations use cubic-bezier(0.25,1,0.5,1) for film-grade easing. (9) 60fps performance with transform and opacity-only animations. (10) Pexels integration for hero images based on neighbourhood keywords."
+##         -working: true
+##         -agent: "main"
+##         -comment: "Tested across multiple neighbourhoods (Shibuya, Gion). Confirmed: Hero parallax working, Ken Burns animation rotating images, tab switching functional (Overview/Cafés/Hotels/Activities), glassmorphic cards rendering correctly, gold accent theming consistent, stats cards showing correct data per neighbourhood, hotels preview displaying with ratings. All interactions smooth at 60fps. Accessible via Collections → Cities → Neighbourhoods flow."
 ##
 ## metadata:
 ##   created_by: "main_agent"
