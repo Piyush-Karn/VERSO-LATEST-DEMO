@@ -101,41 +101,13 @@ export const CityDetailPage: React.FC = () => {
 
       {/* Content */}
       <div className="p-4 pb-24">
-        {/* Neighborhoods Tab */}
+        {/* Neighborhoods Tab - Auto-navigates to dedicated page */}
         {activeTab === 'neighborhoods' && (
-          <div>
-            {travelingWith && (
-              <div className="mb-4 bg-yellow-200/10 border border-yellow-200/30 rounded-xl p-3">
-                <p className="text-yellow-200 text-sm">
-                  Showing neighborhoods perfect for <span className="font-semibold capitalize">{travelingWith}</span> travelers
-                </p>
-              </div>
-            )}
-            
-            {loading && (
-              <div className="flex items-center justify-center py-12">
-                <Loader2 className="animate-spin text-yellow-200" size={32} />
-              </div>
-            )}
-            
-            {!loading && filteredNeighborhoods.length === 0 && (
-              <div className="text-center py-12">
-                <MapPin size={48} className="text-gray-600 mx-auto mb-4" />
-                <p className="text-gray-500">No neighborhoods found for this filter</p>
-              </div>
-            )}
-            
-            {!loading && filteredNeighborhoods.length > 0 && (
-              <div className="space-y-6">
-                {filteredNeighborhoods.map((neighborhood: any) => (
-                  <NeighborhoodCard
-                    key={neighborhood.neighbourhood_id}
-                    neighborhood={neighborhood}
-                    onClick={() => navigate(`/neighbourhoods/${cityKey}`)}
-                  />
-                ))}
-              </div>
-            )}
+          <div className="flex items-center justify-center py-12">
+            <div className="text-center">
+              <Loader2 className="animate-spin text-yellow-200 mx-auto mb-4" size={32} />
+              <p className="text-gray-400">Navigating to neighbourhoods...</p>
+            </div>
           </div>
         )}
 
