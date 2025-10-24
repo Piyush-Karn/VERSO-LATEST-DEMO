@@ -121,6 +121,79 @@ export const ExplorePageCinematic: React.FC = () => {
     }
   }, [])
 
+  // Bottom nav auto-hide logic
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+
+      // Scrolling down - hide nav
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsNavVisible(false)
+        if (navHideTimeout.current) clearTimeout(navHideTimeout.current)
+      }
+      // Scrolling up - show nav
+      else if (currentScrollY < lastScrollY) {
+        setIsNavVisible(true)
+        // Auto-hide after 1.5s of inactivity
+        if (navHideTimeout.current) clearTimeout(navHideTimeout.current)
+        navHideTimeout.current = setTimeout(() => {
+          setIsNavVisible(false)
+        }, 2000)
+      }
+
+      setLastScrollY(currentScrollY)
+    }
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const windowHeight = window.innerHeight
+      const mouseY = e.clientY
+
+      // Check if mouse is near bottom (within 64px)
+      if (windowHeight - mouseY <= 64) {
+        setIsNearBottom(true)
+        setIsNavVisible(true)
+        // Auto-hide after 1.5s
+        if (navHideTimeout.current) clearTimeout(navHideTimeout.current)
+        navHideTimeout.current = setTimeout(() => {
+          setIsNavVisible(false)
+        }, 1500)
+      } else {
+        setIsNearBottom(false)
+      }
+    }
+
+    const handleTouchStart = (e: TouchEvent) => {
+      const windowHeight = window.innerHeight
+      const touchY = e.touches[0].clientY
+
+      // Check if touch is near bottom (within 64px)
+      if (windowHeight - touchY <= 64) {
+        setIsNavVisible(true)
+        // Auto-hide after 1.5s
+        if (navHideTimeout.current) clearTimeout(navHideTimeout.current)
+        navHideTimeout.current = setTimeout(() => {
+          setIsNavVisible(false)
+        }, 1500)
+      }
+    }
+
+    // Initial auto-hide after 2s
+    navHideTimeout.current = setTimeout(() => {
+      setIsNavVisible(false)
+    }, 2000)
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('mousemove', handleMouseMove, { passive: true })
+    window.addEventListener('touchstart', handleTouchStart, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('mousemove', handleMouseMove)
+      window.removeEventListener('touchstart', handleTouchStart)
+      if (navHideTimeout.current) clearTimeout(navHideTimeout.current)
+    }
+  }, [lastScrollY])
+
   const handleFilterClick = (filter: FilterType) => {
     setActiveFilter(activeFilter === filter ? null : filter)
   }
