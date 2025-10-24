@@ -551,10 +551,10 @@ export const NeighborhoodDetailModal: React.FC<NeighborhoodDetailModalProps> = (
             </div>
           )}
 
-          {/* Cafes Tab */}
-          {activeTab === 'cafes' && (
+          {/* Restaurants Tab */}
+          {activeTab === 'restaurants' && (
             <div>
-              <h3 className="text-2xl font-bold text-white mb-4">Cafes in {neighborhood.name}</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Restaurants in {neighborhood.name}</h3>
               <div className="grid grid-cols-1 gap-4">
                 {neighborhood.top_cafes && neighborhood.top_cafes.length > 0 ? (
                   neighborhood.top_cafes.map((cafe: string, idx: number) => (
