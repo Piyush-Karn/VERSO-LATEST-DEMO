@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft, MapPin, Plane, DollarSign, Clock, Star, Home } from 'lucide-react'
+import { ArrowLeft, X, MapPin, Plane, DollarSign, Clock, Star, Home, Coffee, Activity } from 'lucide-react'
 import { fetchPexelsImages } from '../services/pexels'
 import { HotelBottomSheet } from '../components/HotelBottomSheet'
 import neighborhoodsData from '../data/neighborhoods_data.json'
@@ -9,10 +9,14 @@ export const NeighborhoodDetailPage: React.FC = () => {
   const { city, neighborhoodId } = useParams<{ city: string; neighborhoodId: string }>()
   const navigate = useNavigate()
   
-  const [activeTab, setActiveTab] = useState<'overview' | 'activities' | 'cafes'>('overview')
+  const [activeTab, setActiveTab] = useState<'overview' | 'cafes' | 'hotels' | 'activities'>('overview')
   const [heroImages, setHeroImages] = useState<string[]>([])
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [showHotelSheet, setShowHotelSheet] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(false)
+  const [scrollY, setScrollY] = useState(0)
+  const [showBreadcrumb, setShowBreadcrumb] = useState(false)
+  const contentRef = useRef<HTMLDivElement>(null)
 
   // Get neighborhood data
   const cityKey = city?.toLowerCase() || ''
