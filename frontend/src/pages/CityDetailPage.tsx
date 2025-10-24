@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft, Filter, Loader2, MapPin } from 'lucide-react'
+import { ArrowLeft, Filter, Loader2, MapPin, Plane, DollarSign, Users, TrendingUp } from 'lucide-react'
 import { fetchPexelsImages, type PexelsPhoto } from '../services/pexels'
 import { FilterModal } from '../components/FilterModal'
+import { NeighborhoodDetailModal } from '../components/NeighborhoodDetailModal'
 import neighborhoodsData from '../data/neighborhoods_data.json'
 import demoDataset from '../data/verso_demo_dataset.json'
 
