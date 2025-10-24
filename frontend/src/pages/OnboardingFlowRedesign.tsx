@@ -517,10 +517,6 @@ export const OnboardingFlowRedesign: React.FC = () => {
 
   // Screen G: Passport Reveal
   const renderPassportReveal = () => {
-    React.useEffect(() => {
-      setTimeout(() => setShowPassportFlip(true), 500)
-    }, [])
-
     return (
       <div className="min-h-screen p-6 flex flex-col items-center justify-center" style={{ backgroundColor: '#0B0B0E' }}>
         <div className={`max-w-md w-full transition-all duration-700 ${showPassportFlip ? 'animate-flip' : 'opacity-0 scale-75'}`}>
