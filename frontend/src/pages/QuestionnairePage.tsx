@@ -30,7 +30,8 @@ export const QuestionnairePage: React.FC = () => {
         homeLocation: formData.homeLocation || 'Not specified',
         duration: formData.tripDuration
       })
-      navigate(`/trip/itinerary?${params.toString()}`)
+      // Redirect to unified trip planning page
+      navigate('/trip/1')
     }
   }
 
