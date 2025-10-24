@@ -21,6 +21,7 @@ import { TripCompanionFlowPhase1 } from './pages/TripCompanionFlowPhase1'
 import { DynamicTripSummary } from './pages/DynamicTripSummary'
 import { CityExplorationPage } from './pages/CityExplorationPage'
 import { OnboardingFlow } from './pages/OnboardingFlow'
+import { OnboardingFlowRedesign } from './pages/OnboardingFlowRedesign'
 import { CinematicItinerary } from './pages/CinematicItinerary'
 import { VersoItinerary } from './pages/VersoItinerary'
 
