@@ -628,6 +628,95 @@ export const ExplorePageCinematic: React.FC = () => {
         </div>
       )}
 
+      {/* Collapsible Bottom Navigation Bar */}
+      <div 
+        className={`fixed bottom-0 left-0 right-0 z-40 transition-all duration-300 ${
+          isNavVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+        }`}
+        style={{
+          height: '72px',
+          backgroundColor: 'rgba(17, 17, 17, 0.6)',
+          backdropFilter: 'blur(20px)',
+          borderTop: '1px solid rgba(255, 255, 255, 0.1)'
+        }}
+        onMouseEnter={() => {
+          setIsNavVisible(true)
+          if (navHideTimeout.current) clearTimeout(navHideTimeout.current)
+        }}
+        onMouseLeave={() => {
+          navHideTimeout.current = setTimeout(() => {
+            setIsNavVisible(false)
+          }, 1500)
+        }}
+        role="navigation"
+        aria-label="Navigation bar – collapsible. Appears when you reach the bottom of the screen."
+      >
+        <div className="h-full flex items-center justify-around px-4 max-w-md mx-auto">
+          {/* Explore */}
+          <button
+            onClick={() => navigate('/explore')}
+            className="flex flex-col items-center justify-center gap-1 w-16 h-16 transition-all"
+            style={{ minWidth: '44px', minHeight: '44px' }}
+            aria-label="Explore"
+          >
+            <Compass 
+              size={24} 
+              className="transition-colors"
+              style={{ color: '#FFD15C' }}
+            />
+            <span className="text-xs font-medium" style={{ color: '#FFD15C' }}>Explore</span>
+          </button>
+
+          {/* Collections */}
+          <button
+            onClick={() => navigate('/collections')}
+            className="flex flex-col items-center justify-center gap-1 w-16 h-16 transition-all"
+            style={{ minWidth: '44px', minHeight: '44px' }}
+            aria-label="Collections"
+          >
+            <Bookmark 
+              size={24} 
+              className="transition-colors"
+              style={{ color: '#80838A' }}
+            />
+            <span className="text-xs font-medium" style={{ color: '#80838A' }}>Collections</span>
+          </button>
+
+          {/* Your Trip */}
+          <button
+            onClick={() => navigate('/trip')}
+            className="flex flex-col items-center justify-center gap-1 w-16 h-16 transition-all"
+            style={{ minWidth: '44px', minHeight: '44px' }}
+            aria-label="Your Trip"
+          >
+            <MapPin 
+              size={24} 
+              className="transition-colors"
+              style={{ color: '#80838A' }}
+            />
+            <span className="text-xs font-medium" style={{ color: '#80838A' }}>Your Trip</span>
+          </button>
+
+          {/* Ask Verso */}
+          <button
+            onClick={() => {
+              // TODO: Implement Ask Verso feature
+              console.log('Ask Verso clicked')
+            }}
+            className="flex flex-col items-center justify-center gap-1 w-16 h-16 transition-all"
+            style={{ minWidth: '44px', minHeight: '44px' }}
+            aria-label="Ask Verso"
+          >
+            <MessageCircle 
+              size={24} 
+              className="transition-colors"
+              style={{ color: '#80838A' }}
+            />
+            <span className="text-xs font-medium" style={{ color: '#80838A' }}>Ask Verso</span>
+          </button>
+        </div>
+      </div>
+
       <style>{`
         @keyframes pulse {
           0%, 100% {
