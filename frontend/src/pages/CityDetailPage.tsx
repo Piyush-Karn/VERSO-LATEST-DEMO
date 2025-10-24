@@ -35,6 +35,18 @@ export const CityDetailPage: React.FC = () => {
     const loadImages = async () => {
       setLoading(true)
       
+      if (activeTab === 'neighborhoods' && neighborhoods.length > 0) {
+        // Load one image per neighborhood
+        const images: Record<string, string> = {}
+        for (const neighborhood of neighborhoods) {
+          const photos = await fetchPexelsImages(neighborhood.image_keywords, 1)
+          if (photos.length > 0) {
+            images[neighborhood.neighbourhood_id] = photos[0].src.large2x
+          }
+        }
+        setNeighborhoodImages(images)
+      }
+      
       if (activeTab === 'activities' && activities.length > 0) {
         const photos = await fetchPexelsImages(`${cityName} activities attractions`, 6)
         setActivityImages(photos)
@@ -48,13 +60,8 @@ export const CityDetailPage: React.FC = () => {
       setLoading(false)
     }
     
-    // Auto-navigate to neighbourhoods home page when neighborhoods tab is active
-    if (activeTab === 'neighborhoods' && neighborhoods.length > 0) {
-      navigate(`/neighbourhoods/${cityKey}`)
-    } else {
-      loadImages()
-    }
-  }, [activeTab, cityName, neighborhoods.length, activities.length, restaurants.length, cityKey, navigate])
+    loadImages()
+  }, [activeTab, cityName, neighborhoods.length, activities.length, restaurants.length])
 
   return (
     <div className="min-h-screen bg-black">
