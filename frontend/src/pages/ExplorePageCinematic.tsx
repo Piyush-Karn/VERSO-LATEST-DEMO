@@ -64,6 +64,12 @@ export const ExplorePageCinematic: React.FC = () => {
   const [surpriseLocation, setSurpriseLocation] = useState<any>(null)
   const [isSpinning, setIsSpinning] = useState(false)
   const [showProfileModal, setShowProfileModal] = useState(false)
+  
+  // Bottom nav collapsible state
+  const [isNavVisible, setIsNavVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+  const navHideTimeout = useRef<NodeJS.Timeout | null>(null)
+  const [isNearBottom, setIsNearBottom] = useState(false)
 
   // Initialize Mapbox globe
   useEffect(() => {
