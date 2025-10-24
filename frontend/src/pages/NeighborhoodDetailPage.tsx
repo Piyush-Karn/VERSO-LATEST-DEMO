@@ -26,6 +26,7 @@ export const NeighborhoodDetailPage: React.FC = () => {
   // Get hotels for this neighborhood
   const hotels = neighborhoodsData.hotels[neighborhoodId as keyof typeof neighborhoodsData.hotels] || []
 
+  // Load hero images
   useEffect(() => {
     if (neighborhood) {
       const loadImages = async () => {
@@ -36,7 +37,7 @@ export const NeighborhoodDetailPage: React.FC = () => {
     }
   }, [neighborhood])
 
-  // Auto-rotate hero images
+  // Auto-rotate hero images with Ken Burns effect
   useEffect(() => {
     if (heroImages.length > 1) {
       const interval = setInterval(() => {
@@ -45,6 +46,36 @@ export const NeighborhoodDetailPage: React.FC = () => {
       return () => clearInterval(interval)
     }
   }, [heroImages.length])
+
+  // Scroll detection for parallax and breadcrumb
+  useEffect(() => {
+    const handleScroll = () => {
+      if (contentRef.current) {
+        const scrollPosition = contentRef.current.scrollTop
+        setScrollY(scrollPosition)
+        setShowBreadcrumb(scrollPosition > 200)
+      }
+    }
+
+    const container = contentRef.current
+    if (container) {
+      container.addEventListener('scroll', handleScroll)
+      return () => container.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  // Handle expansion
+  const handleExpand = () => {
+    setIsExpanded(true)
+  }
+
+  const handleCollapse = () => {
+    setIsExpanded(false)
+    setScrollY(0)
+    if (contentRef.current) {
+      contentRef.current.scrollTop = 0
+    }
+  }
 
   if (!neighborhood) {
     return (
