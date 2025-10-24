@@ -59,3 +59,62 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* Onboarding Redesign Animations */
+.animate-spin-slow {
+  animation: spin 120s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0; 
+    transform: translateX(100%); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+.animate-flip {
+  animation: flip 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes flip {
+  0% { 
+    transform: perspective(1000px) rotateY(0deg) scale(0.75);
+    opacity: 0;
+  }
+  50% { 
+    transform: perspective(1000px) rotateY(90deg) scale(1);
+  }
+  100% { 
+    transform: perspective(1000px) rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Film grain/noise effect */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Pattern background for passport */
+.bg-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 255, 255, 0.03) 10px,
+    rgba(255, 255, 255, 0.03) 20px
+  );
+}
