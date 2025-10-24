@@ -15,7 +15,7 @@ export const NeighborhoodDetailModal: React.FC<NeighborhoodDetailModalProps> = (
   neighborhoodId,
   onClose
 }) => {
-  const [activeTab, setActiveTab] = useState<'overview' | 'hotels' | 'things_to_do' | 'cafes'>('overview')
+  const [activeTab, setActiveTab] = useState<'overview' | 'hotels' | 'things_to_do' | 'restaurants'>('overview')
   const [heroImage, setHeroImage] = useState<string>('')
   const [showHotelSheet, setShowHotelSheet] = useState(false)
   const [hotelFilters, setHotelFilters] = useState({
