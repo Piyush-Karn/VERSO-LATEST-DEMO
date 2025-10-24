@@ -380,6 +380,15 @@ export const CityDetailPage: React.FC = () => {
         currentValue={travelingWith}
         onSelect={setTravelingWith}
       />
+
+      {/* Neighbourhood Detail Modal */}
+      {selectedNeighborhood && (
+        <NeighborhoodDetailModal
+          city={cityKey}
+          neighborhoodId={selectedNeighborhood}
+          onClose={() => setSelectedNeighborhood(null)}
+        />
+      )}
     </div>
   )
 }
