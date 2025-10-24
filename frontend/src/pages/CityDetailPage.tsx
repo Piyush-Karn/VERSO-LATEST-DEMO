@@ -111,13 +111,158 @@ export const CityDetailPage: React.FC = () => {
 
       {/* Content */}
       <div className="p-4 pb-24">
-        {/* Neighborhoods Tab - Auto-navigates to dedicated page */}
+        {/* Neighborhoods Tab */}
         {activeTab === 'neighborhoods' && (
-          <div className="flex items-center justify-center py-12">
-            <div className="text-center">
-              <Loader2 className="animate-spin text-yellow-200 mx-auto mb-4" size={32} />
-              <p className="text-gray-400">Navigating to neighbourhoods...</p>
-            </div>
+          <div>
+            {loading && (
+              <div className="flex items-center justify-center py-12">
+                <Loader2 className="animate-spin text-yellow-200" size={32} />
+              </div>
+            )}
+
+            {!loading && neighborhoods.length === 0 && (
+              <div className="text-center py-12">
+                <MapPin size={48} className="text-gray-600 mx-auto mb-4" />
+                <p className="text-gray-500">No neighborhoods available</p>
+              </div>
+            )}
+
+            {!loading && neighborhoods.length > 0 && (
+              <div className="space-y-6">
+                {neighborhoods.map((neighborhood: any) => {
+                  const imageUrl = neighborhoodImages[neighborhood.neighbourhood_id]
+                  
+                  // Get popular vibe descriptor
+                  const getVibeDescriptor = () => {
+                    const vibes = neighborhood.vibe || []
+                    if (vibes.includes('nightlife') || vibes.includes('energetic')) return 'Popular for parties'
+                    if (vibes.includes('traditional') || vibes.includes('cultural')) return 'Liked by tourists'
+                    if (vibes.includes('nomad') || vibes.includes('social')) return 'Loved by expats'
+                    if (vibes.includes('romantic') || vibes.includes('peaceful')) return 'Perfect for couples'
+                    return 'Trending neighbourhood'
+                  }
+                  
+                  return (
+                    <button
+                      key={neighborhood.neighbourhood_id}
+                      onClick={() => setSelectedNeighborhood(neighborhood.neighbourhood_id)}
+                      className="w-full group"
+                    >
+                      {/* Collapsible Neighbourhood Card */}
+                      <div 
+                        className="relative rounded-3xl overflow-hidden transition-all duration-500 hover:scale-[1.02]"
+                        style={{
+                          height: '400px',
+                          background: 'rgba(255, 255, 255, 0.05)',
+                          border: '1px solid rgba(255, 255, 255, 0.1)'
+                        }}
+                      >
+                        {/* Hero Image */}
+                        <div className="absolute inset-0">
+                          {imageUrl ? (
+                            <img 
+                              src={imageUrl} 
+                              alt={neighborhood.name}
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                          ) : (
+                            <div 
+                              className="w-full h-full flex items-center justify-center"
+                              style={{
+                                background: 'linear-gradient(135deg, #18181B, #0B0B0E)'
+                              }}
+                            >
+                              <MapPin size={64} style={{ color: 'rgba(255, 255, 255, 0.2)' }} />
+                            </div>
+                          )}
+                          
+                          {/* Gradient overlay */}
+                          <div 
+                            className="absolute inset-0"
+                            style={{
+                              background: 'linear-gradient(to top, #0B0B0E 0%, rgba(11, 11, 14, 0.7) 60%, transparent 100%)'
+                            }}
+                          />
+                        </div>
+
+                        {/* Content Overlay */}
+                        <div className="absolute inset-0 flex flex-col justify-end p-6">
+                          {/* Vibe descriptor tag */}
+                          <div className="mb-3">
+                            <span 
+                              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium backdrop-blur-xl"
+                              style={{
+                                background: 'rgba(255, 209, 92, 0.2)',
+                                border: '1px solid rgba(255, 209, 92, 0.4)',
+                                color: '#FFD15C'
+                              }}
+                            >
+                              <TrendingUp size={12} />
+                              {getVibeDescriptor()}
+                            </span>
+                          </div>
+
+                          {/* Title */}
+                          <h3 className="text-4xl font-bold text-white mb-2 leading-tight">
+                            {neighborhood.name}
+                          </h3>
+
+                          {/* Tagline */}
+                          <p className="text-white/90 text-lg mb-4 leading-relaxed">
+                            {neighborhood.tagline}
+                          </p>
+
+                          {/* Quick Info Bar */}
+                          <div className="flex items-center gap-3 flex-wrap">
+                            <div 
+                              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full backdrop-blur-xl"
+                              style={{
+                                background: 'rgba(0, 0, 0, 0.5)',
+                                border: '1px solid rgba(255, 255, 255, 0.2)'
+                              }}
+                            >
+                              <Plane size={14} style={{ color: '#FFD15C' }} />
+                              <span className="text-white text-sm font-medium">{neighborhood.connectivity.to_airport}</span>
+                            </div>
+                            <div 
+                              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full backdrop-blur-xl"
+                              style={{
+                                background: 'rgba(0, 0, 0, 0.5)',
+                                border: '1px solid rgba(255, 255, 255, 0.2)'
+                              }}
+                            >
+                              <DollarSign size={14} style={{ color: '#FFD15C' }} />
+                              <span className="text-white text-sm font-medium">
+                                ${neighborhood.price_range.min}-{neighborhood.price_range.max}
+                              </span>
+                            </div>
+                            {neighborhood.best_for && neighborhood.best_for.length > 0 && (
+                              <div 
+                                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full backdrop-blur-xl"
+                                style={{
+                                  background: 'rgba(0, 0, 0, 0.5)',
+                                  border: '1px solid rgba(255, 255, 255, 0.2)'
+                                }}
+                              >
+                                <Users size={14} style={{ color: '#FFD15C' }} />
+                                <span className="text-white text-sm font-medium">{neighborhood.best_for[0]}</span>
+                              </div>
+                            )}
+                          </div>
+
+                          {/* Tap to explore hint */}
+                          <div className="mt-4 flex items-center justify-center gap-2 opacity-60">
+                            <div className="w-1 h-1 bg-white rounded-full animate-pulse" />
+                            <div className="w-1 h-1 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.1s' }} />
+                            <div className="w-1 h-1 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  )
+                })}
+              </div>
+            )}
           </div>
         )}
 
