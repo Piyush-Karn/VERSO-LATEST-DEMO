@@ -90,6 +90,7 @@ export const TripPlanningPage: React.FC = () => {
           
           {/* Compact Cost Box - Top Right */}
           <button 
+            onClick={() => setActiveSheet('cost')}
             className="backdrop-blur-xl rounded-xl px-4 py-2 border transition-all hover:scale-105"
             style={{
               background: 'rgba(255, 209, 92, 0.15)',
