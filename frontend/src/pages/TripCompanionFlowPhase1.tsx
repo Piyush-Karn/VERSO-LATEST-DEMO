@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 import { Calendar, Users, MapPin, Plane, Home, Sparkles, Loader2, UtensilsCrossed, Hotel, DollarSign } from 'lucide-react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
-import { addDays, differenceInDays } from 'date-fns'
+import { addDays, differenceInDays, format } from 'date-fns'
 
 type FlowPhase = 'month' | 'dates' | 'travelers' | 'locations' | 'preferences' | 'crafting' | 'summary'
 
