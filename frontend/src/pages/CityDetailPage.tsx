@@ -281,6 +281,7 @@ export const CityDetailPage: React.FC = () => {
                   )
                 })}
               </div>
+              </>
             )}
           </div>
         )}
