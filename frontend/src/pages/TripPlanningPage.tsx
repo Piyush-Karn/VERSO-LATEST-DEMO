@@ -3,7 +3,9 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { ArrowLeft, MapPin, Calendar, Users, Heart, Plus, ChevronRight, Sparkles, Plane, Train, Home, Coffee, CheckCircle, Clock, DollarSign, X, Activity } from 'lucide-react'
 import { fetchPexelsImages } from '../services/pexels'
 import { TripBottomSheet } from '../components/TripBottomSheet'
-import tripData from '../data/trip_data.json'
+import tripDataJapan from '../data/trip_data.json'
+import tripDataBali from '../data/trip_data_bali.json'
+import tripDataBangkok from '../data/trip_data_bangkok.json'
 
 export const TripPlanningPage: React.FC = () => {
   const navigate = useNavigate()
