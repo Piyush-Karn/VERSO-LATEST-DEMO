@@ -1,0 +1,141 @@
+{
+  "trip": {
+    "trip_id": "bali_trip_1",
+    "user_id": "demo_user",
+    "status": "planning",
+    "created_at": "2025-01-10",
+    "overview": {
+      "total_days": 7,
+      "total_cities": 3,
+      "saved_experiences": 10,
+      "companions": 2,
+      "travel_style": "beach_culture"
+    },
+    "route": [
+      {
+        "city_id": "ubud",
+        "city_name": "Ubud",
+        "country": "Bali",
+        "days": 3,
+        "order": 1,
+        "travel_time_from_previous": null,
+        "travel_mode": null,
+        "vibe": "Cultural heart · Rice terraces · Temples",
+        "image_keywords": "ubud bali rice terraces jungle temples",
+        "experiences": [
+          {
+            "experience_id": "ubud-1",
+            "title": "Tegalalang Rice Terrace Walk",
+            "type": "nature",
+            "day": 1,
+            "status": "confirmed",
+            "description": "Walk through iconic emerald rice paddies with stunning valley views"
+          },
+          {
+            "experience_id": "ubud-2",
+            "title": "Sacred Monkey Forest",
+            "type": "culture",
+            "day": 1,
+            "status": "confirmed",
+            "description": "Explore ancient temple complex home to hundreds of playful monkeys"
+          },
+          {
+            "experience_id": "ubud-3",
+            "title": "Traditional Balinese Cooking Class",
+            "type": "food",
+            "day": 2,
+            "status": "pending",
+            "description": "Learn to cook authentic Balinese dishes in a local home"
+          },
+          {
+            "experience_id": "ubud-4",
+            "title": "Tirta Empul Water Temple",
+            "type": "culture",
+            "day": 2,
+            "status": "pending",
+            "description": "Participate in traditional purification ritual at sacred spring temple"
+          },
+          {
+            "experience_id": "ubud-5",
+            "title": "Campuhan Ridge Walk at Sunrise",
+            "type": "nature",
+            "day": 3,
+            "status": "idea",
+            "description": "Scenic jungle ridge walk with panoramic valley views"
+          }
+        ]
+      },
+      {
+        "city_id": "seminyak",
+        "city_name": "Seminyak",
+        "country": "Bali",
+        "days": 2,
+        "order": 2,
+        "travel_time_from_previous": "1 hr by car",
+        "travel_mode": "car",
+        "vibe": "Beach clubs · Sunset vibes · Fine dining",
+        "image_keywords": "seminyak beach sunset beach clubs bali",
+        "experiences": [
+          {
+            "experience_id": "seminyak-1",
+            "title": "Tanah Lot Temple Sunset",
+            "type": "culture",
+            "day": 4,
+            "status": "confirmed",
+            "description": "Visit iconic sea temple perched on rocky outcrop during golden hour"
+          },
+          {
+            "experience_id": "seminyak-2",
+            "title": "Potato Head Beach Club",
+            "type": "leisure",
+            "day": 4,
+            "status": "pending",
+            "description": "Relax at iconic infinity pool overlooking the ocean"
+          },
+          {
+            "experience_id": "seminyak-3",
+            "title": "Sunset Horse Riding on Beach",
+            "type": "adventure",
+            "day": 5,
+            "status": "idea",
+            "description": "Gallop along black sand beaches during magical sunset"
+          }
+        ]
+      },
+      {
+        "city_id": "uluwatu",
+        "city_name": "Uluwatu",
+        "country": "Bali",
+        "days": 2,
+        "order": 3,
+        "travel_time_from_previous": "45 mins by car",
+        "travel_mode": "car",
+        "vibe": "Clifftop temples · Surf spots · Ocean views",
+        "image_keywords": "uluwatu temple cliff ocean bali sunset",
+        "experiences": [
+          {
+            "experience_id": "uluwatu-1",
+            "title": "Uluwatu Temple & Kecak Dance",
+            "type": "culture",
+            "day": 6,
+            "status": "confirmed",
+            "description": "Watch traditional fire dance at clifftop temple during sunset"
+          },
+          {
+            "experience_id": "uluwatu-2",
+            "title": "Single Fin Sunset Session",
+            "type": "leisure",
+            "day": 6,
+            "status": "pending",
+            "description": "Sip cocktails while watching surfers at legendary cliff bar"
+          }
+        ]
+      }
+    ],
+    "verso_notes": [
+      "Added 1 hour buffer between Ubud-Seminyak for scenic stops",
+      "Booked Kecak dance tickets in advance (sells out fast)",
+      "Recommended villa stays in Ubud for authentic experience"
+    ]
+  }
+}
