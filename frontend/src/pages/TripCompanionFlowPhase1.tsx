@@ -98,9 +98,23 @@ export const TripCompanionFlowPhase1: React.FC = () => {
   }
 
   const handlePreferencesConfirm = () => {
+    // Save trip preferences to localStorage before navigating
+    const tripPreferences = {
+      destination: tripContext.primaryCity || tripContext.selectedCountry || 'Japan',
+      startDate: tripContext.startDate ? format(tripContext.startDate, 'yyyy-MM-dd') : '',
+      endDate: tripContext.endDate ? format(tripContext.endDate, 'yyyy-MM-dd') : '',
+      travelers: tripContext.companions || 2,
+      duration: getDuration(),
+      homeLocation: tripContext.originCity || 'Not specified'
+    }
+    
+    console.log('💾 [TripCompanionFlow] Storing trip preferences:', tripPreferences)
+    localStorage.setItem('tripPreferences', JSON.stringify(tripPreferences))
+    console.log('✅ [TripCompanionFlow] Saved to localStorage')
+    
     setPhase('crafting')
     setTimeout(() => {
-      navigate('/trip/summary/1')
+      navigate('/trip/1') // Navigate to unified trip page, not summary
     }, 4000)
   }
 
