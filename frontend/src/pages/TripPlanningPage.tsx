@@ -132,7 +132,7 @@ export const TripPlanningPage: React.FC = () => {
             className="bg-gray-900 hover:bg-gray-850 rounded-xl p-3 text-center border border-gray-800 hover:border-yellow-200/50 transition-all hover:scale-105"
           >
             <Users size={18} className="text-yellow-200 mx-auto mb-1" />
-            <p className="text-2xl font-bold text-white">{trip.overview.companions}</p>
+            <p className="text-2xl font-bold text-white">{travelers}</p>
             <p className="text-xs text-gray-400">people</p>
           </button>
         </div>
