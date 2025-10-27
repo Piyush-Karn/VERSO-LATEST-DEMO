@@ -75,6 +75,23 @@ export const TripHomePage: React.FC = () => {
     loadImages()
   }, [])
 
+  const handleVaultClick = (vault: Vault) => {
+    // Set localStorage before navigating so TripPlanningPage can read it
+    const tripPreferences = {
+      destination: vault.country,
+      startDate: vault.start_date || '',
+      endDate: vault.start_date || '',
+      travelers: 2,
+      duration: vault.days,
+      homeLocation: 'Not specified'
+    }
+    
+    console.log('💾 [TripHomePage] Setting trip preferences for vault:', tripPreferences)
+    localStorage.setItem('tripPreferences', JSON.stringify(tripPreferences))
+    
+    navigate(`/trip/${vault.id}`)
+  }
+
   const getStageInfo = (stage: string) => {
     switch (stage) {
       case 'planning':
