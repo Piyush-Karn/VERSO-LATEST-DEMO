@@ -100,10 +100,10 @@ export const TripCompanionFlowPhase1: React.FC = () => {
   const handlePreferencesConfirm = () => {
     // Save trip preferences to localStorage before navigating
     const tripPreferences = {
-      destination: tripContext.primaryCity || tripContext.selectedCountry || 'Japan',
+      destination: tripContext.destination, // Use the destination from URL params (Bali, Bangkok, etc.)
       startDate: tripContext.startDate ? format(tripContext.startDate, 'yyyy-MM-dd') : '',
       endDate: tripContext.endDate ? format(tripContext.endDate, 'yyyy-MM-dd') : '',
-      travelers: tripContext.companions || 2,
+      travelers: tripContext.travelers || 2,
       duration: getDuration(),
       homeLocation: tripContext.originCity || 'Not specified'
     }
@@ -114,7 +114,7 @@ export const TripCompanionFlowPhase1: React.FC = () => {
     
     setPhase('crafting')
     setTimeout(() => {
-      navigate('/trip/1') // Navigate to unified trip page, not summary
+      navigate('/trip/1') // Navigate to unified trip page
     }, 4000)
   }
 
