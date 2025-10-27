@@ -218,44 +218,10 @@ export const TripPlanningPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Data Mismatch Warning */}
-      {isDataMismatch && (
-        <div className="p-4">
-          <div 
-            className="backdrop-blur-xl rounded-2xl p-5 border-2"
-            style={{
-              background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1))',
-              borderColor: 'rgba(239, 68, 68, 0.4)'
-            }}
-          >
-            <div className="flex items-start gap-3">
-              <div className="flex-shrink-0 p-2 bg-red-500/20 rounded-lg">
-                <MapPin size={20} className="text-red-400" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-white font-bold text-lg mb-2">
-                  🚧 Demo Data - {destination} Itinerary Coming Soon
-                </h3>
-                <p className="text-white/80 text-sm leading-relaxed mb-3">
-                  You selected <span className="font-semibold text-yellow-200">{destination}</span> in the questionnaire, 
-                  but we're currently showing <span className="font-semibold">Japan</span> sample data as a preview.
-                </p>
-                <p className="text-white/70 text-xs">
-                  Your preferences ({totalDays} days, {travelers} traveler{travelers > 1 ? 's' : ''}) are saved. 
-                  Full {destination} itinerary data will be available soon!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Your Journey - Deck Style Cards */}
       <div className="p-4 pb-6">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-lg font-bold text-white">
-            {isDataMismatch ? `${destination} Journey (Sample)` : 'Your Journey'}
-          </h2>
+          <h2 className="text-lg font-bold text-white">Your Journey</h2>
           <button className="flex items-center gap-2 px-3 py-2 bg-yellow-200/10 hover:bg-yellow-200/20 rounded-full border border-yellow-200/30 transition-colors">
             <Plus size={16} className="text-yellow-200" />
             <span className="text-xs text-yellow-200 font-medium">Add city</span>
