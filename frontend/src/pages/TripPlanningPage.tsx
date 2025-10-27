@@ -16,6 +16,7 @@ export const TripPlanningPage: React.FC = () => {
   const [loading, setLoading] = useState(true)
   const [activeSheet, setActiveSheet] = useState<'days' | 'cities' | 'saved' | 'people' | 'flight' | 'train' | 'visa' | 'cost' | null>(null)
   const [tripPreferences, setTripPreferences] = useState<any>(null)
+  const [dataLoaded, setDataLoaded] = useState(false)
 
   // Select correct trip data based on destination
   const getTripData = () => {
