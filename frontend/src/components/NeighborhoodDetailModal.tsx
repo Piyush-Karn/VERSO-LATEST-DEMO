@@ -18,6 +18,8 @@ export const NeighborhoodDetailModal: React.FC<NeighborhoodDetailModalProps> = (
   const [activeTab, setActiveTab] = useState<'overview' | 'hotels' | 'things_to_do' | 'restaurants'>('overview')
   const [heroImage, setHeroImage] = useState<string>('')
   const [showHotelSheet, setShowHotelSheet] = useState(false)
+  const [hotelImages, setHotelImages] = useState<Record<string, string>>({})
+  const [activityImages, setActivityImages] = useState<string[]>([])
   const [hotelFilters, setHotelFilters] = useState({
     checkIn: '',
     checkOut: '',
