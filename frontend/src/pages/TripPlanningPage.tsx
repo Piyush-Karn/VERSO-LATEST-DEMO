@@ -49,6 +49,7 @@ export const TripPlanningPage: React.FC = () => {
     } else {
       console.log('⚠️ [TripPlanningPage] No trip preferences found in localStorage')
     }
+    setDataLoaded(true)
   }, [])
 
   // Use questionnaire data if available, otherwise fall back to static data
