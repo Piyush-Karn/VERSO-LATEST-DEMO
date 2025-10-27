@@ -543,10 +543,32 @@ export const NeighborhoodDetailModal: React.FC<NeighborhoodDetailModalProps> = (
                       className="backdrop-blur-xl rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.02]"
                       style={{
                         background: 'rgba(255, 255, 255, 0.05)',
-                        border: '1px solid rgba(255, 255, 255, 0.1)',
-                        minHeight: '250px'
+                        border: '1px solid rgba(255, 255, 255, 0.1)'
                       }}
                     >
+                      {/* Activity Image */}
+                      {activityImages[idx] && (
+                        <div className="relative h-56 overflow-hidden">
+                          <img 
+                            src={activityImages[idx]} 
+                            alt={`Activity ${idx + 1}`}
+                            className="w-full h-full object-cover"
+                          />
+                          <div 
+                            className="absolute inset-0"
+                            style={{
+                              background: 'linear-gradient(to top, rgba(11, 11, 14, 0.9) 0%, transparent 60%)'
+                            }}
+                          />
+                          <div className="absolute bottom-0 left-0 right-0 p-6">
+                            <h4 className="text-white font-bold text-2xl mb-2">Activity {idx + 1}</h4>
+                            <p className="text-white/90 leading-relaxed">
+                              Explore authentic experiences in {neighborhood.name}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                      
                       <div className="p-6">
                         <div className="flex items-start gap-4 mb-4">
                           <div 
@@ -559,9 +581,8 @@ export const NeighborhoodDetailModal: React.FC<NeighborhoodDetailModalProps> = (
                             <Activity size={24} style={{ color: '#FFD15C' }} />
                           </div>
                           <div className="flex-1">
-                            <h4 className="text-white font-bold text-lg mb-2">Activity {idx + 1}</h4>
                             <p className="text-white/70 leading-relaxed">
-                              Explore authentic experiences in {neighborhood.name}. Discover local favorites and hidden gems.
+                              Discover local favorites and hidden gems. Experience the authentic culture and lifestyle of {neighborhood.name}.
                             </p>
                           </div>
                         </div>
