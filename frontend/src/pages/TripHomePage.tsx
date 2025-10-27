@@ -171,7 +171,7 @@ export const TripHomePage: React.FC = () => {
           return (
             <button
               key={vault.id}
-              onClick={() => navigate(`/trip/${vault.id}`)}
+              onClick={() => handleVaultClick(vault)}
               className="w-full group"
             >
               <div className="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 hover:border-yellow-200/30 transition-all duration-700 hover:scale-[1.02]">
