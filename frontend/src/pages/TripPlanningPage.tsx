@@ -404,11 +404,108 @@ export const TripPlanningPage: React.FC = () => {
 
       {/* Bottom Sheet */}
       <TripBottomSheet
-        isOpen={activeSheet !== null}
+        isOpen={activeSheet !== null && activeSheet !== 'cost'}
         onClose={() => setActiveSheet(null)}
         type={activeSheet || 'days'}
         data={trip}
       />
+
+      {/* Cost Breakdown Bottom Sheet */}
+      {activeSheet === 'cost' && (
+        <div 
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-end"
+          onClick={() => setActiveSheet(null)}
+        >
+          <div 
+            className="bg-gray-900 rounded-t-3xl w-full max-h-[80vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Header */}
+            <div className="sticky top-0 bg-gray-900 border-b border-gray-800 p-6">
+              <div className="flex items-center justify-between mb-2">
+                <h2 className="text-2xl font-bold text-white">Trip Cost Breakdown</h2>
+                <button
+                  onClick={() => setActiveSheet(null)}
+                  className="p-2 hover:bg-gray-800 rounded-full transition-colors"
+                >
+                  <X size={20} className="text-white" />
+                </button>
+              </div>
+              <p className="text-gray-400 text-sm">
+                Estimated costs for {travelers} traveler{travelers > 1 ? 's' : ''} · {totalDays} days
+              </p>
+            </div>
+
+            {/* Cost Items */}
+            <div className="p-6 space-y-4">
+              {/* Flights */}
+              <div className="bg-gray-800 rounded-xl p-5 border border-gray-700">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 bg-yellow-200/20 rounded-lg">
+                      <Plane size={20} style={{ color: '#FFD15C' }} />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-semibold">Flights</h3>
+                      <p className="text-gray-400 text-sm">Round-trip for {travelers} person{travelers > 1 ? 's' : ''}</p>
+                    </div>
+                  </div>
+                  <p className="text-white font-bold text-lg">${costs.flights.toLocaleString()}</p>
+                </div>
+                <p className="text-gray-500 text-xs">$800 per person</p>
+              </div>
+
+              {/* Accommodation */}
+              <div className="bg-gray-800 rounded-xl p-5 border border-gray-700">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 bg-yellow-200/20 rounded-lg">
+                      <Home size={20} style={{ color: '#FFD15C' }} />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-semibold">Accommodation</h3>
+                      <p className="text-gray-400 text-sm">{totalDays - 1} nights</p>
+                    </div>
+                  </div>
+                  <p className="text-white font-bold text-lg">${costs.accommodation.toLocaleString()}</p>
+                </div>
+                <p className="text-gray-500 text-xs">$100 per night</p>
+              </div>
+
+              {/* Activities & Food */}
+              <div className="bg-gray-800 rounded-xl p-5 border border-gray-700">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 bg-yellow-200/20 rounded-lg">
+                      <Activity size={20} style={{ color: '#FFD15C' }} />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-semibold">Activities & Food</h3>
+                      <p className="text-gray-400 text-sm">{totalDays} days for {travelers} person{travelers > 1 ? 's' : ''}</p>
+                    </div>
+                  </div>
+                  <p className="text-white font-bold text-lg">${costs.activities.toLocaleString()}</p>
+                </div>
+                <p className="text-gray-500 text-xs">$150 per day per person</p>
+              </div>
+
+              {/* Total */}
+              <div className="bg-gradient-to-r from-yellow-200/20 to-orange-200/20 rounded-xl p-6 border-2 border-yellow-200/30 mt-6">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-yellow-200/80 text-sm mb-1">Total Estimated Cost</p>
+                    <p className="text-white text-3xl font-bold">${costs.total.toLocaleString()}</p>
+                  </div>
+                  <DollarSign size={48} style={{ color: '#FFD15C', opacity: 0.5 }} />
+                </div>
+                <p className="text-gray-400 text-xs mt-3">
+                  * Prices are estimates and may vary based on season, booking time, and personal preferences
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
