@@ -46,6 +46,34 @@ export const NeighborhoodDetailModal: React.FC<NeighborhoodDetailModalProps> = (
     }
   }, [neighborhood])
 
+  // Load hotel images when hotels tab is active
+  useEffect(() => {
+    if (activeTab === 'hotels' && hotels.length > 0 && Object.keys(hotelImages).length === 0) {
+      const loadHotelImages = async () => {
+        const images: Record<string, string> = {}
+        for (const hotel of hotels.slice(0, 5)) {  // Load images for first 5 hotels
+          const photos = await fetchPexelsImages(`${hotel.type} hotel ${neighborhood?.city}`, 1)
+          if (photos.length > 0) {
+            images[hotel.hotel_id] = photos[0].src.large
+          }
+        }
+        setHotelImages(images)
+      }
+      loadHotelImages()
+    }
+  }, [activeTab, hotels.length, hotelImages, neighborhood])
+
+  // Load activity images when things_to_do tab is active
+  useEffect(() => {
+    if (activeTab === 'things_to_do' && activityImages.length === 0 && neighborhood) {
+      const loadActivityImages = async () => {
+        const photos = await fetchPexelsImages(`${neighborhood.city} ${neighborhood.name} attractions activities`, 6)
+        setActivityImages(photos.map(p => p.src.large))
+      }
+      loadActivityImages()
+    }
+  }, [activeTab, activityImages.length, neighborhood])
+
   // Close on escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
