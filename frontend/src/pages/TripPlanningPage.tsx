@@ -20,13 +20,17 @@ export const TripPlanningPage: React.FC = () => {
   // Load trip preferences from localStorage (from questionnaire)
   useEffect(() => {
     const stored = localStorage.getItem('tripPreferences')
+    console.log('📦 [TripPlanningPage] Reading from localStorage:', stored)
     if (stored) {
       try {
         const prefs = JSON.parse(stored)
+        console.log('✅ [TripPlanningPage] Parsed preferences:', prefs)
         setTripPreferences(prefs)
       } catch (e) {
-        console.error('Failed to parse trip preferences', e)
+        console.error('❌ [TripPlanningPage] Failed to parse trip preferences', e)
       }
+    } else {
+      console.log('⚠️ [TripPlanningPage] No trip preferences found in localStorage')
     }
   }, [])
 
