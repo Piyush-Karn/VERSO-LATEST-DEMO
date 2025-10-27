@@ -98,6 +98,18 @@ export const TripPlanningPage: React.FC = () => {
     loadImages()
   }, [])
 
+  // Show loading state until data is loaded
+  if (!dataLoaded) {
+    return (
+      <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-yellow-200 mx-auto mb-4" />
+          <p className="text-white text-lg">Loading your itinerary...</p>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen bg-black">
       {/* Header */}
