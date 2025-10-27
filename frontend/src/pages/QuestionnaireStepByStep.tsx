@@ -63,6 +63,18 @@ export const QuestionnaireStepByStep: React.FC = () => {
         duration: formData.duration,
         homeLocation: formData.homeLocation || 'Not specified',
       })
+      
+      // Store trip data in localStorage for the itinerary page
+      const tripPreferences = {
+        destination: formData.destination,
+        startDate: formData.startDate,
+        endDate: formData.endDate,
+        travelers: parseInt(formData.travelers) || 2,
+        duration: parseInt(formData.duration) || 7,
+        homeLocation: formData.homeLocation
+      }
+      localStorage.setItem('tripPreferences', JSON.stringify(tripPreferences))
+      
       // Redirect to unified trip planning page
       navigate('/trip/1')
     }
