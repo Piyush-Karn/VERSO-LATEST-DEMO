@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { ArrowLeft, MapPin, Calendar, Users, Heart, Plus, ChevronRight, Sparkles, Plane, Train, Home, Coffee, CheckCircle, Clock, DollarSign, X } from 'lucide-react'
+import { ArrowLeft, MapPin, Calendar, Users, Heart, Plus, ChevronRight, Sparkles, Plane, Train, Home, Coffee, CheckCircle, Clock, DollarSign, X, Activity } from 'lucide-react'
 import { fetchPexelsImages } from '../services/pexels'
 import { TripBottomSheet } from '../components/TripBottomSheet'
 import tripData from '../data/trip_data.json'
