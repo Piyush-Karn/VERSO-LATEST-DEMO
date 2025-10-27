@@ -467,6 +467,23 @@ export const NeighborhoodDetailModal: React.FC<NeighborhoodDetailModalProps> = (
                       }}
                       onClick={() => setShowHotelSheet(true)}
                     >
+                      {/* Hotel Image */}
+                      {hotelImages[hotel.hotel_id] && (
+                        <div className="relative h-48 overflow-hidden">
+                          <img 
+                            src={hotelImages[hotel.hotel_id]} 
+                            alt={hotel.name}
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          />
+                          <div 
+                            className="absolute inset-0"
+                            style={{
+                              background: 'linear-gradient(to top, rgba(11, 11, 14, 0.8) 0%, transparent 60%)'
+                            }}
+                          />
+                        </div>
+                      )}
+                      
                       <div className="p-6">
                         <div className="flex items-start justify-between mb-3">
                           <div className="flex-1">
