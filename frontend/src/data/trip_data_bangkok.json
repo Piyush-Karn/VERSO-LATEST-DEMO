@@ -1,0 +1,144 @@
+{
+  "trip": {
+    "trip_id": "bangkok_trip_1",
+    "user_id": "demo_user",
+    "status": "planning",
+    "created_at": "2025-01-10",
+    "overview": {
+      "total_days": 6,
+      "total_cities": 2,
+      "saved_experiences": 12,
+      "companions": 2,
+      "travel_style": "urban_culture"
+    },
+    "route": [
+      {
+        "city_id": "bangkok",
+        "city_name": "Bangkok",
+        "country": "Thailand",
+        "days": 4,
+        "order": 1,
+        "travel_time_from_previous": null,
+        "travel_mode": null,
+        "vibe": "Temple grandeur · Street food · Night markets",
+        "image_keywords": "bangkok grand palace wat pho temples",
+        "experiences": [
+          {
+            "experience_id": "bangkok-1",
+            "title": "Grand Palace & Wat Phra Kaew",
+            "type": "culture",
+            "day": 1,
+            "status": "confirmed",
+            "description": "Explore Thailand's most sacred temple and former royal residence"
+          },
+          {
+            "experience_id": "bangkok-2",
+            "title": "Wat Pho Reclining Buddha",
+            "type": "culture",
+            "day": 1,
+            "status": "confirmed",
+            "description": "Visit the 46-meter golden reclining Buddha statue"
+          },
+          {
+            "experience_id": "bangkok-3",
+            "title": "Street Food Tour in Chinatown",
+            "type": "food",
+            "day": 2,
+            "status": "pending",
+            "description": "Sample authentic Thai-Chinese street food in Yaowarat"
+          },
+          {
+            "experience_id": "bangkok-4",
+            "title": "Floating Market Experience",
+            "type": "culture",
+            "day": 2,
+            "status": "pending",
+            "description": "Shop from traditional long-tail boats at Damnoen Saduak"
+          },
+          {
+            "experience_id": "bangkok-5",
+            "title": "Rooftop Bar at Lebua",
+            "type": "leisure",
+            "day": 2,
+            "status": "idea",
+            "description": "Sunset cocktails at Sky Bar with 360° city views"
+          },
+          {
+            "experience_id": "bangkok-6",
+            "title": "Jim Thompson House Museum",
+            "type": "culture",
+            "day": 3,
+            "status": "confirmed",
+            "description": "Tour traditional Thai houses filled with Asian art"
+          },
+          {
+            "experience_id": "bangkok-7",
+            "title": "Chatuchak Weekend Market",
+            "type": "shopping",
+            "day": 3,
+            "status": "pending",
+            "description": "Browse 15,000 stalls at the world's largest weekend market"
+          },
+          {
+            "experience_id": "bangkok-8",
+            "title": "Thai Massage at Wat Pho School",
+            "type": "wellness",
+            "day": 4,
+            "status": "idea",
+            "description": "Traditional Thai massage at the birthplace of the practice"
+          }
+        ]
+      },
+      {
+        "city_id": "ayutthaya",
+        "city_name": "Ayutthaya",
+        "country": "Thailand",
+        "days": 2,
+        "order": 2,
+        "travel_time_from_previous": "1.5 hrs by train",
+        "travel_mode": "train",
+        "vibe": "Ancient ruins · UNESCO site · River temples",
+        "image_keywords": "ayutthaya ancient temple ruins thailand buddha",
+        "experiences": [
+          {
+            "experience_id": "ayutthaya-1",
+            "title": "Wat Mahathat Buddha Head",
+            "type": "culture",
+            "day": 5,
+            "status": "confirmed",
+            "description": "See the iconic Buddha head entwined in tree roots"
+          },
+          {
+            "experience_id": "ayutthaya-2",
+            "title": "Bicycle Tour of Temple Ruins",
+            "type": "adventure",
+            "day": 5,
+            "status": "pending",
+            "description": "Cycle through ancient temple complexes at golden hour"
+          },
+          {
+            "experience_id": "ayutthaya-3",
+            "title": "Riverside Dinner Cruise",
+            "type": "food",
+            "day": 5,
+            "status": "idea",
+            "description": "Thai dinner while floating past illuminated temples"
+          },
+          {
+            "experience_id": "ayutthaya-4",
+            "title": "Wat Chaiwatthanaram at Sunset",
+            "type": "culture",
+            "day": 6,
+            "status": "pending",
+            "description": "Visit stunning Khmer-style temple during golden hour"
+          }
+        ]
+      }
+    ],
+    "verso_notes": [
+      "Booked Grand Palace tickets online to skip queues",
+      "Added train journey to Ayutthaya for authentic experience",
+      "Recommended Chatuchak on Saturday for full market experience"
+    ]
+  }
+}
