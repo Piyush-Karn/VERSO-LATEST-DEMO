@@ -253,7 +253,7 @@ export const TripHomePage: React.FC = () => {
                     <button
                       onClick={(e) => {
                         e.stopPropagation()
-                        navigate(`/trip/${vault.id}`)
+                        handleVaultClick(vault)
                       }}
                       className="w-full bg-yellow-200 hover:bg-yellow-300 text-black font-semibold py-2.5 px-4 rounded-full transition-all text-sm flex items-center justify-center gap-2"
                     >
