@@ -88,7 +88,17 @@ export const TripPlanningPage: React.FC = () => {
           
           <h1 className="text-xl font-bold text-white">Your Journey</h1>
           
-          <div className="w-9" />
+          {/* Compact Cost Box - Top Right */}
+          <button 
+            className="backdrop-blur-xl rounded-xl px-4 py-2 border transition-all hover:scale-105"
+            style={{
+              background: 'rgba(255, 209, 92, 0.15)',
+              borderColor: 'rgba(255, 209, 92, 0.3)'
+            }}
+          >
+            <p className="text-yellow-200 text-xs font-medium mb-0.5">Your trip cost</p>
+            <p className="text-white font-bold text-lg">${costs.total.toLocaleString()}</p>
+          </button>
         </div>
       </div>
 
