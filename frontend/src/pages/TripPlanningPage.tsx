@@ -17,7 +17,21 @@ export const TripPlanningPage: React.FC = () => {
   const [activeSheet, setActiveSheet] = useState<'days' | 'cities' | 'saved' | 'people' | 'flight' | 'train' | 'visa' | 'cost' | null>(null)
   const [tripPreferences, setTripPreferences] = useState<any>(null)
 
-  const trip = tripData.trip
+  // Select correct trip data based on destination
+  const getTripData = () => {
+    const dest = tripPreferences?.destination?.toLowerCase() || 'japan'
+    console.log('🗺️ [TripPlanningPage] Loading trip data for:', dest)
+    
+    if (dest.includes('bali')) {
+      return tripDataBali.trip
+    } else if (dest.includes('bangkok') || dest.includes('thailand')) {
+      return tripDataBangkok.trip
+    } else {
+      return tripDataJapan.trip
+    }
+  }
+
+  const trip = getTripData()
 
   // Load trip preferences from localStorage (from questionnaire)
   useEffect(() => {
