@@ -13,8 +13,47 @@ export const TripPlanningPage: React.FC = () => {
   const [cityImages, setCityImages] = useState<Record<string, string>>({})
   const [loading, setLoading] = useState(true)
   const [activeSheet, setActiveSheet] = useState<'days' | 'cities' | 'saved' | 'people' | 'flight' | 'train' | 'visa' | null>(null)
+  const [tripPreferences, setTripPreferences] = useState<any>(null)
 
   const trip = tripData.trip
+
+  // Load trip preferences from localStorage (from questionnaire)
+  useEffect(() => {
+    const stored = localStorage.getItem('tripPreferences')
+    if (stored) {
+      try {
+        const prefs = JSON.parse(stored)
+        setTripPreferences(prefs)
+      } catch (e) {
+        console.error('Failed to parse trip preferences', e)
+      }
+    }
+  }, [])
+
+  // Use questionnaire data if available, otherwise fall back to static data
+  const totalDays = tripPreferences?.duration || trip.overview.total_days
+  const travelers = tripPreferences?.travelers || trip.overview.companions
+  const destination = tripPreferences?.destination || 'Japan'
+  
+  // Calculate realistic costs based on duration
+  const calculateCosts = () => {
+    const baseCostPerDay = 150 // $150 per day per person
+    const flightCost = 800 // $800 per person round trip
+    const accommodationPerNight = 100 // $100 per night
+    
+    const totalFlights = flightCost * travelers
+    const totalAccommodation = accommodationPerNight * (totalDays - 1) // nights = days - 1
+    const totalActivities = baseCostPerDay * totalDays * travelers
+    
+    return {
+      flights: totalFlights,
+      accommodation: totalAccommodation,
+      activities: totalActivities,
+      total: totalFlights + totalAccommodation + totalActivities
+    }
+  }
+  
+  const costs = calculateCosts()
 
   useEffect(() => {
     const loadImages = async () => {
