@@ -280,7 +280,7 @@ export const CityDetailPage: React.FC = () => {
                     </button>
                   )
                 })}
-              </div>
+                </div>
               </>
             )}
           </div>
