@@ -17,22 +17,29 @@ export const TripPlanningPage: React.FC = () => {
   const [activeSheet, setActiveSheet] = useState<'days' | 'cities' | 'saved' | 'people' | 'flight' | 'train' | 'visa' | 'cost' | null>(null)
   const [tripPreferences, setTripPreferences] = useState<any>(null)
   const [dataLoaded, setDataLoaded] = useState(false)
+  const [currentTripData, setCurrentTripData] = useState<any>(tripDataJapan.trip)
 
-  // Select correct trip data based on destination
-  const getTripData = () => {
+  // Update trip data when preferences change
+  useEffect(() => {
     const dest = tripPreferences?.destination?.toLowerCase() || 'japan'
-    console.log('🗺️ [TripPlanningPage] Loading trip data for:', dest)
+    console.log('🗺️ [TripPlanningPage] Loading trip data for:', dest, 'from preferences:', tripPreferences)
     
+    let tripData
     if (dest.includes('bali')) {
-      return tripDataBali.trip
+      tripData = tripDataBali.trip
+      console.log('✅ Loaded Bali itinerary')
     } else if (dest.includes('bangkok') || dest.includes('thailand')) {
-      return tripDataBangkok.trip
+      tripData = tripDataBangkok.trip
+      console.log('✅ Loaded Bangkok itinerary')
     } else {
-      return tripDataJapan.trip
+      tripData = tripDataJapan.trip
+      console.log('✅ Loaded Japan itinerary')
     }
-  }
+    
+    setCurrentTripData(tripData)
+  }, [tripPreferences])
 
-  const trip = getTripData()
+  const trip = currentTripData
 
   // Load trip preferences from localStorage (from questionnaire)
   useEffect(() => {
