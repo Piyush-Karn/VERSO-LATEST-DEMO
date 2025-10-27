@@ -76,6 +76,24 @@ export const NeighborhoodsHomePage: React.FC = () => {
         </div>
       </div>
 
+      {/* Explore Callout Banner */}
+      <div className="px-4 pt-6 pb-4">
+        <div 
+          className="backdrop-blur-xl rounded-2xl p-5 border"
+          style={{
+            background: 'linear-gradient(135deg, rgba(255, 209, 92, 0.15), rgba(255, 165, 0, 0.1))',
+            borderColor: 'rgba(255, 209, 92, 0.3)'
+          }}
+        >
+          <h2 className="text-white font-bold text-xl mb-2">
+            Explore popular neighbourhoods in {city}
+          </h2>
+          <p className="text-white/80 text-sm leading-relaxed">
+            Discover the unique character and hidden gems of each area
+          </p>
+        </div>
+      </div>
+
       {/* Neighbourhoods Grid */}
       <div className="p-4 space-y-6 pb-24">
         {loading && (
