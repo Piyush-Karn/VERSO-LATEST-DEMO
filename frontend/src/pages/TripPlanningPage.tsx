@@ -55,12 +55,7 @@ export const TripPlanningPage: React.FC = () => {
   const travelers = tripPreferences?.travelers || trip.overview.companions
   const destination = tripPreferences?.destination || 'Japan'
   
-  // Check if destination matches the static data
-  const isDataMismatch = tripPreferences?.destination && 
-    tripPreferences.destination !== 'Japan' && 
-    tripPreferences.destination !== 'Japan Food Crawl'
-  
-  console.log('🌍 [TripPlanningPage] Destination:', destination, 'Mismatch:', isDataMismatch)
+  console.log('🌍 [TripPlanningPage] Destination:', destination)
   
   // Calculate realistic costs based on duration
   const calculateCosts = () => {
