@@ -12,7 +12,7 @@ export const TripPlanningPage: React.FC = () => {
   const [selectedActivity, setSelectedActivity] = useState<string | null>(null)
   const [cityImages, setCityImages] = useState<Record<string, string>>({})
   const [loading, setLoading] = useState(true)
-  const [activeSheet, setActiveSheet] = useState<'days' | 'cities' | 'saved' | 'people' | 'flight' | 'train' | 'visa' | null>(null)
+  const [activeSheet, setActiveSheet] = useState<'days' | 'cities' | 'saved' | 'people' | 'flight' | 'train' | 'visa' | 'cost' | null>(null)
   const [tripPreferences, setTripPreferences] = useState<any>(null)
 
   const trip = tripData.trip
