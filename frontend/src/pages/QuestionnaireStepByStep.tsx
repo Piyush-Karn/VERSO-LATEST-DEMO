@@ -73,7 +73,9 @@ export const QuestionnaireStepByStep: React.FC = () => {
         duration: parseInt(formData.duration) || 7,
         homeLocation: formData.homeLocation
       }
+      console.log('💾 [Questionnaire] Storing trip preferences:', tripPreferences)
       localStorage.setItem('tripPreferences', JSON.stringify(tripPreferences))
+      console.log('✅ [Questionnaire] Saved to localStorage')
       
       // Redirect to unified trip planning page
       navigate('/trip/1')
