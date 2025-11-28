@@ -25,6 +25,11 @@ import { CityExplorationPage } from './pages/CityExplorationPage'
 import { OnboardingFlowRedesign } from './pages/OnboardingFlowRedesign'
 import { CinematicItinerary } from './pages/CinematicItinerary'
 import { VersoItinerary } from './pages/VersoItinerary'
+import { TripsVault } from './pages/vaults/TripsVault'
+import { CityGemsVault } from './pages/vaults/CityGemsVault'
+import { FoodDrinkVault } from './pages/vaults/FoodDrinkVault'
+import { AdventuresVault } from './pages/vaults/AdventuresVault'
+import { WishlistsVault } from './pages/vaults/WishlistsVault'
 
 // Simple Ask Verso placeholder
 const AskVersoPage = () => (
