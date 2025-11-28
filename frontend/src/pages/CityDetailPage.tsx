@@ -4,7 +4,8 @@ import { ArrowLeft, Filter, Loader2, MapPin, Plane, DollarSign, Users, TrendingU
 import { fetchPexelsImages, type PexelsPhoto } from '../services/pexels'
 import { FilterModal } from '../components/FilterModal'
 import { NeighborhoodDetailModal } from '../components/NeighborhoodDetailModal'
-import neighborhoodsData from '../data/neighborhoods_data.json'
+// import neighborhoodsData from '../data/neighborhoods_data.json'
+const neighborhoodsData: any = {}
 import demoDataset from '../data/verso_demo_dataset.json'
 
 export const CityDetailPage: React.FC = () => {

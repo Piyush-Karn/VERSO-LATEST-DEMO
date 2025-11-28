@@ -3,7 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { ArrowLeft, MapPin, Plane, DollarSign, Users, TrendingUp } from 'lucide-react'
 import { fetchPexelsImages } from '../services/pexels'
 import { NeighborhoodDetailModal } from '../components/NeighborhoodDetailModal'
-import neighborhoodsData from '../data/neighborhoods_data.json'
+// import neighborhoodsData from '../data/neighborhoods_data.json'
+const neighborhoodsData: any = {}
 
 export const NeighborhoodsHomePage: React.FC = () => {
   const { city } = useParams<{ city: string }>()

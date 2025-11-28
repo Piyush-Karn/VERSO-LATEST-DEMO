@@ -4,7 +4,8 @@ import { ArrowLeft, Calendar, MapPin, Compass, Loader2, Filter } from 'lucide-re
 import { fetchPexelsImages, type PexelsPhoto } from '../services/pexels'
 import { NeighborhoodCard } from '../components/NeighborhoodCard'
 import { FilterModal } from '../components/FilterModal'
-import neighborhoodsData from '../data/neighborhoods_data.json'
+// import neighborhoodsData from '../data/neighborhoods_data.json'
+const neighborhoodsData: any = {}
 
 // Mock vault data - matches with VaultViewPage and Explore page
 const MOCK_VAULT_DATA: Record<string, any> = {
