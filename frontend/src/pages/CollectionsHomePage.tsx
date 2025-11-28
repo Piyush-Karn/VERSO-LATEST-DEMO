@@ -2,67 +2,107 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { 
   Plus, MapPin, Coffee, Utensils, Mountain, Sparkles, Heart, 
-  Bookmark, CheckCircle, Award, TrendingUp, MessageCircle, Edit2, X
+  Bookmark, CheckCircle, Award, Check, X
 } from 'lucide-react'
 import { fetchPexelsImages } from '../services/pexels'
 
-// Vault type system with distinct visual identities
+// ============================================================================
+// UNIFIED DESIGN SYSTEM
+// ============================================================================
+
+const DESIGN_TOKENS = {
+  // Spacing
+  spacing: {
+    cardMargin: '24px',
+    avatarToCaption: '8px',
+    captionToTag: '12px',
+    tagToImage: '16px',
+    imageToTimestamp: '12px',
+    cardVertical: '24px',
+    cardPadding: '20px'
+  },
+  // Typography
+  typography: {
+    caption: { size: '17px', weight: '600', lineHeight: '1.4' },
+    name: { size: '16px', weight: '500' },
+    timestamp: { size: '13px', weight: '400', opacity: '0.65' },
+    tag: { size: '13px', weight: '500' },
+    badge: { size: '14px', weight: '500' }
+  },
+  // Shadow
+  shadow: '0 4px 20px rgba(0, 0, 0, 0.16)',
+  // Border Radius
+  radius: '16px',
+  // Colors
+  colors: {
+    gold: '#FFD15C',
+    purple: '#A78BFA',
+    blue: '#60A5FA',
+    olive: '#84CC9C',
+    rose: '#FB7185',
+    red: '#EF4444',
+    textPrimary: 'rgba(255, 255, 255, 0.95)',
+    textSecondary: 'rgba(255, 255, 255, 0.65)',
+    cardBg: 'rgba(255, 255, 255, 0.03)',
+    cardBorder: 'rgba(255, 255, 255, 0.08)'
+  }
+}
+
+// Refined Vault Types with Subtle Colors
 export const VAULT_TYPES = {
   trips: {
     id: 'trips',
     label: 'Trips',
     icon: MapPin,
-    accent: '#FFD15C',
-    gradient: 'from-amber-400/10 via-yellow-500/5 to-transparent',
-    overlayTint: 'rgba(255, 209, 92, 0.08)',
-    description: 'Travel planning & adventures'
+    accent: DESIGN_TOKENS.colors.blue,
+    bg: 'rgba(96, 165, 250, 0.12)',
+    description: 'Travel planning'
   },
   city_gems: {
     id: 'city_gems',
     label: 'City Gems',
     icon: Sparkles,
-    accent: '#60A5FA',
-    gradient: 'from-blue-400/10 via-cyan-500/5 to-transparent',
-    overlayTint: 'rgba(96, 165, 250, 0.08)',
-    description: 'Hidden neighborhood finds'
+    accent: DESIGN_TOKENS.colors.gold,
+    bg: 'rgba(255, 209, 92, 0.12)',
+    description: 'Hidden finds'
   },
   food_drink: {
     id: 'food_drink',
     label: 'Food & Drink',
     icon: Utensils,
-    accent: '#F472B6',
-    gradient: 'from-pink-400/10 via-rose-500/5 to-transparent',
-    overlayTint: 'rgba(244, 114, 182, 0.08)',
+    accent: DESIGN_TOKENS.colors.rose,
+    bg: 'rgba(251, 113, 133, 0.12)',
     description: 'Culinary maps'
   },
   adventures: {
     id: 'adventures',
     label: 'Adventures',
     icon: Mountain,
-    accent: '#34D399',
-    gradient: 'from-emerald-400/10 via-green-500/5 to-transparent',
-    overlayTint: 'rgba(52, 211, 153, 0.08)',
+    accent: DESIGN_TOKENS.colors.olive,
+    bg: 'rgba(132, 204, 156, 0.12)',
     description: 'Outdoor experiences'
   },
   vibe_boards: {
     id: 'vibe_boards',
     label: 'Vibe Boards',
     icon: Heart,
-    accent: '#A78BFA',
-    gradient: 'from-purple-400/10 via-violet-500/5 to-transparent',
-    overlayTint: 'rgba(167, 139, 250, 0.08)',
-    description: 'Aesthetic inspiration'
+    accent: DESIGN_TOKENS.colors.purple,
+    bg: 'rgba(167, 139, 250, 0.12)',
+    description: 'Aesthetic inspo'
   },
   wishlists: {
     id: 'wishlists',
     label: 'Wishlists',
     icon: Bookmark,
     accent: '#FB923C',
-    gradient: 'from-orange-400/10 via-amber-500/5 to-transparent',
-    overlayTint: 'rgba(251, 146, 60, 0.08)',
+    bg: 'rgba(251, 146, 60, 0.12)',
     description: 'Future dreams'
   }
 }
+
+// ============================================================================
+// TYPES
+// ============================================================================
 
 interface Vault {
   id: string
@@ -96,11 +136,15 @@ interface SharedActivity {
   totalDays?: number
 }
 
+// ============================================================================
+// MOCK DATA
+// ============================================================================
+
 const DEMO_VAULTS: Vault[] = [
   {
     id: '1',
     name: 'Japan Food Crawl',
-    type: 'trips',
+    type: 'food_drink',
     inspirations: 18,
     contributors: 2,
     images: [],
@@ -122,30 +166,6 @@ const DEMO_VAULTS: Vault[] = [
     contributors: 3,
     images: [],
     contributorAvatars: ['👩', '🧑', '👨']
-  },
-  {
-    id: '4',
-    name: 'Goa Surf & Dive',
-    type: 'adventures',
-    inspirations: 8,
-    contributors: 2,
-    images: []
-  },
-  {
-    id: '5',
-    name: 'Aesthetic Japan',
-    type: 'vibe_boards',
-    inspirations: 31,
-    contributors: 1,
-    images: []
-  },
-  {
-    id: '6',
-    name: 'European Summer Dreams',
-    type: 'wishlists',
-    inspirations: 15,
-    contributors: 1,
-    images: []
   }
 ]
 
@@ -218,10 +238,608 @@ const SHARED_ACTIVITIES: SharedActivity[] = [
   }
 ]
 
+// ============================================================================
+// REUSABLE COMPONENTS
+// ============================================================================
+
+// Tag Chip Component (Unified)
+const TagChip: React.FC<{ 
+  label: string
+  accent: string
+  bg: string
+  icon?: React.ComponentType<any>
+}> = ({ label, accent, bg, icon: Icon }) => (
+  <div 
+    className="inline-flex items-center gap-1.5 px-3 py-1.5"
+    style={{
+      background: bg,
+      borderRadius: '8px',
+      fontSize: DESIGN_TOKENS.typography.tag.size,
+      fontWeight: DESIGN_TOKENS.typography.tag.weight,
+      color: accent
+    }}
+  >
+    {Icon && <Icon size={12} />}
+    <span>{label}</span>
+  </div>
+)
+
+// Avatar Component
+const Avatar: React.FC<{ emoji: string; size?: number }> = ({ emoji, size = 40 }) => (
+  <div 
+    className="flex items-center justify-center flex-shrink-0"
+    style={{
+      width: `${size}px`,
+      height: `${size}px`,
+      borderRadius: '50%',
+      background: 'rgba(255, 255, 255, 0.1)',
+      fontSize: `${size * 0.5}px`
+    }}
+  >
+    {emoji}
+  </div>
+)
+
+// Hero Image with Vignette
+const HeroImage: React.FC<{ src: string; height: string; className?: string }> = ({ src, height, className = '' }) => (
+  <div 
+    className={`relative overflow-hidden ${className}`}
+    style={{ 
+      height,
+      borderRadius: DESIGN_TOKENS.radius
+    }}
+  >
+    <img 
+      src={src}
+      alt=""
+      className="w-full h-full object-cover"
+      style={{
+        filter: 'contrast(1.05)'
+      }}
+    />
+    {/* Vignette */}
+    <div 
+      className="absolute inset-0 pointer-events-none"
+      style={{
+        background: 'radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.25) 100%)'
+      }}
+    />
+  </div>
+)
+
+// ============================================================================
+// FEED CARD COMPONENTS
+// ============================================================================
+
+// A) SHARED VAULT CARD (Classic Share)
+const SharedVaultCard: React.FC<{ activity: SharedActivity; images: string[] }> = ({ activity, images }) => {
+  const vaultType = VAULT_TYPES[activity.vaultType]
+  const Icon = vaultType.icon
+
+  return (
+    <div 
+      className="w-full"
+      style={{
+        background: DESIGN_TOKENS.colors.cardBg,
+        borderRadius: DESIGN_TOKENS.radius,
+        border: `1px solid ${DESIGN_TOKENS.colors.cardBorder}`,
+        boxShadow: DESIGN_TOKENS.shadow,
+        padding: DESIGN_TOKENS.spacing.cardPadding
+      }}
+    >
+      {/* Avatar + Name + Caption */}
+      <div className="flex items-start gap-3 mb-3">
+        <Avatar emoji={activity.contributorAvatar} size={40} />
+        <div className="flex-1 min-w-0">
+          <div 
+            style={{
+              fontSize: DESIGN_TOKENS.typography.name.size,
+              fontWeight: DESIGN_TOKENS.typography.name.weight,
+              color: DESIGN_TOKENS.colors.textPrimary,
+              marginBottom: '2px'
+            }}
+          >
+            {activity.contributorName}
+          </div>
+          <div 
+            style={{
+              fontSize: DESIGN_TOKENS.typography.caption.size,
+              fontWeight: DESIGN_TOKENS.typography.caption.weight,
+              lineHeight: DESIGN_TOKENS.typography.caption.lineHeight,
+              color: DESIGN_TOKENS.colors.textPrimary
+            }}
+          >
+            {activity.caption}
+          </div>
+        </div>
+      </div>
+
+      {/* Tag */}
+      <div style={{ marginBottom: DESIGN_TOKENS.spacing.tagToImage }}>
+        <TagChip 
+          label={activity.vaultName}
+          accent={vaultType.accent}
+          bg={vaultType.bg}
+          icon={Icon}
+        />
+      </div>
+
+      {/* Hero Image or Collage */}
+      {images.length > 0 && (
+        <div style={{ marginBottom: DESIGN_TOKENS.spacing.imageToTimestamp }}>
+          {images.length === 1 ? (
+            <HeroImage src={images[0]} height="280px" />
+          ) : (
+            <div className="grid grid-cols-3 gap-2">
+              {images.slice(0, 3).map((img, idx) => (
+                <div 
+                  key={idx}
+                  className="relative overflow-hidden"
+                  style={{ 
+                    height: '120px',
+                    borderRadius: DESIGN_TOKENS.radius
+                  }}
+                >
+                  <img src={img} alt="" className="w-full h-full object-cover" />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Timestamp */}
+      <div 
+        style={{
+          fontSize: DESIGN_TOKENS.typography.timestamp.size,
+          fontWeight: DESIGN_TOKENS.typography.timestamp.weight,
+          color: DESIGN_TOKENS.colors.textSecondary,
+          opacity: DESIGN_TOKENS.typography.timestamp.opacity
+        }}
+      >
+        {activity.timeAgo}
+      </div>
+    </div>
+  )
+}
+
+// B) COMPLETED EXPERIENCE CARD (Achievement)
+const CompletedExperienceCard: React.FC<{ activity: SharedActivity; images: string[] }> = ({ activity, images }) => {
+  const vaultType = VAULT_TYPES[activity.vaultType]
+  const Icon = vaultType.icon
+
+  return (
+    <div 
+      className="w-full"
+      style={{
+        background: DESIGN_TOKENS.colors.cardBg,
+        borderRadius: DESIGN_TOKENS.radius,
+        border: `1px solid ${DESIGN_TOKENS.colors.cardBorder}`,
+        boxShadow: DESIGN_TOKENS.shadow,
+        padding: DESIGN_TOKENS.spacing.cardPadding
+      }}
+    >
+      {/* Hero Image */}
+      {activity.heroImage && (
+        <div style={{ marginBottom: '16px' }}>
+          <HeroImage src={activity.heroImage} height="320px" />
+        </div>
+      )}
+
+      {/* Avatar + Name + Caption */}
+      <div className="flex items-start gap-3 mb-3">
+        <Avatar emoji={activity.contributorAvatar} size={40} />
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 mb-1">
+            <div 
+              style={{
+                fontSize: DESIGN_TOKENS.typography.name.size,
+                fontWeight: DESIGN_TOKENS.typography.name.weight,
+                color: DESIGN_TOKENS.colors.textPrimary
+              }}
+            >
+              {activity.contributorName}
+            </div>
+            <div 
+              className="flex items-center justify-center"
+              style={{
+                width: '20px',
+                height: '20px',
+                borderRadius: '50%',
+                background: vaultType.bg,
+                color: vaultType.accent
+              }}
+            >
+              <CheckCircle size={12} />
+            </div>
+          </div>
+          <div 
+            style={{
+              fontSize: DESIGN_TOKENS.typography.caption.size,
+              fontWeight: DESIGN_TOKENS.typography.caption.weight,
+              lineHeight: DESIGN_TOKENS.typography.caption.lineHeight,
+              color: DESIGN_TOKENS.colors.textPrimary
+            }}
+          >
+            {activity.caption}
+          </div>
+        </div>
+      </div>
+
+      {/* Tag */}
+      <div style={{ marginBottom: DESIGN_TOKENS.spacing.imageToTimestamp }}>
+        <TagChip 
+          label={activity.vaultName}
+          accent={vaultType.accent}
+          bg={vaultType.bg}
+          icon={Icon}
+        />
+      </div>
+
+      {/* Timestamp + Comment Count */}
+      <div className="flex items-center justify-between">
+        <div 
+          style={{
+            fontSize: DESIGN_TOKENS.typography.timestamp.size,
+            fontWeight: DESIGN_TOKENS.typography.timestamp.weight,
+            color: DESIGN_TOKENS.colors.textSecondary,
+            opacity: DESIGN_TOKENS.typography.timestamp.opacity
+          }}
+        >
+          {activity.timeAgo}
+        </div>
+        {activity.commentCount && (
+          <div 
+            style={{
+              fontSize: DESIGN_TOKENS.typography.timestamp.size,
+              color: DESIGN_TOKENS.colors.textSecondary,
+              opacity: 0.5
+            }}
+          >
+            {activity.commentCount} comments
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+// C) CREATOR VAULT CARD (Editorial)
+const CreatorVaultCard: React.FC<{ activity: SharedActivity; images: string[] }> = ({ activity, images }) => {
+  const vaultType = VAULT_TYPES[activity.vaultType]
+
+  return (
+    <div 
+      className="w-full"
+      style={{
+        background: DESIGN_TOKENS.colors.cardBg,
+        borderRadius: DESIGN_TOKENS.radius,
+        border: `1px solid ${DESIGN_TOKENS.colors.cardBorder}`,
+        boxShadow: DESIGN_TOKENS.shadow,
+        padding: DESIGN_TOKENS.spacing.cardPadding
+      }}
+    >
+      {/* Avatar + Name + Caption */}
+      <div className="flex items-start gap-3 mb-3">
+        <Avatar emoji={activity.contributorAvatar} size={40} />
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 mb-1">
+            <div 
+              style={{
+                fontSize: DESIGN_TOKENS.typography.name.size,
+                fontWeight: DESIGN_TOKENS.typography.name.weight,
+                color: DESIGN_TOKENS.colors.textPrimary
+              }}
+            >
+              {activity.contributorName}
+            </div>
+            {/* Verified Badge */}
+            <div 
+              className="flex items-center justify-center"
+              style={{
+                width: '18px',
+                height: '18px',
+                borderRadius: '50%',
+                background: DESIGN_TOKENS.colors.purple,
+                opacity: 0.9
+              }}
+            >
+              <Check size={11} strokeWidth={3} color="#000" />
+            </div>
+          </div>
+          <div 
+            style={{
+              fontSize: DESIGN_TOKENS.typography.caption.size,
+              fontWeight: DESIGN_TOKENS.typography.caption.weight,
+              lineHeight: DESIGN_TOKENS.typography.caption.lineHeight,
+              color: DESIGN_TOKENS.colors.textPrimary
+            }}
+          >
+            {activity.caption}
+          </div>
+        </div>
+      </div>
+
+      {/* Creator Vault Tag + Metadata */}
+      <div className="flex items-center gap-2 mb-4">
+        <TagChip 
+          label="Creator Vault"
+          accent={DESIGN_TOKENS.colors.purple}
+          bg="rgba(167, 139, 250, 0.12)"
+        />
+        {activity.metadata && (
+          <span 
+            style={{
+              fontSize: '12px',
+              color: DESIGN_TOKENS.colors.textSecondary,
+              opacity: 0.6
+            }}
+          >
+            · {activity.metadata}
+          </span>
+        )}
+      </div>
+
+      {/* Horizontal Collage (3 tiles) */}
+      {images.length >= 3 && (
+        <div className="grid grid-cols-3 gap-3 mb-3">
+          {images.slice(0, 3).map((img, idx) => (
+            <div 
+              key={idx}
+              className="relative overflow-hidden"
+              style={{ 
+                height: '140px',
+                borderRadius: DESIGN_TOKENS.radius
+              }}
+            >
+              <img src={img} alt="" className="w-full h-full object-cover" />
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Timestamp */}
+      <div 
+        style={{
+          fontSize: DESIGN_TOKENS.typography.timestamp.size,
+          fontWeight: DESIGN_TOKENS.typography.timestamp.weight,
+          color: DESIGN_TOKENS.colors.textSecondary,
+          opacity: DESIGN_TOKENS.typography.timestamp.opacity
+        }}
+      >
+        {activity.timeAgo}
+      </div>
+    </div>
+  )
+}
+
+// D) ON TRIP CARD (Live)
+const OnTripCard: React.FC<{ activity: SharedActivity; images: string[] }> = ({ activity, images }) => {
+  const totalDays = activity.totalDays || 7
+  const currentDay = activity.dayNumber || 3
+
+  return (
+    <div 
+      className="w-full"
+      style={{
+        background: DESIGN_TOKENS.colors.cardBg,
+        borderRadius: DESIGN_TOKENS.radius,
+        border: `1px solid ${DESIGN_TOKENS.colors.cardBorder}`,
+        boxShadow: DESIGN_TOKENS.shadow,
+        padding: DESIGN_TOKENS.spacing.cardPadding
+      }}
+    >
+      {/* Hero Image with Live Badge */}
+      {activity.heroImage && (
+        <div className="relative mb-4">
+          <HeroImage src={activity.heroImage} height="280px" />
+          {/* Live Badge */}
+          <div 
+            className="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1"
+            style={{
+              background: DESIGN_TOKENS.colors.red,
+              borderRadius: '6px',
+              fontSize: '12px',
+              fontWeight: '600',
+              color: '#fff'
+            }}
+          >
+            <div 
+              style={{
+                width: '6px',
+                height: '6px',
+                borderRadius: '50%',
+                background: '#fff',
+                animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+              }}
+            />
+            Live
+          </div>
+        </div>
+      )}
+
+      {/* Avatar + Name + Caption */}
+      <div className="flex items-start gap-3 mb-3">
+        <Avatar emoji={activity.contributorAvatar} size={40} />
+        <div className="flex-1 min-w-0">
+          <div 
+            style={{
+              fontSize: DESIGN_TOKENS.typography.name.size,
+              fontWeight: DESIGN_TOKENS.typography.name.weight,
+              color: DESIGN_TOKENS.colors.textPrimary,
+              marginBottom: '2px'
+            }}
+          >
+            {activity.contributorName}
+          </div>
+          <div 
+            style={{
+              fontSize: DESIGN_TOKENS.typography.caption.size,
+              fontWeight: DESIGN_TOKENS.typography.caption.weight,
+              lineHeight: DESIGN_TOKENS.typography.caption.lineHeight,
+              color: DESIGN_TOKENS.colors.textPrimary
+            }}
+          >
+            {activity.caption}
+          </div>
+        </div>
+      </div>
+
+      {/* Current Activity */}
+      {activity.metadata && (
+        <div 
+          className="mb-3 px-3 py-2"
+          style={{
+            background: 'rgba(96, 165, 250, 0.08)',
+            borderRadius: '10px',
+            fontSize: '14px',
+            fontWeight: '500',
+            color: DESIGN_TOKENS.colors.blue
+          }}
+        >
+          {activity.metadata}
+        </div>
+      )}
+
+      {/* Timeline Progress */}
+      <div className="mb-3">
+        <div className="flex items-center gap-1.5 mb-2">
+          {Array.from({ length: totalDays }).map((_, idx) => (
+            <div 
+              key={idx}
+              style={{
+                flex: 1,
+                height: '4px',
+                borderRadius: '2px',
+                background: idx < currentDay ? DESIGN_TOKENS.colors.blue : 'rgba(255, 255, 255, 0.1)',
+                transition: 'background 0.3s ease'
+              }}
+            />
+          ))}
+        </div>
+        <div 
+          style={{
+            fontSize: '12px',
+            color: DESIGN_TOKENS.colors.textSecondary,
+            opacity: 0.6
+          }}
+        >
+          Day {currentDay} of {totalDays}
+        </div>
+      </div>
+
+      {/* Timestamp */}
+      <div 
+        style={{
+          fontSize: DESIGN_TOKENS.typography.timestamp.size,
+          fontWeight: DESIGN_TOKENS.typography.timestamp.weight,
+          color: DESIGN_TOKENS.colors.textSecondary,
+          opacity: DESIGN_TOKENS.typography.timestamp.opacity
+        }}
+      >
+        {activity.timeAgo}
+      </div>
+    </div>
+  )
+}
+
+// E) MILESTONE CARD
+const MilestoneCard: React.FC<{ activity: SharedActivity; images: string[] }> = ({ activity, images }) => {
+  const vaultType = VAULT_TYPES[activity.vaultType]
+
+  return (
+    <div 
+      className="w-full"
+      style={{
+        background: DESIGN_TOKENS.colors.cardBg,
+        borderRadius: DESIGN_TOKENS.radius,
+        border: `1px solid ${DESIGN_TOKENS.colors.cardBorder}`,
+        boxShadow: DESIGN_TOKENS.shadow,
+        padding: DESIGN_TOKENS.spacing.cardPadding
+      }}
+    >
+      {/* Avatar + Name */}
+      <div className="flex items-center gap-3 mb-4">
+        <Avatar emoji={activity.contributorAvatar} size={40} />
+        <div 
+          style={{
+            fontSize: DESIGN_TOKENS.typography.name.size,
+            fontWeight: DESIGN_TOKENS.typography.name.weight,
+            color: DESIGN_TOKENS.colors.textPrimary
+          }}
+        >
+          {activity.contributorName}
+        </div>
+      </div>
+
+      {/* Large Badge */}
+      {activity.badgeText && (
+        <div 
+          className="flex items-center justify-center gap-2 mb-3 py-4"
+          style={{
+            background: vaultType.bg,
+            borderRadius: DESIGN_TOKENS.radius,
+            border: `1px solid ${vaultType.accent}20`
+          }}
+        >
+          <Award size={24} color={vaultType.accent} />
+          <div 
+            style={{
+              fontSize: '20px',
+              fontWeight: '600',
+              color: vaultType.accent
+            }}
+          >
+            {activity.badgeText}
+          </div>
+        </div>
+      )}
+
+      {/* Caption */}
+      <div 
+        className="mb-4"
+        style={{
+          fontSize: DESIGN_TOKENS.typography.caption.size,
+          fontWeight: DESIGN_TOKENS.typography.caption.weight,
+          lineHeight: DESIGN_TOKENS.typography.caption.lineHeight,
+          color: DESIGN_TOKENS.colors.textPrimary,
+          textAlign: 'center'
+        }}
+      >
+        {activity.caption}
+      </div>
+
+      {/* Optional Hero Image */}
+      {activity.heroImage && (
+        <div style={{ marginBottom: DESIGN_TOKENS.spacing.imageToTimestamp }}>
+          <HeroImage src={activity.heroImage} height="200px" />
+        </div>
+      )}
+
+      {/* Timestamp */}
+      <div 
+        className="text-center"
+        style={{
+          fontSize: DESIGN_TOKENS.typography.timestamp.size,
+          fontWeight: DESIGN_TOKENS.typography.timestamp.weight,
+          color: DESIGN_TOKENS.colors.textSecondary,
+          opacity: DESIGN_TOKENS.typography.timestamp.opacity
+        }}
+      >
+        {activity.timeAgo}
+      </div>
+    </div>
+  )
+}
+
+// ============================================================================
+// MAIN COMPONENT
+// ============================================================================
+
 export const CollectionsHomePage: React.FC = () => {
   const navigate = useNavigate()
   const [vaults, setVaults] = useState<Vault[]>(DEMO_VAULTS)
-  const [sharedActivities, setSharedActivities] = useState<SharedActivity[]>(SHARED_ACTIVITIES)
+  const [sharedActivities] = useState<SharedActivity[]>(SHARED_ACTIVITIES)
   const [vaultImages, setVaultImages] = useState<Record<string, string[]>>({})
   const [loading, setLoading] = useState(true)
   const [editingVaultId, setEditingVaultId] = useState<string | null>(null)
@@ -244,7 +862,11 @@ export const CollectionsHomePage: React.FC = () => {
         imageMap[activity.id] = photos.map(p => p.src.large)
         
         // Set hero image for certain types
-        if (photos.length > 0 && (activity.type === 'completed_experience' || activity.type === 'on_trip' || activity.type === 'milestone')) {
+        if (photos.length > 0 && (
+          activity.type === 'completed_experience' || 
+          activity.type === 'on_trip' || 
+          activity.type === 'milestone'
+        )) {
           activity.heroImage = photos[0].src.large2x
         }
       }
@@ -264,639 +886,322 @@ export const CollectionsHomePage: React.FC = () => {
   }
 
   const renderSharedActivity = (activity: SharedActivity) => {
-    const vaultType = VAULT_TYPES[activity.vaultType]
-    const Icon = vaultType.icon
     const images = vaultImages[activity.id] || []
 
     switch (activity.type) {
-      // A) Standard Shared Vault
       case 'shared_vault':
-        return (
-          <div 
-            className="group cursor-pointer"
-            onClick={() => navigate(`/vault/shared/${activity.id}`)}
-            style={{
-              boxShadow: '0 2px 16px rgba(0, 0, 0, 0.15)'
-            }}
-          >
-            {/* Hero Image Banner */}
-            {images.length > 0 && (
-              <div className="relative h-64 rounded-t-2xl overflow-hidden">
-                <img 
-                  src={images[0]} 
-                  alt=""
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div 
-                  className="absolute inset-0"
-                  style={{
-                    background: 'linear-gradient(to top, rgba(11, 11, 14, 0.7) 0%, transparent 50%)'
-                  }}
-                />
-              </div>
-            )}
-
-            {/* Content */}
-            <div className="p-5 rounded-b-2xl" style={{ background: 'rgba(255, 255, 255, 0.03)' }}>
-              <div className="flex items-start gap-3 mb-3">
-                <div 
-                  className="w-10 h-10 rounded-full flex items-center justify-center text-lg flex-shrink-0"
-                  style={{
-                    background: 'rgba(255, 255, 255, 0.06)',
-                    border: '1px solid rgba(255, 255, 255, 0.1)'
-                  }}
-                >
-                  {activity.contributorAvatar}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-white text-base leading-relaxed">
-                    <span className="font-semibold">{activity.contributorName}</span>
-                    {' '}
-                    <span className="text-white/80">{activity.caption}</span>
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center justify-between">
-                <div 
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full"
-                  style={{
-                    background: `${vaultType.accent}12`,
-                    border: `1px solid ${vaultType.accent}25`
-                  }}
-                >
-                  <Icon size={11} style={{ color: vaultType.accent }} />
-                  <span className="text-xs font-medium" style={{ color: vaultType.accent }}>
-                    {activity.vaultName}
-                  </span>
-                </div>
-                <span className="text-xs text-white/40">{activity.timeAgo}</span>
-              </div>
-
-              {/* Mini image strip */}
-              {images.length > 1 && (
-                <div className="flex gap-1.5 mt-4">
-                  {images.slice(1, 4).map((img, idx) => (
-                    <div key={idx} className="flex-1 h-16 rounded-lg overflow-hidden">
-                      <img src={img} alt="" className="w-full h-full object-cover" />
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
-        )
-
-      // B) Completed Experience (Achievement)
+        return <SharedVaultCard activity={activity} images={images} />
       case 'completed_experience':
-        return (
-          <div 
-            className="relative rounded-2xl overflow-hidden group cursor-pointer"
-            onClick={() => navigate(`/vault/shared/${activity.id}`)}
-            style={{
-              boxShadow: '0 4px 24px rgba(0, 0, 0, 0.2)'
-            }}
-          >
-            {/* Large Hero Image */}
-            {activity.heroImage && (
-              <div className="relative h-80">
-                <img 
-                  src={activity.heroImage} 
-                  alt=""
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div 
-                  className="absolute inset-0"
-                  style={{
-                    background: 'linear-gradient(to top, rgba(11, 11, 14, 0.9) 0%, transparent 60%)'
-                  }}
-                />
-                
-                {/* Achievement Badge */}
-                <div 
-                  className="absolute top-4 right-4 backdrop-blur-xl rounded-2xl p-3"
-                  style={{
-                    background: 'rgba(52, 211, 153, 0.15)',
-                    border: '2px solid rgba(52, 211, 153, 0.4)',
-                    boxShadow: '0 8px 32px rgba(52, 211, 153, 0.3)'
-                  }}
-                >
-                  <CheckCircle size={24} style={{ color: '#34D399' }} />
-                </div>
-
-                {/* Content Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <div className="flex items-start gap-3 mb-3">
-                    <div 
-                      className="w-11 h-11 rounded-full flex items-center justify-center text-lg flex-shrink-0"
-                      style={{
-                        background: 'rgba(0, 0, 0, 0.5)',
-                        border: '2px solid rgba(255, 255, 255, 0.2)',
-                        backdropFilter: 'blur(12px)'
-                      }}
-                    >
-                      {activity.contributorAvatar}
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-white text-base font-medium leading-relaxed mb-2">
-                        <span className="font-bold">{activity.contributorName}</span>
-                        {' '}
-                        <span>{activity.caption}</span>
-                      </p>
-                      <div className="flex items-center gap-3">
-                        <div 
-                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full backdrop-blur-xl"
-                          style={{
-                            background: `${vaultType.accent}20`,
-                            border: `1px solid ${vaultType.accent}40`
-                          }}
-                        >
-                          <Icon size={10} style={{ color: vaultType.accent }} />
-                          <span className="text-xs font-medium" style={{ color: vaultType.accent }}>
-                            {activity.vaultName}
-                          </span>
-                        </div>
-                        <span className="text-xs text-white/60">{activity.timeAgo}</span>
-                        {activity.commentCount && (
-                          <div className="flex items-center gap-1 text-white/60">
-                            <MessageCircle size={12} />
-                            <span className="text-xs">{activity.commentCount}</span>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        )
-
-      // C) Creator Vault
+        return <CompletedExperienceCard activity={activity} images={images} />
       case 'creator_vault':
-        return (
-          <div 
-            className="rounded-2xl overflow-hidden group cursor-pointer"
-            onClick={() => navigate(`/vault/shared/${activity.id}`)}
-            style={{
-              background: 'linear-gradient(135deg, rgba(255, 209, 92, 0.08), rgba(251, 146, 60, 0.05))',
-              border: '1px solid rgba(255, 209, 92, 0.2)',
-              boxShadow: '0 4px 24px rgba(255, 209, 92, 0.15)'
-            }}
-          >
-            <div className="p-5">
-              {/* Creator Header */}
-              <div className="flex items-start gap-3 mb-4">
-                <div className="relative">
-                  <div 
-                    className="w-12 h-12 rounded-full flex items-center justify-center text-xl"
-                    style={{
-                      background: 'rgba(255, 209, 92, 0.15)',
-                      border: '2px solid rgba(255, 209, 92, 0.4)'
-                    }}
-                  >
-                    {activity.contributorAvatar}
-                  </div>
-                  <div 
-                    className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center"
-                    style={{
-                      background: '#FFD15C',
-                      border: '2px solid #0B0B0E'
-                    }}
-                  >
-                    <Award size={10} style={{ color: '#0B0B0E' }} />
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <p className="text-white text-base leading-relaxed mb-1">
-                    <span className="font-bold">{activity.contributorName}</span>
-                    {' '}
-                    <span className="text-white/80">{activity.caption}</span>
-                  </p>
-                  {activity.metadata && (
-                    <div className="flex items-center gap-1.5 text-yellow-200 text-xs">
-                      <TrendingUp size={11} />
-                      <span>{activity.metadata}</span>
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              {/* 3-Wide Collage */}
-              {images.length >= 3 && (
-                <div className="grid grid-cols-3 gap-2 mb-3">
-                  {images.slice(0, 3).map((img, idx) => (
-                    <div key={idx} className="aspect-square rounded-xl overflow-hidden">
-                      <img src={img} alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              <div className="flex items-center justify-between">
-                <div 
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full"
-                  style={{
-                    background: `${vaultType.accent}12`,
-                    border: `1px solid ${vaultType.accent}25`
-                  }}
-                >
-                  <Icon size={11} style={{ color: vaultType.accent }} />
-                  <span className="text-xs font-medium" style={{ color: vaultType.accent }}>
-                    Creator Vault
-                  </span>
-                </div>
-                <span className="text-xs text-white/40">{activity.timeAgo}</span>
-              </div>
-            </div>
-          </div>
-        )
-
-      // D) On Trip (Live)
+        return <CreatorVaultCard activity={activity} images={images} />
       case 'on_trip':
-        return (
-          <div 
-            className="rounded-2xl overflow-hidden group cursor-pointer"
-            onClick={() => navigate(`/vault/shared/${activity.id}`)}
-            style={{
-              background: 'rgba(255, 255, 255, 0.03)',
-              border: '1px solid rgba(96, 165, 250, 0.3)',
-              boxShadow: '0 4px 24px rgba(96, 165, 250, 0.2)'
-            }}
-          >
-            {/* Hero Image/Map */}
-            {activity.heroImage && (
-              <div className="relative h-56">
-                <img 
-                  src={activity.heroImage} 
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-                <div 
-                  className="absolute inset-0"
-                  style={{
-                    background: 'linear-gradient(to top, rgba(11, 11, 14, 0.8) 0%, transparent 50%)'
-                  }}
-                />
-                
-                {/* Live Badge */}
-                <div 
-                  className="absolute top-4 left-4 backdrop-blur-xl rounded-full px-3 py-1.5 flex items-center gap-2"
-                  style={{
-                    background: 'rgba(239, 68, 68, 0.2)',
-                    border: '1px solid rgba(239, 68, 68, 0.5)'
-                  }}
-                >
-                  <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-                  <span className="text-xs font-semibold text-red-400">Live</span>
-                </div>
-              </div>
-            )}
-
-            <div className="p-5">
-              <div className="flex items-start gap-3 mb-3">
-                <div 
-                  className="w-10 h-10 rounded-full flex items-center justify-center text-lg flex-shrink-0"
-                  style={{
-                    background: 'rgba(96, 165, 250, 0.15)',
-                    border: '1px solid rgba(96, 165, 250, 0.3)'
-                  }}
-                >
-                  {activity.contributorAvatar}
-                </div>
-                <div className="flex-1">
-                  <p className="text-white text-base leading-relaxed mb-2">
-                    <span className="font-semibold">{activity.contributorName}</span>
-                    {' '}
-                    <span className="text-white/80">{activity.caption}</span>
-                  </p>
-                  {activity.metadata && (
-                    <p className="text-white/70 text-sm mb-3">{activity.metadata}</p>
-                  )}
-                  
-                  {/* Micro Timeline */}
-                  {activity.dayNumber && activity.totalDays && (
-                    <div className="flex items-center gap-1 mb-3">
-                      {Array.from({ length: activity.totalDays }, (_, i) => (
-                        <div 
-                          key={i}
-                          className="h-1 rounded-full flex-1"
-                          style={{
-                            background: i < activity.dayNumber 
-                              ? '#60A5FA' 
-                              : 'rgba(255, 255, 255, 0.1)'
-                          }}
-                        />
-                      ))}
-                    </div>
-                  )}
-
-                  <div className="flex items-center gap-3">
-                    <span className="text-xs text-blue-400 font-medium">{activity.timeAgo}</span>
-                    {activity.commentCount && (
-                      <div className="flex items-center gap-1 text-white/50">
-                        <MessageCircle size={12} />
-                        <span className="text-xs">{activity.commentCount}</span>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )
-
-      // E) Milestone/Badge
+        return <OnTripCard activity={activity} images={images} />
       case 'milestone':
-        return (
-          <div 
-            className="rounded-2xl overflow-hidden group cursor-pointer"
-            onClick={() => navigate(`/vault/shared/${activity.id}`)}
-            style={{
-              background: 'linear-gradient(135deg, rgba(167, 139, 250, 0.08), rgba(139, 92, 246, 0.05))',
-              border: '1px solid rgba(167, 139, 250, 0.25)',
-              boxShadow: '0 4px 24px rgba(167, 139, 250, 0.2)'
-            }}
-          >
-            <div className="p-5">
-              <div className="flex items-start gap-4">
-                <div 
-                  className="w-12 h-12 rounded-full flex items-center justify-center text-xl flex-shrink-0"
-                  style={{
-                    background: 'rgba(167, 139, 250, 0.15)',
-                    border: '2px solid rgba(167, 139, 250, 0.4)'
-                  }}
-                >
-                  {activity.contributorAvatar}
-                </div>
-                
-                <div className="flex-1">
-                  <p className="text-white text-base leading-relaxed mb-3">
-                    <span className="font-bold">{activity.contributorName}</span>
-                    {' '}
-                    <span className="text-white/80">{activity.caption}</span>
-                  </p>
-                  
-                  {/* Badge Graphic */}
-                  {activity.badgeText && (
-                    <div 
-                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl mb-3"
-                      style={{
-                        background: 'linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(139, 92, 246, 0.15))',
-                        border: '2px solid rgba(167, 139, 250, 0.4)'
-                      }}
-                    >
-                      <Award size={20} style={{ color: '#A78BFA' }} />
-                      <span className="text-lg font-bold" style={{ color: '#A78BFA' }}>
-                        {activity.badgeText}
-                      </span>
-                    </div>
-                  )}
-
-                  {/* Optional Hero Image */}
-                  {activity.heroImage && (
-                    <div className="mb-3 rounded-xl overflow-hidden">
-                      <img 
-                        src={activity.heroImage} 
-                        alt=""
-                        className="w-full h-48 object-cover"
-                      />
-                    </div>
-                  )}
-
-                  <span className="text-xs text-white/40">{activity.timeAgo}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        )
-
+        return <MilestoneCard activity={activity} images={images} />
       default:
         return null
     }
   }
 
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-[#0B0B0E] to-[#18181B] flex items-center justify-center">
+        <div style={{ color: DESIGN_TOKENS.colors.textSecondary }}>Loading...</div>
+      </div>
+    )
+  }
+
   return (
-    <div 
-      className="min-h-screen"
-      style={{
-        background: 'linear-gradient(to bottom, #0B0B0E, #18181B)'
-      }}
-    >
-      {/* Minimal Header */}
-      <div className="px-6 pt-8 pb-6">
-        <div className="flex items-end justify-between">
+    <div className="min-h-screen bg-gradient-to-b from-[#0B0B0E] to-[#18181B]">
+      {/* Header */}
+      <div 
+        className="sticky top-0 z-10 backdrop-blur-xl"
+        style={{
+          background: 'rgba(11, 11, 14, 0.8)',
+          borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
+          padding: '16px 24px'
+        }}
+      >
+        <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-4xl font-bold text-white mb-2 tracking-tight">Collections</h1>
-            <p className="text-white/50 text-sm">Your travel inspiration</p>
+            <h1 
+              style={{
+                fontSize: '28px',
+                fontWeight: '700',
+                color: DESIGN_TOKENS.colors.textPrimary
+              }}
+            >
+              Collections
+            </h1>
+            <p 
+              style={{
+                fontSize: '14px',
+                color: DESIGN_TOKENS.colors.textSecondary,
+                marginTop: '2px'
+              }}
+            >
+              Your travel inspiration
+            </p>
           </div>
-          
-          {/* Subtle Create Vault Button */}
           <button
-            onClick={() => navigate('/vault/create')}
-            className="group flex items-center gap-2 px-4 py-2.5 rounded-full transition-all hover:scale-105"
+            className="flex items-center gap-2 px-4 py-2"
             style={{
-              background: 'rgba(255, 209, 92, 0.1)',
-              border: '1px solid rgba(255, 209, 92, 0.2)'
+              background: DESIGN_TOKENS.colors.gold,
+              color: '#000',
+              borderRadius: '12px',
+              fontSize: '14px',
+              fontWeight: '600',
+              border: 'none',
+              cursor: 'pointer'
             }}
           >
-            <Plus size={18} style={{ color: '#FFD15C' }} />
-            <span className="text-sm font-medium" style={{ color: '#FFD15C' }}>New Vault</span>
+            <Plus size={18} />
+            New Vault
           </button>
         </div>
       </div>
 
-      {/* Section 1: Your Vaults - Horizontal Scroll with Editable Tags */}
-      <section className="mb-12">
-        <div className="px-6 mb-4">
-          <h2 className="text-lg font-semibold text-white">Your Vaults</h2>
-        </div>
+      {/* Main Content */}
+      <div className="pb-24">
+        {/* Your Vaults Section */}
+        <div style={{ padding: '24px 0' }}>
+          <h2 
+            style={{
+              fontSize: '20px',
+              fontWeight: '600',
+              color: DESIGN_TOKENS.colors.textPrimary,
+              marginBottom: '16px',
+              paddingLeft: DESIGN_TOKENS.spacing.cardMargin
+            }}
+          >
+            Your Vaults
+          </h2>
+          
+          <div 
+            className="flex gap-4 overflow-x-auto pb-4 hide-scrollbar"
+            style={{
+              paddingLeft: DESIGN_TOKENS.spacing.cardMargin,
+              paddingRight: DESIGN_TOKENS.spacing.cardMargin
+            }}
+          >
+            {vaults.map((vault) => {
+              const vaultType = VAULT_TYPES[vault.type]
+              const Icon = vaultType.icon
+              const images = vaultImages[vault.id] || []
 
-        {loading ? (
-          <div className="px-6">
-            <div className="animate-pulse flex gap-4">
-              {[1, 2, 3].map(i => (
-                <div key={i} className="w-72 h-96 bg-white/5 rounded-3xl" />
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div className="overflow-x-auto scrollbar-hide">
-            <div className="flex gap-5 px-6 pb-2">
-              {vaults.map((vault) => {
-                const vaultType = VAULT_TYPES[vault.type]
-                const Icon = vaultType.icon
-                const images = vaultImages[vault.id] || []
-
-                return (
+              return (
+                <div
+                  key={vault.id}
+                  className="flex-shrink-0"
+                  style={{ width: '280px' }}
+                >
                   <div
-                    key={vault.id}
-                    className="group flex-shrink-0"
+                    className="cursor-pointer group"
+                    style={{
+                      background: DESIGN_TOKENS.colors.cardBg,
+                      borderRadius: DESIGN_TOKENS.radius,
+                      border: `1px solid ${DESIGN_TOKENS.colors.cardBorder}`,
+                      boxShadow: DESIGN_TOKENS.shadow,
+                      overflow: 'hidden'
+                    }}
+                    onClick={() => navigate(`/vault/${vault.id}`)}
                   >
-                    <div 
-                      className="rounded-3xl overflow-hidden transition-all duration-500 hover:scale-[1.02] cursor-pointer"
-                      style={{
-                        width: '288px',
-                        aspectRatio: '4/5',
-                        background: 'rgba(255, 255, 255, 0.03)',
-                        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
-                      }}
-                      onClick={() => navigate(`/vault/${vault.id}`)}
-                    >
-                      {/* Image Collage with Soft Blend */}
-                      <div className="relative h-[65%] overflow-hidden">
-                        {images.length >= 4 ? (
-                          <div className="relative w-full h-full">
-                            <div className="absolute inset-0">
-                              <img 
-                                src={images[0]} 
-                                alt=""
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                              />
-                            </div>
-                            <div className="absolute bottom-3 right-3 flex gap-1.5">
-                              {images.slice(1, 4).map((img, idx) => (
-                                <div 
-                                  key={idx}
-                                  className="w-12 h-12 rounded-lg overflow-hidden"
-                                  style={{
-                                    boxShadow: '0 2px 8px rgba(0,0,0,0.4)'
-                                  }}
-                                >
-                                  <img src={img} alt="" className="w-full h-full object-cover" />
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        ) : (
-                          <div 
-                            className={`w-full h-full bg-gradient-to-br ${vaultType.gradient} flex items-center justify-center`}
-                          >
-                            <Icon size={56} style={{ color: vaultType.accent, opacity: 0.3 }} />
-                          </div>
-                        )}
-                        
+                    {/* Hero Image */}
+                    {images.length > 0 && (
+                      <div 
+                        className="relative overflow-hidden"
+                        style={{ height: '180px' }}
+                      >
+                        <img
+                          src={images[0]}
+                          alt=""
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
                         <div 
                           className="absolute inset-0"
                           style={{
-                            background: vaultType.overlayTint
+                            background: 'linear-gradient(to top, rgba(11, 11, 14, 0.6) 0%, transparent 60%)'
                           }}
                         />
+                      </div>
+                    )}
 
-                        {/* Editable Type Chip */}
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation()
-                            setEditingVaultId(vault.id)
-                          }}
-                          className="absolute top-3 left-3 backdrop-blur-xl rounded-full px-3 py-1.5 hover:scale-105 transition-transform"
-                          style={{
-                            background: `${vaultType.accent}15`,
-                            border: `1px solid ${vaultType.accent}30`
-                          }}
-                        >
-                          <div className="flex items-center gap-1.5">
-                            <Icon size={11} style={{ color: vaultType.accent }} />
-                            <span className="text-xs font-medium tracking-wide" style={{ color: vaultType.accent }}>
-                              {vaultType.label}
-                            </span>
-                            <Edit2 size={9} style={{ color: vaultType.accent, opacity: 0.5 }} />
-                          </div>
-                        </button>
+                    {/* Content */}
+                    <div style={{ padding: '16px' }}>
+                      <div 
+                        style={{
+                          fontSize: '18px',
+                          fontWeight: '600',
+                          color: DESIGN_TOKENS.colors.textPrimary,
+                          marginBottom: '8px'
+                        }}
+                      >
+                        {vault.name}
                       </div>
 
-                      <div className="p-5 space-y-3">
-                        <h3 className="text-white font-semibold text-lg leading-snug line-clamp-2">
-                          {vault.name}
-                        </h3>
+                      <div className="flex items-center gap-2 mb-3">
+                        <span 
+                          style={{
+                            fontSize: '13px',
+                            color: DESIGN_TOKENS.colors.textSecondary
+                          }}
+                        >
+                          {vault.inspirations} saved · {vault.contributors} {vault.contributors === 1 ? 'person' : 'people'}
+                        </span>
+                      </div>
 
-                        <div className="flex items-center justify-between">
-                          <p className="text-white/50 text-xs">
-                            {vault.inspirations} saved · {vault.contributors} {vault.contributors === 1 ? 'person' : 'people'}
-                          </p>
-
-                          {vault.contributorAvatars && vault.contributorAvatars.length > 0 && (
-                            <div className="flex -space-x-1.5">
-                              {vault.contributorAvatars.slice(0, 3).map((avatar, idx) => (
-                                <div 
-                                  key={idx}
-                                  className="w-5 h-5 rounded-full flex items-center justify-center text-[10px] border"
-                                  style={{
-                                    background: 'rgba(255, 255, 255, 0.08)',
-                                    borderColor: '#18181B'
-                                  }}
-                                >
-                                  {avatar}
-                                </div>
-                              ))}
-                            </div>
-                          )}
+                      {/* Editable Tag */}
+                      <div 
+                        className="inline-block cursor-pointer"
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          setEditingVaultId(vault.id)
+                        }}
+                      >
+                        <div 
+                          className="flex items-center gap-1.5 px-2.5 py-1.5 transition-all hover:opacity-80"
+                          style={{
+                            background: vaultType.bg,
+                            borderRadius: '8px',
+                            border: `1px solid ${vaultType.accent}20`
+                          }}
+                        >
+                          <Icon size={12} color={vaultType.accent} />
+                          <span 
+                            style={{
+                              fontSize: '12px',
+                              fontWeight: '500',
+                              color: vaultType.accent
+                            }}
+                          >
+                            {vaultType.label}
+                          </span>
                         </div>
                       </div>
                     </div>
                   </div>
-                )
-              })}
-            </div>
+                </div>
+              )
+            })}
           </div>
-        )}
-      </section>
-
-      {/* Section 2: Shared by Friends - Premium Strava-Inspired Feed */}
-      <section className="px-6 pb-24">
-        <h2 className="text-lg font-semibold text-white mb-6">Shared by Friends</h2>
-
-        <div className="space-y-6">
-          {sharedActivities.map((activity) => (
-            <div key={activity.id}>
-              {renderSharedActivity(activity)}
-            </div>
-          ))}
         </div>
-      </section>
 
-      {/* Edit Vault Type Bottom Sheet */}
+        {/* Shared by Friends Section */}
+        <div style={{ padding: '24px 0' }}>
+          <h2 
+            style={{
+              fontSize: '20px',
+              fontWeight: '600',
+              color: DESIGN_TOKENS.colors.textPrimary,
+              marginBottom: '20px',
+              paddingLeft: DESIGN_TOKENS.spacing.cardMargin
+            }}
+          >
+            Shared by Friends
+          </h2>
+
+          <div 
+            className="flex flex-col"
+            style={{
+              gap: DESIGN_TOKENS.spacing.cardVertical,
+              paddingLeft: DESIGN_TOKENS.spacing.cardMargin,
+              paddingRight: DESIGN_TOKENS.spacing.cardMargin
+            }}
+          >
+            {sharedActivities.map((activity) => (
+              <div key={activity.id}>
+                {renderSharedActivity(activity)}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Sheet for Vault Type Selection */}
       {editingVaultId && (
-        <div 
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-end"
+        <div
+          className="fixed inset-0 z-50 flex items-end"
           onClick={() => setEditingVaultId(null)}
         >
           <div 
-            className="w-full rounded-t-3xl p-6 space-y-4"
+            className="absolute inset-0"
+            style={{ background: 'rgba(0, 0, 0, 0.6)' }}
+          />
+          <div
+            className="relative w-full"
             style={{
-              background: 'linear-gradient(to bottom, #18181B, #0B0B0E)',
-              boxShadow: '0 -8px 32px rgba(0, 0, 0, 0.5)'
+              background: '#1C1C1E',
+              borderTopLeftRadius: '24px',
+              borderTopRightRadius: '24px',
+              padding: '24px',
+              maxHeight: '70vh',
+              overflowY: 'auto'
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-white font-semibold text-lg">Change Vault Type</h3>
+            <div className="flex items-center justify-between mb-6">
+              <h3 
+                style={{
+                  fontSize: '20px',
+                  fontWeight: '600',
+                  color: DESIGN_TOKENS.colors.textPrimary
+                }}
+              >
+                Select Vault Type
+              </h3>
               <button
                 onClick={() => setEditingVaultId(null)}
-                className="p-2 hover:bg-white/10 rounded-full transition-colors"
+                style={{
+                  background: 'rgba(255, 255, 255, 0.1)',
+                  border: 'none',
+                  borderRadius: '50%',
+                  width: '32px',
+                  height: '32px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer'
+                }}
               >
-                <X size={20} className="text-white" />
+                <X size={18} color={DESIGN_TOKENS.colors.textPrimary} />
               </button>
             </div>
 
             <div className="grid grid-cols-2 gap-3">
               {Object.values(VAULT_TYPES).map((type) => {
-                const TypeIcon = type.icon
+                const Icon = type.icon
                 return (
                   <button
                     key={type.id}
                     onClick={() => handleVaultTypeChange(editingVaultId, type.id as keyof typeof VAULT_TYPES)}
-                    className="p-4 rounded-2xl transition-all hover:scale-105"
+                    className="text-left p-4 transition-all hover:scale-[1.02]"
                     style={{
-                      background: `${type.accent}10`,
-                      border: `1px solid ${type.accent}30`
+                      background: type.bg,
+                      border: `1px solid ${type.accent}30`,
+                      borderRadius: DESIGN_TOKENS.radius,
+                      cursor: 'pointer'
                     }}
                   >
-                    <div className="flex items-center gap-3">
-                      <TypeIcon size={20} style={{ color: type.accent }} />
-                      <span className="text-sm font-medium" style={{ color: type.accent }}>
-                        {type.label}
-                      </span>
+                    <Icon size={24} color={type.accent} className="mb-2" />
+                    <div 
+                      style={{
+                        fontSize: '16px',
+                        fontWeight: '600',
+                        color: type.accent,
+                        marginBottom: '4px'
+                      }}
+                    >
+                      {type.label}
+                    </div>
+                    <div 
+                      style={{
+                        fontSize: '13px',
+                        color: DESIGN_TOKENS.colors.textSecondary,
+                        opacity: 0.7
+                      }}
+                    >
+                      {type.description}
                     </div>
                   </button>
                 )
@@ -907,12 +1212,20 @@ export const CollectionsHomePage: React.FC = () => {
       )}
 
       <style>{`
-        .scrollbar-hide::-webkit-scrollbar {
+        .hide-scrollbar::-webkit-scrollbar {
           display: none;
         }
-        .scrollbar-hide {
+        .hide-scrollbar {
           -ms-overflow-style: none;
           scrollbar-width: none;
+        }
+        @keyframes pulse {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.5;
+          }
         }
       `}</style>
     </div>
