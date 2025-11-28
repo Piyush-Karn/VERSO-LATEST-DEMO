@@ -55,7 +55,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<ExplorePageCinematic />} />
           <Route path="country/:countryName" element={<CountryOverviewPage />} />
-          <Route path="collections" element={<VaultViewPage />} />
+          <Route path="collections" element={<CollectionsHomePage />} />
           <Route path="vault/:vaultId" element={<VaultDetailPage />} />
           <Route path="vault/:vaultId/city/:cityName" element={<CityFeedView />} />
           <Route path="vault/:vaultId/category/:categoryName" element={<CityFeedView />} />
