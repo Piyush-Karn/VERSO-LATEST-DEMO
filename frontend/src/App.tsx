@@ -73,8 +73,6 @@ function App() {
           <Route path="itinerary/:tripId" element={<CinematicItinerary />} />
           {/* Legacy route - redirect to unified trip planning page */}
           <Route path="trip/itinerary" element={<Navigate to="/trip/1" replace />} />
-          {/* Vault Interior Pages */}
-          <Route path="vault-interior/trips/:vaultId" element={<TripsVaultPage />} />
           <Route path="ask-verso" element={<AskVersoPage />} />
           <Route path="organize/interests" element={<InterestsPage />} />
           <Route path="add" element={<AddPage />} />
