@@ -1022,7 +1022,11 @@ export const CollectionsHomePage: React.FC = () => {
                       boxShadow: DESIGN_TOKENS.shadow,
                       overflow: 'hidden'
                     }}
-                    onClick={() => navigate(`/vault/${vault.id}`)}
+                    onClick={() => {
+                      // Navigate to vault interior based on type
+                      const typeRoute = vault.type === 'trips' ? 'trips' : vault.type
+                      navigate(`/vault-interior/${typeRoute}/${vault.id}`)
+                    }}
                   >
                     {/* Hero Image */}
                     {images.length > 0 && (
