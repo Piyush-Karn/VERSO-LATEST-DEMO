@@ -6,7 +6,8 @@ import { FilterModal } from '../components/FilterModal'
 import { NeighborhoodDetailModal } from '../components/NeighborhoodDetailModal'
 // import neighborhoodsData from '../data/neighborhoods_data.json'
 const neighborhoodsData: any = {}
-import demoDataset from '../data/verso_demo_dataset.json'
+// import demoDataset from '../data/verso_demo_dataset.json'
+const demoDataset: any = { countries: [] }
 
 export const CityDetailPage: React.FC = () => {
   const { country, cityName } = useParams<{ country: string; cityName: string }>()
