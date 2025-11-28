@@ -918,8 +918,6 @@ export const CollectionsHomePage: React.FC = () => {
     </div>
   )
 }
-
-import { useNavigate } from 'react-router-dom'
 import { 
   Plus, MapPin, Coffee, Utensils, Mountain, Sparkles, Heart, 
   Users, Clock, Bookmark
