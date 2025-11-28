@@ -1022,7 +1022,7 @@ export const CollectionsHomePage: React.FC = () => {
                       boxShadow: DESIGN_TOKENS.shadow,
                       overflow: 'hidden'
                     }}
-                    onClick={() => navigate(`/vault-interior/${vault.id}`)}
+                    onClick={() => navigate(`/vault/${vault.id}`)}
                   >
                     {/* Hero Image */}
                     {images.length > 0 && (
