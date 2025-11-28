@@ -25,7 +25,6 @@ import { CityExplorationPage } from './pages/CityExplorationPage'
 import { OnboardingFlowRedesign } from './pages/OnboardingFlowRedesign'
 import { CinematicItinerary } from './pages/CinematicItinerary'
 import { VersoItinerary } from './pages/VersoItinerary'
-import { TripsVaultPage } from './pages/vaults/TripsVaultPage'
 
 // Simple Ask Verso placeholder
 const AskVersoPage = () => (
