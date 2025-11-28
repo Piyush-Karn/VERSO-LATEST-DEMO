@@ -160,12 +160,29 @@ const DEMO_VAULTS: Vault[] = [
   },
   {
     id: '3',
-    name: 'Bali Beachside Dining',
-    type: 'food_drink',
-    inspirations: 12,
+    name: 'Southeast Asia Adventure',
+    type: 'trips',
+    inspirations: 32,
     contributors: 3,
     images: [],
     contributorAvatars: ['👩', '🧑', '👨']
+  },
+  {
+    id: '4',
+    name: 'Maldives Scuba & Dive',
+    type: 'adventures',
+    inspirations: 15,
+    contributors: 2,
+    images: [],
+    contributorAvatars: ['🧑', '👩']
+  },
+  {
+    id: '5',
+    name: 'European Summer Dreams',
+    type: 'wishlists',
+    inspirations: 28,
+    contributors: 1,
+    images: []
   }
 ]
 
