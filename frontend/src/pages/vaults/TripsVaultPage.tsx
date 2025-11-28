@@ -70,7 +70,7 @@ export const TripsVaultPage: React.FC = () => {
   if (loading) {
     return (
       <div 
-        className=\"min-h-screen flex items-center justify-center\"
+        className="min-h-screen flex items-center justify-center"
         style={{ background: DESIGN_TOKENS.colors.background }}
       >
         <div style={{ color: DESIGN_TOKENS.colors.textMuted }}>Loading...</div>
