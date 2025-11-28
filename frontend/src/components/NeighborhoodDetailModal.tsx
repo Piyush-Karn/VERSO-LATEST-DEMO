@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { X, MapPin, Plane, DollarSign, Clock, Star, Home, Coffee, Activity, Users, Train, Calendar, Filter as FilterIcon, TrendingUp } from 'lucide-react'
 import { fetchPexelsImages } from '../services/pexels'
 import { HotelBottomSheet } from './HotelBottomSheet'
-import neighborhoodsData from '../data/neighborhoods_data.json'
+// import neighborhoodsData from '../data/neighborhoods_data.json'
+const neighborhoodsData: any = {}
 
 interface NeighborhoodDetailModalProps {
   city: string
