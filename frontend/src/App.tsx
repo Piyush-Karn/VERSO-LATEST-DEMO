@@ -30,6 +30,7 @@ import { CityGemsVault } from './pages/vaults/CityGemsVault'
 import { FoodDrinkVault } from './pages/vaults/FoodDrinkVault'
 import { AdventuresVault } from './pages/vaults/AdventuresVault'
 import { WishlistsVault } from './pages/vaults/WishlistsVault'
+import { TripPlanningQuestionnaire } from './pages/TripPlanningQuestionnaire'
 
 // Simple Ask Verso placeholder
 const AskVersoPage = () => (
