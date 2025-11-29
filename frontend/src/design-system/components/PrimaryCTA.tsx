@@ -10,10 +10,12 @@ interface PrimaryCTAProps {
 export const PrimaryCTA: React.FC<PrimaryCTAProps> = ({ label, onClick, icon }) => {
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-center"
+      className="fixed bottom-0 left-0 right-0 flex items-center justify-center"
       style={{
-        padding: `0 ${DESIGN_TOKENS.grid.horizontalMargin}px ${DESIGN_TOKENS.dimensions.ctaBottomMargin}px`,
-        pointerEvents: 'none'
+        padding: `0 ${DESIGN_TOKENS.grid.horizontalMargin}px`,
+        paddingBottom: '90px',
+        pointerEvents: 'none',
+        zIndex: 999
       }}
     >
       <button
