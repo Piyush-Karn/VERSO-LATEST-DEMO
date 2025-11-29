@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { MapPin, Users, Calendar, Sun, Cloud, CloudRain, X, TrendingUp } from 'lucide-react'
+import { MapPin, Filter, TrendingUp, X } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { ParallaxHeader } from '../../design-system/components/ParallaxHeader'
 import { PrimaryCTA } from '../../design-system/components/PrimaryCTA'
