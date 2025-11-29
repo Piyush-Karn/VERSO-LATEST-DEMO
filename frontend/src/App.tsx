@@ -81,7 +81,7 @@ function App() {
           {/* Vault Interior Pages */}
           <Route path="vault/1" element={<FoodDrinkVault />} />
           <Route path="vault/2" element={<CityGemsVault />} />
-          <Route path="vault/3" element={<TripsVault />} />
+          <Route path="vault/3" element={<TripsVaultPremium />} />
           <Route path="vault/4" element={<AdventuresVault />} />
           <Route path="vault/5" element={<WishlistsVault />} />
           <Route path="ask-verso" element={<AskVersoPage />} />
