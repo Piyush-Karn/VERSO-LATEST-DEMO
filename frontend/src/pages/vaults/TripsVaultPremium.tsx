@@ -231,15 +231,15 @@ export const TripsVaultPremium: React.FC = () => {
         {/* Things to Do Tab */}
         {activeTab === 'things' && (
           <>
-            {/* Highlights Grid */}
+            {/* Highlights Horizontal Scroll */}
             <section style={{ marginTop: '24px', marginBottom: '24px' }}>
               <h2 style={{ fontSize: DESIGN_TOKENS.typography.sectionHeader.size, fontWeight: DESIGN_TOKENS.typography.sectionHeader.weight, color: DESIGN_TOKENS.colors.textPrimary, marginBottom: '16px' }}>
                 Highlights
               </h2>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="flex gap-3 overflow-x-auto pb-2 hide-scrollbar">
                 {highlights.map((highlight, idx) => (
-                  <div key={highlight.title} className="cursor-pointer transition-transform active:scale-98" style={{ background: DESIGN_TOKENS.colors.cardBackground, borderRadius: DESIGN_TOKENS.radius.card, overflow: 'hidden', boxShadow: DESIGN_TOKENS.shadow.default }}>
-                    <div style={{ height: '130px', overflow: 'hidden' }}>
+                  <div key={highlight.title} className="flex-shrink-0 cursor-pointer transition-transform active:scale-98" style={{ width: '180px', background: DESIGN_TOKENS.colors.cardBackground, borderRadius: DESIGN_TOKENS.radius.card, overflow: 'hidden', boxShadow: DESIGN_TOKENS.shadow.default }}>
+                    <div style={{ height: '140px', overflow: 'hidden' }}>
                       <img src={highlightImages[idx]} alt={highlight.title} className="w-full h-full object-cover" />
                     </div>
                     <div style={{ padding: '12px' }}>
