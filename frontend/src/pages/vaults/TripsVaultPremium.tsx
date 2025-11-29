@@ -127,9 +127,9 @@ export const TripsVaultPremium: React.FC = () => {
       />
 
       <div style={{ padding: `0 ${DESIGN_TOKENS.grid.horizontalMargin}px` }}>
-        {/* Tabs - FIXED SPACING */}
+        {/* Tabs - INCREASED SPACING */}
         <div style={{ paddingTop: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-12">
             <button onClick={() => setActiveTab('cities')} className="relative pb-3" style={{ background: 'none', border: 'none', fontSize: '17px', fontWeight: '600', color: activeTab === 'cities' ? DESIGN_TOKENS.colors.textPrimary : DESIGN_TOKENS.colors.textMuted, cursor: 'pointer', transition: 'color 180ms ease-out' }}>
               Cities
               {activeTab === 'cities' && (
